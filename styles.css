@@ -57,3 +57,10 @@ body {
 .pblock {
     margin-bottom: 10px;
 }
+
+.doc {
+    display: none;
+}
+.doc.active {
+    display: block;
+}

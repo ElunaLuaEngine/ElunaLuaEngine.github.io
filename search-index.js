@@ -1237,13 +1237,13 @@ searchIndex["Quest"] = {
         //
         [3, "GetFlags", "", "Returns the &amp;Quest's flags."],
         //
-        [3, "GetId", "", "Returns entry ID of the &amp;Quest."],
+        [3, "GetId", "", "Returns entry id of the &amp;Quest."],
         //
         [3, "GetLevel", "", "Returns the &amp;Quest's level."],
         //
-        [3, "GetMinLevel", "", "Returns the minimum &amp;Quest level required to pick up the &amp;Quest."],
+        [3, "GetMinLevel", "", "Returns the minimum level required to pick up the &amp;Quest."],
         //
-        [3, "GetNextQuestId", "", "Returns the next &amp;Quest entry ID."],
+        [3, "GetNextQuestId", "", "Returns the next &amp;Quest entry id."],
         //
         [3, "GetNextQuestInChain", "", "Returns the next &amp;Quest entry ID in the specific &amp;Quest chain."],
         //
@@ -1251,7 +1251,7 @@ searchIndex["Quest"] = {
         //
         [3, "GetType", "", "Returns the &amp;Quest's type."],
         //
-        [3, "HasFlag", "", ""],
+        [3, "HasFlag", "", "Returns 'true' if the &amp;Quest has the specified flag, false otherwise. Below flags are based off of 3.3.5a. Subject to change."],
         //
         [3, "IsDaily", "", "Returns 'true' if the &amp;Quest is a daily quest, false otherwise."],
         //
@@ -1283,7 +1283,7 @@ searchIndex["Spell"] = {
         //
         [3, "GetPowerCost", "", "Returns the power cost of the &amp;Spell."],
         //
-        [3, "GetTarget", "", "Returns the target &amp;Object of the &amp;Spell."],
+        [3, "GetTarget", "", "Returns the target &amp;Object of the &amp;Spell. Target can be any of the following &amp;Object types: &amp;Player, &amp;Creature, &amp;GameObject, &amp;Item, &amp;Corpse"],
         //
         [3, "GetTargetDest", "", "Returns the target destination coordinates of the &amp;Spell."],
         //
@@ -1311,7 +1311,7 @@ searchIndex["Unit"] = {
         //
         [3, "AttackStop", "", ""],
         //
-        [3, "CastCustomSpell", "", "Casts the spell at target with modified basepoints or casters."],
+        [3, "CastCustomSpell", "", "Casts the spell at target with modified basepoints or casters. See also &amp;Unit:CastSpell"],
         //
         [3, "CastSpell", "", ""],
         //
@@ -1631,13 +1631,13 @@ searchIndex["Weather"] = {
     "items": [
         [0, "", "Weather", ""],
         //
-        [3, "GetZoneId", "", "Returns the Zone ID of the &amp;Weather as an uint32."],
+        [3, "GetZoneId", "", "Returns the zone id of the &amp;Weather"],
         //
         [3, "Regenerate", "", "Regenerates the &amp;Weather, causing it to change based on the below statistics."],
         //
         [3, "SendWeatherUpdateToPlayer", "", "Sends a &amp;Weather update to the &amp;Player supplied."],
         //
-        [3, "SetWeather", "", "Sets the &amp;Weather type based on &amp;Weather type and grade supplied."],
+        [3, "SetWeather", "", "Sets the &amp;Weather type based on &amp;WeatherType and grade supplied."],
         //
         [3, "UpdateWeather", "", "Sends a &amp;Weather update to the all &amp;Player in the zone."],
         //
@@ -1663,7 +1663,7 @@ searchIndex["WorldObject"] = {
         //
         [3, "GetInstanceId", "", ""],
         //
-        [3, "GetLocation", "", "Returns the coordinates and orientation of the &amp;WorldObject"],
+        [3, "GetLocation", "", "Returns the coordinates and orientation / facing of the &amp;WorldObject"],
         //
         [3, "GetMap", "", ""],
         //
@@ -1723,7 +1723,7 @@ searchIndex["WorldPacket"] = {
         //
         [3, "ReadFloat", "", "Reads a float value of the &amp;WorldPacket specified."],
         //
-        [3, "ReadGUID", "", "Reads a uint64 GUID value of the &amp;WorldPacket specified."],
+        [3, "ReadGUID", "", "Reads a uint64 value of the &amp;WorldPacket specified."],
         //
         [3, "ReadLong", "", "Reads an int32 value of the &amp;WorldPacket specified."],
         //
@@ -1745,7 +1745,7 @@ searchIndex["WorldPacket"] = {
         //
         [3, "WriteFloat", "", "Writes a float value to the &amp;WorldPacket."],
         //
-        [3, "WriteGUID", "", "Writes a uint64 GUID to the &amp;WorldPacket."],
+        [3, "WriteGUID", "", "Writes an uint64 value to the &amp;WorldPacket."],
         //
         [3, "WriteLong", "", "Writes an int32 value to the &amp;WorldPacket."],
         //
@@ -1753,11 +1753,11 @@ searchIndex["WorldPacket"] = {
         //
         [3, "WriteString", "", "Writes a string to the &amp;WorldPacket."],
         //
-        [3, "WriteUByte", "", "Writes a uint8 value to the &amp;WorldPacket."],
+        [3, "WriteUByte", "", "Writes an uint8 value to the &amp;WorldPacket."],
         //
-        [3, "WriteULong", "", "Writes a uint32 value to the &amp;WorldPacket."],
+        [3, "WriteULong", "", "Writes an uint32 value to the &amp;WorldPacket."],
         //
-        [3, "WriteUShort", "", "Writes a uint16 value to the &amp;WorldPacket."],
+        [3, "WriteUShort", "", "Writes an uint16 value to the &amp;WorldPacket."],
         //
     ],
     "paths": [

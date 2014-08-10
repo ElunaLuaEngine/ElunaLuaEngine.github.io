@@ -60,13 +60,13 @@
 
     
     <div class='docblock'>
-        <p>Regenerates the &amp;Weather, causing it to change based on the below statistics.</p> <p>30% - No change 30% - <a class="mod" href="../Weather/index.html">Weather</a> gets better (if not fine) or change <a class="mod" href="../Weather/index.html">Weather</a> type 30% - <a class="mod" href="../Weather/index.html">Weather</a> worsens (if not fine) 10% - Radical change (if not fine)</p> 
+        <p>Regenerates the &amp;Weather, causing it to change based on the below statistics.</p> <ul> <li>30% chance of no change</li> <li>30% chance of <a class="mod" href="../Weather/index.html">Weather</a> getting better (if not fine) or changing <a class="mod" href="../Weather/index.html">Weather</a> type</li> <li>30% chance of <a class="mod" href="../Weather/index.html">Weather</a> getting worse (if not fine)</li> <li>10% chance of radical change (if not fine)</li> </ul> 
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Changed = Weather:Regenerate()</code>
+            <code>changed = Weather:Regenerate()</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -81,7 +81,7 @@
         </h2>
         <p>
             <dl>
-                <dt><code>None Changed</code></dt>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.2.html">boolean</a></strong> changed</code></dt>
                 <dd class="docblock"><p>Returns 'true' if <a class="mod" href="../Weather/index.html">Weather</a> changed. </p> </dd>
             </dl>
         </p>

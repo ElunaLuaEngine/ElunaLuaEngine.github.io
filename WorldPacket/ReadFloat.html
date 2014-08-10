@@ -78,13 +78,13 @@
 
     
     <div class='docblock'>
-        <p>Reads a float value of the <a class="mod" href="../WorldPacket/index.html">WorldPacket</a> specified.</p> <p>@return float</p> 
+        <p>Reads a float value of the <a class="mod" href="../WorldPacket/index.html">WorldPacket</a> specified.</p> 
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>WorldPacket:ReadFloat()</code>
+            <code>value = WorldPacket:ReadFloat()</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -98,7 +98,10 @@
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Nothing.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> value</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: all decimal numbers.</p> </dd>
+            </dl>
         </p>
     </div>
 

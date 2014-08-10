@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="API documentation for the Unit class in the Eluna engine.">
+    <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
+
+    <title>Unit - Eluna API</title>
+
+    <link rel="stylesheet" type="text/css" href="../static/main.css">
+
+    <link rel="shortcut icon" href="../static/favicon.ico">
+
+</head>
+<body class="rustdoc">
+<!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+<section class="sidebar">
+    <a href='../index.html'><img src='../static/eluna-logo.png' alt='Eluna Logo' width='100'></a>
+    <div class="block">
+        
+            <h2>All Classes</h2>
+            <a class="mod " href="../Aura/index.html">Aura</a><a class="mod " href="../Corpse/index.html">Corpse</a><a class="mod " href="../Creature/index.html">Creature</a><a class="mod " href="../GameObject/index.html">GameObject</a><a class="mod " href="../Global/index.html">Global</a><a class="mod " href="../Group/index.html">Group</a><a class="mod " href="../Guild/index.html">Guild</a><a class="mod " href="../Item/index.html">Item</a><a class="mod " href="../Map/index.html">Map</a><a class="mod " href="../Object/index.html">Object</a><a class="mod " href="../Player/index.html">Player</a><a class="mod " href="../Query/index.html">Query</a><a class="mod " href="../Quest/index.html">Quest</a><a class="mod " href="../Spell/index.html">Spell</a><a class="mod current" href="../Unit/index.html">Unit</a><a class="mod " href="../Vehicle/index.html">Vehicle</a><a class="mod " href="../Weather/index.html">Weather</a><a class="mod " href="../WorldObject/index.html">WorldObject</a><a class="mod " href="../WorldPacket/index.html">WorldPacket</a>
+        
+    </div>
+</section>
+
+<nav class="sub">
+    <form class="search-form js-only">
+        <div class="search-container">
+            <input class="search-input" name="search"
+                   autocomplete="off"
+                   placeholder="Click or press 'S' to search, '?' for more options..."
+                   type="search">
+        </div>
+    </form>
+</nav>
+
+<section id='main' class="content mod">
+    <h1 class='fqn'>
+        Class <a class="mod" href="">Unit</a>
+        <span class='out-of-band'>
+            <span id='render-detail'>
+                <a id="collapse-all" href="#">[-]</a>
+                <a id="expand-all" href="#">[+]</a>
+            </span>
+        </span>
+    </h1>
+
+    
+    
+
+    <h2 id='methods' class='section-header'><a href="#methods">Methods</a></h2>
+    <table>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='AddAura.html'>AddAura</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='AddThreat.html'>AddThreat</a>
+            </td>
+            <td class='docblock short'>
+                <p>Adds threat to the <a class="mod" href="../Unit/index.html">Unit</a> from the victim. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='AddUnitState.html'>AddUnitState</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='Attack.html'>Attack</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='AttackStop.html'>AttackStop</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='CastCustomSpell.html'>CastCustomSpell</a>
+            </td>
+            <td class='docblock short'>
+                <p>Casts the spell at target with modified basepoints or casters. </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='CastSpell.html'>CastSpell</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='CastSpellAoF.html'>CastSpellAoF</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='ClearInCombat.html'>ClearInCombat</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='ClearThreatList.html'>ClearThreatList</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='ClearUnitState.html'>ClearUnitState</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='CountPctFromCurHealth.html'>CountPctFromCurHealth</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='CountPctFromMaxHealth.html'>CountPctFromMaxHealth</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='DeMorph.html'>DeMorph</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='DealDamage.html'>DealDamage</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='DealHeal.html'>DealHeal</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='Dismount.html'>Dismount</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='Emote.html'>Emote</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetAura.html'>GetAura</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetBaseSpellPower.html'>GetBaseSpellPower</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetCharmGUID.html'>GetCharmGUID</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetCharmerGUID.html'>GetCharmerGUID</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetClass.html'>GetClass</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetClassAsString.html'>GetClassAsString</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetCombatTime.html'>GetCombatTime</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetControllerGUID.html'>GetControllerGUID</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetControllerGUIDS.html'>GetControllerGUIDS</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetCreatorGUID.html'>GetCreatorGUID</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetCreatureType.html'>GetCreatureType</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetCritterGUID.html'>GetCritterGUID</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetCurrentSpell.html'>GetCurrentSpell</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetDisplayId.html'>GetDisplayId</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetFaction.html'>GetFaction</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetFriendlyUnitsInRange.html'>GetFriendlyUnitsInRange</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetGender.html'>GetGender</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetHealth.html'>GetHealth</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetHealthPct.html'>GetHealthPct</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetLevel.html'>GetLevel</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetMaxHealth.html'>GetMaxHealth</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetMaxPower.html'>GetMaxPower</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetMinionGUID.html'>GetMinionGUID</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetMountId.html'>GetMountId</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetNativeDisplayId.html'>GetNativeDisplayId</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetOwner.html'>GetOwner</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetOwnerGUID.html'>GetOwnerGUID</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetPetGUID.html'>GetPetGUID</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetPower.html'>GetPower</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetPowerPct.html'>GetPowerPct</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetPowerType.html'>GetPowerType</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetRace.html'>GetRace</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetStandState.html'>GetStandState</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetStat.html'>GetStat</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetUnfriendlyUnitsInRange.html'>GetUnfriendlyUnitsInRange</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetVehicle.html'>GetVehicle</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetVehicleKit.html'>GetVehicleKit</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetVictim.html'>GetVictim</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='HasAura.html'>HasAura</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='HasUnitState.html'>HasUnitState</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='HealthAbovePct.html'>HealthAbovePct</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='HealthBelowPct.html'>HealthBelowPct</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='InterruptSpell.html'>InterruptSpell</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsAlive.html'>IsAlive</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsArmorer.html'>IsArmorer</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsAttackingPlayer.html'>IsAttackingPlayer</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsAuctioneer.html'>IsAuctioneer</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsBanker.html'>IsBanker</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsBattleMaster.html'>IsBattleMaster</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsCharmed.html'>IsCharmed</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsDead.html'>IsDead</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsDying.html'>IsDying</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsFullHealth.html'>IsFullHealth</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsGossip.html'>IsGossip</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsGuildMaster.html'>IsGuildMaster</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsInAccessiblePlaceFor.html'>IsInAccessiblePlaceFor</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsInCombat.html'>IsInCombat</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsInWater.html'>IsInWater</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsInnkeeper.html'>IsInnkeeper</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsMounted.html'>IsMounted</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsOnVehicle.html'>IsOnVehicle</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsPvPFlagged.html'>IsPvPFlagged</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsQuestGiver.html'>IsQuestGiver</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsRooted.html'>IsRooted</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsServiceProvider.html'>IsServiceProvider</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsSpiritGuide.html'>IsSpiritGuide</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsSpiritHealer.html'>IsSpiritHealer</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsSpiritService.html'>IsSpiritService</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsStandState.html'>IsStandState</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsStopped.html'>IsStopped</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsTabardDesigner.html'>IsTabardDesigner</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsTaxi.html'>IsTaxi</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsTrainer.html'>IsTrainer</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsUnderWater.html'>IsUnderWater</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsVendor.html'>IsVendor</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsWithinDistInMap.html'>IsWithinDistInMap</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='IsWithinLoS.html'>IsWithinLoS</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='Kill.html'>Kill</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='Mount.html'>Mount</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='MoveChase.html'>MoveChase</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='MoveClear.html'>MoveClear</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='MoveConfused.html'>MoveConfused</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='MoveExpire.html'>MoveExpire</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='MoveFleeing.html'>MoveFleeing</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='MoveFollow.html'>MoveFollow</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='MoveHome.html'>MoveHome</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='MoveIdle.html'>MoveIdle</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='MoveJump.html'>MoveJump</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='MoveRandom.html'>MoveRandom</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='MoveStop.html'>MoveStop</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='MoveTo.html'>MoveTo</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='NearTeleport.html'>NearTeleport</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='PlayDirectSound.html'>PlayDirectSound</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='PlayDistanceSound.html'>PlayDistanceSound</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='RegisterEvent.html'>RegisterEvent</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='RemoveAllAuras.html'>RemoveAllAuras</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='RemoveAura.html'>RemoveAura</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='RemoveEventById.html'>RemoveEventById</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='RemoveEvents.html'>RemoveEvents</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SendChatMessageToPlayer.html'>SendChatMessageToPlayer</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SendUnitEmote.html'>SendUnitEmote</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SendUnitSay.html'>SendUnitSay</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SendUnitWhisper.html'>SendUnitWhisper</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SendUnitYell.html'>SendUnitYell</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetCharmerGUID.html'>SetCharmerGUID</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetCreatorGUID.html'>SetCreatorGUID</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetCritterGUID.html'>SetCritterGUID</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetDisplayId.html'>SetDisplayId</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetFFA.html'>SetFFA</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetFacing.html'>SetFacing</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetFacingToObject.html'>SetFacingToObject</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetFaction.html'>SetFaction</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetHealth.html'>SetHealth</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetLevel.html'>SetLevel</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetMaxHealth.html'>SetMaxHealth</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetMaxPower.html'>SetMaxPower</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetMinionGUID.html'>SetMinionGUID</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetName.html'>SetName</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetNativeDisplayId.html'>SetNativeDisplayId</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetOwnerGUID.html'>SetOwnerGUID</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetPetGUID.html'>SetPetGUID</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetPhaseMask.html'>SetPhaseMask</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetPower.html'>SetPower</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetPowerType.html'>SetPowerType</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetPvP.html'>SetPvP</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetSanctuary.html'>SetSanctuary</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetSheath.html'>SetSheath</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetSpeed.html'>SetSpeed</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetStandState.html'>SetStandState</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetWaterWalk.html'>SetWaterWalk</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='StopSpellCast.html'>StopSpellCast</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+    </table>
+
+</section>
+
+<section id='search' class="content hidden"></section>
+
+<section class="footer"></section>
+
+<div id="help" class="hidden">
+    <div class="shortcuts">
+        <h1>Keyboard shortcuts</h1>
+        <dl>
+            <dt>?</dt>
+            <dd>Show this help dialog</dd>
+            <dt>S</dt>
+            <dd>Focus the search field</dd>
+            <dt>&larrb;</dt>
+            <dd>Move up in search results</dd>
+            <dt>&rarrb;</dt>
+            <dd>Move down in search results</dd>
+            <dt>&#9166;</dt>
+            <dd>Go to active search result</dd>
+        </dl>
+    </div>
+    <div class="infos">
+        <h1>Search tricks</h1>
+        <p>
+            Prefix searches with a type followed by a colon (e.g.
+            <code>fn:</code>) to restrict the search to a given type.
+        </p>
+        <p>
+            Accepted types are: <code>fn</code>, <code>mod</code>,
+            <code>struct</code> (or <code>str</code>), <code>enum</code>,
+            <code>trait</code>, <code>typedef</code> (or
+            <code>tdef</code>).
+        </p>
+    </div>
+</div>
+
+<script>
+    window.rootPath = "";
+</script>
+<script src="../static/jquery.js"></script>
+<script src="../static/main.js"></script>
+<script async src="../search-index.js"></script>
+</body>
+</html>

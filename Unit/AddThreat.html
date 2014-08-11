@@ -204,7 +204,20 @@
 
     
     <div class='docblock'>
-        <p>Adds threat to the <a class="mod" href="../Unit/index.html">Unit</a> from the victim.</p> <pre> enum SpellSchoolMask { SPELL_SCHOOL_MASK_NONE = 0, SPELL_SCHOOL_MASK_NORMAL = 1, SPELL_SCHOOL_MASK_HOLY = 2, SPELL_SCHOOL_MASK_FIRE = 4, SPELL_SCHOOL_MASK_NATURE = 8, SPELL_SCHOOL_MASK_FROST = 16, SPELL_SCHOOL_MASK_SHADOW = 32, SPELL_SCHOOL_MASK_ARCANE = 64, } </pre> 
+        <p>Adds threat to the <a class="mod" href="../Unit/index.html">Unit</a> from the victim.</p>
+<pre>
+enum SpellSchoolMask
+{
+SPELL_SCHOOL_MASK_NONE    = 0,
+SPELL_SCHOOL_MASK_NORMAL  = 1,
+SPELL_SCHOOL_MASK_HOLY    = 2,
+SPELL_SCHOOL_MASK_FIRE    = 4,
+SPELL_SCHOOL_MASK_NATURE  = 8,
+SPELL_SCHOOL_MASK_FROST   = 16,
+SPELL_SCHOOL_MASK_SHADOW  = 32,
+SPELL_SCHOOL_MASK_ARCANE  = 64,
+}
+</pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
@@ -218,20 +231,20 @@
         </h2>
         <p>
             <dl>
-                <dt><code><strong><a class="mod" href="../Unit/index.html">Unit</a></strong> victim </code></dt>
-                <dd class="docblock"><p>&amp;Unit that caused the threat. </p> </dd>
+                <dt><code><strong><a class="mod" href="../Unit/index.html">Unit</a></strong> victim</code></dt>
+                <dd class="docblock"><p><a class="mod" href="../Unit/index.html">Unit</a> that caused the threat. </p></dd>
             </dl>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> threat </code></dt>
-                <dd class="docblock"><p>Threat amount. </p><p><em>Valid numbers</em>: all decimal numbers.</p> </dd>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> threat</code></dt>
+                <dd class="docblock"><p>Threat amount. </p><p><em>Valid numbers</em>: all decimal numbers.</p></dd>
             </dl>
             <dl>
-                <dt><code>None schoolMask </code></dt>
-                <dd class="docblock"><em>See method description.</em></dd>
+                <dt><code>None schoolMask (0)</code></dt>
+                <dd class="docblock"><p>Spell school mask of the threat causer. </p></dd>
             </dl>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> spell </code></dt>
-                <dd class="docblock"><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p> </dd>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> spell (0)</code></dt>
+                <dd class="docblock"><p>Spell entry used for threat. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
         </p>
 

@@ -197,39 +197,39 @@ searchIndex["GameObject"] = {
     "items": [
         [0, "", "GameObject", ""],
         //
-        [3, "Despawn", "", ""],
+        [3, "Despawn", "", "Despawns a &amp;GameObject"],
         //
-        [3, "GetDisplayId", "", ""],
+        [3, "GetDisplayId", "", "Returns display ID of the &amp;GameObject"],
         //
-        [3, "GetGoState", "", ""],
+        [3, "GetGoState", "", "Returns the state of a &amp;GameObject Below are client side GOStates off of 3.3.5a"],
         //
-        [3, "GetLootState", "", ""],
+        [3, "GetLootState", "", "Returns the loot state of a &amp;GameObject Below are Loot States off of 3.3.5a"],
         //
-        [3, "HasQuest", "", ""],
+        [3, "HasQuest", "", "Returns 'true' if the &amp;GameObject can give the specified &amp;Quest"],
         //
-        [3, "IsActive", "", ""],
+        [3, "IsActive", "", "Returns 'true' if the &amp;GameObject is active"],
         //
-        [3, "IsSpawned", "", ""],
+        [3, "IsSpawned", "", "Returns 'true' if the &amp;GameObject is spawned"],
         //
-        [3, "IsTransport", "", ""],
+        [3, "IsTransport", "", "Returns 'true' if the &amp;GameObject is a transport"],
         //
-        [3, "RegisterEvent", "", ""],
+        [3, "RegisterEvent", "", "Registers a timed event to the &amp;GameObject"],
         //
-        [3, "RemoveEventById", "", ""],
+        [3, "RemoveEventById", "", "Removes the timed event from a &amp;GameObject by the specified event ID"],
         //
-        [3, "RemoveEvents", "", ""],
+        [3, "RemoveEvents", "", "Removes all timed events from a &amp;GameObject"],
         //
-        [3, "RemoveFromWorld", "", ""],
+        [3, "RemoveFromWorld", "", "Removes &amp;GameObject from the world"],
         //
-        [3, "Respawn", "", ""],
+        [3, "Respawn", "", "Respawns a &amp;GameObject"],
         //
-        [3, "SaveToDB", "", ""],
+        [3, "SaveToDB", "", "Saves &amp;GameObject to the database"],
         //
-        [3, "SetGoState", "", ""],
+        [3, "SetGoState", "", "Sets the state of a &amp;GameObject"],
         //
-        [3, "SetLootState", "", ""],
+        [3, "SetLootState", "", "Sets the loot state of a &amp;GameObject Below are Loot States off of 3.3.5a"],
         //
-        [3, "UseDoorOrButton", "", ""],
+        [3, "UseDoorOrButton", "", "Changes uses a door or a button type &amp;GameObject"],
         //
     ],
     "paths": [
@@ -609,33 +609,33 @@ searchIndex["Map"] = {
     "items": [
         [0, "", "Map", ""],
         //
-        [3, "GetAreaId", "", ""],
+        [3, "GetAreaId", "", "Returns the area ID of the &amp;Map at the specified X, Y and Z coordinates"],
         //
-        [3, "GetDifficulty", "", ""],
+        [3, "GetDifficulty", "", "Returns the difficulty of the &amp;Map"],
         //
-        [3, "GetHeight", "", ""],
+        [3, "GetHeight", "", "Returns the height of the &amp;Map at the given X and Y coordinates"],
         //
-        [3, "GetInstanceId", "", ""],
+        [3, "GetInstanceId", "", "Returns the instance ID of the &amp;Map"],
         //
-        [3, "GetMapId", "", ""],
+        [3, "GetMapId", "", "Returns the ID of the &amp;Map"],
         //
-        [3, "GetName", "", ""],
+        [3, "GetName", "", "Returns the name of the &amp;Map"],
         //
-        [3, "GetPlayerCount", "", ""],
+        [3, "GetPlayerCount", "", "Returns the player count currently on the &amp;Map Does not include gamemasters"],
         //
-        [3, "GetWorldObject", "", ""],
+        [3, "GetWorldObject", "", "Returns a &amp;WorldObject by it's guid from the map if it is spawned"],
         //
-        [3, "IsArena", "", ""],
+        [3, "IsArena", "", "Returns 'true' if the &amp;Map is an arena, false otherwise"],
         //
-        [3, "IsBattleground", "", ""],
+        [3, "IsBattleground", "", "Returns 'true' if the &amp;Map is a battleground, false otherwise"],
         //
-        [3, "IsDungeon", "", ""],
+        [3, "IsDungeon", "", "Returns 'true' if the &amp;Map is a dungeon, false otherwise"],
         //
-        [3, "IsEmpty", "", ""],
+        [3, "IsEmpty", "", "Returns 'true' if the &amp;Map is empty, false otherwise"],
         //
-        [3, "IsHeroic", "", ""],
+        [3, "IsHeroic", "", "Returns 'true' if the &amp;Map is a heroic, false otherwise"],
         //
-        [3, "IsRaid", "", ""],
+        [3, "IsRaid", "", "Returns 'true' if the &amp;Map is a raid, false otherwise"],
         //
     ],
     "paths": [
@@ -1237,13 +1237,13 @@ searchIndex["Quest"] = {
         //
         [3, "GetFlags", "", "Returns the &amp;Quest's flags."],
         //
-        [3, "GetId", "", "Returns entry id of the &amp;Quest."],
+        [3, "GetId", "", "Returns entry ID of the &amp;Quest."],
         //
         [3, "GetLevel", "", "Returns the &amp;Quest's level."],
         //
         [3, "GetMinLevel", "", "Returns the minimum level required to pick up the &amp;Quest."],
         //
-        [3, "GetNextQuestId", "", "Returns the next &amp;Quest entry id."],
+        [3, "GetNextQuestId", "", "Returns the next &amp;Quest entry ID."],
         //
         [3, "GetNextQuestInChain", "", "Returns the next &amp;Quest entry ID in the specific &amp;Quest chain."],
         //
@@ -1289,7 +1289,7 @@ searchIndex["Spell"] = {
         //
         [3, "IsAutoRepeat", "", "Returns 'true' if the &amp;Spell is automatically repeating, false otherwise."],
         //
-        [3, "SetAutoRepeat", "", "Sets the &amp;Spell to automatically repeat:"],
+        [3, "SetAutoRepeat", "", "Sets the &amp;Spell to automatically repeat."],
         //
     ],
     "paths": [
@@ -1651,57 +1651,59 @@ searchIndex["WorldObject"] = {
     "items": [
         [0, "", "WorldObject", ""],
         //
-        [3, "GetAngle", "", ""],
+        [3, "GetAngle", "", "Returns the angle between this &amp;WorldObject and another &amp;WorldObject or a point. The angle is the angle between two points and orientation will be ignored."],
         //
-        [3, "GetAreaId", "", ""],
+        [3, "GetAreaId", "", "Returns the current area ID of the &amp;WorldObject"],
         //
-        [3, "GetCreaturesInRange", "", ""],
+        [3, "GetCreaturesInRange", "", "Returns a table of &amp;Creature objects in sight of the &amp;WorldObject or within the given range and/or with a specific entry ID"],
         //
-        [3, "GetDistance", "", ""],
+        [3, "GetDistance", "", "Returns the distance from this &amp;WorldObject to another &amp;WorldObject, or from this &amp;WorldObject to a point."],
         //
-        [3, "GetGameObjectsInRange", "", ""],
+        [3, "GetGameObjectsInRange", "", "Returns a table of &amp;GameObject objects in sight of the &amp;WorldObject or within the given range and/or with a specific entry ID"],
         //
-        [3, "GetInstanceId", "", ""],
+        [3, "GetInstanceId", "", "Returns the current instance ID of the &amp;WorldObject"],
         //
-        [3, "GetLocation", "", "Returns the coordinates and orientation / facing of the &amp;WorldObject"],
+        [3, "GetLocation", "", "Returns the coordinates and orientation of the &amp;WorldObject"],
         //
-        [3, "GetMap", "", ""],
+        [3, "GetMap", "", "Returns the current &amp;Map object of the &amp;WorldObject"],
         //
-        [3, "GetMapId", "", ""],
+        [3, "GetMapId", "", "Returns the current map ID of the &amp;WorldObject"],
         //
-        [3, "GetName", "", ""],
+        [3, "GetName", "", "Returns the name of the &amp;WorldObject"],
         //
-        [3, "GetNearObject", "", ""],
+        [3, "GetNearObject", "", "Returns nearest &amp;WorldObject in sight of the &amp;WorldObject. The distance, type, entry and hostility requirements the &amp;WorldObject must match can be passed."],
         //
-        [3, "GetNearestCreature", "", ""],
+        [3, "GetNearObjects", "", "Returns a table of &amp;WorldObjects in sight of the &amp;WorldObject. The distance, type, entry and hostility requirements the &amp;WorldObject must match can be passed."],
         //
-        [3, "GetNearestGameObject", "", ""],
+        [3, "GetNearestCreature", "", "Returns the nearest &amp;Creature object in sight of the &amp;WorldObject or within the given range and/or with a specific entry ID"],
         //
-        [3, "GetNearestPlayer", "", ""],
+        [3, "GetNearestGameObject", "", "Returns the nearest &amp;GameObject object in sight of the &amp;WorldObject or within the given range and/or with a specific entry ID"],
         //
-        [3, "GetO", "", ""],
+        [3, "GetNearestPlayer", "", "Returns the nearest &amp;Player object in sight of the &amp;WorldObject or within the given range"],
         //
-        [3, "GetPhaseMask", "", ""],
+        [3, "GetO", "", "Returns the current orientation of the &amp;WorldObject"],
         //
-        [3, "GetPlayersInRange", "", ""],
+        [3, "GetPhaseMask", "", "Returns the current phase of the &amp;WorldObject"],
         //
-        [3, "GetRelativePoint", "", ""],
+        [3, "GetPlayersInRange", "", "Returns a table of &amp;Player objects in sight of the &amp;WorldObject or within the given range"],
         //
-        [3, "GetWorldObject", "", ""],
+        [3, "GetRelativePoint", "", "Returns a point relative to the &amp;WorldObject. With distance set to 1 and angle set to 0, this will return a point 1 yard in front of the &amp;WorldObject"],
         //
-        [3, "GetX", "", ""],
+        [3, "GetWorldObject", "", "Returns a &amp;WorldObject based on it's guid if it is spawned"],
         //
-        [3, "GetY", "", ""],
+        [3, "GetX", "", "Returns the current X coordinate of the &amp;WorldObject"],
         //
-        [3, "GetZ", "", ""],
+        [3, "GetY", "", "Returns the current Y coordinate of the &amp;WorldObject"],
         //
-        [3, "GetZoneId", "", ""],
+        [3, "GetZ", "", "Returns the current Z coordinate of the &amp;WorldObject"],
         //
-        [3, "SendPacket", "", ""],
+        [3, "GetZoneId", "", "Returns the current zone ID of the &amp;WorldObject"],
         //
-        [3, "SpawnCreature", "", ""],
+        [3, "SendPacket", "", "Sends a &amp;WorldPacket to &amp;Players in sight of the &amp;WorldObject."],
         //
-        [3, "SummonGameObject", "", ""],
+        [3, "SpawnCreature", "", "Spawns the creature at specified location."],
+        //
+        [3, "SummonGameObject", "", "Spawns a &amp;GameObject at specified location."],
         //
     ],
     "paths": [
@@ -1717,25 +1719,25 @@ searchIndex["WorldPacket"] = {
         //
         [3, "GetSize", "", "Returns the size of the &amp;WorldPacket."],
         //
-        [3, "ReadByte", "", "Reads an int8 value of the &amp;WorldPacket specified."],
+        [3, "ReadByte", "", "Reads and returns an int8 value from the &amp;WorldPacket."],
         //
-        [3, "ReadDouble", "", "Reads a double value of the &amp;WorldPacket specified."],
+        [3, "ReadDouble", "", "Reads and returns a double value from the &amp;WorldPacket."],
         //
-        [3, "ReadFloat", "", "Reads a float value of the &amp;WorldPacket specified."],
+        [3, "ReadFloat", "", "Reads and returns a float value from the &amp;WorldPacket."],
         //
-        [3, "ReadGUID", "", "Reads a uint64 value of the &amp;WorldPacket specified."],
+        [3, "ReadGUID", "", "Reads and returns a uint64 value from the &amp;WorldPacket."],
         //
-        [3, "ReadLong", "", "Reads an int32 value of the &amp;WorldPacket specified."],
+        [3, "ReadLong", "", "Reads and returns an int32 value from the &amp;WorldPacket."],
         //
-        [3, "ReadShort", "", "Reads an int16 value of the &amp;WorldPacket specified."],
+        [3, "ReadShort", "", "Reads and returns an int16 value from the &amp;WorldPacket."],
         //
-        [3, "ReadString", "", "Reads a string value of the &amp;WorldPacket specified."],
+        [3, "ReadString", "", "Reads and returns a string value from the &amp;WorldPacket."],
         //
-        [3, "ReadUByte", "", "Reads a uint8 value of the &amp;WorldPacket specified."],
+        [3, "ReadUByte", "", "Reads and returns a uint8 value from the &amp;WorldPacket."],
         //
-        [3, "ReadULong", "", "Reads a uint32 value of the &amp;WorldPacket specified."],
+        [3, "ReadULong", "", "Reads and returns a uint32 value from the &amp;WorldPacket."],
         //
-        [3, "ReadUShort", "", "Reads a uint16 value of the &amp;WorldPacket specified."],
+        [3, "ReadUShort", "", "Reads and returns a uint16 value from the &amp;WorldPacket."],
         //
         [3, "SetOpcode", "", "Sets the opcode of the &amp;WorldPacket by specifying an opcode."],
         //

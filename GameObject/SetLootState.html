@@ -72,27 +72,40 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Sets the loot state of a <a class="mod" href="../GameObject/index.html">GameObject</a>
+Below are Loot States off of 3.3.5a</p>
+<pre>
+enum LootState
+{
+GO_NOT_READY = 0,
+GO_READY,                                               // can be ready but despawned, and then not possible activate until spawn
+GO_ACTIVATED,
+GO_JUST_DEACTIVATED
+};
+</pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>GameObject:SetLootState()</code>
+            <code>GameObject:SetLootState( state )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> state</code></dt>
+                <dd class="docblock"><p>All available loot states can be seen above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            Nothing.
         </p>
     </div>
 

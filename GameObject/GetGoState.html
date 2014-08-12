@@ -72,27 +72,39 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Returns the state of a <a class="mod" href="../GameObject/index.html">GameObject</a>
+Below are client side GOStates off of 3.3.5a</p>
+<pre>
+enum GOState
+{
+GO_STATE_ACTIVE             = 0,                        // show in world as used and not reset (closed door open)
+GO_STATE_READY              = 1,                        // show in world as ready (closed door close)
+GO_STATE_ACTIVE_ALTERNATIVE = 2                         // show in world as used in alt way and not reset (closed door open by cannon fire)
+};
+</pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>GameObject:GetGoState()</code>
+            <code>goState = GameObject:GetGoState()</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            None.
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> goState</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
         </p>
     </div>
 

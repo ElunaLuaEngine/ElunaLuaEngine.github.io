@@ -72,27 +72,38 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Sets the state of a <a class="mod" href="../GameObject/index.html">GameObject</a></p>
+<pre>
+enum GOState
+{
+GO_STATE_ACTIVE             = 0,                        // show in world as used and not reset (closed door open)
+GO_STATE_READY              = 1,                        // show in world as ready (closed door close)
+GO_STATE_ACTIVE_ALTERNATIVE = 2                         // show in world as used in alt way and not reset (closed door open by cannon fire)
+};
+</pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>GameObject:SetGoState()</code>
+            <code>GameObject:SetGoState( state )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> state</code></dt>
+                <dd class="docblock"><p>All available go states can be seen above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            Nothing.
         </p>
     </div>
 

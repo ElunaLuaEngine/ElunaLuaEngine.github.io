@@ -37,6 +37,7 @@
     <a class="fn " href="../WorldObject/GetMapId.html">GetMapId</a>
     <a class="fn " href="../WorldObject/GetName.html">GetName</a>
     <a class="fn " href="../WorldObject/GetNearObject.html">GetNearObject</a>
+    <a class="fn " href="../WorldObject/GetNearObjects.html">GetNearObjects</a>
     <a class="fn " href="../WorldObject/GetNearestCreature.html">GetNearestCreature</a>
     <a class="fn " href="../WorldObject/GetNearestGameObject.html">GetNearestGameObject</a>
     <a class="fn " href="../WorldObject/GetNearestPlayer.html">GetNearestPlayer</a>
@@ -81,27 +82,45 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Returns the angle between this <a class="mod" href="../WorldObject/index.html">WorldObject</a> and another <a class="mod" href="../WorldObject/index.html">WorldObject</a> or a point.
+The angle is the angle between two points and orientation will be ignored.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>WorldObject:GetAngle()</code>
+            <code>dist = WorldObject:GetAngle( obj )</code>
+        </p>
+        <p>
+            <code>dist = WorldObject:GetAngle( x, y )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a class="mod" href="../WorldObject/index.html">WorldObject</a></strong> object</code></dt>
+                <dd class="docblock"><em>See method description.</em></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> x</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: all decimal numbers.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> y</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: all decimal numbers.</p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> angle</code></dt>
+                <dd class="docblock"><p>Angle in radians in range 0..2*pi. </p><p><em>Valid numbers</em>: all decimal numbers.</p></dd>
+            </dl>
         </p>
     </div>
 

@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the WorldObject:GetNearObject method in the Eluna engine.">
+    <meta name="description" content="API documentation for the WorldObject:GetNearObjects method in the Eluna engine.">
     <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>WorldObject:GetNearObject - Eluna</title>
+    <title>WorldObject:GetNearObjects - Eluna</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
 
@@ -36,8 +36,8 @@
     <a class="fn " href="../WorldObject/GetMap.html">GetMap</a>
     <a class="fn " href="../WorldObject/GetMapId.html">GetMapId</a>
     <a class="fn " href="../WorldObject/GetName.html">GetName</a>
-    <a class="fn current" href="../WorldObject/GetNearObject.html">GetNearObject</a>
-    <a class="fn " href="../WorldObject/GetNearObjects.html">GetNearObjects</a>
+    <a class="fn " href="../WorldObject/GetNearObject.html">GetNearObject</a>
+    <a class="fn current" href="../WorldObject/GetNearObjects.html">GetNearObjects</a>
     <a class="fn " href="../WorldObject/GetNearestCreature.html">GetNearestCreature</a>
     <a class="fn " href="../WorldObject/GetNearestGameObject.html">GetNearestGameObject</a>
     <a class="fn " href="../WorldObject/GetNearestPlayer.html">GetNearestPlayer</a>
@@ -71,7 +71,7 @@
 <section id='main' class="content mod">
     <h1 class='fqn'>
         Method
-    <a class="mod" href="../WorldObject/index.html">WorldObject</a>:<a class="fn" href="../WorldObject/GetNearObject.html">GetNearObject</a>
+    <a class="mod" href="../WorldObject/index.html">WorldObject</a>:<a class="fn" href="../WorldObject/GetNearObjects.html">GetNearObjects</a>
         <span class='out-of-band'>
             <span id='render-detail'>
                 <a id="collapse-all" href="#">[-]</a>
@@ -82,14 +82,14 @@
 
     
     <div class='docblock'>
-        <p>Returns nearest <a class="mod" href="../WorldObject/index.html">WorldObject</a> in sight of the <a class="mod" href="../WorldObject/index.html">WorldObject</a>.
+        <p>Returns a table of <a class="mod" href="../WorldObject/index.html">WorldObject</a>s in sight of the <a class="mod" href="../WorldObject/index.html">WorldObject</a>.
 The distance, type, entry and hostility requirements the <a class="mod" href="../WorldObject/index.html">WorldObject</a> must match can be passed.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>worldObject = WorldObject:GetNearObject( range, type, entry, hostile )</code>
+            <code>worldObjectList = WorldObject:GetNearObjects( range, type, entry, hostile )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -119,8 +119,8 @@ The distance, type, entry and hostility requirements the <a class="mod" href="..
         </h2>
         <p>
             <dl>
-                <dt><code><strong><a class="mod" href="../WorldObject/index.html">WorldObject</a></strong> worldObject</code></dt>
-                <dd class="docblock"><em>See method description.</em></dd>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.5.html">table</a></strong> worldObjectList</code></dt>
+                <dd class="docblock"><p>Table of <a class="mod" href="../WorldObject/index.html">WorldObject</a>s. </p></dd>
             </dl>
         </p>
     </div>

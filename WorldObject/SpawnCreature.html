@@ -37,6 +37,7 @@
     <a class="fn " href="../WorldObject/GetMapId.html">GetMapId</a>
     <a class="fn " href="../WorldObject/GetName.html">GetName</a>
     <a class="fn " href="../WorldObject/GetNearObject.html">GetNearObject</a>
+    <a class="fn " href="../WorldObject/GetNearObjects.html">GetNearObjects</a>
     <a class="fn " href="../WorldObject/GetNearestCreature.html">GetNearestCreature</a>
     <a class="fn " href="../WorldObject/GetNearestGameObject.html">GetNearestGameObject</a>
     <a class="fn " href="../WorldObject/GetNearestPlayer.html">GetNearestPlayer</a>
@@ -81,27 +82,57 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Spawns the creature at specified location.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>WorldObject:SpawnCreature()</code>
+            <code>spawnedCreature = WorldObject:SpawnCreature( entry, x, y, z, o, spawnType, despawnTimer )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> entry</code></dt>
+                <dd class="docblock"><p><a class="mod" href="../Creature/index.html">Creature</a>'s entry ID. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> x</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: all decimal numbers.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> y</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: all decimal numbers.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> z</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: all decimal numbers.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> o</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: all decimal numbers.</p></dd>
+            </dl>
+            <dl>
+                <dt><code>None spawnType</code></dt>
+                <dd class="docblock"><p>Defines how and when the creature despawns. </p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> despawnTimer</code></dt>
+                <dd class="docblock"><p>Despawn time in seconds. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a class="mod" href="../Creature/index.html">Creature</a></strong> spawnedCreature</code></dt>
+                <dd class="docblock"><em>See method description.</em></dd>
+            </dl>
         </p>
     </div>
 

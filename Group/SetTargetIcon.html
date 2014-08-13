@@ -78,27 +78,38 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Sets the target icon of an object for the <a class="mod" href="../Group/index.html">Group</a></p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Group:SetTargetIcon()</code>
+            <code>Group:SetTargetIcon( icon, target, setter )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> icon</code></dt>
+                <dd class="docblock"><p>The icon (Skull, Square, etc). </p><p><em>Valid numbers</em>: integers from 0 to 255.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.4.html">string</a></strong> target</code></dt>
+                <dd class="docblock"><p>GUID of the icon target, 0 is to clear the icon. </p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.4.html">string</a></strong> setter</code></dt>
+                <dd class="docblock"><p>GUID of the icon setter. </p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            Nothing.
         </p>
     </div>
 

@@ -3,31 +3,31 @@ var searchIndex = {};
 //
 searchIndex["Aura"] = {
     "items": [
-        [0, "", "Aura", "The persistent effect of a &amp;Spell that remains on a &amp;Unit after the spell has been cast."],
+        [0, "", "Aura", "The persistent effect of a [Spell] that remains on a [Unit] after the [Spell] has been cast."],
         //
-        [3, "GetAuraId", "", "Returns the ID of the &amp;Spell that caused this &amp;Aura to be applied."],
+        [3, "GetAuraId", "", "Returns the ID of the [Spell] that caused this [Aura] to be applied."],
         //
-        [3, "GetCaster", "", "Returns the &amp;Unit that casted the &amp;Spell that caused this &amp;Aura to be applied."],
+        [3, "GetCaster", "", "Returns the [Unit] that casted the [Spell] that caused this [Aura] to be applied."],
         //
-        [3, "GetCasterGUID", "", "Returns the GUID of the &amp;Unit that casted the &amp;Spell that caused this &amp;Aura to be applied."],
+        [3, "GetCasterGUID", "", "Returns the GUID of the [Unit] that casted the [Spell] that caused this [Aura] to be applied."],
         //
-        [3, "GetCasterLevel", "", "Returns the level of the &amp;Unit that casted the &amp;Spell that caused this &amp;Aura to be applied."],
+        [3, "GetCasterLevel", "", "Returns the level of the [Unit] that casted the [Spell] that caused this [Aura] to be applied."],
         //
-        [3, "GetDuration", "", "Returns the amount of time left until the &amp;Aura expires."],
+        [3, "GetDuration", "", "Returns the amount of time left until the [Aura] expires."],
         //
-        [3, "GetMaxDuration", "", "Returns the amount of time this &amp;Aura lasts when applied."],
+        [3, "GetMaxDuration", "", "Returns the amount of time this [Aura] lasts when applied."],
         //
-        [3, "GetOwner", "", "Returns the &amp;Unit that the &amp;Aura has been applied to."],
+        [3, "GetOwner", "", "Returns the [Unit] that the [Aura] has been applied to."],
         //
-        [3, "GetStackAmount", "", "Returns the number of times the &amp;Aura has &#34;stacked&#34;."],
+        [3, "GetStackAmount", "", "Returns the number of times the [Aura] has &#34;stacked&#34;."],
         //
-        [3, "Remove", "", "Remove this &amp;Aura from the &amp;Unit it is applied to."],
+        [3, "Remove", "", "Remove this [Aura] from the [Unit] it is applied to."],
         //
-        [3, "SetDuration", "", "Change the amount of time before the &amp;Aura expires."],
+        [3, "SetDuration", "", "Change the amount of time before the [Aura] expires."],
         //
-        [3, "SetMaxDuration", "", "Change the maximum amount of time before the &amp;Aura expires."],
+        [3, "SetMaxDuration", "", "Change the maximum amount of time before the [Aura] expires."],
         //
-        [3, "SetStackAmount", "", "Change the amount of times the &amp;Aura has &#34;stacked&#34; on the &amp;Unit."],
+        [3, "SetStackAmount", "", "Change the amount of times the [Aura] has &#34;stacked&#34; on the [Unit]."],
         //
     ],
     "paths": [
@@ -39,17 +39,17 @@ searchIndex["Corpse"] = {
     "items": [
         [0, "", "Corpse", ""],
         //
-        [3, "DeleteBonesFromWorld", "", "Deletes the &amp;Corpse from the world."],
+        [3, "DeleteBonesFromWorld", "", "Deletes the [Corpse] from the world."],
         //
-        [3, "GetGhostTime", "", "Returns the ghost time of a &amp;Corpse."],
+        [3, "GetGhostTime", "", "Returns the ghost time of a [Corpse]."],
         //
-        [3, "GetOwnerGUID", "", "Returns the &amp;Corpse Owner GUID."],
+        [3, "GetOwnerGUID", "", "Returns the [Corpse] Owner GUID."],
         //
-        [3, "GetType", "", "Returns the CorpseType of a &amp;Corpse."],
+        [3, "GetType", "", "Returns the [CorpseType] of a [Corpse]."],
         //
-        [3, "ResetGhostTime", "", "Resets the &amp;Corpse ghost time."],
+        [3, "ResetGhostTime", "", "Resets the [Corpse] ghost time."],
         //
-        [3, "SaveToDB", "", "Saves the &amp;Corpse to the database."],
+        [3, "SaveToDB", "", "Saves the [Corpse] to the database."],
         //
     ],
     "paths": [
@@ -197,39 +197,39 @@ searchIndex["GameObject"] = {
     "items": [
         [0, "", "GameObject", ""],
         //
-        [3, "Despawn", "", "Despawns a &amp;GameObject"],
+        [3, "Despawn", "", "Despawns a [GameObject]"],
         //
-        [3, "GetDisplayId", "", "Returns display ID of the &amp;GameObject"],
+        [3, "GetDisplayId", "", "Returns display ID of the [GameObject]"],
         //
-        [3, "GetGoState", "", "Returns the state of a &amp;GameObject Below are client side GOStates off of 3.3.5a"],
+        [3, "GetGoState", "", "Returns the state of a [GameObject] Below are client side [GOState]s off of 3.3.5a"],
         //
-        [3, "GetLootState", "", "Returns the loot state of a &amp;GameObject Below are Loot States off of 3.3.5a"],
+        [3, "GetLootState", "", "Returns the [LootState] of a [GameObject] Below are [LootState]s off of 3.3.5a"],
         //
-        [3, "HasQuest", "", "Returns 'true' if the &amp;GameObject can give the specified &amp;Quest"],
+        [3, "HasQuest", "", "Returns 'true' if the [GameObject] can give the specified [Quest]"],
         //
-        [3, "IsActive", "", "Returns 'true' if the &amp;GameObject is active"],
+        [3, "IsActive", "", "Returns 'true' if the [GameObject] is active"],
         //
-        [3, "IsSpawned", "", "Returns 'true' if the &amp;GameObject is spawned"],
+        [3, "IsSpawned", "", "Returns 'true' if the [GameObject] is spawned"],
         //
-        [3, "IsTransport", "", "Returns 'true' if the &amp;GameObject is a transport"],
+        [3, "IsTransport", "", "Returns 'true' if the [GameObject] is a transport"],
         //
-        [3, "RegisterEvent", "", "Registers a timed event to the &amp;GameObject"],
+        [3, "RegisterEvent", "", "Registers a timed event to the [GameObject]"],
         //
-        [3, "RemoveEventById", "", "Removes the timed event from a &amp;GameObject by the specified event ID"],
+        [3, "RemoveEventById", "", "Removes the timed event from a [GameObject] by the specified event ID"],
         //
-        [3, "RemoveEvents", "", "Removes all timed events from a &amp;GameObject"],
+        [3, "RemoveEvents", "", "Removes all timed events from a [GameObject]"],
         //
-        [3, "RemoveFromWorld", "", "Removes &amp;GameObject from the world"],
+        [3, "RemoveFromWorld", "", "Removes [GameObject] from the world"],
         //
-        [3, "Respawn", "", "Respawns a &amp;GameObject"],
+        [3, "Respawn", "", "Respawns a [GameObject]"],
         //
-        [3, "SaveToDB", "", "Saves &amp;GameObject to the database"],
+        [3, "SaveToDB", "", "Saves [GameObject] to the database"],
         //
-        [3, "SetGoState", "", "Sets the state of a &amp;GameObject"],
+        [3, "SetGoState", "", "Sets the state of a [GameObject]"],
         //
-        [3, "SetLootState", "", "Sets the loot state of a &amp;GameObject Below are Loot States off of 3.3.5a"],
+        [3, "SetLootState", "", "Sets the [LootState] of a [GameObject] Below are [LootState]s off of 3.3.5a"],
         //
-        [3, "UseDoorOrButton", "", "Changes uses a door or a button type &amp;GameObject"],
+        [3, "UseDoorOrButton", "", "Changes uses a door or a button type [GameObject]"],
         //
     ],
     "paths": [
@@ -391,51 +391,51 @@ searchIndex["Group"] = {
     "items": [
         [0, "", "Group", ""],
         //
-        [3, "AddInvite", "", ""],
+        [3, "AddInvite", "", "Returns 'true' if the [Group] invite was successful"],
         //
-        [3, "ConvertToRaid", "", ""],
+        [3, "ConvertToRaid", "", "Converts this [Group] to a raid [Group]"],
         //
-        [3, "Disband", "", ""],
+        [3, "Disband", "", "Disbands this [Group]"],
         //
-        [3, "GetGUID", "", ""],
+        [3, "GetGUID", "", "Returns the [Group]'s GUID"],
         //
-        [3, "GetLeader", "", ""],
+        [3, "GetLeader", "", "Finds and returns a [Group] leader by their GUID if logged in"],
         //
-        [3, "GetLeaderGUID", "", ""],
+        [3, "GetLeaderGUID", "", "Returns [Group] leader GUID"],
         //
-        [3, "GetMemberGUID", "", ""],
+        [3, "GetMemberGUID", "", "Returns a [Group] member's GUID by their name"],
         //
-        [3, "GetMemberGroup", "", ""],
+        [3, "GetMemberGroup", "", "Returns the [Player]'s subgroup ID of this [Group]"],
         //
-        [3, "GetMembers", "", ""],
+        [3, "GetMembers", "", "Returns a table with the [Player]s in this [Group]"],
         //
-        [3, "GetMembersCount", "", ""],
+        [3, "GetMembersCount", "", "Returns the member count of this [Group]"],
         //
-        [3, "HasFreeSlotSubGroup", "", ""],
+        [3, "HasFreeSlotSubGroup", "", "Returns 'true' if the subgroup has free slots in this [Group]"],
         //
-        [3, "IsAssistant", "", ""],
+        [3, "IsAssistant", "", "Returns 'true' if the [Player] is an assistant of this [Group]"],
         //
-        [3, "IsBGGroup", "", ""],
+        [3, "IsBGGroup", "", "Returns 'true' if the [Group] is a battleground [Group]"],
         //
-        [3, "IsFull", "", ""],
+        [3, "IsFull", "", "Returns 'true' if the [Group] is full"],
         //
-        [3, "IsLeader", "", ""],
+        [3, "IsLeader", "", "Returns 'true' if the player is the [Group] leader"],
         //
-        [3, "IsMember", "", ""],
+        [3, "IsMember", "", "Returns 'true' if the [Player] is a member of this [Group]"],
         //
-        [3, "IsRaidGroup", "", ""],
+        [3, "IsRaidGroup", "", "Returns 'true' if the [Group] is a raid [Group]"],
         //
-        [3, "RemoveMember", "", ""],
+        [3, "RemoveMember", "", "Removes a member from this [Group] and returns 'true' if successful"],
         //
-        [3, "SameSubGroup", "", ""],
+        [3, "SameSubGroup", "", "Returns 'true' if the [Player]s are in the same subgroup in this [Group]"],
         //
-        [3, "SendPacket", "", ""],
+        [3, "SendPacket", "", "Sends a specified [WorldPacket] to this [Group]"],
         //
-        [3, "SetLeader", "", ""],
+        [3, "SetLeader", "", "Sets the leader of this [Group]"],
         //
-        [3, "SetMembersGroup", "", ""],
+        [3, "SetMembersGroup", "", "Sets the member's subGroup"],
         //
-        [3, "SetTargetIcon", "", ""],
+        [3, "SetTargetIcon", "", "Sets the target icon of an object for the [Group]"],
         //
     ],
     "paths": [
@@ -609,33 +609,33 @@ searchIndex["Map"] = {
     "items": [
         [0, "", "Map", ""],
         //
-        [3, "GetAreaId", "", "Returns the area ID of the &amp;Map at the specified X, Y and Z coordinates"],
+        [3, "GetAreaId", "", "Returns the area ID of the [Map] at the specified X, Y and Z coordinates"],
         //
-        [3, "GetDifficulty", "", "Returns the difficulty of the &amp;Map"],
+        [3, "GetDifficulty", "", "Returns the difficulty of the [Map]"],
         //
-        [3, "GetHeight", "", "Returns the height of the &amp;Map at the given X and Y coordinates"],
+        [3, "GetHeight", "", "Returns the height of the [Map] at the given X and Y coordinates"],
         //
-        [3, "GetInstanceId", "", "Returns the instance ID of the &amp;Map"],
+        [3, "GetInstanceId", "", "Returns the instance ID of the [Map]"],
         //
-        [3, "GetMapId", "", "Returns the ID of the &amp;Map"],
+        [3, "GetMapId", "", "Returns the ID of the [Map]"],
         //
-        [3, "GetName", "", "Returns the name of the &amp;Map"],
+        [3, "GetName", "", "Returns the name of the [Map]"],
         //
-        [3, "GetPlayerCount", "", "Returns the player count currently on the &amp;Map Does not include gamemasters"],
+        [3, "GetPlayerCount", "", "Returns the player count currently on the [Map] Does not include gamemasters"],
         //
-        [3, "GetWorldObject", "", "Returns a &amp;WorldObject by it's guid from the map if it is spawned"],
+        [3, "GetWorldObject", "", "Returns a [WorldObject] by it's guid from the map if it is spawned"],
         //
-        [3, "IsArena", "", "Returns 'true' if the &amp;Map is an arena, false otherwise"],
+        [3, "IsArena", "", "Returns 'true' if the [Map] is an arena, false otherwise"],
         //
-        [3, "IsBattleground", "", "Returns 'true' if the &amp;Map is a battleground, false otherwise"],
+        [3, "IsBattleground", "", "Returns 'true' if the [Map] is a battleground, false otherwise"],
         //
-        [3, "IsDungeon", "", "Returns 'true' if the &amp;Map is a dungeon, false otherwise"],
+        [3, "IsDungeon", "", "Returns 'true' if the [Map] is a dungeon, false otherwise"],
         //
-        [3, "IsEmpty", "", "Returns 'true' if the &amp;Map is empty, false otherwise"],
+        [3, "IsEmpty", "", "Returns 'true' if the [Map] is empty, false otherwise"],
         //
-        [3, "IsHeroic", "", "Returns 'true' if the &amp;Map is a heroic, false otherwise"],
+        [3, "IsHeroic", "", "Returns 'true' if the [Map] is a heroic, false otherwise"],
         //
-        [3, "IsRaid", "", "Returns 'true' if the &amp;Map is a raid, false otherwise"],
+        [3, "IsRaid", "", "Returns 'true' if the [Map] is a raid, false otherwise"],
         //
     ],
     "paths": [
@@ -1235,27 +1235,27 @@ searchIndex["Quest"] = {
     "items": [
         [0, "", "Quest", ""],
         //
-        [3, "GetFlags", "", "Returns the &amp;Quest's flags."],
+        [3, "GetFlags", "", "Returns the [Quest]'s flags."],
         //
-        [3, "GetId", "", "Returns entry ID of the &amp;Quest."],
+        [3, "GetId", "", "Returns entry ID of the [Quest]."],
         //
-        [3, "GetLevel", "", "Returns the &amp;Quest's level."],
+        [3, "GetLevel", "", "Returns the [Quest]'s level."],
         //
-        [3, "GetMinLevel", "", "Returns the minimum level required to pick up the &amp;Quest."],
+        [3, "GetMinLevel", "", "Returns the minimum level required to pick up the [Quest]."],
         //
-        [3, "GetNextQuestId", "", "Returns the next &amp;Quest entry ID."],
+        [3, "GetNextQuestId", "", "Returns the next [Quest] entry ID."],
         //
-        [3, "GetNextQuestInChain", "", "Returns the next &amp;Quest entry ID in the specific &amp;Quest chain."],
+        [3, "GetNextQuestInChain", "", "Returns the next [Quest] entry ID in the specific [Quest] chain."],
         //
-        [3, "GetPrevQuestId", "", "Returns the previous &amp;Quest entry ID."],
+        [3, "GetPrevQuestId", "", "Returns the previous [Quest] entry ID."],
         //
-        [3, "GetType", "", "Returns the &amp;Quest's type."],
+        [3, "GetType", "", "Returns the [Quest]'s type."],
         //
-        [3, "HasFlag", "", "Returns 'true' if the &amp;Quest has the specified flag, false otherwise. Below flags are based off of 3.3.5a. Subject to change."],
+        [3, "HasFlag", "", "Returns 'true' if the [Quest] has the specified flag, false otherwise. Below flags are based off of 3.3.5a. Subject to change."],
         //
-        [3, "IsDaily", "", "Returns 'true' if the &amp;Quest is a daily quest, false otherwise."],
+        [3, "IsDaily", "", "Returns 'true' if the [Quest] is a daily quest, false otherwise."],
         //
-        [3, "IsRepeatable", "", "Returns 'true' if the &amp;Quest is repeatable, false otherwise."],
+        [3, "IsRepeatable", "", "Returns 'true' if the [Quest] is repeatable, false otherwise."],
         //
     ],
     "paths": [
@@ -1267,29 +1267,29 @@ searchIndex["Spell"] = {
     "items": [
         [0, "", "Spell", ""],
         //
-        [3, "Cancel", "", "Cancels the &amp;Spell."],
+        [3, "Cancel", "", "Cancels the [Spell]."],
         //
-        [3, "Cast", "", "Casts the &amp;Spell."],
+        [3, "Cast", "", "Casts the [Spell]."],
         //
-        [3, "Finish", "", "Finishes the &amp;Spell."],
+        [3, "Finish", "", "Finishes the [Spell]."],
         //
-        [3, "GetCastTime", "", "Returns the cast time of the &amp;Spell."],
+        [3, "GetCastTime", "", "Returns the cast time of the [Spell]."],
         //
-        [3, "GetCaster", "", "Returns the &amp;Unit that casted the &amp;Spell."],
+        [3, "GetCaster", "", "Returns the [Unit] that casted the [Spell]."],
         //
-        [3, "GetDuration", "", "Returns the spell duration of the &amp;Spell."],
+        [3, "GetDuration", "", "Returns the spell duration of the [Spell]."],
         //
-        [3, "GetEntry", "", "Returns the entry ID of the &amp;Spell."],
+        [3, "GetEntry", "", "Returns the entry ID of the [Spell]."],
         //
-        [3, "GetPowerCost", "", "Returns the power cost of the &amp;Spell."],
+        [3, "GetPowerCost", "", "Returns the power cost of the [Spell]."],
         //
-        [3, "GetTarget", "", "Returns the target &amp;Object of the &amp;Spell. Target can be any of the following &amp;Object types: &amp;Player, &amp;Creature, &amp;GameObject, &amp;Item, &amp;Corpse"],
+        [3, "GetTarget", "", "Returns the target [Object] of the [Spell]. Target can be any of the following [Object] types: [Player], [Creature], [GameObject], [Item], [Corpse]"],
         //
-        [3, "GetTargetDest", "", "Returns the target destination coordinates of the &amp;Spell."],
+        [3, "GetTargetDest", "", "Returns the target destination coordinates of the [Spell]."],
         //
-        [3, "IsAutoRepeat", "", "Returns 'true' if the &amp;Spell is automatically repeating, false otherwise."],
+        [3, "IsAutoRepeat", "", "Returns 'true' if the [Spell] is automatically repeating, false otherwise."],
         //
-        [3, "SetAutoRepeat", "", "Sets the &amp;Spell to automatically repeat."],
+        [3, "SetAutoRepeat", "", "Sets the [Spell] to automatically repeat."],
         //
     ],
     "paths": [
@@ -1303,7 +1303,7 @@ searchIndex["Unit"] = {
         //
         [3, "AddAura", "", ""],
         //
-        [3, "AddThreat", "", "Adds threat to the &amp;Unit from the victim."],
+        [3, "AddThreat", "", "Adds threat to the [Unit] from the victim."],
         //
         [3, "AddUnitState", "", ""],
         //
@@ -1311,7 +1311,7 @@ searchIndex["Unit"] = {
         //
         [3, "AttackStop", "", ""],
         //
-        [3, "CastCustomSpell", "", "Casts the spell at target with modified basepoints or casters. See also &amp;Unit:CastSpell"],
+        [3, "CastCustomSpell", "", "Casts the [Spell] at target [Unit] with custom basepoints or casters. See also [Unit:CastSpell]."],
         //
         [3, "CastSpell", "", ""],
         //
@@ -1631,15 +1631,15 @@ searchIndex["Weather"] = {
     "items": [
         [0, "", "Weather", ""],
         //
-        [3, "GetZoneId", "", "Returns the zone id of the &amp;Weather"],
+        [3, "GetZoneId", "", "Returns the zone id of the [Weather]"],
         //
-        [3, "Regenerate", "", "Regenerates the &amp;Weather, causing it to change based on the below statistics."],
+        [3, "Regenerate", "", "Regenerates the [Weather], causing it to change based on the below statistics."],
         //
-        [3, "SendWeatherUpdateToPlayer", "", "Sends a &amp;Weather update to the &amp;Player supplied."],
+        [3, "SendWeatherUpdateToPlayer", "", "Sends a [Weather] update to the [Player] supplied."],
         //
-        [3, "SetWeather", "", "Sets the &amp;Weather type based on &amp;WeatherType and grade supplied."],
+        [3, "SetWeather", "", "Sets the [Weather] type based on [WeatherType] and grade supplied."],
         //
-        [3, "UpdateWeather", "", "Sends a &amp;Weather update to the all &amp;Player in the zone."],
+        [3, "UpdateWeather", "", "Sends a [Weather] update to the all [Player] in the zone."],
         //
     ],
     "paths": [
@@ -1651,59 +1651,59 @@ searchIndex["WorldObject"] = {
     "items": [
         [0, "", "WorldObject", ""],
         //
-        [3, "GetAngle", "", "Returns the angle between this &amp;WorldObject and another &amp;WorldObject or a point. The angle is the angle between two points and orientation will be ignored."],
+        [3, "GetAngle", "", "Returns the angle between this [WorldObject] and another [WorldObject] or a point. The angle is the angle between two points and orientation will be ignored."],
         //
-        [3, "GetAreaId", "", "Returns the current area ID of the &amp;WorldObject"],
+        [3, "GetAreaId", "", "Returns the current area ID of the [WorldObject]"],
         //
-        [3, "GetCreaturesInRange", "", "Returns a table of &amp;Creature objects in sight of the &amp;WorldObject or within the given range and/or with a specific entry ID"],
+        [3, "GetCreaturesInRange", "", "Returns a table of [Creature] objects in sight of the [WorldObject] or within the given range and/or with a specific entry ID"],
         //
-        [3, "GetDistance", "", "Returns the distance from this &amp;WorldObject to another &amp;WorldObject, or from this &amp;WorldObject to a point."],
+        [3, "GetDistance", "", "Returns the distance from this [WorldObject] to another [WorldObject], or from this [WorldObject] to a point."],
         //
-        [3, "GetGameObjectsInRange", "", "Returns a table of &amp;GameObject objects in sight of the &amp;WorldObject or within the given range and/or with a specific entry ID"],
+        [3, "GetGameObjectsInRange", "", "Returns a table of [GameObject] objects in sight of the [WorldObject] or within the given range and/or with a specific entry ID"],
         //
-        [3, "GetInstanceId", "", "Returns the current instance ID of the &amp;WorldObject"],
+        [3, "GetInstanceId", "", "Returns the current instance ID of the [WorldObject]"],
         //
-        [3, "GetLocation", "", "Returns the coordinates and orientation of the &amp;WorldObject"],
+        [3, "GetLocation", "", "Returns the coordinates and orientation of the [WorldObject]"],
         //
-        [3, "GetMap", "", "Returns the current &amp;Map object of the &amp;WorldObject"],
+        [3, "GetMap", "", "Returns the current [Map] object of the [WorldObject]"],
         //
-        [3, "GetMapId", "", "Returns the current map ID of the &amp;WorldObject"],
+        [3, "GetMapId", "", "Returns the current map ID of the [WorldObject]"],
         //
-        [3, "GetName", "", "Returns the name of the &amp;WorldObject"],
+        [3, "GetName", "", "Returns the name of the [WorldObject]"],
         //
-        [3, "GetNearObject", "", "Returns nearest &amp;WorldObject in sight of the &amp;WorldObject. The distance, type, entry and hostility requirements the &amp;WorldObject must match can be passed."],
+        [3, "GetNearObject", "", "Returns nearest [WorldObject] in sight of the [WorldObject]. The distance, type, entry and hostility requirements the [WorldObject] must match can be passed."],
         //
-        [3, "GetNearObjects", "", "Returns a table of &amp;WorldObjects in sight of the &amp;WorldObject. The distance, type, entry and hostility requirements the &amp;WorldObject must match can be passed."],
+        [3, "GetNearObjects", "", "Returns a table of [WorldObject]s in sight of the [WorldObject]. The distance, type, entry and hostility requirements the [WorldObject] must match can be passed."],
         //
-        [3, "GetNearestCreature", "", "Returns the nearest &amp;Creature object in sight of the &amp;WorldObject or within the given range and/or with a specific entry ID"],
+        [3, "GetNearestCreature", "", "Returns the nearest [Creature] object in sight of the [WorldObject] or within the given range and/or with a specific entry ID"],
         //
-        [3, "GetNearestGameObject", "", "Returns the nearest &amp;GameObject object in sight of the &amp;WorldObject or within the given range and/or with a specific entry ID"],
+        [3, "GetNearestGameObject", "", "Returns the nearest [GameObject] object in sight of the [WorldObject] or within the given range and/or with a specific entry ID"],
         //
-        [3, "GetNearestPlayer", "", "Returns the nearest &amp;Player object in sight of the &amp;WorldObject or within the given range"],
+        [3, "GetNearestPlayer", "", "Returns the nearest [Player] object in sight of the [WorldObject] or within the given range"],
         //
-        [3, "GetO", "", "Returns the current orientation of the &amp;WorldObject"],
+        [3, "GetO", "", "Returns the current orientation of the [WorldObject]"],
         //
-        [3, "GetPhaseMask", "", "Returns the current phase of the &amp;WorldObject"],
+        [3, "GetPhaseMask", "", "Returns the current phase of the [WorldObject]"],
         //
-        [3, "GetPlayersInRange", "", "Returns a table of &amp;Player objects in sight of the &amp;WorldObject or within the given range"],
+        [3, "GetPlayersInRange", "", "Returns a table of [Player] objects in sight of the [WorldObject] or within the given range"],
         //
-        [3, "GetRelativePoint", "", "Returns a point relative to the &amp;WorldObject. With distance set to 1 and angle set to 0, this will return a point 1 yard in front of the &amp;WorldObject"],
+        [3, "GetRelativePoint", "", "Returns a point relative to the [WorldObject]. With distance set to 1 and angle set to 0, this will return a point 1 yard in front of the [WorldObject]"],
         //
-        [3, "GetWorldObject", "", "Returns a &amp;WorldObject based on it's guid if it is spawned"],
+        [3, "GetWorldObject", "", "Returns a [WorldObject] based on it's guid if it is spawned"],
         //
-        [3, "GetX", "", "Returns the current X coordinate of the &amp;WorldObject"],
+        [3, "GetX", "", "Returns the current X coordinate of the [WorldObject]"],
         //
-        [3, "GetY", "", "Returns the current Y coordinate of the &amp;WorldObject"],
+        [3, "GetY", "", "Returns the current Y coordinate of the [WorldObject]"],
         //
-        [3, "GetZ", "", "Returns the current Z coordinate of the &amp;WorldObject"],
+        [3, "GetZ", "", "Returns the current Z coordinate of the [WorldObject]"],
         //
-        [3, "GetZoneId", "", "Returns the current zone ID of the &amp;WorldObject"],
+        [3, "GetZoneId", "", "Returns the current zone ID of the [WorldObject]"],
         //
-        [3, "SendPacket", "", "Sends a &amp;WorldPacket to &amp;Players in sight of the &amp;WorldObject."],
+        [3, "SendPacket", "", "Sends a [WorldPacket] to [Player]s in sight of the [WorldObject]."],
         //
         [3, "SpawnCreature", "", "Spawns the creature at specified location."],
         //
-        [3, "SummonGameObject", "", "Spawns a &amp;GameObject at specified location."],
+        [3, "SummonGameObject", "", "Spawns a [GameObject] at specified location."],
         //
     ],
     "paths": [
@@ -1715,51 +1715,51 @@ searchIndex["WorldPacket"] = {
     "items": [
         [0, "", "WorldPacket", ""],
         //
-        [3, "GetOpcode", "", "Returns the opcode of the &amp;WorldPacket."],
+        [3, "GetOpcode", "", "Returns the opcode of the [WorldPacket]."],
         //
-        [3, "GetSize", "", "Returns the size of the &amp;WorldPacket."],
+        [3, "GetSize", "", "Returns the size of the [WorldPacket]."],
         //
-        [3, "ReadByte", "", "Reads and returns an int8 value from the &amp;WorldPacket."],
+        [3, "ReadByte", "", "Reads and returns an int8 value from the [WorldPacket]."],
         //
-        [3, "ReadDouble", "", "Reads and returns a double value from the &amp;WorldPacket."],
+        [3, "ReadDouble", "", "Reads and returns a double value from the [WorldPacket]."],
         //
-        [3, "ReadFloat", "", "Reads and returns a float value from the &amp;WorldPacket."],
+        [3, "ReadFloat", "", "Reads and returns a float value from the [WorldPacket]."],
         //
-        [3, "ReadGUID", "", "Reads and returns a uint64 value from the &amp;WorldPacket."],
+        [3, "ReadGUID", "", "Reads and returns a uint64 value from the [WorldPacket]."],
         //
-        [3, "ReadLong", "", "Reads and returns an int32 value from the &amp;WorldPacket."],
+        [3, "ReadLong", "", "Reads and returns an int32 value from the [WorldPacket]."],
         //
-        [3, "ReadShort", "", "Reads and returns an int16 value from the &amp;WorldPacket."],
+        [3, "ReadShort", "", "Reads and returns an int16 value from the [WorldPacket]."],
         //
-        [3, "ReadString", "", "Reads and returns a string value from the &amp;WorldPacket."],
+        [3, "ReadString", "", "Reads and returns a string value from the [WorldPacket]."],
         //
-        [3, "ReadUByte", "", "Reads and returns a uint8 value from the &amp;WorldPacket."],
+        [3, "ReadUByte", "", "Reads and returns a uint8 value from the [WorldPacket]."],
         //
-        [3, "ReadULong", "", "Reads and returns a uint32 value from the &amp;WorldPacket."],
+        [3, "ReadULong", "", "Reads and returns a uint32 value from the [WorldPacket]."],
         //
-        [3, "ReadUShort", "", "Reads and returns a uint16 value from the &amp;WorldPacket."],
+        [3, "ReadUShort", "", "Reads and returns a uint16 value from the [WorldPacket]."],
         //
-        [3, "SetOpcode", "", "Sets the opcode of the &amp;WorldPacket by specifying an opcode."],
+        [3, "SetOpcode", "", "Sets the opcode of the [WorldPacket] by specifying an opcode."],
         //
-        [3, "WriteByte", "", "Writes an int8 value to the &amp;WorldPacket."],
+        [3, "WriteByte", "", "Writes an int8 value to the [WorldPacket]."],
         //
-        [3, "WriteDouble", "", "Writes a double value to the &amp;WorldPacket."],
+        [3, "WriteDouble", "", "Writes a double value to the [WorldPacket]."],
         //
-        [3, "WriteFloat", "", "Writes a float value to the &amp;WorldPacket."],
+        [3, "WriteFloat", "", "Writes a float value to the [WorldPacket]."],
         //
-        [3, "WriteGUID", "", "Writes an uint64 value to the &amp;WorldPacket."],
+        [3, "WriteGUID", "", "Writes an uint64 value to the [WorldPacket]."],
         //
-        [3, "WriteLong", "", "Writes an int32 value to the &amp;WorldPacket."],
+        [3, "WriteLong", "", "Writes an int32 value to the [WorldPacket]."],
         //
-        [3, "WriteShort", "", "Writes an int16 value to the &amp;WorldPacket."],
+        [3, "WriteShort", "", "Writes an int16 value to the [WorldPacket]."],
         //
-        [3, "WriteString", "", "Writes a string to the &amp;WorldPacket."],
+        [3, "WriteString", "", "Writes a string to the [WorldPacket]."],
         //
-        [3, "WriteUByte", "", "Writes an uint8 value to the &amp;WorldPacket."],
+        [3, "WriteUByte", "", "Writes an uint8 value to the [WorldPacket]."],
         //
-        [3, "WriteULong", "", "Writes an uint32 value to the &amp;WorldPacket."],
+        [3, "WriteULong", "", "Writes an uint32 value to the [WorldPacket]."],
         //
-        [3, "WriteUShort", "", "Writes an uint16 value to the &amp;WorldPacket."],
+        [3, "WriteUShort", "", "Writes an uint16 value to the [WorldPacket]."],
         //
     ],
     "paths": [

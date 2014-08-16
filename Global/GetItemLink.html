@@ -125,27 +125,51 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Returns an <a class="mod" href="../Item/index.html">Item</a>'s chat link</p>
+<pre>
+enum Locales
+{
+LOCALE_enUS = 0,
+LOCALE_koKR = 1,
+LOCALE_frFR = 2,
+LOCALE_deDE = 3,
+LOCALE_zhCN = 4,
+LOCALE_zhTW = 5,
+LOCALE_esES = 6,
+LOCALE_esMX = 7,
+LOCALE_ruRU = 8
+};
+</pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Global:GetItemLink()</code>
+            <code>itemLink = Global:GetItemLink( entry, loc_idx )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> entry</code></dt>
+                <dd class="docblock"><p>Entry ID of the <a class="mod" href="../Item/index.html">Item</a>. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> loc_idx (0)</code></dt>
+                <dd class="docblock"><p>Locale index, default is enUS. </p><p><em>Valid numbers</em>: integers from -2,147,483,647 to 2,147,483,647.</p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.4.html">string</a></strong> itemLink</code></dt>
+                <dd class="docblock"><em>See method description.</em></dd>
+            </dl>
         </p>
     </div>
 

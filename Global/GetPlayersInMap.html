@@ -125,27 +125,49 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Returns a table with all the current <a class="mod" href="../Player/index.html">Player</a>s in a map</p>
+<pre>
+enum TeamId
+{
+TEAM_ALLIANCE = 0,
+TEAM_HORDE = 1,
+TEAM_NEUTRAL = 2
+};
+</pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Global:GetPlayersInMap()</code>
+            <code>mapPlayers = Global:GetPlayersInMap( mapId, instanceId, team )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> mapId</code></dt>
+                <dd class="docblock"><p>The <a class="mod" href="../Map/index.html">Map</a> entry ID. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> instanceId</code></dt>
+                <dd class="docblock"><p>The instance ID to search in the map. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code>None team</code></dt>
+                <dd class="docblock"><p>Optional check team of the <a class="mod" href="../Player/index.html">Player</a>, Alliance, Horde or Neutral (All). </p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.5.html">table</a></strong> mapPlayers</code></dt>
+                <dd class="docblock"><em>See method description.</em></dd>
+            </dl>
         </p>
     </div>
 

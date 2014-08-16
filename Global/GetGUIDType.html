@@ -125,27 +125,35 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Returns the type ID from a GUID.
+Type ID is different for each type (<a class="mod" href="../Player/index.html">Player</a>, <a class="mod" href="../Creature/index.html">Creature</a>, <a class="mod" href="../GameObject/index.html">GameObject</a>...)
+GUID consist of entry ID, low GUID and type ID</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Global:GetGUIDType()</code>
+            <code>typeId = Global:GetGUIDType( guid )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.4.html">string</a></strong> guid</code></dt>
+                <dd class="docblock"><p>GUID of an <a class="mod" href="../Object/index.html">Object</a>. </p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> typeId</code></dt>
+                <dd class="docblock"><p>Type ID of the <a class="mod" href="../Object/index.html">Object</a>. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
         </p>
     </div>
 

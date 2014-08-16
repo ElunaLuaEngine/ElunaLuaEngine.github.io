@@ -125,27 +125,39 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Returns a <a class="mod" href="../GameObject/index.html">GameObject</a>'s GUID
+<a class="mod" href="../GameObject/index.html">GameObject</a> GUID consist of entry ID, low GUID and type ID
+<a class="mod" href="../Player/index.html">Player</a> and <a class="mod" href="../GameObject/index.html">GameObject</a> for example can have the same low GUID but not GUID.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Global:GetObjectGUID()</code>
+            <code>guid = Global:GetObjectGUID( lowguid, entry )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> lowguid</code></dt>
+                <dd class="docblock"><p>Low GUID of the <a class="mod" href="../GameObject/index.html">GameObject</a>. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> entry</code></dt>
+                <dd class="docblock"><p>Entry ID of the <a class="mod" href="../GameObject/index.html">GameObject</a>. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.4.html">string</a></strong> guid</code></dt>
+                <dd class="docblock"><em>See method description.</em></dd>
+            </dl>
         </p>
     </div>
 

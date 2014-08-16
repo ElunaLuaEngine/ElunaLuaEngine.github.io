@@ -125,27 +125,73 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Performs an ingame spawn and returns <a class="mod" href="../Creature/index.html">Creature</a> or <a class="mod" href="../GameObject/index.html">GameObject</a> dependent on spawnType</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Global:PerformIngameSpawn()</code>
+            <code>worldObject = Global:PerformIngameSpawn( spawnType, entry, mapId, instanceId, x, y, z, o, save, durorresptime, phase )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> spawnType</code></dt>
+                <dd class="docblock"><p>Type of object to spawn, 1 = <a class="mod" href="../Creature/index.html">Creature</a>, 2 = <a class="mod" href="../GameObject/index.html">GameObject</a>. </p><p><em>Valid numbers</em>: integers from -2,147,483,647 to 2,147,483,647.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> entry</code></dt>
+                <dd class="docblock"><p>Entry ID of the <a class="mod" href="../Creature/index.html">Creature</a> or <a class="mod" href="../GameObject/index.html">GameObject</a>. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> mapId</code></dt>
+                <dd class="docblock"><p>Map ID to spawn the <a class="mod" href="../Creature/index.html">Creature</a> or <a class="mod" href="../GameObject/index.html">GameObject</a> in. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> instanceId</code></dt>
+                <dd class="docblock"><p>Instance ID to put the <a class="mod" href="../Creature/index.html">Creature</a> or <a class="mod" href="../GameObject/index.html">GameObject</a> in. Non instance is 0. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> x</code></dt>
+                <dd class="docblock"><p>X coordinate of the <a class="mod" href="../Creature/index.html">Creature</a> or <a class="mod" href="../GameObject/index.html">GameObject</a>. </p><p><em>Valid numbers</em>: all decimal numbers.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> y</code></dt>
+                <dd class="docblock"><p>Y coordinate of the <a class="mod" href="../Creature/index.html">Creature</a> or <a class="mod" href="../GameObject/index.html">GameObject</a>. </p><p><em>Valid numbers</em>: all decimal numbers.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> z</code></dt>
+                <dd class="docblock"><p>Z coordinate of the <a class="mod" href="../Creature/index.html">Creature</a> or <a class="mod" href="../GameObject/index.html">GameObject</a>. </p><p><em>Valid numbers</em>: all decimal numbers.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> o</code></dt>
+                <dd class="docblock"><p>O facing/orientation of the <a class="mod" href="../Creature/index.html">Creature</a> or <a class="mod" href="../GameObject/index.html">GameObject</a>. </p><p><em>Valid numbers</em>: all decimal numbers.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.2.html">boolean</a></strong> save (false)</code></dt>
+                <dd class="docblock"><p>Optional to save the <a class="mod" href="../Creature/index.html">Creature</a> or <a class="mod" href="../GameObject/index.html">GameObject</a> to the database. </p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> durorresptime (0)</code></dt>
+                <dd class="docblock"><p>Despawn time of the <a class="mod" href="../Creature/index.html">Creature</a> if it's not saved or respawn time of <a class="mod" href="../GameObject/index.html">GameObject</a>. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> phase (1)</code></dt>
+                <dd class="docblock"><p>Phase to put the <a class="mod" href="../Creature/index.html">Creature</a> or <a class="mod" href="../GameObject/index.html">GameObject</a> in. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a class="mod" href="../WorldObject/index.html">WorldObject</a></strong> worldObject</code></dt>
+                <dd class="docblock"><p>Returns <a class="mod" href="../Creature/index.html">Creature</a> or <a class="mod" href="../GameObject/index.html">GameObject</a>. </p></dd>
+            </dl>
         </p>
     </div>
 

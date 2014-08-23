@@ -54,266 +54,350 @@
     </h1>
 
     
-    
+    <p>Non-<a class="mod" href="../Player/index.html">Player</a> controlled <a class="mod" href="../Unit/index.html">Unit</a>s.</p>
+<p>Inherits <a class="mod" href="../Object/index.html">Object</a>, <a class="mod" href="../WorldObject/index.html">WorldObject</a>, <a class="mod" href="../Unit/index.html">Unit</a></p>
 
     <h2 id='methods' class='section-header'><a href="#methods">Methods</a></h2>
     <table>
         <tr>
             <td>
                 <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='AddLootMode.html'>AddLootMode</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='AttackStart.html'>AttackStart</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Make the <a class="mod" href="../Creature/index.html">Creature</a> attack <code>target</code>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='CallAssistance.html'>CallAssistance</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Make the <a class="mod" href="../Creature/index.html">Creature</a> call for assistance in combat from other nearby <a class="mod" href="../Creature/index.html">Creature</a>s.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='CallForHelp.html'>CallForHelp</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Make the <a class="mod" href="../Creature/index.html">Creature</a> call for help in combat from friendly <a class="mod" href="../Creature/index.html">Creature</a>s within <code>radius</code>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='CanAggro.html'>CanAggro</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a> can start attacking nearby hostile <a class="mod" href="../Unit/index.html">Unit</a>s,
+  and returns <code>false</code> otherwise.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='CanAssistTo.html'>CanAssistTo</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a> can assist <code>friend</code> in combat against <code>enemy</code>,
+  and returns <code>false</code> otherwise.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='CanCompleteQuest.html'>CanCompleteQuest</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a> completes the <a class="mod" href="../Quest/index.html">Quest</a> with the ID <code>questID</code>,
+  and returns <code>false</code> otherwise.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='CanFly.html'>CanFly</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a> can fly,
+  and returns <code>false</code> otherwise.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='CanRegenerateHealth.html'>CanRegenerateHealth</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a> can regenerate its health out-of-combat,
+  and returns <code>false</code> otherwise.</p>
             </td>
         </tr>
         <tr>
             <td>
                 <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='CanStartAttack.html'>CanStartAttack</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='CanSwim.html'>CanSwim</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a> can move through deep water,
+  and returns <code>false</code> otherwise.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='CanWalk.html'>CanWalk</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a> can move on land,
+  and returns <code>false</code> otherwise.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='DespawnOrUnsummon.html'>DespawnOrUnsummon</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Despawn this <a class="mod" href="../Creature/index.html">Creature</a>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='FleeToGetAssistance.html'>FleeToGetAssistance</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Make the <a class="mod" href="../Creature/index.html">Creature</a> flee combat to get assistance from a nearby friendly <a class="mod" href="../Creature/index.html">Creature</a>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetAIName.html'>GetAIName</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the <a class="mod" href="../Creature/index.html">Creature</a>'s AI name.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetAITarget.html'>GetAITarget</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns a target from the <a class="mod" href="../Creature/index.html">Creature</a>'s threat list based on the
+  supplied arguments.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetAITargets.html'>GetAITargets</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns all <a class="mod" href="../Unit/index.html">Unit</a>s in the <a class="mod" href="../Creature/index.html">Creature</a>'s threat list.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetAITargetsCount.html'>GetAITargetsCount</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the number of <a class="mod" href="../Unit/index.html">Unit</a>s in this <a class="mod" href="../Creature/index.html">Creature</a>'s threat list.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetAggroRange.html'>GetAggroRange</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the aggro range of the <a class="mod" href="../Creature/index.html">Creature</a> for <code>target</code>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetAttackDistance.html'>GetAttackDistance</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the effective aggro range of the <a class="mod" href="../Creature/index.html">Creature</a> for <code>target</code>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetCorpseDelay.html'>GetCorpseDelay</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the delay between when the <a class="mod" href="../Creature/index.html">Creature</a> dies and when its body despawns.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetCreatureSpellCooldownDelay.html'>GetCreatureSpellCooldownDelay</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the <a class="mod" href="../Creature/index.html">Creature</a>'s cooldown for <code>spellID</code>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetCurrentWaypointId.html'>GetCurrentWaypointId</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the current waypoint ID of the <a class="mod" href="../Creature/index.html">Creature</a>.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetDefaultMovementType.html'>GetDefaultMovementType</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the default movement type for this <a class="mod" href="../Creature/index.html">Creature</a>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetHomePosition.html'>GetHomePosition</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns position the <a class="mod" href="../Creature/index.html">Creature</a> returns to when evading from combat
+  or respawning.</p>
             </td>
         </tr>
         <tr>
             <td>
                 <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='GetLootMode.html'>GetLootMode</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetLootRecipient.html'>GetLootRecipient</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the <a class="mod" href="../Player/index.html">Player</a> that can loot this <a class="mod" href="../Creature/index.html">Creature</a>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetLootRecipientGroup.html'>GetLootRecipientGroup</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the <a class="mod" href="../Group/index.html">Group</a> that can loot this <a class="mod" href="../Creature/index.html">Creature</a>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetNPCFlags.html'>GetNPCFlags</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the <a class="mod" href="../Creature/index.html">Creature</a>'s NPC flags.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetRespawnDelay.html'>GetRespawnDelay</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the time it takes for this <a class="mod" href="../Creature/index.html">Creature</a> to respawn once killed.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
-                <a class='fn' href='GetRespawnRadius.html'>GetRespawnRadius</a>
-            </td>
-            <td class='docblock short'>
-                <p></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetScriptId.html'>GetScriptId</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the <a class="mod" href="../Creature/index.html">Creature</a>'s script ID.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetScriptName.html'>GetScriptName</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the <a class="mod" href="../Creature/index.html">Creature</a>'s script name.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetShieldBlockValue.html'>GetShieldBlockValue</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the <a class="mod" href="../Creature/index.html">Creature</a>'s shield block value.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetWanderRadius.html'>GetWanderRadius</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the radius the <a class="mod" href="../Creature/index.html">Creature</a> is permitted to wander from its
+  respawn point.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetWaypointPath.html'>GetWaypointPath</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the current waypoint path ID of the <a class="mod" href="../Creature/index.html">Creature</a>.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='HasCategoryCooldown.html'>HasCategoryCooldown</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a> cannot cast <code>spellId</code> due to a category cooldown,
+  and returns <code>false</code> otherwise.</p>
             </td>
         </tr>
         <tr>
             <td>
                 <a class='stability Experimental' title='Undocumented'></a>
-                <a class='fn' href='HasInvolvedQuest.html'>HasInvolvedQuest</a>
+                <a class='fn' href='HasLootMode.html'>HasLootMode</a>
             </td>
             <td class='docblock short'>
                 <p></p>
@@ -321,62 +405,68 @@
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='HasLootRecipient.html'>HasLootRecipient</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a> will give its loot to a <a class="mod" href="../Player/index.html">Player</a> or <a class="mod" href="../Group/index.html">Group</a>,
+  and returns <code>false</code> otherwise.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='HasQuest.html'>HasQuest</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a> starts the <a class="mod" href="../Quest/index.html">Quest</a> <code>questId</code>,
+  and returns <code>false</code> otherwise.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='HasSearchedAssistance.html'>HasSearchedAssistance</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a> has searched for combat assistance already,
+  and returns <code>false</code> otherwise.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='HasSpell.html'>HasSpell</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a> can cast <code>spellId</code> when mind-controlled,
+  and returns <code>false</code> otherwise.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='HasSpellCooldown.html'>HasSpellCooldown</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a> has <code>spellId</code> on cooldown,
+  and returns <code>false</code> otherwise.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='IsCivilian.html'>IsCivilian</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a> is a civilian,
+  and returns <code>false</code> otherwise.</p>
             </td>
         </tr>
         <tr>
             <td>
                 <a class='stability Experimental' title='Undocumented'></a>
-                <a class='fn' href='IsCombatAllowed.html'>IsCombatAllowed</a>
+                <a class='fn' href='IsDamageEnoughForLootingAndReward.html'>IsDamageEnoughForLootingAndReward</a>
             </td>
             <td class='docblock short'>
                 <p></p>
@@ -384,245 +474,290 @@
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='IsElite.html'>IsElite</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a>'s rank is Elite or Rare Elite,
+  and returns <code>false</code> otherwise.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='IsGuard.html'>IsGuard</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a> is a city guard,
+  and returns <code>false</code> otherwise.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='IsInEvadeMode.html'>IsInEvadeMode</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a> is returning to its spawn position from combat,
+  and returns <code>false</code> otherwise.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='IsRacialLeader.html'>IsRacialLeader</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a> is the leader of a player faction,
+  and returns <code>false</code> otherwise.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
-                <a class='fn' href='IsRegeneratingHealth.html'>IsRegeneratingHealth</a>
-            </td>
-            <td class='docblock short'>
-                <p></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='IsReputationGainDisabled.html'>IsReputationGainDisabled</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a> is set to not give reputation when killed,
+  and returns <code>false</code> otherwise.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='IsTappedBy.html'>IsTappedBy</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a> will give its loot to <code>player</code>,
+  and returns <code>false</code> otherwise.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='IsTargetableForAttack.html'>IsTargetableForAttack</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a> can be targeted for attack,
+  and returns <code>false</code> otherwise.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='IsTrigger.html'>IsTrigger</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a> is an invisible trigger,
+  and returns <code>false</code> otherwise.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='IsWorldBoss.html'>IsWorldBoss</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Creature/index.html">Creature</a>'s rank is Boss,
+  and returns <code>false</code> otherwise.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='MoveWaypoint.html'>MoveWaypoint</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Make the <a class="mod" href="../Creature/index.html">Creature</a> start following it's waypoint path.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='RemoveCorpse.html'>RemoveCorpse</a>
             </td>
             <td class='docblock short'>
+                <p>Remove this <a class="mod" href="../Creature/index.html">Creature</a>'s corpse.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='RemoveLootMode.html'>RemoveLootMode</a>
+            </td>
+            <td class='docblock short'>
                 <p></p>
             </td>
         </tr>
         <tr>
             <td>
                 <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='ResetLootMode.html'>ResetLootMode</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='Respawn.html'>Respawn</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Respawn this <a class="mod" href="../Creature/index.html">Creature</a>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SaveToDB.html'>SaveToDB</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Save the <a class="mod" href="../Creature/index.html">Creature</a> in the database.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SelectVictim.html'>SelectVictim</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Make the <a class="mod" href="../Creature/index.html">Creature</a> try to find a new target.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
-                <a class='fn' href='SetAllowedCombat.html'>SetAllowedCombat</a>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='SetAggroEnabled.html'>SetAggroEnabled</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Sets whether the <a class="mod" href="../Creature/index.html">Creature</a> can be aggroed by movement or not.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetDeathState.html'>SetDeathState</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Sets the <a class="mod" href="../Creature/index.html">Creature</a>'s death state to <code>deathState</code>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetDefaultMovementType.html'>SetDefaultMovementType</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Sets the default movement type of the <a class="mod" href="../Creature/index.html">Creature</a>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='SetDisableGravity.html'>SetDisableGravity</a>
+            </td>
+            <td class='docblock short'>
+                <p>Makes the <a class="mod" href="../Creature/index.html">Creature</a> able to fly if enabled.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetDisableReputationGain.html'>SetDisableReputationGain</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Sets whether the <a class="mod" href="../Creature/index.html">Creature</a> gives reputation or not.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetHover.html'>SetHover</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Sets whether the creature is hovering / levitating or not.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetInCombatWithZone.html'>SetInCombatWithZone</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Sets the <a class="mod" href="../Creature/index.html">Creature</a> as in combat with all <a class="mod" href="../Player/index.html">Player</a>s in the dungeon instance.</p>
             </td>
         </tr>
         <tr>
             <td>
                 <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetLootMode.html'>SetLootMode</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetNPCFlags.html'>SetNPCFlags</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Sets the <a class="mod" href="../Creature/index.html">Creature</a>'s NPC flags to <code>flags</code>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetNoCallAssistance.html'>SetNoCallAssistance</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Sets whether the <a class="mod" href="../Creature/index.html">Creature</a> can call nearby enemies for help in combat or not.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetNoSearchAssistance.html'>SetNoSearchAssistance</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Sets whether the <a class="mod" href="../Creature/index.html">Creature</a> can search for assistance at low health or not.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetRespawnDelay.html'>SetRespawnDelay</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Sets the time it takes for the <a class="mod" href="../Creature/index.html">Creature</a> to respawn when killed.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
-                <a class='fn' href='SetRespawnRadius.html'>SetRespawnRadius</a>
-            </td>
-            <td class='docblock short'>
-                <p></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetWalk.html'>SetWalk</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Sets whether the <a class="mod" href="../Creature/index.html">Creature</a> is currently walking or running.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='SetWanderRadius.html'>SetWanderRadius</a>
+            </td>
+            <td class='docblock short'>
+                <p>Sets the distance the <a class="mod" href="../Creature/index.html">Creature</a> can wander from it's spawn point.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='UpdateEntry.html'>UpdateEntry</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Transform the <a class="mod" href="../Creature/index.html">Creature</a> into another Creature.</p>
             </td>
         </tr>
     </table>

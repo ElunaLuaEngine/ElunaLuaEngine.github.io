@@ -82,24 +82,19 @@
 
     
     <div class='docblock'>
-        <p>Returns a point relative to the <a class="mod" href="../WorldObject/index.html">WorldObject</a>.
-With distance set to 1 and angle set to 0, this will return a point 1 yard in front of the <a class="mod" href="../WorldObject/index.html">WorldObject</a></p>
+        <p>Returns the x, y and z of a point dist away from the <a class="mod" href="../WorldObject/index.html">WorldObject</a>.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>x, y, z = WorldObject:GetRelativePoint( object, distance, angle )</code>
+            <code>x, y, z = WorldObject:GetRelativePoint( distance, angle )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            <dl>
-                <dt><code><strong><a class="mod" href="../WorldObject/index.html">WorldObject</a></strong> object</code></dt>
-                <dd class="docblock"><em>See method description.</em></dd>
-            </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> distance</code></dt>
                 <dd class="docblock"><p>Specifies the distance of the point from the <a class="mod" href="../WorldObject/index.html">WorldObject</a> in yards. </p><p><em>Valid numbers</em>: all decimal numbers.</p></dd>

@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the Creature:DespawnOrUnsummon method in the Eluna engine.">
+    <meta name="description" content="API documentation for the Creature:GetCurrentWaypointId method in the Eluna engine.">
     <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>Creature:DespawnOrUnsummon - Eluna</title>
+    <title>Creature:GetCurrentWaypointId - Eluna</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
 
@@ -38,7 +38,7 @@
     <a class="fn " href="../Creature/CanStartAttack.html">CanStartAttack</a>
     <a class="fn " href="../Creature/CanSwim.html">CanSwim</a>
     <a class="fn " href="../Creature/CanWalk.html">CanWalk</a>
-    <a class="fn current" href="../Creature/DespawnOrUnsummon.html">DespawnOrUnsummon</a>
+    <a class="fn " href="../Creature/DespawnOrUnsummon.html">DespawnOrUnsummon</a>
     <a class="fn " href="../Creature/FleeToGetAssistance.html">FleeToGetAssistance</a>
     <a class="fn " href="../Creature/GetAIName.html">GetAIName</a>
     <a class="fn " href="../Creature/GetAITarget.html">GetAITarget</a>
@@ -48,7 +48,7 @@
     <a class="fn " href="../Creature/GetAttackDistance.html">GetAttackDistance</a>
     <a class="fn " href="../Creature/GetCorpseDelay.html">GetCorpseDelay</a>
     <a class="fn " href="../Creature/GetCreatureSpellCooldownDelay.html">GetCreatureSpellCooldownDelay</a>
-    <a class="fn " href="../Creature/GetCurrentWaypointId.html">GetCurrentWaypointId</a>
+    <a class="fn current" href="../Creature/GetCurrentWaypointId.html">GetCurrentWaypointId</a>
     <a class="fn " href="../Creature/GetDefaultMovementType.html">GetDefaultMovementType</a>
     <a class="fn " href="../Creature/GetHomePosition.html">GetHomePosition</a>
     <a class="fn " href="../Creature/GetLootMode.html">GetLootMode</a>
@@ -119,7 +119,7 @@
 <section id='main' class="content mod">
     <h1 class='fqn'>
         Method
-    <a class="mod" href="../Creature/index.html">Creature</a>:<a class="fn" href="../Creature/DespawnOrUnsummon.html">DespawnOrUnsummon</a>
+    <a class="mod" href="../Creature/index.html">Creature</a>:<a class="fn" href="../Creature/GetCurrentWaypointId.html">GetCurrentWaypointId</a>
         <span class='out-of-band'>
             <span id='render-detail'>
                 <a id="collapse-all" href="#">[-]</a>
@@ -130,30 +130,30 @@
 
     
     <div class='docblock'>
-        <p>Despawn this <a class="mod" href="../Creature/index.html">Creature</a>.</p>
+        <p>Returns the current waypoint ID of the <a class="mod" href="../Creature/index.html">Creature</a>.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Creature:DespawnOrUnsummon( delay )</code>
+            <code>wpId = Creature:GetCurrentWaypointId()</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> delay (0)</code></dt>
-                <dd class="docblock"><p>Dely to despawn in milliseconds. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
-            </dl>
+            None.
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Nothing.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> wpId</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
         </p>
     </div>
 

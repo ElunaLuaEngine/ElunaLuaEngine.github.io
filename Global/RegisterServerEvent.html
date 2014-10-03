@@ -64,6 +64,7 @@
     <a class="fn " href="../Global/GetUnitGUID.html">GetUnitGUID</a>
     <a class="fn " href="../Global/Kick.html">Kick</a>
     <a class="fn " href="../Global/PerformIngameSpawn.html">PerformIngameSpawn</a>
+    <a class="fn " href="../Global/RegisterBGEvent.html">RegisterBGEvent</a>
     <a class="fn " href="../Global/RegisterCreatureEvent.html">RegisterCreatureEvent</a>
     <a class="fn " href="../Global/RegisterCreatureGossipEvent.html">RegisterCreatureGossipEvent</a>
     <a class="fn " href="../Global/RegisterGameObjectEvent.html">RegisterGameObjectEvent</a>
@@ -125,27 +126,90 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Registers a server event</p>
+<pre>
+enum ServerEvents
+{
+    // Server
+    SERVER_EVENT_ON_NETWORK_START           =     1,       // Not Implemented
+    SERVER_EVENT_ON_NETWORK_STOP            =     2,       // Not Implemented
+    SERVER_EVENT_ON_SOCKET_OPEN             =     3,       // Not Implemented
+    SERVER_EVENT_ON_SOCKET_CLOSE            =     4,       // Not Implemented
+    SERVER_EVENT_ON_PACKET_RECEIVE          =     5,       // (event, packet, player) - Player only if accessible. Can return false or a new packet
+    SERVER_EVENT_ON_PACKET_RECEIVE_UNKNOWN  =     6,       // Not Implemented
+    SERVER_EVENT_ON_PACKET_SEND             =     7,       // (event, packet, player) - Player only if accessible. Can return false or a new packet
+
+    // World
+    WORLD_EVENT_ON_OPEN_STATE_CHANGE        =     8,        // (event, open) - Needs core support on Mangos
+    WORLD_EVENT_ON_CONFIG_LOAD              =     9,        // (event, reload)
+    // UNUSED                               =     10,
+    WORLD_EVENT_ON_SHUTDOWN_INIT            =     11,       // (event, code, mask)
+    WORLD_EVENT_ON_SHUTDOWN_CANCEL          =     12,       // (event)
+    WORLD_EVENT_ON_UPDATE                   =     13,       // (event, diff)
+    WORLD_EVENT_ON_STARTUP                  =     14,       // (event)
+    WORLD_EVENT_ON_SHUTDOWN                 =     15,       // (event)
+
+    // Eluna
+    ELUNA_EVENT_ON_LUA_STATE_CLOSE          =     16,       // (event) - triggers just before shutting down eluna (on shutdown and restart)
+    ELUNA_EVENT_ON_LUA_STATE_OPEN           =     33,       // (event) - triggers after all scripts are loaded
+
+    // Map
+    MAP_EVENT_ON_CREATE                     =     17,       // (event, map)
+    MAP_EVENT_ON_DESTROY                    =     18,       // (event, map)
+    MAP_EVENT_ON_GRID_LOAD                  =     19,       // Not Implemented
+    MAP_EVENT_ON_GRID_UNLOAD                =     20,       // Not Implemented
+    MAP_EVENT_ON_PLAYER_ENTER               =     21,       // (event, map, player)
+    MAP_EVENT_ON_PLAYER_LEAVE               =     22,       // (event, map, player)
+    MAP_EVENT_ON_UPDATE                     =     23,       // (event, map, diff)
+
+    // Area trigger
+    TRIGGER_EVENT_ON_TRIGGER                =     24,       // (event, player, triggerId)
+
+    // Weather
+    WEATHER_EVENT_ON_CHANGE                 =     25,       // (event, weather, state, grade)
+
+    // Auction house
+    AUCTION_EVENT_ON_ADD                    =     26,       // (event, AHObject)
+    AUCTION_EVENT_ON_REMOVE                 =     27,       // (event, AHObject)
+    AUCTION_EVENT_ON_SUCCESSFUL             =     28,       // (event, AHObject) // Not Implemented
+    AUCTION_EVENT_ON_EXPIRE                 =     29,       // (event, AHObject) // Not Implemented
+
+    // AddOns
+    ADDON_EVENT_ON_MESSAGE                  =     30,       // (event, sender, type, prefix, msg, target) - target can be nil/whisper_target/guild/group/channel
+
+    WORLD_EVENT_ON_DELETE_CREATURE          =     31,       // (event, creature)
+    WORLD_EVENT_ON_DELETE_GAMEOBJECT        =     32,       // (event, gameobject)
+
+    SERVER_EVENT_COUNT
+};
+</pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Global:RegisterServerEvent()</code>
+            <code>Global:RegisterServerEvent( event, function )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> event</code></dt>
+                <dd class="docblock"><p>Server event Id, refer to ServerEvents above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.6.html">function</a></strong> function</code></dt>
+                <dd class="docblock"><p>Function to register. </p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            Nothing.
         </p>
     </div>
 
@@ -192,5 +256,6 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
+<center>&copy;2014 - Eluna Lua Engine</center>
 </body>
 </html>

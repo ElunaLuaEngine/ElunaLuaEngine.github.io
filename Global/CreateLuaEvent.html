@@ -64,6 +64,7 @@
     <a class="fn " href="../Global/GetUnitGUID.html">GetUnitGUID</a>
     <a class="fn " href="../Global/Kick.html">Kick</a>
     <a class="fn " href="../Global/PerformIngameSpawn.html">PerformIngameSpawn</a>
+    <a class="fn " href="../Global/RegisterBGEvent.html">RegisterBGEvent</a>
     <a class="fn " href="../Global/RegisterCreatureEvent.html">RegisterCreatureEvent</a>
     <a class="fn " href="../Global/RegisterCreatureGossipEvent.html">RegisterCreatureGossipEvent</a>
     <a class="fn " href="../Global/RegisterGameObjectEvent.html">RegisterGameObjectEvent</a>
@@ -125,27 +126,43 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Registers a global timed event
+When the passed function is called, the parameters <code>(eventId, delay, repeats)</code> are passed to it.
+Repeats will decrease on each call if the event does not repeat indefinitely</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Global:CreateLuaEvent()</code>
+            <code>eventId = Global:CreateLuaEvent( function, delay, repeats )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.6.html">function</a></strong> function</code></dt>
+                <dd class="docblock"><p>Function to trigger when the time has passed. </p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> delay</code></dt>
+                <dd class="docblock"><p>Set time in milliseconds for the event to trigger. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> repeats</code></dt>
+                <dd class="docblock"><p>How many times for the event to repeat, 0 is infinite. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code>None eventId</code></dt>
+                <dd class="docblock"><p>Unique ID for the timed event used to cancel it or nil. </p></dd>
+            </dl>
         </p>
     </div>
 
@@ -192,5 +209,6 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
+<center>&copy;2014 - Eluna Lua Engine</center>
 </body>
 </html>

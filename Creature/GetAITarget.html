@@ -91,6 +91,7 @@
     <a class="fn " href="../Creature/SetDefaultMovementType.html">SetDefaultMovementType</a>
     <a class="fn " href="../Creature/SetDisableGravity.html">SetDisableGravity</a>
     <a class="fn " href="../Creature/SetDisableReputationGain.html">SetDisableReputationGain</a>
+    <a class="fn " href="../Creature/SetHomePosition.html">SetHomePosition</a>
     <a class="fn " href="../Creature/SetHover.html">SetHover</a>
     <a class="fn " href="../Creature/SetInCombatWithZone.html">SetInCombatWithZone</a>
     <a class="fn " href="../Creature/SetLootMode.html">SetLootMode</a>
@@ -132,6 +133,17 @@
     <div class='docblock'>
         <p>Returns a target from the <a class="mod" href="../Creature/index.html">Creature</a>'s threat list based on the
   supplied arguments.</p>
+<pre>
+enum SelectAggroTarget
+{
+    SELECT_TARGET_RANDOM = 0,  //Just selects a random target
+    SELECT_TARGET_TOPAGGRO,    //Selects targets from top aggro to bottom
+    SELECT_TARGET_BOTTOMAGGRO, //Selects targets from bottom aggro to top
+    SELECT_TARGET_NEAREST,
+    SELECT_TARGET_FARTHEST
+};
+</pre>
+
 <p>For example, if you wanted to select the third-farthest <a class="mod" href="../Player/index.html">Player</a>
   within 50 yards that has the <a class="mod" href="../Aura/index.html">Aura</a> "Corrupted Blood" (ID 24328),
   you could use this function like so:</p>
@@ -224,5 +236,6 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
+<center>&copy;2014 - Eluna Lua Engine</center>
 </body>
 </html>

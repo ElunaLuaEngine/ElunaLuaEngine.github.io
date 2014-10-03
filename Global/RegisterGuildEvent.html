@@ -64,6 +64,7 @@
     <a class="fn " href="../Global/GetUnitGUID.html">GetUnitGUID</a>
     <a class="fn " href="../Global/Kick.html">Kick</a>
     <a class="fn " href="../Global/PerformIngameSpawn.html">PerformIngameSpawn</a>
+    <a class="fn " href="../Global/RegisterBGEvent.html">RegisterBGEvent</a>
     <a class="fn " href="../Global/RegisterCreatureEvent.html">RegisterCreatureEvent</a>
     <a class="fn " href="../Global/RegisterCreatureGossipEvent.html">RegisterCreatureGossipEvent</a>
     <a class="fn " href="../Global/RegisterGameObjectEvent.html">RegisterGameObjectEvent</a>
@@ -125,27 +126,53 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Registers a <a class="mod" href="../Guild/index.html">Guild</a> event</p>
+<pre>
+enum GuildEvents
+{
+    // Guild
+    GUILD_EVENT_ON_ADD_MEMBER               =     1,       // (event, guild, player, rank)
+    GUILD_EVENT_ON_REMOVE_MEMBER            =     2,       // (event, guild, isDisbanding)
+    GUILD_EVENT_ON_MOTD_CHANGE              =     3,       // (event, guild, newMotd)
+    GUILD_EVENT_ON_INFO_CHANGE              =     4,       // (event, guild, newInfo)
+    GUILD_EVENT_ON_CREATE                   =     5,       // (event, guild, leader, name)  // Not on TC
+    GUILD_EVENT_ON_DISBAND                  =     6,       // (event, guild)
+    GUILD_EVENT_ON_MONEY_WITHDRAW           =     7,       // (event, guild, player, amount, isRepair)
+    GUILD_EVENT_ON_MONEY_DEPOSIT            =     8,       // (event, guild, player, amount)
+    GUILD_EVENT_ON_ITEM_MOVE                =     9,       // (event, guild, player, item, isSrcBank, srcContainer, srcSlotId, isDestBank, destContainer, destSlotId)   // TODO
+    GUILD_EVENT_ON_EVENT                    =     10,      // (event, guild, eventType, plrGUIDLow1, plrGUIDLow2, newRank)  // TODO
+    GUILD_EVENT_ON_BANK_EVENT               =     11,      // (event, guild, eventType, tabId, playerGUIDLow, itemOrMoney, itemStackCount, destTabId)
+
+    GUILD_EVENT_COUNT
+};
+</pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Global:RegisterGuildEvent()</code>
+            <code>Global:RegisterGuildEvent( event, function )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> event</code></dt>
+                <dd class="docblock"><p><a class="mod" href="../Guild/index.html">Guild</a> event Id, refer to GuildEvents above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.6.html">function</a></strong> function</code></dt>
+                <dd class="docblock"><p>Function to register. </p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            Nothing.
         </p>
     </div>
 
@@ -192,5 +219,6 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
+<center>&copy;2014 - Eluna Lua Engine</center>
 </body>
 </html>

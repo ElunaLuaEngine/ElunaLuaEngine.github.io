@@ -64,6 +64,7 @@
     <a class="fn " href="../Global/GetUnitGUID.html">GetUnitGUID</a>
     <a class="fn " href="../Global/Kick.html">Kick</a>
     <a class="fn " href="../Global/PerformIngameSpawn.html">PerformIngameSpawn</a>
+    <a class="fn " href="../Global/RegisterBGEvent.html">RegisterBGEvent</a>
     <a class="fn current" href="../Global/RegisterCreatureEvent.html">RegisterCreatureEvent</a>
     <a class="fn " href="../Global/RegisterCreatureGossipEvent.html">RegisterCreatureGossipEvent</a>
     <a class="fn " href="../Global/RegisterGameObjectEvent.html">RegisterGameObjectEvent</a>
@@ -125,27 +126,81 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Registers a <a class="mod" href="../Creature/index.html">Creature</a> event</p>
+<pre>
+enum CreatureEvents
+{
+    CREATURE_EVENT_ON_ENTER_COMBAT                    = 1,  // (event, creature, target)
+    CREATURE_EVENT_ON_LEAVE_COMBAT                    = 2,  // (event, creature)
+    CREATURE_EVENT_ON_TARGET_DIED                     = 3,  // (event, creature, victim)
+    CREATURE_EVENT_ON_DIED                            = 4,  // (event, creature, killer)
+    CREATURE_EVENT_ON_SPAWN                           = 5,  // (event, creature)
+    CREATURE_EVENT_ON_REACH_WP                        = 6,  // (event, creature, type, id)
+    CREATURE_EVENT_ON_AIUPDATE                        = 7,  // (event, creature, diff)
+    CREATURE_EVENT_ON_RECEIVE_EMOTE                   = 8,  // (event, creature, player, emoteid)
+    CREATURE_EVENT_ON_DAMAGE_TAKEN                    = 9,  // (event, creature, attacker, damage) - Can return new damage
+    CREATURE_EVENT_ON_PRE_COMBAT                      = 10, // (event, creature, target)
+    CREATURE_EVENT_ON_ATTACKED_AT                     = 11, // (event, creature, attacker)
+    CREATURE_EVENT_ON_OWNER_ATTACKED                  = 12, // (event, creature, target)    // Not on mangos
+    CREATURE_EVENT_ON_OWNER_ATTACKED_AT               = 13, // (event, creature, attacker)  // Not on mangos
+    CREATURE_EVENT_ON_HIT_BY_SPELL                    = 14, // (event, creature, caster, spellid)
+    CREATURE_EVENT_ON_SPELL_HIT_TARGET                = 15, // (event, creature, target, spellid)
+    // UNUSED                                         = 16, // (event, creature)
+    // UNUSED                                         = 17, // (event, creature)
+    // UNUSED                                         = 18, // (event, creature)
+    CREATURE_EVENT_ON_JUST_SUMMONED_CREATURE          = 19, // (event, creature, summon)
+    CREATURE_EVENT_ON_SUMMONED_CREATURE_DESPAWN       = 20, // (event, creature, summon)
+    CREATURE_EVENT_ON_SUMMONED_CREATURE_DIED          = 21, // (event, creature, summon, killer)    // Not on mangos
+    CREATURE_EVENT_ON_SUMMONED                        = 22, // (event, creature, summoner)
+    CREATURE_EVENT_ON_RESET                           = 23, // (event, creature)
+    CREATURE_EVENT_ON_REACH_HOME                      = 24, // (event, creature)
+    // UNUSED                                         = 25, // (event, creature)
+    CREATURE_EVENT_ON_CORPSE_REMOVED                  = 26, // (event, creature, respawndelay) - Can return new respawndelay
+    CREATURE_EVENT_ON_MOVE_IN_LOS                     = 27, // (event, creature, unit) - Does not actually check LOS. Just uses the sight range
+    // UNUSED                                         = 28, // (event, creature)
+    // UNUSED                                         = 29, // (event, creature)
+    CREATURE_EVENT_ON_DUMMY_EFFECT                    = 30, // (event, caster, spellid, effindex, creature)
+    CREATURE_EVENT_ON_QUEST_ACCEPT                    = 31, // (event, player, creature, quest)
+    // UNUSED                                         = 32, // (event, creature)
+    // UNUSED                                         = 33, // (event, creature)
+    CREATURE_EVENT_ON_QUEST_REWARD                    = 34, // (event, player, creature, quest, opt)
+    CREATURE_EVENT_ON_DIALOG_STATUS                   = 35, // (event, player, creature)
+    CREATURE_EVENT_ON_ADD                             = 36, // (event, creature)
+    CREATURE_EVENT_ON_REMOVE                          = 37, // (event, creature)
+    CREATURE_EVENT_COUNT
+};
+</pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Global:RegisterCreatureEvent()</code>
+            <code>Global:RegisterCreatureEvent( entry, event, function )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> entry</code></dt>
+                <dd class="docblock"><p><a class="mod" href="../Creature/index.html">Creature</a> entry Id. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> event</code></dt>
+                <dd class="docblock"><p><a class="mod" href="../Creature/index.html">Creature</a> event Id, refer to CreatureEvents above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.6.html">function</a></strong> function</code></dt>
+                <dd class="docblock"><p>Function to register. </p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            Nothing.
         </p>
     </div>
 
@@ -192,5 +247,6 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
+<center>&copy;2014 - Eluna Lua Engine</center>
 </body>
 </html>

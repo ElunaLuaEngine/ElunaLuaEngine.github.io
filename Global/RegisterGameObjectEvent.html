@@ -64,6 +64,7 @@
     <a class="fn " href="../Global/GetUnitGUID.html">GetUnitGUID</a>
     <a class="fn " href="../Global/Kick.html">Kick</a>
     <a class="fn " href="../Global/PerformIngameSpawn.html">PerformIngameSpawn</a>
+    <a class="fn " href="../Global/RegisterBGEvent.html">RegisterBGEvent</a>
     <a class="fn " href="../Global/RegisterCreatureEvent.html">RegisterCreatureEvent</a>
     <a class="fn " href="../Global/RegisterCreatureGossipEvent.html">RegisterCreatureGossipEvent</a>
     <a class="fn current" href="../Global/RegisterGameObjectEvent.html">RegisterGameObjectEvent</a>
@@ -125,27 +126,57 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Registers a <a class="mod" href="../GameObject/index.html">GameObject</a> event</p>
+<pre>
+enum GameObjectEvents
+{
+    GAMEOBJECT_EVENT_ON_AIUPDATE                    = 1,    // (event, go, diff)
+    GAMEOBJECT_EVENT_ON_SPAWN                       = 2,    // (event, go)
+    GAMEOBJECT_EVENT_ON_DUMMY_EFFECT                = 3,    // (event, caster, spellid, effindex, go)
+    GAMEOBJECT_EVENT_ON_QUEST_ACCEPT                = 4,    // (event, player, go, quest)
+    GAMEOBJECT_EVENT_ON_QUEST_REWARD                = 5,    // (event, player, go, quest, opt)
+    GAMEOBJECT_EVENT_ON_DIALOG_STATUS               = 6,    // (event, player, go)
+    GAMEOBJECT_EVENT_ON_DESTROYED                   = 7,    // (event, go, player)
+    GAMEOBJECT_EVENT_ON_DAMAGED                     = 8,    // (event, go, player)
+    GAMEOBJECT_EVENT_ON_LOOT_STATE_CHANGE           = 9,    // (event, go, state)
+    GAMEOBJECT_EVENT_ON_GO_STATE_CHANGED            = 10,   // (event, go, state)
+    // UNUSED                                       = 11,   // (event, gameobject)
+    GAMEOBJECT_EVENT_ON_ADD                         = 12,   // (event, gameobject)
+    GAMEOBJECT_EVENT_ON_REMOVE                      = 13,   // (event, gameobject)
+    GAMEOBJECT_EVENT_COUNT
+};
+</pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Global:RegisterGameObjectEvent()</code>
+            <code>Global:RegisterGameObjectEvent( entry, event, function )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> entry</code></dt>
+                <dd class="docblock"><p><a class="mod" href="../GameObject/index.html">GameObject</a> entry Id. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> event</code></dt>
+                <dd class="docblock"><p><a class="mod" href="../GameObject/index.html">GameObject</a> event Id, refer to GameObjectEvents above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.6.html">function</a></strong> function</code></dt>
+                <dd class="docblock"><p>Function to register. </p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            Nothing.
         </p>
     </div>
 
@@ -192,5 +223,6 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
+<center>&copy;2014 - Eluna Lua Engine</center>
 </body>
 </html>

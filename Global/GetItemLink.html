@@ -62,6 +62,10 @@
     <a class="fn " href="../Global/GetPlayersInWorld.html">GetPlayersInWorld</a>
     <a class="fn " href="../Global/GetQuest.html">GetQuest</a>
     <a class="fn " href="../Global/GetUnitGUID.html">GetUnitGUID</a>
+    <a class="fn " href="../Global/IsBagPos.html">IsBagPos</a>
+    <a class="fn " href="../Global/IsBankPos.html">IsBankPos</a>
+    <a class="fn " href="../Global/IsEquipmentPos.html">IsEquipmentPos</a>
+    <a class="fn " href="../Global/IsInventoryPos.html">IsInventoryPos</a>
     <a class="fn " href="../Global/Kick.html">Kick</a>
     <a class="fn " href="../Global/PerformIngameSpawn.html">PerformIngameSpawn</a>
     <a class="fn " href="../Global/RegisterBGEvent.html">RegisterBGEvent</a>
@@ -126,9 +130,9 @@
 
     
     <div class='docblock'>
-        <p>Returns an <a class="mod" href="../Item/index.html">Item</a>'s chat link</p>
+        <p>Returns an item chat link for given entry</p>
 <pre>
-enum Locales
+enum LocaleConstant
 {
     LOCALE_enUS = 0,
     LOCALE_koKR = 1,
@@ -146,7 +150,7 @@ enum Locales
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>itemLink = Global:GetItemLink( entry, loc_idx )</code>
+            <code>itemLink = Global:GetItemLink( entry, locale )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -155,11 +159,11 @@ enum Locales
         <p>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> entry</code></dt>
-                <dd class="docblock"><p>Entry ID of the <a class="mod" href="../Item/index.html">Item</a>. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dd class="docblock"><p>Entry ID of an <a class="mod" href="../Item/index.html">Item</a>. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> loc_idx (0)</code></dt>
-                <dd class="docblock"><p>Locale index, default is enUS. </p><p><em>Valid numbers</em>: integers from -2,147,483,647 to 2,147,483,647.</p></dd>
+                <dt><code>None locale (DEFAULT_LOCALE)</code></dt>
+                <dd class="docblock"><p>Locale to return the <a class="mod" href="../Item/index.html">Item</a> name in. </p></dd>
             </dl>
         </p>
 

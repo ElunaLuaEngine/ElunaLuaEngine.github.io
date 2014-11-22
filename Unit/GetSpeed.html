@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the Unit:IsWithinLoS method in the Eluna engine.">
+    <meta name="description" content="API documentation for the Unit:GetSpeed method in the Eluna engine.">
     <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>Unit:IsWithinLoS - Eluna</title>
+    <title>Unit:GetSpeed - Eluna</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
 
@@ -76,6 +76,8 @@
     <a class="fn " href="../Unit/GetPowerPct.html">GetPowerPct</a>
     <a class="fn " href="../Unit/GetPowerType.html">GetPowerType</a>
     <a class="fn " href="../Unit/GetRace.html">GetRace</a>
+    <a class="fn " href="../Unit/GetRaceAsString.html">GetRaceAsString</a>
+    <a class="fn current" href="../Unit/GetSpeed.html">GetSpeed</a>
     <a class="fn " href="../Unit/GetStandState.html">GetStandState</a>
     <a class="fn " href="../Unit/GetStat.html">GetStat</a>
     <a class="fn " href="../Unit/GetUnfriendlyUnitsInRange.html">GetUnfriendlyUnitsInRange</a>
@@ -120,7 +122,6 @@
     <a class="fn " href="../Unit/IsUnderWater.html">IsUnderWater</a>
     <a class="fn " href="../Unit/IsVendor.html">IsVendor</a>
     <a class="fn " href="../Unit/IsWithinDistInMap.html">IsWithinDistInMap</a>
-    <a class="fn current" href="../Unit/IsWithinLoS.html">IsWithinLoS</a>
     <a class="fn " href="../Unit/Kill.html">Kill</a>
     <a class="fn " href="../Unit/Mount.html">Mount</a>
     <a class="fn " href="../Unit/MoveChase.html">MoveChase</a>
@@ -190,7 +191,7 @@
 <section id='main' class="content mod">
     <h1 class='fqn'>
         Method
-    <a class="mod" href="../Unit/index.html">Unit</a>:<a class="fn" href="../Unit/IsWithinLoS.html">IsWithinLoS</a>
+    <a class="mod" href="../Unit/index.html">Unit</a>:<a class="fn" href="../Unit/GetSpeed.html">GetSpeed</a>
         <span class='out-of-band'>
             <span id='render-detail'>
                 <a id="collapse-all" href="#">[-]</a>
@@ -201,27 +202,47 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Returns the <a class="mod" href="../Unit/index.html">Unit</a>'s speed of given [UnitMoveType].</p>
+<pre>
+enum UnitMoveType
+{
+    MOVE_WALK           = 0,
+    MOVE_RUN            = 1,
+    MOVE_RUN_BACK       = 2,
+    MOVE_SWIM           = 3,
+    MOVE_SWIM_BACK      = 4,
+    MOVE_TURN_RATE      = 5,
+    MOVE_FLIGHT         = 6,
+    MOVE_FLIGHT_BACK    = 7,
+    MOVE_PITCH_RATE     = 8
+};
+</pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Unit:IsWithinLoS()</code>
+            <code>speed = Unit:GetSpeed( type )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code>None type</code></dt>
+                <dd class="docblock"><em>See method description.</em></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> speed</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: all decimal numbers.</p></dd>
+            </dl>
         </p>
     </div>
 

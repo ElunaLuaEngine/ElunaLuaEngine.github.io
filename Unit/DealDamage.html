@@ -76,6 +76,8 @@
     <a class="fn " href="../Unit/GetPowerPct.html">GetPowerPct</a>
     <a class="fn " href="../Unit/GetPowerType.html">GetPowerType</a>
     <a class="fn " href="../Unit/GetRace.html">GetRace</a>
+    <a class="fn " href="../Unit/GetRaceAsString.html">GetRaceAsString</a>
+    <a class="fn " href="../Unit/GetSpeed.html">GetSpeed</a>
     <a class="fn " href="../Unit/GetStandState.html">GetStandState</a>
     <a class="fn " href="../Unit/GetStat.html">GetStat</a>
     <a class="fn " href="../Unit/GetUnfriendlyUnitsInRange.html">GetUnfriendlyUnitsInRange</a>
@@ -120,7 +122,6 @@
     <a class="fn " href="../Unit/IsUnderWater.html">IsUnderWater</a>
     <a class="fn " href="../Unit/IsVendor.html">IsVendor</a>
     <a class="fn " href="../Unit/IsWithinDistInMap.html">IsWithinDistInMap</a>
-    <a class="fn " href="../Unit/IsWithinLoS.html">IsWithinLoS</a>
     <a class="fn " href="../Unit/Kill.html">Kill</a>
     <a class="fn " href="../Unit/Mount.html">Mount</a>
     <a class="fn " href="../Unit/MoveChase.html">MoveChase</a>
@@ -201,27 +202,59 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Makes the <a class="mod" href="../Unit/index.html">Unit</a> damage the target <a class="mod" href="../Unit/index.html">Unit</a></p>
+<pre>
+enum SpellSchools
+{
+    SPELL_SCHOOL_NORMAL  = 0,
+    SPELL_SCHOOL_HOLY    = 1,
+    SPELL_SCHOOL_FIRE    = 2,
+    SPELL_SCHOOL_NATURE  = 3,
+    SPELL_SCHOOL_FROST   = 4,
+    SPELL_SCHOOL_SHADOW  = 5,
+    SPELL_SCHOOL_ARCANE  = 6,
+    MAX_SPELL_SCHOOL     = 7
+};
+</pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Unit:DealDamage()</code>
+            <code>Unit:DealDamage( target, damage, durabilityloss, school, spell )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a class="mod" href="../Unit/index.html">Unit</a></strong> target</code></dt>
+                <dd class="docblock"><p><a class="mod" href="../Unit/index.html">Unit</a> to damage. </p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> damage</code></dt>
+                <dd class="docblock"><p>Amount to damage. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.2.html">boolean</a></strong> durabilityloss (true)</code></dt>
+                <dd class="docblock"><p>If false, the damage does not do durability damage. </p></dd>
+            </dl>
+            <dl>
+                <dt><code>None school (MAX_SPELL_SCHOOL)</code></dt>
+                <dd class="docblock"><p>School the damage is done in or MAX_SPELL_SCHOOL for direct damage. </p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> spell (0)</code></dt>
+                <dd class="docblock"><p>Spell that inflicts the damage. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            Nothing.
         </p>
     </div>
 

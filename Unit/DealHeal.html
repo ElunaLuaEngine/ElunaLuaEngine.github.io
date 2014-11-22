@@ -76,6 +76,8 @@
     <a class="fn " href="../Unit/GetPowerPct.html">GetPowerPct</a>
     <a class="fn " href="../Unit/GetPowerType.html">GetPowerType</a>
     <a class="fn " href="../Unit/GetRace.html">GetRace</a>
+    <a class="fn " href="../Unit/GetRaceAsString.html">GetRaceAsString</a>
+    <a class="fn " href="../Unit/GetSpeed.html">GetSpeed</a>
     <a class="fn " href="../Unit/GetStandState.html">GetStandState</a>
     <a class="fn " href="../Unit/GetStat.html">GetStat</a>
     <a class="fn " href="../Unit/GetUnfriendlyUnitsInRange.html">GetUnfriendlyUnitsInRange</a>
@@ -120,7 +122,6 @@
     <a class="fn " href="../Unit/IsUnderWater.html">IsUnderWater</a>
     <a class="fn " href="../Unit/IsVendor.html">IsVendor</a>
     <a class="fn " href="../Unit/IsWithinDistInMap.html">IsWithinDistInMap</a>
-    <a class="fn " href="../Unit/IsWithinLoS.html">IsWithinLoS</a>
     <a class="fn " href="../Unit/Kill.html">Kill</a>
     <a class="fn " href="../Unit/Mount.html">Mount</a>
     <a class="fn " href="../Unit/MoveChase.html">MoveChase</a>
@@ -201,27 +202,42 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Makes the <a class="mod" href="../Unit/index.html">Unit</a> heal the target <a class="mod" href="../Unit/index.html">Unit</a> with given spell</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Unit:DealHeal()</code>
+            <code>Unit:DealHeal( target, spell, amount, critical )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a class="mod" href="../Unit/index.html">Unit</a></strong> target</code></dt>
+                <dd class="docblock"><p><a class="mod" href="../Unit/index.html">Unit</a> to heal. </p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> spell</code></dt>
+                <dd class="docblock"><p>Spell that causes the healing. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> amount</code></dt>
+                <dd class="docblock"><p>Amount to heal. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.2.html">boolean</a></strong> critical (false)</code></dt>
+                <dd class="docblock"><p>If true, heal is logged as critical. </p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            Nothing.
         </p>
     </div>
 

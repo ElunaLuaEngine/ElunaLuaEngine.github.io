@@ -76,6 +76,8 @@
     <a class="fn " href="../Unit/GetPowerPct.html">GetPowerPct</a>
     <a class="fn " href="../Unit/GetPowerType.html">GetPowerType</a>
     <a class="fn " href="../Unit/GetRace.html">GetRace</a>
+    <a class="fn " href="../Unit/GetRaceAsString.html">GetRaceAsString</a>
+    <a class="fn " href="../Unit/GetSpeed.html">GetSpeed</a>
     <a class="fn " href="../Unit/GetStandState.html">GetStandState</a>
     <a class="fn " href="../Unit/GetStat.html">GetStat</a>
     <a class="fn " href="../Unit/GetUnfriendlyUnitsInRange.html">GetUnfriendlyUnitsInRange</a>
@@ -120,7 +122,6 @@
     <a class="fn " href="../Unit/IsUnderWater.html">IsUnderWater</a>
     <a class="fn " href="../Unit/IsVendor.html">IsVendor</a>
     <a class="fn " href="../Unit/IsWithinDistInMap.html">IsWithinDistInMap</a>
-    <a class="fn " href="../Unit/IsWithinLoS.html">IsWithinLoS</a>
     <a class="fn " href="../Unit/Kill.html">Kill</a>
     <a class="fn " href="../Unit/Mount.html">Mount</a>
     <a class="fn " href="../Unit/MoveChase.html">MoveChase</a>
@@ -201,27 +202,53 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Sets the <a class="mod" href="../Unit/index.html">Unit</a>'s speed of given [UnitMoveType] to given rate.
+If forced, packets sent to clients forcing the visual change.</p>
+<pre>
+enum UnitMoveType
+{
+    MOVE_WALK           = 0,
+    MOVE_RUN            = 1,
+    MOVE_RUN_BACK       = 2,
+    MOVE_SWIM           = 3,
+    MOVE_SWIM_BACK      = 4,
+    MOVE_TURN_RATE      = 5,
+    MOVE_FLIGHT         = 6,
+    MOVE_FLIGHT_BACK    = 7,
+    MOVE_PITCH_RATE     = 8
+};
+</pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Unit:SetSpeed()</code>
+            <code>Unit:SetSpeed( type, rate, forced )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code>None type</code></dt>
+                <dd class="docblock"><em>See method description.</em></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> rate</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: all decimal numbers.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.2.html">boolean</a></strong> forced (false)</code></dt>
+                <dd class="docblock"><em>See method description.</em></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            Nothing.
         </p>
     </div>
 

@@ -62,6 +62,10 @@
     <a class="fn " href="../Global/GetPlayersInWorld.html">GetPlayersInWorld</a>
     <a class="fn " href="../Global/GetQuest.html">GetQuest</a>
     <a class="fn " href="../Global/GetUnitGUID.html">GetUnitGUID</a>
+    <a class="fn " href="../Global/IsBagPos.html">IsBagPos</a>
+    <a class="fn " href="../Global/IsBankPos.html">IsBankPos</a>
+    <a class="fn " href="../Global/IsEquipmentPos.html">IsEquipmentPos</a>
+    <a class="fn " href="../Global/IsInventoryPos.html">IsInventoryPos</a>
     <a class="fn " href="../Global/Kick.html">Kick</a>
     <a class="fn " href="../Global/PerformIngameSpawn.html">PerformIngameSpawn</a>
     <a class="fn " href="../Global/RegisterBGEvent.html">RegisterBGEvent</a>
@@ -126,14 +130,13 @@
 
     
     <div class='docblock'>
-        <p>Returns result
-Documentation will need to be changed</p>
+        <p>Returns the result of bitwise left shift: a &lt;&lt; b</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>val = Global:bit_lshift( a, b )</code>
+            <code>result = Global:bit_lshift( a, b )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -155,7 +158,7 @@ Documentation will need to be changed</p>
         </h2>
         <p>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> val</code></dt>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> result</code></dt>
                 <dd class="docblock"><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
         </p>

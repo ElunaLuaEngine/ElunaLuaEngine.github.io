@@ -288,27 +288,54 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Returns an item in given bag on given slot.</p>
+<pre>
+Possible and most commonly used combinations:
+
+bag = 255
+slots 0-18 equipment
+slots 19-22 equipped bag slots
+slots 23-38 backpack
+slots 39-66 bank main slots
+slots 67-74 bank bag slots
+slots 86-117 keyring
+
+bag = 19-22
+slots 0-35 for equipped bags
+
+bag = 67-74
+slots 0-35 for bank bags
+</pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Player:GetItemByPos()</code>
+            <code>item = Player:GetItemByPos( bag, slot )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> bag</code></dt>
+                <dd class="docblock"><p>The bag the <a class="mod" href="../Item/index.html">Item</a> is in, you can get this with <a class="fn" href="../Item/GetBagSlot.html">Item:GetBagSlot</a>. </p><p><em>Valid numbers</em>: integers from 0 to 255.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> slot</code></dt>
+                <dd class="docblock"><p>The slot the <a class="mod" href="../Item/index.html">Item</a> is in within the bag, you can get this with <a class="fn" href="../Item/GetSlot.html">Item:GetSlot</a>. </p><p><em>Valid numbers</em>: integers from 0 to 255.</p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a class="mod" href="../Item/index.html">Item</a></strong> item</code></dt>
+                <dd class="docblock"><p><a class="mod" href="../Item/index.html">Item</a> or nil. </p></dd>
+            </dl>
         </p>
     </div>
 

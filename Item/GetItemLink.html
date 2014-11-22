@@ -107,27 +107,47 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Returns the chat link of the <a class="mod" href="../Item/index.html">Item</a></p>
+<pre>
+enum LocaleConstant
+{
+    LOCALE_enUS = 0,
+    LOCALE_koKR = 1,
+    LOCALE_frFR = 2,
+    LOCALE_deDE = 3,
+    LOCALE_zhCN = 4,
+    LOCALE_zhTW = 5,
+    LOCALE_esES = 6,
+    LOCALE_esMX = 7,
+    LOCALE_ruRU = 8
+};
+</pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Item:GetItemLink()</code>
+            <code>itemLink = Item:GetItemLink( locale )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code>None locale (DEFAULT_LOCALE)</code></dt>
+                <dd class="docblock"><p>Locale to return the <a class="mod" href="../Item/index.html">Item</a>'s name in. </p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.4.html">string</a></strong> itemLink</code></dt>
+                <dd class="docblock"><em>See method description.</em></dd>
+            </dl>
         </p>
     </div>
 

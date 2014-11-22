@@ -62,6 +62,10 @@
     <a class="fn " href="../Global/GetPlayersInWorld.html">GetPlayersInWorld</a>
     <a class="fn " href="../Global/GetQuest.html">GetQuest</a>
     <a class="fn " href="../Global/GetUnitGUID.html">GetUnitGUID</a>
+    <a class="fn " href="../Global/IsBagPos.html">IsBagPos</a>
+    <a class="fn " href="../Global/IsBankPos.html">IsBankPos</a>
+    <a class="fn " href="../Global/IsEquipmentPos.html">IsEquipmentPos</a>
+    <a class="fn " href="../Global/IsInventoryPos.html">IsInventoryPos</a>
     <a class="fn " href="../Global/Kick.html">Kick</a>
     <a class="fn " href="../Global/PerformIngameSpawn.html">PerformIngameSpawn</a>
     <a class="fn " href="../Global/RegisterBGEvent.html">RegisterBGEvent</a>
@@ -126,13 +130,21 @@
 
     
     <div class='docblock'>
-        <p>Adds a taxi path to a specified map, also returns pathId</p>
+        <p>Adds a taxi path to a specified map, returns the used pathId
+Related function: <a class="fn" href="../Player/StartTaxi.html">Player:StartTaxi</a></p>
+<pre>
+-- Execute on startup
+local pathTable = {{mapid, x, y, z}, {mapid, x, y, z}}
+local path = AddTaxiPath(pathTable, 28135, 28135)
+-- Execute when the player should fly
+player:StartTaxi(path)
+</pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>pathId = Global:AddTaxiPath( waypoints, mountA, mountH, price, pathId )</code>
+            <code>actualPathId = Global:AddTaxiPath( waypoints, mountA, mountH, price, pathId )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -141,7 +153,7 @@
         <p>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.5.html">table</a></strong> waypoints</code></dt>
-                <dd class="docblock"><p>Waypoint table, goes by map, x, y, and z. </p></dd>
+                <dd class="docblock"><p>Table containing waypoints: {map, x, y, z[, actionFlag, delay]}. </p></dd>
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> mountA</code></dt>
@@ -153,11 +165,11 @@
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> price (0)</code></dt>
-                <dd class="docblock"><p>Price of the taxi path, this is optional. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dd class="docblock"><p>Price of the taxi path. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> pathId (0)</code></dt>
-                <dd class="docblock"><p>Path Id of the taxi path, this is optional. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dd class="docblock"><p>Path Id of the taxi path. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
         </p>
 
@@ -166,7 +178,7 @@
         </h2>
         <p>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> pathId</code></dt>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> actualPathId</code></dt>
                 <dd class="docblock"><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
         </p>

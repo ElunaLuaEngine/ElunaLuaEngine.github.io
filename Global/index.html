@@ -73,7 +73,8 @@
                 <a class='fn' href='AddTaxiPath.html'>AddTaxiPath</a>
             </td>
             <td class='docblock short'>
-                <p>Adds a taxi path to a specified map, also returns pathId</p>
+                <p>Adds a taxi path to a specified map, returns the used pathId
+Related function: <a class="fn" href="../Player/StartTaxi.html">Player:StartTaxi</a></p>
             </td>
         </tr>
         <tr>
@@ -293,7 +294,7 @@ GUID consist of entry ID, low GUID and type ID</p>
                 <a class='fn' href='GetItemLink.html'>GetItemLink</a>
             </td>
             <td class='docblock short'>
-                <p>Returns an <a class="mod" href="../Item/index.html">Item</a>'s chat link</p>
+                <p>Returns an item chat link for given entry</p>
             </td>
         </tr>
         <tr>
@@ -399,6 +400,42 @@ GUID consist of entry ID, low GUID and type ID</p>
                 <p>Returns a <a class="mod" href="../Creature/index.html">Creature</a>'s GUID.
 <a class="mod" href="../Creature/index.html">Creature</a> GUID consist of entry ID, low GUID and type ID
 <a class="mod" href="../Player/index.html">Player</a> and <a class="mod" href="../Creature/index.html">Creature</a> for example can have the same low GUID but not GUID.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='IsBagPos.html'>IsBagPos</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns true if the bag and slot is a valid bag position, otherwise false</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='IsBankPos.html'>IsBankPos</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns true if the bag and slot is a valid bank position, otherwise false</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='IsEquipmentPos.html'>IsEquipmentPos</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns true if the bag and slot is a valid equipment position, otherwise false</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='IsInventoryPos.html'>IsInventoryPos</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns true if the bag and slot is a valid inventory position, otherwise false</p>
             </td>
         </tr>
         <tr>
@@ -614,7 +651,8 @@ GUID consist of entry ID, low GUID and type ID</p>
                 <a class='fn' href='SendMail.html'>SendMail</a>
             </td>
             <td class='docblock short'>
-                <p>Sends mail to a <a class="mod" href="../Player/index.html">Player</a></p>
+                <p>Sends mail to a <a class="mod" href="../Player/index.html">Player</a>
+There can be several item entry-amount pairs at the end of the function. There can be maximum of 12 different items.</p>
             </td>
         </tr>
         <tr>
@@ -668,8 +706,7 @@ GUID consist of entry ID, low GUID and type ID</p>
                 <a class='fn' href='bit_and.html'>bit_and</a>
             </td>
             <td class='docblock short'>
-                <p>Returns result
-Documentation will need to be changed</p>
+                <p>Returns the result of bitwise and: a &amp; b</p>
             </td>
         </tr>
         <tr>
@@ -678,8 +715,7 @@ Documentation will need to be changed</p>
                 <a class='fn' href='bit_lshift.html'>bit_lshift</a>
             </td>
             <td class='docblock short'>
-                <p>Returns result
-Documentation will need to be changed</p>
+                <p>Returns the result of bitwise left shift: a &lt;&lt; b</p>
             </td>
         </tr>
         <tr>
@@ -688,8 +724,7 @@ Documentation will need to be changed</p>
                 <a class='fn' href='bit_not.html'>bit_not</a>
             </td>
             <td class='docblock short'>
-                <p>Returns result
-Documentation will need to be changed</p>
+                <p>Returns the result of bitwise not: ~a</p>
             </td>
         </tr>
         <tr>
@@ -698,8 +733,7 @@ Documentation will need to be changed</p>
                 <a class='fn' href='bit_or.html'>bit_or</a>
             </td>
             <td class='docblock short'>
-                <p>Returns result
-Documentation will need to be changed</p>
+                <p>Returns the result of bitwise or: a | b</p>
             </td>
         </tr>
         <tr>
@@ -708,8 +742,7 @@ Documentation will need to be changed</p>
                 <a class='fn' href='bit_rshift.html'>bit_rshift</a>
             </td>
             <td class='docblock short'>
-                <p>Returns result
-Documentation will need to be changed</p>
+                <p>Returns the result of bitwise right shift: a &gt;&gt; b</p>
             </td>
         </tr>
         <tr>
@@ -718,8 +751,7 @@ Documentation will need to be changed</p>
                 <a class='fn' href='bit_xor.html'>bit_xor</a>
             </td>
             <td class='docblock short'>
-                <p>Returns result
-Documentation will need to be changed</p>
+                <p>Returns the result of bitwise xor: a ^ b</p>
             </td>
         </tr>
     </table>

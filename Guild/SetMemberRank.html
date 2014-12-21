@@ -73,27 +73,34 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Promotes/demotes the <a class="mod" href="../Player/index.html">Player</a> to the specified rank.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Guild:SetMemberRank()</code>
+            <code>Guild:SetMemberRank( player, rankId )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a class="mod" href="../Player/index.html">Player</a></strong> player</code></dt>
+                <dd class="docblock"><p>The <a class="mod" href="../Player/index.html">Player</a> to be promoted/demoted. </p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> rankId</code></dt>
+                <dd class="docblock"><p>The rank ID. </p><p><em>Valid numbers</em>: integers from 0 to 255.</p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            Nothing.
         </p>
     </div>
 

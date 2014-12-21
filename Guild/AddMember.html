@@ -73,27 +73,35 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Adds the specified <a class="mod" href="../Player/index.html">Player</a> to the <a class="mod" href="../Guild/index.html">Guild</a> at the specified rank.</p>
+<p>If no rank is specified, defaults to none.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Guild:AddMember()</code>
+            <code>Guild:AddMember( player, rankId )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a class="mod" href="../Player/index.html">Player</a></strong> player</code></dt>
+                <dd class="docblock"><p>The <a class="mod" href="../Player/index.html">Player</a> to be added to the guild. </p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> rankId</code></dt>
+                <dd class="docblock"><p>The rank ID. </p><p><em>Valid numbers</em>: integers from 0 to 255.</p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            Nothing.
         </p>
     </div>
 

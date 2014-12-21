@@ -107,27 +107,37 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Sets the specified enchantment of the <a class="mod" href="../Item/index.html">Item</a> to the specified slot</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Item:SetEnchantment()</code>
+            <code>enchantmentSuccess = Item:SetEnchantment( enchantId, enchantSlot )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> enchantId</code></dt>
+                <dd class="docblock"><p>The ID of the enchant to be applied. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> enchantSlot</code></dt>
+                <dd class="docblock"><p>The slot for the enchant to be applied to. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.2.html">boolean</a></strong> enchantmentSuccess</code></dt>
+                <dd class="docblock"><p>If enchantment is successfully set to specified slot, returns 'true', otherwise 'false'. </p></dd>
+            </dl>
         </p>
     </div>
 

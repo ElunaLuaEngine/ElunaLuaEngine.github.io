@@ -101,7 +101,7 @@ Related function: <a class="fn" href="../Player/StartTaxi.html">Player:StartTaxi
                 <a class='fn' href='AuthDBExecute.html'>AuthDBExecute</a>
             </td>
             <td class='docblock short'>
-                <p>Executes a [Query] (not instantly ) to your auth database</p>
+                <p>Executes an sql to your auth database. The SQL is not ran instantly.</p>
             </td>
         </tr>
         <tr>
@@ -110,7 +110,7 @@ Related function: <a class="fn" href="../Player/StartTaxi.html">Player:StartTaxi
                 <a class='fn' href='AuthDBQuery.html'>AuthDBQuery</a>
             </td>
             <td class='docblock short'>
-                <p>Executes auth database sql [Query] instantly and returns QueryResult object</p>
+                <p>Executes an sql to your auth database instantly and returns <a class="mod" href="../ElunaQuery/index.html">ElunaQuery</a></p>
             </td>
         </tr>
         <tr>
@@ -128,7 +128,7 @@ Related function: <a class="fn" href="../Player/StartTaxi.html">Player:StartTaxi
                 <a class='fn' href='CharDBExecute.html'>CharDBExecute</a>
             </td>
             <td class='docblock short'>
-                <p>Executes a [Query] (not instantly) to your character database</p>
+                <p>Executes an sql to your character database. The SQL is not ran instantly.</p>
             </td>
         </tr>
         <tr>
@@ -137,7 +137,7 @@ Related function: <a class="fn" href="../Player/StartTaxi.html">Player:StartTaxi
                 <a class='fn' href='CharDBQuery.html'>CharDBQuery</a>
             </td>
             <td class='docblock short'>
-                <p>Executes character database sql [Query] instantly and returns QueryResult object</p>
+                <p>Executes an sql to your character database instantly and returns <a class="mod" href="../ElunaQuery/index.html">ElunaQuery</a></p>
             </td>
         </tr>
         <tr>
@@ -147,6 +147,16 @@ Related function: <a class="fn" href="../Player/StartTaxi.html">Player:StartTaxi
             </td>
             <td class='docblock short'>
                 <p>Converts a <a class="mod" href="../Corpse/index.html">Corpse</a> by guid, also allows for insignia to be looted</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='CreateLongLong.html'>CreateLongLong</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns an object represeting long long.
+The value by default is 0, but can be initialized to a value by passing a number or long long as a string.</p>
             </td>
         </tr>
         <tr>
@@ -167,6 +177,16 @@ Repeats will decrease on each call if the event does not repeat indefinitely</p>
             </td>
             <td class='docblock short'>
                 <p>Creates a <a class="mod" href="../WorldPacket/index.html">WorldPacket</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='CreateULongLong.html'>CreateULongLong</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns an object represeting unsigned long long.
+The value by default is 0, but can be initialized to a value by passing a number or unsigned long long as a string.</p>
             </td>
         </tr>
         <tr>
@@ -213,6 +233,15 @@ For example <code>MaNGOS</code>, <code>cMaNGOS</code> or <code>TrinityCore</code
             </td>
             <td class='docblock short'>
                 <p>Returns emulator version</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetCurrTime.html'>GetCurrTime</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns current time in ms</p>
             </td>
         </tr>
         <tr>
@@ -394,6 +423,15 @@ GUID consist of entry ID, low GUID and type ID</p>
         <tr>
             <td>
                 <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetTimeDiff.html'>GetTimeDiff</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns difference from a <a class="fn" href="../Global/GetCurrTime.html">Global:GetCurrTime</a> time to now</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetUnitGUID.html'>GetUnitGUID</a>
             </td>
             <td class='docblock short'>
@@ -454,6 +492,33 @@ GUID consist of entry ID, low GUID and type ID</p>
             </td>
             <td class='docblock short'>
                 <p>Performs an ingame spawn and returns <a class="mod" href="../Creature/index.html">Creature</a> or <a class="mod" href="../GameObject/index.html">GameObject</a> dependent on spawnType</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='PrintDebug.html'>PrintDebug</a>
+            </td>
+            <td class='docblock short'>
+                <p>Prints given parameters to the debug log</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='PrintError.html'>PrintError</a>
+            </td>
+            <td class='docblock short'>
+                <p>Prints given parameters to the error log</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='PrintInfo.html'>PrintInfo</a>
+            </td>
+            <td class='docblock short'>
+                <p>Prints given parameters to the info log</p>
             </td>
         </tr>
         <tr>
@@ -688,7 +753,7 @@ There can be several item entry-amount pairs at the end of the function. There c
                 <a class='fn' href='WorldDBExecute.html'>WorldDBExecute</a>
             </td>
             <td class='docblock short'>
-                <p>Executes a sql [Query] (not instantly) to your world database</p>
+                <p>Executes an sql to your character database. The SQL is not ran instantly.</p>
             </td>
         </tr>
         <tr>
@@ -697,7 +762,7 @@ There can be several item entry-amount pairs at the end of the function. There c
                 <a class='fn' href='WorldDBQuery.html'>WorldDBQuery</a>
             </td>
             <td class='docblock short'>
-                <p>Executes world database sql [Query] instantly and returns QueryResult object</p>
+                <p>Executes an sql to your world database instantly and returns <a class="mod" href="../ElunaQuery/index.html">ElunaQuery</a></p>
             </td>
         </tr>
         <tr>

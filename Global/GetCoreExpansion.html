@@ -137,13 +137,14 @@
 
     
     <div class='docblock'>
-        <p>Returns emulator expansion. Expansion is 0 for classic, 1 for TBC, 2 for WOTLK and 3 for cataclysm</p>
+        <p>Returns emulator's supported expansion.</p>
+<p>Expansion is 0 for pre-TBC, 1 for TBC, 2 for WotLK, and 3 for Cataclysm.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>version = GetCoreExpansion()</code>
+            <code>expansion = GetCoreExpansion()</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -158,8 +159,8 @@
         </h2>
         <p>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> version</code></dt>
-                <dd class="docblock"><p>Emulator expansion ID. </p><p><em>Valid numbers</em>: integers from -2,147,483,647 to 2,147,483,647.</p></dd>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> expansion</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: integers from -2,147,483,647 to 2,147,483,647.</p></dd>
             </dl>
         </p>
     </div>

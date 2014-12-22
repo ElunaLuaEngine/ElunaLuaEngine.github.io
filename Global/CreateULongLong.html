@@ -137,23 +137,23 @@
 
     
     <div class='docblock'>
-        <p>Returns an object represeting unsigned long long.
-The value by default is 0, but can be initialized to a value by passing a number or unsigned long long as a string.</p>
+        <p>Returns an object representing an <code>unsigned long long</code> (64-bit) value.</p>
+<p>The value by default is 0, but can be initialized to a value by passing a number or unsigned long long as a string.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>value = Global:CreateULongLong( None )</code>
+            <code>value = Global:CreateULongLong()</code>
         </p>
         <p>
-            <code>value = Global:CreateULongLong( number )</code>
+            <code>value = Global:CreateULongLong( n )</code>
         </p>
         <p>
-            <code>value = Global:CreateULongLong( ulonglong )</code>
+            <code>value = Global:CreateULongLong( n_ull )</code>
         </p>
         <p>
-            <code>value = Global:CreateULongLong( ulonglongstr )</code>
+            <code>value = Global:CreateULongLong( n_str )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -161,16 +161,16 @@ The value by default is 0, but can be initialized to a value by passing a number
         </h2>
         <p>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> number</code></dt>
-                <dd class="docblock"><p>Regular lua number. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> n</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
             <dl>
-                <dt><code>uint64 ulonglong</code></dt>
-                <dd class="docblock"><p>An unsigned long long object. </p></dd>
+                <dt><code>uint64 n_ull</code></dt>
+                <dd class="docblock"><em>See method description.</em></dd>
             </dl>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.4.html">string</a></strong> ulonglongstr</code></dt>
-                <dd class="docblock"><p>An unsigned long long as a string. </p></dd>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.4.html">string</a></strong> n_str</code></dt>
+                <dd class="docblock"><em>See method description.</em></dd>
             </dl>
         </p>
 

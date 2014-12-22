@@ -54,7 +54,6 @@
     <a class="fn " href="../Object/ToGameObject.html">ToGameObject</a>
     <a class="fn " href="../Object/ToPlayer.html">ToPlayer</a>
     <a class="fn " href="../Object/ToUnit.html">ToUnit</a>
-    <a class="fn " href="../Object/UpdateUInt32Value.html">UpdateUInt32Value</a>
 
     </div>
 </section>
@@ -84,27 +83,42 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Returns the TypeId of the <a class="mod" href="../Object/index.html">Object</a>.</p>
+<pre><code>enum TypeID
+{
+    TYPEID_OBJECT        = 0,
+    TYPEID_ITEM          = 1,
+    TYPEID_CONTAINER     = 2,
+    TYPEID_UNIT          = 3,
+    TYPEID_PLAYER        = 4,
+    TYPEID_GAMEOBJECT    = 5,
+    TYPEID_DYNAMICOBJECT = 6,
+    TYPEID_CORPSE        = 7
+};
+</code></pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Object:GetTypeId()</code>
+            <code>typeID = Object:GetTypeId()</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            None.
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> typeID</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: integers from 0 to 255.</p></dd>
+            </dl>
         </p>
     </div>
 

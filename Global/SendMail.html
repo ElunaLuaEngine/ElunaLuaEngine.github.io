@@ -137,10 +137,10 @@
 
     
     <div class='docblock'>
-        <p>Sends mail to a <a class="mod" href="../Player/index.html">Player</a>
-There can be several item entry-amount pairs at the end of the function. There can be maximum of 12 different items.</p>
-<pre>
-enum MailStationery
+        <p>Sends mail to a <a class="mod" href="../Player/index.html">Player</a>.</p>
+<p>There can be several item entry-amount pairs at the end of the function.
+There can be maximum of 12 different items.</p>
+<pre><code>enum MailStationery
 {
     MAIL_STATIONERY_TEST = 1,
     MAIL_STATIONERY_DEFAULT = 41,
@@ -150,11 +150,32 @@ enum MailStationery
     MAIL_STATIONERY_CHR = 65, // Christmas
     MAIL_STATIONERY_ORP = 67 // Orphan
 };
-</pre>
+</code></pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
+        <p>
+            <code>SendMail( subject, text, receiverGUIDLow )</code>
+        </p>
+        <p>
+            <code>SendMail( subject, text, receiverGUIDLow, senderGUIDLow )</code>
+        </p>
+        <p>
+            <code>SendMail( subject, text, receiverGUIDLow, senderGUIDLow, stationary )</code>
+        </p>
+        <p>
+            <code>SendMail( subject, text, receiverGUIDLow, senderGUIDLow, stationary, delay )</code>
+        </p>
+        <p>
+            <code>SendMail( subject, text, receiverGUIDLow, senderGUIDLow, stationary, delay, money )</code>
+        </p>
+        <p>
+            <code>SendMail( subject, text, receiverGUIDLow, senderGUIDLow, stationary, delay, money, cod )</code>
+        </p>
+        <p>
+            <code>SendMail( subject, text, receiverGUIDLow, senderGUIDLow, stationary, delay, money, cod, entry )</code>
+        </p>
         <p>
             <code>SendMail( subject, text, receiverGUIDLow, senderGUIDLow, stationary, delay, money, cod, entry, amount )</code>
         </p>

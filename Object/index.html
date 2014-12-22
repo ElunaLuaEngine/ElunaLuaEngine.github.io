@@ -54,269 +54,267 @@
     </h1>
 
     
-    
+    <p>A basic game object (either an <a class="mod" href="../Item/index.html">Item</a> or a <a class="mod" href="../WorldObject/index.html">WorldObject</a>).</p>
+<p>Objects in MaNGOS/Trinity are stored an a giant block of "values".
+Subclasses of Object, like <a class="mod" href="../WorldObject/index.html">WorldObject</a>, extend the block with more data specific to that subclass.
+Further subclasses, like <a class="mod" href="../Player/index.html">Player</a>, extend it even further.</p>
+<p>A detailed map of all the fields in this data block can be found in the UpdateFields.h file of your emulator
+(it varies depending on the expansion supported).</p>
+<p>The GetValue methods in this class (e.g. <a class="fn" href="../Object/GetInt32Value.html">Object:GetInt32Value</a>) provide low-level access to the data block.
+Other methods, like <a class="fn" href="../Object/HasFlag.html">Object:HasFlag</a> and <a class="fn" href="../Object/GetScale.html">Object:GetScale</a>, merely wrap the GetValue methods and provide a simpler interface.</p>
 
     <h2 id='methods' class='section-header'><a href="#methods">Methods</a></h2>
     <table>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetByteValue.html'>GetByteValue</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the data at the specified index and offset, casted to an unsigned 8-bit integer.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetEntry.html'>GetEntry</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the entry of the <a class="mod" href="../Object/index.html">Object</a>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetFloatValue.html'>GetFloatValue</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the data at the specified index, casted to a single-precision floating point value.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetGUID.html'>GetGUID</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the GUID of the <a class="mod" href="../Object/index.html">Object</a>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetGUIDLow.html'>GetGUIDLow</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the low-part of the <a class="mod" href="../Object/index.html">Object</a>'s GUID.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetInt32Value.html'>GetInt32Value</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the data at the specified index, casted to a signed 32-bit integer.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetScale.html'>GetScale</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the scale/size of the <a class="mod" href="../Object/index.html">Object</a>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetTypeId.html'>GetTypeId</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the TypeId of the <a class="mod" href="../Object/index.html">Object</a>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetUInt16Value.html'>GetUInt16Value</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the data at the specified index and offset, casted to a signed 16-bit integer.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetUInt32Value.html'>GetUInt32Value</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the data at the specified index, casted to a unsigned 32-bit integer.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetUInt64Value.html'>GetUInt64Value</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the data at the specified index, casted to an unsigned 64-bit integer.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='HasFlag.html'>HasFlag</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the specified flag is set, otherwise <code>false</code>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='IsInWorld.html'>IsInWorld</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Object/index.html">Object</a> has been added to its <a class="mod" href="../Map/index.html">Map</a>, otherwise <code>false</code>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='RemoveFlag.html'>RemoveFlag</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Removes a flag from the value at the specified index.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetByteValue.html'>SetByteValue</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Sets the data at the specified index and offset to the given value, converted to an unsigned 8-bit integer.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetFlag.html'>SetFlag</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Sets the specified flag in the data value at the specified index.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetFloatValue.html'>SetFloatValue</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Sets the data at the specified index to the given value, converted to a single-precision floating point value.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetInt16Value.html'>SetInt16Value</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Sets the data at the specified index to the given value, converted to a signed 16-bit integer.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetInt32Value.html'>SetInt32Value</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Sets the data at the specified index to the given value, converted to a signed 32-bit integer.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetScale.html'>SetScale</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Sets the <a class="mod" href="../Object/index.html">Object</a>'s scale/size to the given value.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetUInt16Value.html'>SetUInt16Value</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Sets the data at the specified index to the given value, converted to an unsigned 16-bit integer.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetUInt32Value.html'>SetUInt32Value</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Sets the data at the specified index to the given value, converted to an unsigned 32-bit integer.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetUInt64Value.html'>SetUInt64Value</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Sets the data at the specified index to the given value, converted to an unsigned 64-bit integer.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='ToCorpse.html'>ToCorpse</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Attempts to convert the <a class="mod" href="../Object/index.html">Object</a> to a <a class="mod" href="../Corpse/index.html">Corpse</a>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='ToCreature.html'>ToCreature</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Attempts to convert the <a class="mod" href="../Object/index.html">Object</a> to a <a class="mod" href="../Creature/index.html">Creature</a>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='ToGameObject.html'>ToGameObject</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Attempts to convert the <a class="mod" href="../Object/index.html">Object</a> to a <a class="mod" href="../GameObject/index.html">GameObject</a>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='ToPlayer.html'>ToPlayer</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Attempts to convert the <a class="mod" href="../Object/index.html">Object</a> to a <a class="mod" href="../Player/index.html">Player</a>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='ToUnit.html'>ToUnit</a>
             </td>
             <td class='docblock short'>
-                <p></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Experimental' title='Undocumented'></a>
-                <a class='fn' href='UpdateUInt32Value.html'>UpdateUInt32Value</a>
-            </td>
-            <td class='docblock short'>
-                <p></p>
+                <p>Attempts to convert the <a class="mod" href="../Object/index.html">Object</a> to a <a class="mod" href="../Unit/index.html">Unit</a>.</p>
             </td>
         </tr>
     </table>

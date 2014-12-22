@@ -137,11 +137,14 @@
 
     
     <div class='docblock'>
-        <p>Converts a <a class="mod" href="../Corpse/index.html">Corpse</a> by guid, also allows for insignia to be looted</p>
+        <p>Converts a <a class="mod" href="../Corpse/index.html">Corpse</a> by GUID, and optionally allows for insignia to be looted.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
+        <p>
+            <code>corpse = ConvertCorpseForPlayer( playerGUID )</code>
+        </p>
         <p>
             <code>corpse = ConvertCorpseForPlayer( playerGUID, insignia )</code>
         </p>
@@ -152,11 +155,11 @@
         <p>
             <dl>
                 <dt><code>uint64 playerGUID</code></dt>
-                <dd class="docblock"><p>Guid of the <a class="mod" href="../Player/index.html">Player</a>. </p></dd>
+                <dd class="docblock"><p>GUID of the <a class="mod" href="../Player/index.html">Player</a>. </p></dd>
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.2.html">boolean</a></strong> insignia (false)</code></dt>
-                <dd class="docblock"><p>If true, it allows insignia to be looted. </p></dd>
+                <dd class="docblock"><p>If <code>true</code>, allow an insignia to be looted. </p></dd>
             </dl>
         </p>
 

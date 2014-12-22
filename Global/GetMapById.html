@@ -137,11 +137,14 @@
 
     
     <div class='docblock'>
-        <p>Returns <a class="mod" href="../Map/index.html">Map</a> by ID</p>
+        <p>Returns a <a class="mod" href="../Map/index.html">Map</a> by ID.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
+        <p>
+            <code>map = GetMapById( mapId )</code>
+        </p>
         <p>
             <code>map = GetMapById( mapId, instanceId )</code>
         </p>
@@ -152,11 +155,11 @@
         <p>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> mapId</code></dt>
-                <dd class="docblock"><p>The <a class="mod" href="../Map/index.html">Map</a> ID. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dd class="docblock"><p>See <a href="https://github.com/cmangos/issues/wiki/Map.dbc">Map.dbc</a>. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> instanceId</code></dt>
-                <dd class="docblock"><p>Instance ID to search, use 0 if not instance. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> instanceId (0)</code></dt>
+                <dd class="docblock"><p>Required if the map is an instance, otherwise don't pass anything. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
         </p>
 
@@ -166,7 +169,7 @@
         <p>
             <dl>
                 <dt><code><strong><a class="mod" href="../Map/index.html">Map</a></strong> map</code></dt>
-                <dd class="docblock"><em>See method description.</em></dd>
+                <dd class="docblock"><p>The Map, or <code>nil</code> if it doesn't exist. </p></dd>
             </dl>
         </p>
     </div>

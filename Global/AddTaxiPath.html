@@ -137,19 +137,25 @@
 
     
     <div class='docblock'>
-        <p>Adds a taxi path to a specified map, returns the used pathId
-Related function: <a class="fn" href="../Player/StartTaxi.html">Player:StartTaxi</a></p>
-<pre>
--- Execute on startup
+        <p>Adds a taxi path to a specified map, returns the used pathId.</p>
+<p>Related function: <a class="fn" href="../Player/StartTaxi.html">Player:StartTaxi</a></p>
+<pre><code>-- Execute on startup
 local pathTable = {{mapid, x, y, z}, {mapid, x, y, z}}
 local path = AddTaxiPath(pathTable, 28135, 28135)
+
 -- Execute when the player should fly
 player:StartTaxi(path)
-</pre>
+</code></pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
+        <p>
+            <code>actualPathId = AddTaxiPath( waypoints, mountA, mountH )</code>
+        </p>
+        <p>
+            <code>actualPathId = AddTaxiPath( waypoints, mountA, mountH, price )</code>
+        </p>
         <p>
             <code>actualPathId = AddTaxiPath( waypoints, mountA, mountH, price, pathId )</code>
         </p>

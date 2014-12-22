@@ -137,9 +137,8 @@
 
     
     <div class='docblock'>
-        <p>Registers a server event</p>
-<pre>
-enum ServerEvents
+        <p>Registers a server event handler.</p>
+<pre><code>enum ServerEvents
 {
     // Server
     SERVER_EVENT_ON_NETWORK_START           =     1,       // Not Implemented
@@ -193,11 +192,14 @@ enum ServerEvents
 
     SERVER_EVENT_COUNT
 };
-</pre>
+</code></pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
+        <p>
+            <code>RegisterServerEvent( event, function )</code>
+        </p>
         <p>
             <code>RegisterServerEvent( event, function, shots )</code>
         </p>
@@ -208,11 +210,11 @@ enum ServerEvents
         <p>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> event</code></dt>
-                <dd class="docblock"><p>Server event Id, refer to ServerEvents above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dd class="docblock"><p>Server event ID, refer to ServerEvents above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.6.html">function</a></strong> function</code></dt>
-                <dd class="docblock"><p>Function to register. </p></dd>
+                <dd class="docblock"><p>Function that will be called when the event occurs. </p></dd>
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> shots (0)</code></dt>

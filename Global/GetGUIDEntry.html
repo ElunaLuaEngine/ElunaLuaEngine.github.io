@@ -137,10 +137,8 @@
 
     
     <div class='docblock'>
-        <p>Returns the entry ID from a GUID.
-Entry ID is different for each <a class="mod" href="../Creature/index.html">Creature</a> and <a class="mod" href="../GameObject/index.html">GameObject</a>.
-<a class="mod" href="../Item/index.html">Item</a> GUIDs dont include the entry
-GUID consist of entry ID, low GUID and type ID</p>
+        <p>Returns the entry ID from a GUID.</p>
+<p>GUID consist of entry ID, low GUID, and type ID.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
@@ -155,7 +153,7 @@ GUID consist of entry ID, low GUID and type ID</p>
         <p>
             <dl>
                 <dt><code>uint64 guid</code></dt>
-                <dd class="docblock"><p>GUID of an <a class="mod" href="../Creature/index.html">Creature</a> or <a class="mod" href="../GameObject/index.html">GameObject</a>, otherwise returns 0. </p></dd>
+                <dd class="docblock"><p>GUID of an <a class="mod" href="../Creature/index.html">Creature</a> or <a class="mod" href="../GameObject/index.html">GameObject</a>. </p></dd>
             </dl>
         </p>
 
@@ -165,7 +163,7 @@ GUID consist of entry ID, low GUID and type ID</p>
         <p>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> entry</code></dt>
-                <dd class="docblock"><p>Entry ID of the <a class="mod" href="../Creature/index.html">Creature</a> or <a class="mod" href="../GameObject/index.html">GameObject</a>. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dd class="docblock"><p>Entry ID, or <code>0</code> if <code>guid</code> is not a <a class="mod" href="../Creature/index.html">Creature</a> or <a class="mod" href="../GameObject/index.html">GameObject</a>. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
         </p>
     </div>

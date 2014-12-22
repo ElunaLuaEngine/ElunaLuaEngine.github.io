@@ -288,27 +288,33 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Returns the amount of reputation the <a class="mod" href="../Player/index.html">Player</a> has with the faction specified</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Player:GetReputation()</code>
+            <code>reputationAmt = Player:GetReputation( faction )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> faction</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> reputationAmt</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: integers from -2,147,483,647 to 2,147,483,647.</p></dd>
+            </dl>
         </p>
     </div>
 

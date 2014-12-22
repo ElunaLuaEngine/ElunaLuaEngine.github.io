@@ -27,7 +27,6 @@
         
     <h2>ElunaQuery Methods</h2>
     <a class="fn " href="../ElunaQuery/GetBool.html">GetBool</a>
-    <a class="fn " href="../ElunaQuery/GetCString.html">GetCString</a>
     <a class="fn " href="../ElunaQuery/GetColumnCount.html">GetColumnCount</a>
     <a class="fn " href="../ElunaQuery/GetDouble.html">GetDouble</a>
     <a class="fn " href="../ElunaQuery/GetFloat.html">GetFloat</a>
@@ -73,27 +72,33 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
+        <p>Returns the data in the specified column of the current row, casted to an unsigned 64-bit integer.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>ElunaQuery:GetUInt64()</code>
+            <code>data = ElunaQuery:GetUInt64( column )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> column</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code>uint64 data</code></dt>
+                <dd class="docblock"><em>See method description.</em></dd>
+            </dl>
         </p>
     </div>
 

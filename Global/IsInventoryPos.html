@@ -137,24 +137,25 @@
 
     
     <div class='docblock'>
-        <p>Returns true if the bag and slot is a valid inventory position, otherwise false</p>
-<pre>
-Possible and most commonly used combinations:
-
-bag = 255
-slots 0-18 equipment
-slots 19-22 equipped bag slots
-slots 23-38 backpack
-slots 39-66 bank main slots
-slots 67-74 bank bag slots
-slots 86-117 keyring
-
-bag = 19-22
-slots 0-35 for equipped bags
-
-bag = 67-74
-slots 0-35 for bank bags
-</pre>
+        <p>Returns <code>true</code> if the bag and slot is a valid inventory position, otherwise <code>false</code>.</p>
+<p>Some commonly used combinations:</p>
+<p><em>Bag 255 (common character inventory)</em></p>
+<ul>
+<li>Slots 0-18: equipment</li>
+<li>Slots 19-22: bag slots</li>
+<li>Slots 23-38: backpack</li>
+<li>Slots 39-66: bank main slots</li>
+<li>Slots 67-74: bank bag slots</li>
+<li>Slots 86-117: keyring</li>
+</ul>
+<p><em>Bags 19-22 (equipped bags)</em></p>
+<ul>
+<li>Slots 0-35</li>
+</ul>
+<p><em>Bags 67-74 (bank bags)</em></p>
+<ul>
+<li>Slots 0-35</li>
+</ul>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>

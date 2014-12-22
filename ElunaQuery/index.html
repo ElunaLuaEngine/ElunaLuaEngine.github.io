@@ -54,89 +54,81 @@
     </h1>
 
     
-    
+    <p>The result of a database query.</p>
+<p>E.g. the return value of <a class="fn" href="../Global/WorldDBQuery.html">Global:WorldDBQuery</a>.</p>
 
     <h2 id='methods' class='section-header'><a href="#methods">Methods</a></h2>
     <table>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetBool.html'>GetBool</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the data in the specified column of the current row, casted to a boolean.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
-                <a class='fn' href='GetCString.html'>GetCString</a>
-            </td>
-            <td class='docblock short'>
-                <p></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetColumnCount.html'>GetColumnCount</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the number of columns in the result set.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetDouble.html'>GetDouble</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the data in the specified column of the current row, casted to a 64-bit floating point value.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetFloat.html'>GetFloat</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the data in the specified column of the current row, casted to a 32-bit floating point value.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetInt16.html'>GetInt16</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the data in the specified column of the current row, casted to a signed 16-bit integer.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetInt32.html'>GetInt32</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the data in the specified column of the current row, casted to a signed 32-bit integer.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetInt64.html'>GetInt64</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the data in the specified column of the current row, casted to a signed 64-bit integer.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetInt8.html'>GetInt8</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the data in the specified column of the current row, casted to a signed 8-bit integer.</p>
             </td>
         </tr>
         <tr>
@@ -145,73 +137,70 @@
                 <a class='fn' href='GetRow.html'>GetRow</a>
             </td>
             <td class='docblock short'>
-                <p>Returns a table from the current row where keys are field names and values are the row's values.
-All numerical values will be numbers and everything else is returned as a string.
-For example <code>SELECT entry, name FROM creature_template</code> would result in a table of <code>{ entry = 123, name = "some creature name" }</code>
-To move to next row see <a class="fn" href="../ElunaQuery/NextRow.html">ElunaQuery:NextRow</a></p>
+                <p>Returns a table from the current row where keys are field names and values are the row's values.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetRowCount.html'>GetRowCount</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the number of rows in the result set.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetString.html'>GetString</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the data in the specified column of the current row, casted to a string.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetUInt16.html'>GetUInt16</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the data in the specified column of the current row, casted to an unsigned 16-bit integer.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetUInt32.html'>GetUInt32</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the data in the specified column of the current row, casted to an unsigned 32-bit integer.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetUInt64.html'>GetUInt64</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the data in the specified column of the current row, casted to an unsigned 64-bit integer.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetUInt8.html'>GetUInt8</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the data in the specified column of the current row, casted to an unsigned 8-bit integer.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='IsNull.html'>IsNull</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the specified column of the current row is <code>NULL</code>, otherwise <code>false</code>.</p>
             </td>
         </tr>
         <tr>
@@ -220,8 +209,7 @@ To move to next row see <a class="fn" href="../ElunaQuery/NextRow.html">ElunaQue
                 <a class='fn' href='NextRow.html'>NextRow</a>
             </td>
             <td class='docblock short'>
-                <p>Advances the ElunaQuery to the next row in the result returned.
-Returns false if there was no new row, otherwise true.</p>
+                <p>Advances the <a class="mod" href="../ElunaQuery/index.html">ElunaQuery</a> to the next row in the result set.</p>
             </td>
         </tr>
     </table>

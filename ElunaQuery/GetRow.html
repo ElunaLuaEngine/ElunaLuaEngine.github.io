@@ -27,7 +27,6 @@
         
     <h2>ElunaQuery Methods</h2>
     <a class="fn " href="../ElunaQuery/GetBool.html">GetBool</a>
-    <a class="fn " href="../ElunaQuery/GetCString.html">GetCString</a>
     <a class="fn " href="../ElunaQuery/GetColumnCount.html">GetColumnCount</a>
     <a class="fn " href="../ElunaQuery/GetDouble.html">GetDouble</a>
     <a class="fn " href="../ElunaQuery/GetFloat.html">GetFloat</a>
@@ -73,10 +72,15 @@
 
     
     <div class='docblock'>
-        <p>Returns a table from the current row where keys are field names and values are the row's values.
-All numerical values will be numbers and everything else is returned as a string.
-For example <code>SELECT entry, name FROM creature_template</code> would result in a table of <code>{ entry = 123, name = "some creature name" }</code>
-To move to next row see <a class="fn" href="../ElunaQuery/NextRow.html">ElunaQuery:NextRow</a></p>
+        <p>Returns a table from the current row where keys are field names and values are the row's values.</p>
+<p>All numerical values will be numbers and everything else is returned as a string.</p>
+<p><strong>For example,</strong> the query:</p>
+<pre><code>SELECT entry, name FROM creature_template
+</code></pre>
+<p>would result in a table like:</p>
+<pre><code>{ entry = 123, name = "some creature name" }
+</code></pre>
+<p>To move to next row use <a class="fn" href="../ElunaQuery/NextRow.html">ElunaQuery:NextRow</a>.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>

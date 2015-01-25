@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the Weather:SendWeatherUpdateToPlayer method in the Eluna engine.">
+    <meta name="description" content="API documentation for the Map:SetWeather method in the Eluna engine.">
     <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>Weather:SendWeatherUpdateToPlayer - Eluna</title>
+    <title>Map:SetWeather - Eluna</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
 
@@ -25,12 +25,22 @@
     <a href='../index.html'><img src='../static/eluna-logo.png' alt='Eluna Logo' width='100'></a>
     <div class="block">
         
-    <h2>Weather Methods</h2>
-    <a class="fn " href="../Weather/GetZoneId.html">GetZoneId</a>
-    <a class="fn " href="../Weather/Regenerate.html">Regenerate</a>
-    <a class="fn current" href="../Weather/SendWeatherUpdateToPlayer.html">SendWeatherUpdateToPlayer</a>
-    <a class="fn " href="../Weather/SetWeather.html">SetWeather</a>
-    <a class="fn " href="../Weather/UpdateWeather.html">UpdateWeather</a>
+    <h2>Map Methods</h2>
+    <a class="fn " href="../Map/GetAreaId.html">GetAreaId</a>
+    <a class="fn " href="../Map/GetDifficulty.html">GetDifficulty</a>
+    <a class="fn " href="../Map/GetHeight.html">GetHeight</a>
+    <a class="fn " href="../Map/GetInstanceId.html">GetInstanceId</a>
+    <a class="fn " href="../Map/GetMapId.html">GetMapId</a>
+    <a class="fn " href="../Map/GetName.html">GetName</a>
+    <a class="fn " href="../Map/GetPlayerCount.html">GetPlayerCount</a>
+    <a class="fn " href="../Map/GetWorldObject.html">GetWorldObject</a>
+    <a class="fn " href="../Map/IsArena.html">IsArena</a>
+    <a class="fn " href="../Map/IsBattleground.html">IsBattleground</a>
+    <a class="fn " href="../Map/IsDungeon.html">IsDungeon</a>
+    <a class="fn " href="../Map/IsEmpty.html">IsEmpty</a>
+    <a class="fn " href="../Map/IsHeroic.html">IsHeroic</a>
+    <a class="fn " href="../Map/IsRaid.html">IsRaid</a>
+    <a class="fn current" href="../Map/SetWeather.html">SetWeather</a>
 
     </div>
 </section>
@@ -49,7 +59,7 @@
 <section id='main' class="content mod">
     <h1 class='fqn'>
         Method
-    <a class="mod" href="../Weather/index.html">Weather</a>:<a class="fn" href="../Weather/SendWeatherUpdateToPlayer.html">SendWeatherUpdateToPlayer</a>
+    <a class="mod" href="../Map/index.html">Map</a>:<a class="fn" href="../Map/SetWeather.html">SetWeather</a>
         <span class='out-of-band'>
             <span id='render-detail'>
                 <a id="collapse-all" href="#">[-]</a>
@@ -60,13 +70,23 @@
 
     
     <div class='docblock'>
-        <p>Sends a <a class="mod" href="../Weather/index.html">Weather</a> update to the <a class="mod" href="../Player/index.html">Player</a> supplied.</p>
+        <p>Sets the [Weather] type based on [WeatherType] and grade supplied.</p>
+<pre><code>enum WeatherType
+{
+    WEATHER_TYPE_FINE       = 0,
+    WEATHER_TYPE_RAIN       = 1,
+    WEATHER_TYPE_SNOW       = 2,
+    WEATHER_TYPE_STORM      = 3,
+    WEATHER_TYPE_THUNDERS   = 86,
+    WEATHER_TYPE_BLACKRAIN  = 90
+};
+</code></pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Weather:SendWeatherUpdateToPlayer( player )</code>
+            <code>Map:SetWeather( zone, type, grade )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -74,8 +94,16 @@
         </h2>
         <p>
             <dl>
-                <dt><code><strong><a class="mod" href="../Player/index.html">Player</a></strong> player</code></dt>
-                <dd class="docblock"><em>See method description.</em></dd>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> zone</code></dt>
+                <dd class="docblock"><p>Id of the zone to set the weather for. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code>WeatherType type</code></dt>
+                <dd class="docblock"><p>The [WeatherType], see above available weather types. </p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> grade</code></dt>
+                <dd class="docblock"><p>The intensity/grade of the [Weather], ranges from 0 to 1. </p><p><em>Valid numbers</em>: all decimal numbers.</p></dd>
             </dl>
         </p>
 
@@ -130,6 +158,6 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>&copy;2014 - Eluna Lua Engine</center>
+<center>&copy;2015 - Eluna Lua Engine</center>
 </body>
 </html>

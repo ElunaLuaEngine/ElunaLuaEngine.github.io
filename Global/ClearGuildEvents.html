@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="API documentation for the Global:ClearGuildEvents method in the Eluna engine.">
+    <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
+
+    <title>Global:ClearGuildEvents - Eluna</title>
+
+    <link rel="stylesheet" type="text/css" href="../static/main.css">
+
+    <link rel="shortcut icon" href="../static/favicon.ico">
+
+</head>
+<body class="rustdoc">
+<!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+<section class="sidebar">
+    <a href='../index.html'><img src='../static/eluna-logo.png' alt='Eluna Logo' width='100'></a>
+    <div class="block">
+        
+    <h2>Global Methods</h2>
+    <a class="fn " href="../Global/AddCorpse.html">AddCorpse</a>
+    <a class="fn " href="../Global/AddTaxiPath.html">AddTaxiPath</a>
+    <a class="fn " href="../Global/AddVendorItem.html">AddVendorItem</a>
+    <a class="fn " href="../Global/AuthDBExecute.html">AuthDBExecute</a>
+    <a class="fn " href="../Global/AuthDBQuery.html">AuthDBQuery</a>
+    <a class="fn " href="../Global/Ban.html">Ban</a>
+    <a class="fn " href="../Global/CharDBExecute.html">CharDBExecute</a>
+    <a class="fn " href="../Global/CharDBQuery.html">CharDBQuery</a>
+    <a class="fn " href="../Global/ClearBattleGroundEvents.html">ClearBattleGroundEvents</a>
+    <a class="fn " href="../Global/ClearCreatureEvents.html">ClearCreatureEvents</a>
+    <a class="fn " href="../Global/ClearCreatureGossipEvents.html">ClearCreatureGossipEvents</a>
+    <a class="fn " href="../Global/ClearGameObjectEvents.html">ClearGameObjectEvents</a>
+    <a class="fn " href="../Global/ClearGameObjectGossipEvents.html">ClearGameObjectGossipEvents</a>
+    <a class="fn " href="../Global/ClearGroupEvents.html">ClearGroupEvents</a>
+    <a class="fn current" href="../Global/ClearGuildEvents.html">ClearGuildEvents</a>
+    <a class="fn " href="../Global/ClearItemEvents.html">ClearItemEvents</a>
+    <a class="fn " href="../Global/ClearItemGossipEvents.html">ClearItemGossipEvents</a>
+    <a class="fn " href="../Global/ClearPacketEvents.html">ClearPacketEvents</a>
+    <a class="fn " href="../Global/ClearPlayerEvents.html">ClearPlayerEvents</a>
+    <a class="fn " href="../Global/ClearPlayerGossipEvents.html">ClearPlayerGossipEvents</a>
+    <a class="fn " href="../Global/ClearServerEvents.html">ClearServerEvents</a>
+    <a class="fn " href="../Global/ClearUniqueCreatureEvents.html">ClearUniqueCreatureEvents</a>
+    <a class="fn " href="../Global/ConvertCorpseForPlayer.html">ConvertCorpseForPlayer</a>
+    <a class="fn " href="../Global/CreateLongLong.html">CreateLongLong</a>
+    <a class="fn " href="../Global/CreateLuaEvent.html">CreateLuaEvent</a>
+    <a class="fn " href="../Global/CreatePacket.html">CreatePacket</a>
+    <a class="fn " href="../Global/CreateULongLong.html">CreateULongLong</a>
+    <a class="fn " href="../Global/GetAreaName.html">GetAreaName</a>
+    <a class="fn " href="../Global/GetCoreExpansion.html">GetCoreExpansion</a>
+    <a class="fn " href="../Global/GetCoreName.html">GetCoreName</a>
+    <a class="fn " href="../Global/GetCoreVersion.html">GetCoreVersion</a>
+    <a class="fn " href="../Global/GetCurrTime.html">GetCurrTime</a>
+    <a class="fn " href="../Global/GetGUIDEntry.html">GetGUIDEntry</a>
+    <a class="fn " href="../Global/GetGUIDLow.html">GetGUIDLow</a>
+    <a class="fn " href="../Global/GetGUIDType.html">GetGUIDType</a>
+    <a class="fn " href="../Global/GetGameTime.html">GetGameTime</a>
+    <a class="fn " href="../Global/GetGuildByLeaderGUID.html">GetGuildByLeaderGUID</a>
+    <a class="fn " href="../Global/GetGuildByName.html">GetGuildByName</a>
+    <a class="fn " href="../Global/GetItemGUID.html">GetItemGUID</a>
+    <a class="fn " href="../Global/GetItemLink.html">GetItemLink</a>
+    <a class="fn " href="../Global/GetLuaEngine.html">GetLuaEngine</a>
+    <a class="fn " href="../Global/GetMapById.html">GetMapById</a>
+    <a class="fn " href="../Global/GetObjectGUID.html">GetObjectGUID</a>
+    <a class="fn " href="../Global/GetPlayerByGUID.html">GetPlayerByGUID</a>
+    <a class="fn " href="../Global/GetPlayerByName.html">GetPlayerByName</a>
+    <a class="fn " href="../Global/GetPlayerCount.html">GetPlayerCount</a>
+    <a class="fn " href="../Global/GetPlayerGUID.html">GetPlayerGUID</a>
+    <a class="fn " href="../Global/GetPlayersInMap.html">GetPlayersInMap</a>
+    <a class="fn " href="../Global/GetPlayersInWorld.html">GetPlayersInWorld</a>
+    <a class="fn " href="../Global/GetQuest.html">GetQuest</a>
+    <a class="fn " href="../Global/GetTimeDiff.html">GetTimeDiff</a>
+    <a class="fn " href="../Global/GetUnitGUID.html">GetUnitGUID</a>
+    <a class="fn " href="../Global/IsBagPos.html">IsBagPos</a>
+    <a class="fn " href="../Global/IsBankPos.html">IsBankPos</a>
+    <a class="fn " href="../Global/IsEquipmentPos.html">IsEquipmentPos</a>
+    <a class="fn " href="../Global/IsInventoryPos.html">IsInventoryPos</a>
+    <a class="fn " href="../Global/Kick.html">Kick</a>
+    <a class="fn " href="../Global/PerformIngameSpawn.html">PerformIngameSpawn</a>
+    <a class="fn " href="../Global/PrintDebug.html">PrintDebug</a>
+    <a class="fn " href="../Global/PrintError.html">PrintError</a>
+    <a class="fn " href="../Global/PrintInfo.html">PrintInfo</a>
+    <a class="fn " href="../Global/RegisterBGEvent.html">RegisterBGEvent</a>
+    <a class="fn " href="../Global/RegisterCreatureEvent.html">RegisterCreatureEvent</a>
+    <a class="fn " href="../Global/RegisterCreatureGossipEvent.html">RegisterCreatureGossipEvent</a>
+    <a class="fn " href="../Global/RegisterGameObjectEvent.html">RegisterGameObjectEvent</a>
+    <a class="fn " href="../Global/RegisterGameObjectGossipEvent.html">RegisterGameObjectGossipEvent</a>
+    <a class="fn " href="../Global/RegisterGroupEvent.html">RegisterGroupEvent</a>
+    <a class="fn " href="../Global/RegisterGuildEvent.html">RegisterGuildEvent</a>
+    <a class="fn " href="../Global/RegisterItemEvent.html">RegisterItemEvent</a>
+    <a class="fn " href="../Global/RegisterItemGossipEvent.html">RegisterItemGossipEvent</a>
+    <a class="fn " href="../Global/RegisterPacketEvent.html">RegisterPacketEvent</a>
+    <a class="fn " href="../Global/RegisterPlayerEvent.html">RegisterPlayerEvent</a>
+    <a class="fn " href="../Global/RegisterPlayerGossipEvent.html">RegisterPlayerGossipEvent</a>
+    <a class="fn " href="../Global/RegisterServerEvent.html">RegisterServerEvent</a>
+    <a class="fn " href="../Global/RegisterUniqueCreatureEvent.html">RegisterUniqueCreatureEvent</a>
+    <a class="fn " href="../Global/ReloadEluna.html">ReloadEluna</a>
+    <a class="fn " href="../Global/RemoveCorpse.html">RemoveCorpse</a>
+    <a class="fn " href="../Global/RemoveEventById.html">RemoveEventById</a>
+    <a class="fn " href="../Global/RemoveEvents.html">RemoveEvents</a>
+    <a class="fn " href="../Global/RemoveOldCorpses.html">RemoveOldCorpses</a>
+    <a class="fn " href="../Global/SaveAllPlayers.html">SaveAllPlayers</a>
+    <a class="fn " href="../Global/SendMail.html">SendMail</a>
+    <a class="fn " href="../Global/SendWorldMessage.html">SendWorldMessage</a>
+    <a class="fn " href="../Global/VendorRemoveAllItems.html">VendorRemoveAllItems</a>
+    <a class="fn " href="../Global/VendorRemoveItem.html">VendorRemoveItem</a>
+    <a class="fn " href="../Global/WorldDBExecute.html">WorldDBExecute</a>
+    <a class="fn " href="../Global/WorldDBQuery.html">WorldDBQuery</a>
+    <a class="fn " href="../Global/bit_and.html">bit_and</a>
+    <a class="fn " href="../Global/bit_lshift.html">bit_lshift</a>
+    <a class="fn " href="../Global/bit_not.html">bit_not</a>
+    <a class="fn " href="../Global/bit_or.html">bit_or</a>
+    <a class="fn " href="../Global/bit_rshift.html">bit_rshift</a>
+    <a class="fn " href="../Global/bit_xor.html">bit_xor</a>
+
+    </div>
+</section>
+
+<nav class="sub">
+    <form class="search-form js-only">
+        <div class="search-container">
+            <input class="search-input" name="search"
+                   autocomplete="off"
+                   placeholder="Click or press 'S' to search, '?' for more options..."
+                   type="search">
+        </div>
+    </form>
+</nav>
+
+<section id='main' class="content mod">
+    <h1 class='fqn'>
+        Method
+    <a class="mod" href="../Global/index.html">Global</a>:<a class="fn" href="../Global/ClearGuildEvents.html">ClearGuildEvents</a>
+        <span class='out-of-band'>
+            <span id='render-detail'>
+                <a id="collapse-all" href="#">[-]</a>
+                <a id="expand-all" href="#">[+]</a>
+            </span>
+        </span>
+    </h1>
+
+    
+    <div class='docblock'>
+        <p>Unbinds all event handlers for a particular <a class="mod" href="../Guild/index.html">Guild</a> event.</p>
+
+        <h2 id="synopsis" class='section-header'>
+            <a href="#synopsis">Synopsis</a>
+        </h2>
+        <p>
+            <code>ClearGuildEvents( event_type )</code>
+        </p>
+
+        <h2 id="arguments" class='section-header'>
+            <a href="#arguments">Arguments</a>
+        </h2>
+        <p>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> event_type</code></dt>
+                <dd class="docblock"><p>The event whose handlers will be cleared, see <a class="fn" href="../Global/RegisterGuildEvent.html">Global:RegisterGuildEvent</a>. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+        </p>
+
+        <h2 id="returns" class='section-header'>
+            <a href="#returns">Returns</a>
+        </h2>
+        <p>
+            Nothing.
+        </p>
+    </div>
+
+</section>
+
+<section id='search' class="content hidden"></section>
+
+<section class="footer"></section>
+
+<div id="help" class="hidden">
+    <div class="shortcuts">
+        <h1>Keyboard shortcuts</h1>
+        <dl>
+            <dt>?</dt>
+            <dd>Show this help dialog</dd>
+            <dt>S</dt>
+            <dd>Focus the search field</dd>
+            <dt>&larrb;</dt>
+            <dd>Move up in search results</dd>
+            <dt>&rarrb;</dt>
+            <dd>Move down in search results</dd>
+            <dt>&#9166;</dt>
+            <dd>Go to active search result</dd>
+        </dl>
+    </div>
+    <div class="infos">
+        <h1>Search tricks</h1>
+        <p>
+            Prefix searches with a type followed by a colon (e.g.
+            <code>fn:</code>) to restrict the search to a given type.
+        </p>
+        <p>
+            Accepted types are: <code>fn</code>, <code>mod</code>,
+            <code>struct</code> (or <code>str</code>), <code>enum</code>,
+            <code>trait</code>, <code>typedef</code> (or
+            <code>tdef</code>).
+        </p>
+    </div>
+</div>
+
+<script>
+    window.rootPath = "../";
+</script>
+<script src="../static/jquery.js"></script>
+<script src="../static/main.js"></script>
+<script async src="../search-index.js"></script>
+<center>&copy;2015 - Eluna Lua Engine</center>
+</body>
+</html>

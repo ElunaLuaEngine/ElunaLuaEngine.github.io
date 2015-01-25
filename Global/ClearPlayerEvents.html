@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the Global:RemoveWeather method in the Eluna engine.">
+    <meta name="description" content="API documentation for the Global:ClearPlayerEvents method in the Eluna engine.">
     <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>Global:RemoveWeather - Eluna</title>
+    <title>Global:ClearPlayerEvents - Eluna</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
 
@@ -29,18 +29,30 @@
     <a class="fn " href="../Global/AddCorpse.html">AddCorpse</a>
     <a class="fn " href="../Global/AddTaxiPath.html">AddTaxiPath</a>
     <a class="fn " href="../Global/AddVendorItem.html">AddVendorItem</a>
-    <a class="fn " href="../Global/AddWeather.html">AddWeather</a>
     <a class="fn " href="../Global/AuthDBExecute.html">AuthDBExecute</a>
     <a class="fn " href="../Global/AuthDBQuery.html">AuthDBQuery</a>
     <a class="fn " href="../Global/Ban.html">Ban</a>
     <a class="fn " href="../Global/CharDBExecute.html">CharDBExecute</a>
     <a class="fn " href="../Global/CharDBQuery.html">CharDBQuery</a>
+    <a class="fn " href="../Global/ClearBattleGroundEvents.html">ClearBattleGroundEvents</a>
+    <a class="fn " href="../Global/ClearCreatureEvents.html">ClearCreatureEvents</a>
+    <a class="fn " href="../Global/ClearCreatureGossipEvents.html">ClearCreatureGossipEvents</a>
+    <a class="fn " href="../Global/ClearGameObjectEvents.html">ClearGameObjectEvents</a>
+    <a class="fn " href="../Global/ClearGameObjectGossipEvents.html">ClearGameObjectGossipEvents</a>
+    <a class="fn " href="../Global/ClearGroupEvents.html">ClearGroupEvents</a>
+    <a class="fn " href="../Global/ClearGuildEvents.html">ClearGuildEvents</a>
+    <a class="fn " href="../Global/ClearItemEvents.html">ClearItemEvents</a>
+    <a class="fn " href="../Global/ClearItemGossipEvents.html">ClearItemGossipEvents</a>
+    <a class="fn " href="../Global/ClearPacketEvents.html">ClearPacketEvents</a>
+    <a class="fn current" href="../Global/ClearPlayerEvents.html">ClearPlayerEvents</a>
+    <a class="fn " href="../Global/ClearPlayerGossipEvents.html">ClearPlayerGossipEvents</a>
+    <a class="fn " href="../Global/ClearServerEvents.html">ClearServerEvents</a>
+    <a class="fn " href="../Global/ClearUniqueCreatureEvents.html">ClearUniqueCreatureEvents</a>
     <a class="fn " href="../Global/ConvertCorpseForPlayer.html">ConvertCorpseForPlayer</a>
     <a class="fn " href="../Global/CreateLongLong.html">CreateLongLong</a>
     <a class="fn " href="../Global/CreateLuaEvent.html">CreateLuaEvent</a>
     <a class="fn " href="../Global/CreatePacket.html">CreatePacket</a>
     <a class="fn " href="../Global/CreateULongLong.html">CreateULongLong</a>
-    <a class="fn " href="../Global/FindWeather.html">FindWeather</a>
     <a class="fn " href="../Global/GetAreaName.html">GetAreaName</a>
     <a class="fn " href="../Global/GetCoreExpansion.html">GetCoreExpansion</a>
     <a class="fn " href="../Global/GetCoreName.html">GetCoreName</a>
@@ -88,14 +100,13 @@
     <a class="fn " href="../Global/RegisterPlayerEvent.html">RegisterPlayerEvent</a>
     <a class="fn " href="../Global/RegisterPlayerGossipEvent.html">RegisterPlayerGossipEvent</a>
     <a class="fn " href="../Global/RegisterServerEvent.html">RegisterServerEvent</a>
+    <a class="fn " href="../Global/RegisterUniqueCreatureEvent.html">RegisterUniqueCreatureEvent</a>
     <a class="fn " href="../Global/ReloadEluna.html">ReloadEluna</a>
     <a class="fn " href="../Global/RemoveCorpse.html">RemoveCorpse</a>
     <a class="fn " href="../Global/RemoveEventById.html">RemoveEventById</a>
     <a class="fn " href="../Global/RemoveEvents.html">RemoveEvents</a>
     <a class="fn " href="../Global/RemoveOldCorpses.html">RemoveOldCorpses</a>
-    <a class="fn current" href="../Global/RemoveWeather.html">RemoveWeather</a>
     <a class="fn " href="../Global/SaveAllPlayers.html">SaveAllPlayers</a>
-    <a class="fn " href="../Global/SendFineWeatherToPlayer.html">SendFineWeatherToPlayer</a>
     <a class="fn " href="../Global/SendMail.html">SendMail</a>
     <a class="fn " href="../Global/SendWorldMessage.html">SendWorldMessage</a>
     <a class="fn " href="../Global/VendorRemoveAllItems.html">VendorRemoveAllItems</a>
@@ -126,7 +137,7 @@
 <section id='main' class="content mod">
     <h1 class='fqn'>
         Method
-    <a class="mod" href="../Global/index.html">Global</a>:<a class="fn" href="../Global/RemoveWeather.html">RemoveWeather</a>
+    <a class="mod" href="../Global/index.html">Global</a>:<a class="fn" href="../Global/ClearPlayerEvents.html">ClearPlayerEvents</a>
         <span class='out-of-band'>
             <span id='render-detail'>
                 <a id="collapse-all" href="#">[-]</a>
@@ -137,13 +148,13 @@
 
     
     <div class='docblock'>
-        <p>Removes <a class="mod" href="../Weather/index.html">Weather</a> from a zone.</p>
+        <p>Unbinds all event handlers for a particular <a class="mod" href="../Player/index.html">Player</a> event.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>RemoveWeather( zoneId )</code>
+            <code>ClearPlayerEvents( event_type )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -151,8 +162,8 @@
         </h2>
         <p>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> zoneId</code></dt>
-                <dd class="docblock"><p>Zone Id to remove <a class="mod" href="../Weather/index.html">Weather</a>. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> event_type</code></dt>
+                <dd class="docblock"><p>The event whose handlers will be cleared, see <a class="fn" href="../Global/RegisterPlayerEvent.html">Global:RegisterPlayerEvent</a>. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
         </p>
 
@@ -207,6 +218,6 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>&copy;2014 - Eluna Lua Engine</center>
+<center>&copy;2015 - Eluna Lua Engine</center>
 </body>
 </html>

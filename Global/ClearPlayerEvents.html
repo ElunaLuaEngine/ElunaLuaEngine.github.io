@@ -148,11 +148,16 @@
 
     
     <div class='docblock'>
-        <p>Unbinds all event handlers for a particular <a class="mod" href="../Player/index.html">Player</a> event.</p>
+        <p>Unbinds event handlers for either all <a class="mod" href="../Player/index.html">Player</a> events, or one type of <a class="mod" href="../Player/index.html">Player</a> event.</p>
+<p>If <code>event_type</code> is <code>nil</code>, all <a class="mod" href="../Player/index.html">Player</a> event handlers are cleared.</p>
+<p>Otherwise, only event handlers for <code>event_type</code> are cleared.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
+        <p>
+            <code>ClearPlayerEvents()</code>
+        </p>
         <p>
             <code>ClearPlayerEvents( event_type )</code>
         </p>

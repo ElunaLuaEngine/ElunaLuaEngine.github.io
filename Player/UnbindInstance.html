@@ -256,6 +256,7 @@
     <a class="fn " href="../Player/TextEmote.html">TextEmote</a>
     <a class="fn " href="../Player/ToggleAFK.html">ToggleAFK</a>
     <a class="fn " href="../Player/ToggleDND.html">ToggleDND</a>
+    <a class="fn " href="../Player/UnbindAllInstances.html">UnbindAllInstances</a>
     <a class="fn current" href="../Player/UnbindInstance.html">UnbindInstance</a>
     <a class="fn " href="../Player/UnsetKnownTitle.html">UnsetKnownTitle</a>
     <a class="fn " href="../Player/UpdateHonor.html">UpdateHonor</a>
@@ -290,28 +291,38 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
-        <p>For temporary documentation, please check the <a href="https://github.com/ElunaLuaEngine/Eluna/blob/master/LuaFunctions.cpp">LuaFunctions</a> source file.</p>
+        <p>Unbinds the <a class="mod" href="../Player/index.html">Player</a> from his instances except the one he currently is in.</p>
+<p>Difficulty is not used on classic.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Player:UnbindInstance()</code>
+            <code>Player:UnbindInstance( map )</code>
+        </p>
+        <p>
+            <code>Player:UnbindInstance( map, difficulty )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> map (true)</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> difficulty (0)</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            Nothing.
         </p>
     </div>
 

@@ -54,6 +54,7 @@
     <a class="fn " href="../Object/ToGameObject.html">ToGameObject</a>
     <a class="fn " href="../Object/ToPlayer.html">ToPlayer</a>
     <a class="fn " href="../Object/ToUnit.html">ToUnit</a>
+    <a class="fn " href="../Object/UpdateUInt32Value.html">UpdateUInt32Value</a>
 
     </div>
 </section>
@@ -84,8 +85,11 @@
     
     <div class='docblock'>
         <p>Returns the low-part of the <a class="mod" href="../Object/index.html">Object</a>'s GUID.</p>
-<p>This is the counter that is unique among <a class="mod" href="../Object/index.html">Object</a>s of the same type
-  (e.g. no two <a class="mod" href="../Creature/index.html">Creature</a>s will have a low-GUID of 5 at the same time).</p>
+<p>On TrinityCore all low GUIDs are different for all objects of the same type.
+For example creatures in instances are assigned new GUIDs when the Map is created.</p>
+<p>On MaNGOS and cMaNGOS low GUIDs are unique only on the same map.
+For example creatures in instances use the same low GUID assigned for that spawn in the database.
+This is why to identify a creature you have to know the instanceId and low GUID. See [Map:GetIntstanceId]</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>

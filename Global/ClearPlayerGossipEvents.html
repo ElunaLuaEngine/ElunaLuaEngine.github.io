@@ -148,11 +148,16 @@
 
     
     <div class='docblock'>
-        <p>Unbinds all event handlers for a particular <a class="mod" href="../Player/index.html">Player</a> gossip event.</p>
+        <p>Unbinds event handlers for either all of a <a class="mod" href="../Player/index.html">Player</a>'s gossip events, or one type of event.</p>
+<p>If <code>event_type</code> is <code>nil</code>, all the <a class="mod" href="../Player/index.html">Player</a>'s gossip event handlers are cleared.</p>
+<p>Otherwise, only event handlers for <code>event_type</code> are cleared.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
+        <p>
+            <code>ClearPlayerGossipEvents( entry )</code>
+        </p>
         <p>
             <code>ClearPlayerGossipEvents( entry, event_type )</code>
         </p>
@@ -163,7 +168,7 @@
         <p>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> entry</code></dt>
-                <dd class="docblock"><p>The ID of a [] whose handlers will be cleared. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dd class="docblock"><p>The low GUID of a <a class="mod" href="../Player/index.html">Player</a> whose handlers will be cleared. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> event_type</code></dt>

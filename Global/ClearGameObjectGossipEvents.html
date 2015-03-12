@@ -148,11 +148,18 @@
 
     
     <div class='docblock'>
-        <p>Unbinds all event handlers for a particular <a class="mod" href="../GameObject/index.html">GameObject</a> gossip event/entry combination.</p>
+        <p>Unbinds event handlers for either all of a <a class="mod" href="../GameObject/index.html">GameObject</a>'s gossip events, or one type of event.</p>
+<p>If <code>event_type</code> is <code>nil</code>, all the <a class="mod" href="../GameObject/index.html">GameObject</a>'s gossip event handlers are cleared.</p>
+<p>Otherwise, only event handlers for <code>event_type</code> are cleared.</p>
+<p><strong>NOTE:</strong> this will affect all instances of the <a class="mod" href="../GameObject/index.html">GameObject</a>, not just one.
+To bind and unbind gossip events to a single <a class="mod" href="../GameObject/index.html">GameObject</a>, tell the Eluna developers to implement that.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
+        <p>
+            <code>ClearGameObjectGossipEvents( entry )</code>
+        </p>
         <p>
             <code>ClearGameObjectGossipEvents( entry, event_type )</code>
         </p>

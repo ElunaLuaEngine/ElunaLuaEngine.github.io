@@ -148,11 +148,16 @@
 
     
     <div class='docblock'>
-        <p>Unbinds all event handlers for a particular <a class="mod" href="../BattleGround/index.html">BattleGround</a> event.</p>
+        <p>Unbinds event handlers for either all <a class="mod" href="../BattleGround/index.html">BattleGround</a> events, or one type of event.</p>
+<p>If <code>event_type</code> is <code>nil</code>, all <a class="mod" href="../BattleGround/index.html">BattleGround</a> event handlers are cleared.</p>
+<p>Otherwise, only event handlers for <code>event_type</code> are cleared.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
+        <p>
+            <code>ClearBattleGroundEvents()</code>
+        </p>
         <p>
             <code>ClearBattleGroundEvents( event_type )</code>
         </p>

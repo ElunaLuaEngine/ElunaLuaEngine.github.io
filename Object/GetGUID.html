@@ -54,6 +54,7 @@
     <a class="fn " href="../Object/ToGameObject.html">ToGameObject</a>
     <a class="fn " href="../Object/ToPlayer.html">ToPlayer</a>
     <a class="fn " href="../Object/ToUnit.html">ToUnit</a>
+    <a class="fn " href="../Object/UpdateUInt32Value.html">UpdateUInt32Value</a>
 
     </div>
 </section>
@@ -84,6 +85,10 @@
     
     <div class='docblock'>
         <p>Returns the GUID of the <a class="mod" href="../Object/index.html">Object</a>.</p>
+<p>GUID is an unique identifier for the object.</p>
+<p>However on MaNGOS and cMangos creatures and gameobjects inside different maps can share
+the same GUID but not on the same map.</p>
+<p>On TrinityCore this value is unique across all maps</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>

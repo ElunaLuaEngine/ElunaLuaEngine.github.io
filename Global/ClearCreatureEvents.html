@@ -148,11 +148,18 @@
 
     
     <div class='docblock'>
-        <p>Unbinds all event handlers for a particular <a class="mod" href="../Creature/index.html">Creature</a> event/entry combination.</p>
+        <p>Unbinds event handlers for either all of a <a class="mod" href="../Creature/index.html">Creature</a>'s events, or one type of event.</p>
+<p>If <code>event_type</code> is <code>nil</code>, all the <a class="mod" href="../Creature/index.html">Creature</a>'s event handlers are cleared.</p>
+<p>Otherwise, only event handlers for <code>event_type</code> are cleared.</p>
+<p><strong>NOTE:</strong> this will affect all instances of the <a class="mod" href="../Creature/index.html">Creature</a>, not just one.
+To bind and unbind events to a single <a class="mod" href="../Creature/index.html">Creature</a>, see <a class="fn" href="../Global/RegisterUniqueCreatureEvent.html">Global:RegisterUniqueCreatureEvent</a> and [Global:ClearUniqueCreatureEvent].</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
+        <p>
+            <code>ClearCreatureEvents( entry )</code>
+        </p>
         <p>
             <code>ClearCreatureEvents( entry, event_type )</code>
         </p>

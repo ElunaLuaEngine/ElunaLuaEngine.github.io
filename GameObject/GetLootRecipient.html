@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the GameObject:HasQuest method in the Eluna engine.">
+    <meta name="description" content="API documentation for the GameObject:GetLootRecipient method in the Eluna engine.">
     <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>GameObject:HasQuest - Eluna</title>
+    <title>GameObject:GetLootRecipient - Eluna</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
 
@@ -29,10 +29,10 @@
     <a class="fn " href="../GameObject/Despawn.html">Despawn</a>
     <a class="fn " href="../GameObject/GetDisplayId.html">GetDisplayId</a>
     <a class="fn " href="../GameObject/GetGoState.html">GetGoState</a>
-    <a class="fn " href="../GameObject/GetLootRecipient.html">GetLootRecipient</a>
+    <a class="fn current" href="../GameObject/GetLootRecipient.html">GetLootRecipient</a>
     <a class="fn " href="../GameObject/GetLootRecipientGroup.html">GetLootRecipientGroup</a>
     <a class="fn " href="../GameObject/GetLootState.html">GetLootState</a>
-    <a class="fn current" href="../GameObject/HasQuest.html">HasQuest</a>
+    <a class="fn " href="../GameObject/HasQuest.html">HasQuest</a>
     <a class="fn " href="../GameObject/IsActive.html">IsActive</a>
     <a class="fn " href="../GameObject/IsSpawned.html">IsSpawned</a>
     <a class="fn " href="../GameObject/IsTransport.html">IsTransport</a>
@@ -60,7 +60,7 @@
 <section id='main' class="content mod">
     <h1 class='fqn'>
         Method
-    <a class="mod" href="../GameObject/index.html">GameObject</a>:<a class="fn" href="../GameObject/HasQuest.html">HasQuest</a>
+    <a class="mod" href="../GameObject/index.html">GameObject</a>:<a class="fn" href="../GameObject/GetLootRecipient.html">GetLootRecipient</a>
         <span class='out-of-band'>
             <span id='render-detail'>
                 <a id="collapse-all" href="#">[-]</a>
@@ -71,23 +71,20 @@
 
     
     <div class='docblock'>
-        <p>Returns 'true' if the <a class="mod" href="../GameObject/index.html">GameObject</a> can give the specified <a class="mod" href="../Quest/index.html">Quest</a></p>
+        <p>Returns the <a class="mod" href="../Player/index.html">Player</a> that can loot the <a class="mod" href="../GameObject/index.html">GameObject</a></p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>hasQuest = GameObject:HasQuest( questId )</code>
+            <code>player = GameObject:GetLootRecipient()</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> questId</code></dt>
-                <dd class="docblock"><p>Quest entry Id to check. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
-            </dl>
+            None.
         </p>
 
         <h2 id="returns" class='section-header'>
@@ -95,7 +92,7 @@
         </h2>
         <p>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.2.html">boolean</a></strong> hasQuest</code></dt>
+                <dt><code><strong><a class="mod" href="../Player/index.html">Player</a></strong> player</code></dt>
                 <dd class="docblock"><em>See method description.</em></dd>
             </dl>
         </p>

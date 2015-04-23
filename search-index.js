@@ -161,6 +161,8 @@ searchIndex["Aura"] = {
         [3, "Despawn", "", "Despawns a <a class=\"mod\" href=\"GameObject/index.html\">GameObject</a>"],
         [3, "GetDisplayId", "", "Returns display ID of the <a class=\"mod\" href=\"GameObject/index.html\">GameObject</a>"],
         [3, "GetGoState", "", "Returns the state of a <a class=\"mod\" href=\"GameObject/index.html\">GameObject</a> Below are client side [GOState]s off of 3.3.5a"],
+        [3, "GetLootRecipient", "", "Returns the <a class=\"mod\" href=\"Player/index.html\">Player</a> that can loot the <a class=\"mod\" href=\"GameObject/index.html\">GameObject</a>"],
+        [3, "GetLootRecipientGroup", "", "Returns the <a class=\"mod\" href=\"Group/index.html\">Group</a> that can loot the <a class=\"mod\" href=\"GameObject/index.html\">GameObject</a>"],
         [3, "GetLootState", "", "Returns the [LootState] of a <a class=\"mod\" href=\"GameObject/index.html\">GameObject</a> Below are [LootState]s off of 3.3.5a"],
         [3, "HasQuest", "", "Returns 'true' if the <a class=\"mod\" href=\"GameObject/index.html\">GameObject</a> can give the specified <a class=\"mod\" href=\"Quest/index.html\">Quest</a>"],
         [3, "IsActive", "", "Returns 'true' if the <a class=\"mod\" href=\"GameObject/index.html\">GameObject</a> is active"],

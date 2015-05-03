@@ -204,28 +204,47 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
-        <p>For temporary documentation, please check the <a href="https://github.com/ElunaLuaEngine/Eluna/blob/master/LuaFunctions.cpp">LuaFunctions</a> source file.</p>
+        <p>Returns the <a class="mod" href="../Unit/index.html">Unit</a>'s max power amount for given power type.</p>
+<pre><code>enum Powers
+{
+    POWER_MANA        = 0,
+    POWER_RAGE        = 1,
+    POWER_FOCUS       = 2,
+    POWER_ENERGY      = 3,
+    POWER_HAPPINESS   = 4,
+    POWER_RUNE        = 5,
+    POWER_RUNIC_POWER = 6,
+    MAX_POWERS        = 7,
+    POWER_ALL         = 127,         // default for class?
+    POWER_HEALTH      = 0xFFFFFFFE   // (-2 as signed value)
+};
+</code></pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Unit:GetMaxPower()</code>
+            <code>maxPowerAmount = Unit:GetMaxPower( type )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code>n type</code></dt>
+                <dd class="docblock"><em>See method description.</em></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> maxPowerAmount</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
         </p>
     </div>
 

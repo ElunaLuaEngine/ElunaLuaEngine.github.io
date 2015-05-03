@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the Player:ModifyArenaPoints method in the Eluna engine.">
+    <meta name="description" content="API documentation for the Player:RemoveQuest method in the Eluna engine.">
     <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>Player:ModifyArenaPoints - Eluna</title>
+    <title>Player:RemoveQuest - Eluna</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
 
@@ -179,7 +179,7 @@
     <a class="fn " href="../Player/LearnTalent.html">LearnTalent</a>
     <a class="fn " href="../Player/LeaveBattleground.html">LeaveBattleground</a>
     <a class="fn " href="../Player/LogoutPlayer.html">LogoutPlayer</a>
-    <a class="fn current" href="../Player/ModifyArenaPoints.html">ModifyArenaPoints</a>
+    <a class="fn " href="../Player/ModifyArenaPoints.html">ModifyArenaPoints</a>
     <a class="fn " href="../Player/ModifyHonorPoints.html">ModifyHonorPoints</a>
     <a class="fn " href="../Player/ModifyMoney.html">ModifyMoney</a>
     <a class="fn " href="../Player/Mute.html">Mute</a>
@@ -188,7 +188,7 @@
     <a class="fn " href="../Player/RemoveFromGroup.html">RemoveFromGroup</a>
     <a class="fn " href="../Player/RemoveItem.html">RemoveItem</a>
     <a class="fn " href="../Player/RemoveLifetimeKills.html">RemoveLifetimeKills</a>
-    <a class="fn " href="../Player/RemoveQuest.html">RemoveQuest</a>
+    <a class="fn current" href="../Player/RemoveQuest.html">RemoveQuest</a>
     <a class="fn " href="../Player/RemoveSpell.html">RemoveSpell</a>
     <a class="fn " href="../Player/RemovedInsignia.html">RemovedInsignia</a>
     <a class="fn " href="../Player/ResetAchievements.html">ResetAchievements</a>
@@ -281,7 +281,7 @@
 <section id='main' class="content mod">
     <h1 class='fqn'>
         Method
-    <a class="mod" href="../Player/index.html">Player</a>:<a class="fn" href="../Player/ModifyArenaPoints.html">ModifyArenaPoints</a>
+    <a class="mod" href="../Player/index.html">Player</a>:<a class="fn" href="../Player/RemoveQuest.html">RemoveQuest</a>
         <span class='out-of-band'>
             <span id='render-detail'>
                 <a id="collapse-all" href="#">[-]</a>
@@ -292,13 +292,13 @@
 
     
     <div class='docblock'>
-        <p>Adds or detracts from the <a class="mod" href="../Player/index.html">Player</a>s current Arena Points</p>
+        <p>Removes the given quest entry from the <a class="mod" href="../Player/index.html">Player</a>.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Player:ModifyArenaPoints( amount )</code>
+            <code>Player:RemoveQuest( entry )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -306,8 +306,8 @@
         </h2>
         <p>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> amount</code></dt>
-                <dd class="docblock"><p><em>Valid numbers</em>: integers from -2,147,483,647 to 2,147,483,647.</p></dd>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> entry</code></dt>
+                <dd class="docblock"><p>Quest entry. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
         </p>
 

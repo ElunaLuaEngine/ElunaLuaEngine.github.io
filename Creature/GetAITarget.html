@@ -134,8 +134,7 @@
     <div class='docblock'>
         <p>Returns a target from the <a class="mod" href="../Creature/index.html">Creature</a>'s threat list based on the
   supplied arguments.</p>
-<pre>
-enum SelectAggroTarget
+<pre><code>enum SelectAggroTarget
 {
     SELECT_TARGET_RANDOM = 0,  //Just selects a random target
     SELECT_TARGET_TOPAGGRO,    //Selects targets from top aggro to bottom
@@ -143,12 +142,12 @@ enum SelectAggroTarget
     SELECT_TARGET_NEAREST,
     SELECT_TARGET_FARTHEST
 };
-</pre>
-
+</code></pre>
 <p>For example, if you wanted to select the third-farthest <a class="mod" href="../Player/index.html">Player</a>
   within 50 yards that has the <a class="mod" href="../Aura/index.html">Aura</a> "Corrupted Blood" (ID 24328),
   you could use this function like so:</p>
-<p>target = creature:GetAITarget(4, true, 3, 50, 24328)</p>
+<pre><code>target = creature:GetAITarget(4, true, 3, 50, 24328)
+</code></pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
@@ -174,7 +173,7 @@ enum SelectAggroTarget
         </h2>
         <p>
             <dl>
-                <dt><code>electAggroTarge targetType</code></dt>
+                <dt><code>SelectAggroTarget targetType</code></dt>
                 <dd class="docblock"><p>How the threat list should be sorted. </p></dd>
             </dl>
             <dl>
@@ -200,7 +199,7 @@ enum SelectAggroTarget
         </h2>
         <p>
             <dl>
-                <dt><code>ni target</code></dt>
+                <dt><code><strong><a class="mod" href="../Unit/index.html">Unit</a></strong> target</code></dt>
                 <dd class="docblock"><p>The target, or <code>nil</code>. </p></dd>
             </dl>
         </p>

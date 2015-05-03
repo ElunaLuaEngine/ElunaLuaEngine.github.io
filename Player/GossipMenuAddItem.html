@@ -29,11 +29,13 @@
     <a class="fn " href="../Player/AddComboPoints.html">AddComboPoints</a>
     <a class="fn " href="../Player/AddItem.html">AddItem</a>
     <a class="fn " href="../Player/AddLifetimeKills.html">AddLifetimeKills</a>
+    <a class="fn " href="../Player/AddQuest.html">AddQuest</a>
     <a class="fn " href="../Player/AdvanceAllSkills.html">AdvanceAllSkills</a>
     <a class="fn " href="../Player/AdvanceSkill.html">AdvanceSkill</a>
     <a class="fn " href="../Player/AdvanceSkillsToMax.html">AdvanceSkillsToMax</a>
     <a class="fn " href="../Player/AreaExploredOrEventHappens.html">AreaExploredOrEventHappens</a>
     <a class="fn " href="../Player/CanBlock.html">CanBlock</a>
+    <a class="fn " href="../Player/CanCompleteQuest.html">CanCompleteQuest</a>
     <a class="fn " href="../Player/CanEquipItem.html">CanEquipItem</a>
     <a class="fn " href="../Player/CanFly.html">CanFly</a>
     <a class="fn " href="../Player/CanParry.html">CanParry</a>
@@ -125,7 +127,6 @@
     <a class="fn " href="../Player/GetTeam.html">GetTeam</a>
     <a class="fn " href="../Player/GetTotalPlayedTime.html">GetTotalPlayedTime</a>
     <a class="fn " href="../Player/GetXPRestBonus.html">GetXPRestBonus</a>
-    <a class="fn " href="../Player/GiveLevel.html">GiveLevel</a>
     <a class="fn " href="../Player/GiveXP.html">GiveXP</a>
     <a class="fn " href="../Player/GossipAddQuests.html">GossipAddQuests</a>
     <a class="fn " href="../Player/GossipClearMenu.html">GossipClearMenu</a>
@@ -187,6 +188,7 @@
     <a class="fn " href="../Player/RemoveFromGroup.html">RemoveFromGroup</a>
     <a class="fn " href="../Player/RemoveItem.html">RemoveItem</a>
     <a class="fn " href="../Player/RemoveLifetimeKills.html">RemoveLifetimeKills</a>
+    <a class="fn " href="../Player/RemoveQuest.html">RemoveQuest</a>
     <a class="fn " href="../Player/RemoveSpell.html">RemoveSpell</a>
     <a class="fn " href="../Player/RemovedInsignia.html">RemovedInsignia</a>
     <a class="fn " href="../Player/ResetAchievements.html">ResetAchievements</a>
@@ -217,7 +219,6 @@
     <a class="fn " href="../Player/SendTabardVendorActivate.html">SendTabardVendorActivate</a>
     <a class="fn " href="../Player/SendTaxiMenu.html">SendTaxiMenu</a>
     <a class="fn " href="../Player/SendTrainerList.html">SendTrainerList</a>
-    <a class="fn " href="../Player/SendVendorWindow.html">SendVendorWindow</a>
     <a class="fn " href="../Player/SetAcceptWhispers.html">SetAcceptWhispers</a>
     <a class="fn " href="../Player/SetArenaPoints.html">SetArenaPoints</a>
     <a class="fn " href="../Player/SetAtLoginFlag.html">SetAtLoginFlag</a>
@@ -291,28 +292,68 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
-        <p>For temporary documentation, please check the <a href="https://github.com/ElunaLuaEngine/Eluna/blob/master/LuaFunctions.cpp">LuaFunctions</a> source file.</p>
+        <p>Adds a new item to the gossip menu shown to the <a class="mod" href="../Player/index.html">Player</a> on next call to <a class="fn" href="../Player/GossipSendMenu.html">Player:GossipSendMenu</a>.</p>
+<p>sender and intid are numbers which are passed directly to the gossip selection handler. Internally they are partly used for the database gossip handling.<br />
+code specifies whether to show a box to insert text to. The player inserted text is passed to the gossip selection handler.<br />
+money specifies an amount of money the player needs to have to click the option. An error message is shown if the player doesn't have enough money.<br />
+Note that the money amount is only checked client side and is not removed from the player either. You will need to check again in your code before taking action.</p>
+<p>See also: <a class="fn" href="../Player/GossipSendMenu.html">Player:GossipSendMenu</a>, <a class="fn" href="../Player/GossipAddQuests.html">Player:GossipAddQuests</a>, <a class="fn" href="../Player/GossipComplete.html">Player:GossipComplete</a>, <a class="fn" href="../Player/GossipClearMenu.html">Player:GossipClearMenu</a></p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Player:GossipMenuAddItem()</code>
+            <code>Player:GossipMenuAddItem( icon, msg, sender, intid )</code>
+        </p>
+        <p>
+            <code>Player:GossipMenuAddItem( icon, msg, sender, intid, code )</code>
+        </p>
+        <p>
+            <code>Player:GossipMenuAddItem( icon, msg, sender, intid, code, popup )</code>
+        </p>
+        <p>
+            <code>Player:GossipMenuAddItem( icon, msg, sender, intid, code, popup, money )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> icon</code></dt>
+                <dd class="docblock"><p>Number that specifies used icon. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.4.html">string</a></strong> msg</code></dt>
+                <dd class="docblock"><p>Label on the gossip item. </p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> sender</code></dt>
+                <dd class="docblock"><p>Number passed to gossip handlers. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> intid</code></dt>
+                <dd class="docblock"><p>Number passed to gossip handlers. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> code (false)</code></dt>
+                <dd class="docblock"><p>Show text input on click if true. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.4.html">string</a></strong> popup (nil)</code></dt>
+                <dd class="docblock"><p>If non empty string, a popup with given text shown on click. </p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> money (0)</code></dt>
+                <dd class="docblock"><p>Required money in copper. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            Nothing.
         </p>
     </div>
 

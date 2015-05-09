@@ -149,6 +149,13 @@
     
     <div class='docblock'>
         <p>Registers a <a class="mod" href="../GameObject/index.html">GameObject</a> event handler.</p>
+<p>If <code>return_callback</code> is <code>true</code>, a function will be returned which
+  cancels this event binding.</p>
+<p>(The returned function is the <strong>only</strong> way to cancel the bindings;
+  <code>shots</code> must be <code>0</code> (e.g. the binding will never expire), and
+  <a class="fn" href="../Global/ClearGameObjectEvents.html">Global:ClearGameObjectEvents</a> will skip this binding.)</p>
+<p>If <code>return_callback</code> is <code>false</code>, nothing is returned, and <code>shots</code> and
+  <a class="fn" href="../Global/ClearGameObjectEvents.html">Global:ClearGameObjectEvents</a> work as normal.</p>
 <pre>
 enum GameObjectEvents
 {
@@ -178,6 +185,9 @@ enum GameObjectEvents
         <p>
             <code>RegisterGameObjectEvent( entry, event, function, shots )</code>
         </p>
+        <p>
+            <code>cancel = RegisterGameObjectEvent( entry, event, function, 0, true )</code>
+        </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
@@ -199,13 +209,20 @@ enum GameObjectEvents
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> shots (0)</code></dt>
                 <dd class="docblock"><p>The number of times the function will be called, 0 means "always call this function". </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.2.html">boolean</a></strong> return_callback (false)</code></dt>
+                <dd class="docblock"><em>See method description.</em></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Nothing.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.6.html">function</a></strong> cancel</code></dt>
+                <dd class="docblock"><p>A function that cancels the binding when called. </p></dd>
+            </dl>
         </p>
     </div>
 
@@ -252,6 +269,7 @@ enum GameObjectEvents
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
+<center>Generated on 10/05/2015</center>
 <center>&copy;2015 - Eluna Lua Engine</center>
 </body>
 </html>

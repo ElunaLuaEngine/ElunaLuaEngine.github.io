@@ -77,6 +77,7 @@ searchIndex["Aura"] = {
         [3, "GetCorpseDelay", "", "Returns the delay between when the <a class=\"mod\" href=\"Creature/index.html\">Creature</a> dies and when its body despawns."],
         [3, "GetCreatureSpellCooldownDelay", "", "Returns the <a class=\"mod\" href=\"Creature/index.html\">Creature</a>'s cooldown for <code>spellID</code>."],
         [3, "GetCurrentWaypointId", "", "Returns the current waypoint ID of the <a class=\"mod\" href=\"Creature/index.html\">Creature</a>."],
+        [3, "GetDBTableGUIDLow", "", "Returns the guid of the <a class=\"mod\" href=\"Creature/index.html\">Creature</a> that is used as the ID in the database"],
         [3, "GetDefaultMovementType", "", "Returns the default movement type for this <a class=\"mod\" href=\"Creature/index.html\">Creature</a>."],
         [3, "GetHomePosition", "", "Returns position the <a class=\"mod\" href=\"Creature/index.html\">Creature</a> returns to when evading from combat   or respawning."],
         [3, "GetLootMode", "", ""],
@@ -157,8 +158,9 @@ searchIndex["Aura"] = {
     "paths": []
 };searchIndex["GameObject"] = {
     "items": [
-        [0, "", "GameObject", ""],
+        [0, "", "GameObject", "Inherits all methods from: <a class=\"mod\" href=\"Object/index.html\">Object</a>, <a class=\"mod\" href=\"WorldObject/index.html\">WorldObject</a>"],
         [3, "Despawn", "", "Despawns a <a class=\"mod\" href=\"GameObject/index.html\">GameObject</a>"],
+        [3, "GetDBTableGUIDLow", "", "Returns the guid of the <a class=\"mod\" href=\"GameObject/index.html\">GameObject</a> that is used as the ID in the database"],
         [3, "GetDisplayId", "", "Returns display ID of the <a class=\"mod\" href=\"GameObject/index.html\">GameObject</a>"],
         [3, "GetGoState", "", "Returns the state of a <a class=\"mod\" href=\"GameObject/index.html\">GameObject</a> Below are client side [GOState]s off of 3.3.5a"],
         [3, "GetLootRecipient", "", "Returns the <a class=\"mod\" href=\"Player/index.html\">Player</a> that can loot the <a class=\"mod\" href=\"GameObject/index.html\">GameObject</a>"],
@@ -276,12 +278,11 @@ searchIndex["Aura"] = {
     "paths": []
 };searchIndex["Group"] = {
     "items": [
-        [0, "", "Group", ""],
-        [3, "AddInvite", "", "Returns 'true' if the <a class=\"mod\" href=\"Group/index.html\">Group</a> invite was successful"],
+        [0, "", "Group", "Inherits all methods from: none"],
+        [3, "AddMember", "", "Adds a new member to the <a class=\"mod\" href=\"Group/index.html\">Group</a>"],
         [3, "ConvertToRaid", "", "Converts this <a class=\"mod\" href=\"Group/index.html\">Group</a> to a raid <a class=\"mod\" href=\"Group/index.html\">Group</a>"],
         [3, "Disband", "", "Disbands this <a class=\"mod\" href=\"Group/index.html\">Group</a>"],
         [3, "GetGUID", "", "Returns the <a class=\"mod\" href=\"Group/index.html\">Group</a>'s GUID"],
-        [3, "GetLeader", "", "Finds and returns a <a class=\"mod\" href=\"Group/index.html\">Group</a> leader by their GUID if logged in"],
         [3, "GetLeaderGUID", "", "Returns <a class=\"mod\" href=\"Group/index.html\">Group</a> leader GUID"],
         [3, "GetMemberGUID", "", "Returns a <a class=\"mod\" href=\"Group/index.html\">Group</a> member's GUID by their name"],
         [3, "GetMemberGroup", "", "Returns the <a class=\"mod\" href=\"Player/index.html\">Player</a>'s subgroup ID of this <a class=\"mod\" href=\"Group/index.html\">Group</a>"],
@@ -291,10 +292,10 @@ searchIndex["Aura"] = {
         [3, "IsAssistant", "", "Returns 'true' if the <a class=\"mod\" href=\"Player/index.html\">Player</a> is an assistant of this <a class=\"mod\" href=\"Group/index.html\">Group</a>"],
         [3, "IsBGGroup", "", "Returns 'true' if the <a class=\"mod\" href=\"Group/index.html\">Group</a> is a battleground <a class=\"mod\" href=\"Group/index.html\">Group</a>"],
         [3, "IsFull", "", "Returns 'true' if the <a class=\"mod\" href=\"Group/index.html\">Group</a> is full"],
-        [3, "IsLeader", "", "Returns 'true' if the player is the <a class=\"mod\" href=\"Group/index.html\">Group</a> leader"],
+        [3, "IsLeader", "", "Returns 'true' if the <a class=\"mod\" href=\"Player/index.html\">Player</a> is the <a class=\"mod\" href=\"Group/index.html\">Group</a> leader"],
         [3, "IsMember", "", "Returns 'true' if the <a class=\"mod\" href=\"Player/index.html\">Player</a> is a member of this <a class=\"mod\" href=\"Group/index.html\">Group</a>"],
         [3, "IsRaidGroup", "", "Returns 'true' if the <a class=\"mod\" href=\"Group/index.html\">Group</a> is a raid <a class=\"mod\" href=\"Group/index.html\">Group</a>"],
-        [3, "RemoveMember", "", "Removes a member from this <a class=\"mod\" href=\"Group/index.html\">Group</a> and returns 'true' if successful"],
+        [3, "RemoveMember", "", "Removes a <a class=\"mod\" href=\"Player/index.html\">Player</a> from this <a class=\"mod\" href=\"Group/index.html\">Group</a> and returns 'true' if successful"],
         [3, "SameSubGroup", "", "Returns 'true' if the <a class=\"mod\" href=\"Player/index.html\">Player</a>s are in the same subgroup in this <a class=\"mod\" href=\"Group/index.html\">Group</a>"],
         [3, "SendPacket", "", "Sends a specified <a class=\"mod\" href=\"WorldPacket/index.html\">WorldPacket</a> to this <a class=\"mod\" href=\"Group/index.html\">Group</a>"],
         [3, "SetLeader", "", "Sets the leader of this <a class=\"mod\" href=\"Group/index.html\">Group</a>"],
@@ -304,7 +305,7 @@ searchIndex["Aura"] = {
     "paths": []
 };searchIndex["Guild"] = {
     "items": [
-        [0, "", "Guild", ""],
+        [0, "", "Guild", "Inherits all methods from: none"],
         [3, "AddMember", "", "Adds the specified <a class=\"mod\" href=\"Player/index.html\">Player</a> to the <a class=\"mod\" href=\"Guild/index.html\">Guild</a> at the specified rank."],
         [3, "DeleteMember", "", "Removes the specified <a class=\"mod\" href=\"Player/index.html\">Player</a> from the <a class=\"mod\" href=\"Guild/index.html\">Guild</a>."],
         [3, "DepositBankMoney", "", ""],
@@ -327,7 +328,7 @@ searchIndex["Aura"] = {
     "paths": []
 };searchIndex["Item"] = {
     "items": [
-        [0, "", "Item", ""],
+        [0, "", "Item", "Inherits all methods from: <a class=\"mod\" href=\"Object/index.html\">Object</a>"],
         [3, "CanBeTraded", "", "Returns 'true' if the <a class=\"mod\" href=\"Item/index.html\">Item</a> can be traded, 'false' otherwise"],
         [3, "ClearEnchantment", "", "Removes an enchant from the <a class=\"mod\" href=\"Item/index.html\">Item</a> by the specified slot"],
         [3, "GetAllowableClass", "", "Returns the <a class=\"mod\" href=\"Player/index.html\">Player</a> classes allowed to use this <a class=\"mod\" href=\"Item/index.html\">Item</a>"],
@@ -438,7 +439,7 @@ searchIndex["Aura"] = {
     "paths": []
 };searchIndex["Player"] = {
     "items": [
-        [0, "", "Player", ""],
+        [0, "", "Player", "Inherits all methods from: <a class=\"mod\" href=\"Object/index.html\">Object</a>, <a class=\"mod\" href=\"WorldObject/index.html\">WorldObject</a>, <a class=\"mod\" href=\"Unit/index.html\">Unit</a>"],
         [3, "AddComboPoints", "", ""],
         [3, "AddItem", "", "Adds the given amount of the specified item entry to the player."],
         [3, "AddLifetimeKills", "", ""],
@@ -546,7 +547,9 @@ searchIndex["Aura"] = {
         [3, "GossipMenuAddItem", "", "Adds a new item to the gossip menu shown to the <a class=\"mod\" href=\"Player/index.html\">Player</a> on next call to <a class=\"fn\" href=\"Player/GossipSendMenu.html\">Player:GossipSendMenu</a>."],
         [3, "GossipSendMenu", "", "Sends the current gossip items of the player to him as a gossip menu with header text from the given textId."],
         [3, "GossipSendPOI", "", ""],
+        [3, "GroupCreate", "", "Creates a new <a class=\"mod\" href=\"Group/index.html\">Group</a> with the creator <a class=\"mod\" href=\"Player/index.html\">Player</a> as leader."],
         [3, "GroupEventHappens", "", ""],
+        [3, "GroupInvite", "", "Makes the <a class=\"mod\" href=\"Player/index.html\">Player</a> invite another player to a group."],
         [3, "HasAchieved", "", "Returns 'true' if the <a class=\"mod\" href=\"Player/index.html\">Player</a> has completed the specified achievement, 'false' otherwise."],
         [3, "HasAtLoginFlag", "", ""],
         [3, "HasItem", "", "Returns 'true' if the <a class=\"mod\" href=\"Player/index.html\">Player</a> has the given amount of item entry specified, 'false' otherwise."],
@@ -679,7 +682,7 @@ searchIndex["Aura"] = {
     "paths": []
 };searchIndex["Quest"] = {
     "items": [
-        [0, "", "Quest", ""],
+        [0, "", "Quest", "Inherits all methods from: none"],
         [3, "GetFlags", "", "Returns the <a class=\"mod\" href=\"Quest/index.html\">Quest</a>'s flags."],
         [3, "GetId", "", "Returns entry ID of the <a class=\"mod\" href=\"Quest/index.html\">Quest</a>."],
         [3, "GetLevel", "", "Returns the <a class=\"mod\" href=\"Quest/index.html\">Quest</a>'s level."],
@@ -712,7 +715,7 @@ searchIndex["Aura"] = {
     "paths": []
 };searchIndex["Unit"] = {
     "items": [
-        [0, "", "Unit", ""],
+        [0, "", "Unit", "Inherits all methods from: <a class=\"mod\" href=\"Object/index.html\">Object</a>, <a class=\"mod\" href=\"WorldObject/index.html\">WorldObject</a>"],
         [3, "AddAura", "", "Adds the <a class=\"mod\" href=\"Aura/index.html\">Aura</a> of the given spell entry on the given target from the <a class=\"mod\" href=\"Unit/index.html\">Unit</a>."],
         [3, "AddThreat", "", "Adds threat to the <a class=\"mod\" href=\"Unit/index.html\">Unit</a> from the victim."],
         [3, "AddUnitState", "", "Adds the given unit state for the <a class=\"mod\" href=\"Unit/index.html\">Unit</a>."],
@@ -866,7 +869,7 @@ searchIndex["Aura"] = {
     "paths": []
 };searchIndex["Vehicle"] = {
     "items": [
-        [0, "", "Vehicle", ""],
+        [0, "", "Vehicle", "Inherits all methods from: none"],
         [3, "AddPassenger", "", ""],
         [3, "GetEntry", "", ""],
         [3, "GetOwner", "", ""],
@@ -877,7 +880,7 @@ searchIndex["Aura"] = {
     "paths": []
 };searchIndex["WorldObject"] = {
     "items": [
-        [0, "", "WorldObject", ""],
+        [0, "", "WorldObject", "Inherits all methods from: <a class=\"mod\" href=\"Object/index.html\">Object</a>"],
         [3, "GetAngle", "", "Returns the angle between this <a class=\"mod\" href=\"WorldObject/index.html\">WorldObject</a> and another <a class=\"mod\" href=\"WorldObject/index.html\">WorldObject</a> or a point."],
         [3, "GetAreaId", "", "Returns the current area ID of the <a class=\"mod\" href=\"WorldObject/index.html\">WorldObject</a>"],
         [3, "GetCreaturesInRange", "", "Returns a table of <a class=\"mod\" href=\"Creature/index.html\">Creature</a> objects in sight of the <a class=\"mod\" href=\"WorldObject/index.html\">WorldObject</a> or within the given range and/or with a specific entry ID"],

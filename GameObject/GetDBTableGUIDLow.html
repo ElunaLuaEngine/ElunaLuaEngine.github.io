@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the Group:GetLeader method in the Eluna engine.">
+    <meta name="description" content="API documentation for the GameObject:GetDBTableGUIDLow method in the Eluna engine.">
     <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>Group:GetLeader - Eluna</title>
+    <title>GameObject:GetDBTableGUIDLow - Eluna</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
 
@@ -25,30 +25,24 @@
     <a href='../index.html'><img src='../static/eluna-logo.png' alt='Eluna Logo' width='100'></a>
     <div class="block">
         
-    <h2>Group Methods</h2>
-    <a class="fn " href="../Group/AddInvite.html">AddInvite</a>
-    <a class="fn " href="../Group/ConvertToRaid.html">ConvertToRaid</a>
-    <a class="fn " href="../Group/Disband.html">Disband</a>
-    <a class="fn " href="../Group/GetGUID.html">GetGUID</a>
-    <a class="fn current" href="../Group/GetLeader.html">GetLeader</a>
-    <a class="fn " href="../Group/GetLeaderGUID.html">GetLeaderGUID</a>
-    <a class="fn " href="../Group/GetMemberGUID.html">GetMemberGUID</a>
-    <a class="fn " href="../Group/GetMemberGroup.html">GetMemberGroup</a>
-    <a class="fn " href="../Group/GetMembers.html">GetMembers</a>
-    <a class="fn " href="../Group/GetMembersCount.html">GetMembersCount</a>
-    <a class="fn " href="../Group/HasFreeSlotSubGroup.html">HasFreeSlotSubGroup</a>
-    <a class="fn " href="../Group/IsAssistant.html">IsAssistant</a>
-    <a class="fn " href="../Group/IsBGGroup.html">IsBGGroup</a>
-    <a class="fn " href="../Group/IsFull.html">IsFull</a>
-    <a class="fn " href="../Group/IsLeader.html">IsLeader</a>
-    <a class="fn " href="../Group/IsMember.html">IsMember</a>
-    <a class="fn " href="../Group/IsRaidGroup.html">IsRaidGroup</a>
-    <a class="fn " href="../Group/RemoveMember.html">RemoveMember</a>
-    <a class="fn " href="../Group/SameSubGroup.html">SameSubGroup</a>
-    <a class="fn " href="../Group/SendPacket.html">SendPacket</a>
-    <a class="fn " href="../Group/SetLeader.html">SetLeader</a>
-    <a class="fn " href="../Group/SetMembersGroup.html">SetMembersGroup</a>
-    <a class="fn " href="../Group/SetTargetIcon.html">SetTargetIcon</a>
+    <h2>GameObject Methods</h2>
+    <a class="fn " href="../GameObject/Despawn.html">Despawn</a>
+    <a class="fn current" href="../GameObject/GetDBTableGUIDLow.html">GetDBTableGUIDLow</a>
+    <a class="fn " href="../GameObject/GetDisplayId.html">GetDisplayId</a>
+    <a class="fn " href="../GameObject/GetGoState.html">GetGoState</a>
+    <a class="fn " href="../GameObject/GetLootRecipient.html">GetLootRecipient</a>
+    <a class="fn " href="../GameObject/GetLootRecipientGroup.html">GetLootRecipientGroup</a>
+    <a class="fn " href="../GameObject/GetLootState.html">GetLootState</a>
+    <a class="fn " href="../GameObject/HasQuest.html">HasQuest</a>
+    <a class="fn " href="../GameObject/IsActive.html">IsActive</a>
+    <a class="fn " href="../GameObject/IsSpawned.html">IsSpawned</a>
+    <a class="fn " href="../GameObject/IsTransport.html">IsTransport</a>
+    <a class="fn " href="../GameObject/RemoveFromWorld.html">RemoveFromWorld</a>
+    <a class="fn " href="../GameObject/Respawn.html">Respawn</a>
+    <a class="fn " href="../GameObject/SaveToDB.html">SaveToDB</a>
+    <a class="fn " href="../GameObject/SetGoState.html">SetGoState</a>
+    <a class="fn " href="../GameObject/SetLootState.html">SetLootState</a>
+    <a class="fn " href="../GameObject/UseDoorOrButton.html">UseDoorOrButton</a>
 
     </div>
 </section>
@@ -67,7 +61,7 @@
 <section id='main' class="content mod">
     <h1 class='fqn'>
         Method
-    <a class="mod" href="../Group/index.html">Group</a>:<a class="fn" href="../Group/GetLeader.html">GetLeader</a>
+    <a class="mod" href="../GameObject/index.html">GameObject</a>:<a class="fn" href="../GameObject/GetDBTableGUIDLow.html">GetDBTableGUIDLow</a>
         <span class='out-of-band'>
             <span id='render-detail'>
                 <a id="collapse-all" href="#">[-]</a>
@@ -78,13 +72,13 @@
 
     
     <div class='docblock'>
-        <p>Finds and returns a <a class="mod" href="../Group/index.html">Group</a> leader by their GUID if logged in</p>
+        <p>Returns the guid of the <a class="mod" href="../GameObject/index.html">GameObject</a> that is used as the ID in the database</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>leader = Group:GetLeader()</code>
+            <code>dbguid = GameObject:GetDBTableGUIDLow()</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -99,8 +93,8 @@
         </h2>
         <p>
             <dl>
-                <dt><code><strong><a class="mod" href="../Player/index.html">Player</a></strong> leader</code></dt>
-                <dd class="docblock"><em>See method description.</em></dd>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> dbguid</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
         </p>
     </div>
@@ -148,7 +142,7 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 05/06/2015</center>
+<center>Generated on 08/07/2015</center>
 <center>&copy;2015 - Eluna Lua Engine</center>
 </body>
 </html>

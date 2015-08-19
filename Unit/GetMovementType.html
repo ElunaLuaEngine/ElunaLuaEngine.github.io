@@ -95,6 +95,7 @@
     <a class="fn " href="../Unit/IsAuctioneer.html">IsAuctioneer</a>
     <a class="fn " href="../Unit/IsBanker.html">IsBanker</a>
     <a class="fn " href="../Unit/IsBattleMaster.html">IsBattleMaster</a>
+    <a class="fn " href="../Unit/IsCasting.html">IsCasting</a>
     <a class="fn " href="../Unit/IsCharmed.html">IsCharmed</a>
     <a class="fn " href="../Unit/IsDead.html">IsDead</a>
     <a class="fn " href="../Unit/IsDying.html">IsDying</a>
@@ -212,6 +213,7 @@ enum MovementGeneratorType
     RANDOM_MOTION_TYPE              = 1,
     WAYPOINT_MOTION_TYPE            = 2,
     MAX_DB_MOTION_TYPE              = 3,
+    ANIMAL_RANDOM_MOTION_TYPE       = 3, // TC
 
     CONFUSED_MOTION_TYPE            = 4,
     CHASE_MOTION_TYPE               = 5,
@@ -224,7 +226,10 @@ enum MovementGeneratorType
     ASSISTANCE_DISTRACT_MOTION_TYPE = 12,          
     TIMED_FLEEING_MOTION_TYPE       = 13,
     FOLLOW_MOTION_TYPE              = 14,
-    EFFECT_MOTION_TYPE              = 15,
+    EFFECT_MOTION_TYPE              = 15, // mangos
+    ROTATE_MOTION_TYPE              = 15, // TC
+    EFFECT_MOTION_TYPE              = 16, // TC
+    NULL_MOTION_TYPE                = 17, // TC
 };
 </pre>
 
@@ -296,7 +301,7 @@ enum MovementGeneratorType
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 08/07/2015</center>
+<center>Generated on 20/08/2015</center>
 <center>&copy;2015 - Eluna Lua Engine</center>
 </body>
 </html>

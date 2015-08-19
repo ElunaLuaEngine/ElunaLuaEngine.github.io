@@ -294,6 +294,8 @@
     
     <div class='docblock'>
         <p>Sends the current gossip items of the player to him as a gossip menu with header text from the given textId.</p>
+<p>If sender is a <a class="mod" href="../Player/index.html">Player</a> then menu_id is mandatory, otherwise it is not used for anything.
+menu_id is the ID used to trigger the OnGossipSelect registered for players. See <a class="fn" href="../Global/RegisterPlayerGossipEvent.html">Global:RegisterPlayerGossipEvent</a></p>
 <p>See also: <a class="fn" href="../Player/GossipMenuAddItem.html">Player:GossipMenuAddItem</a>, <a class="fn" href="../Player/GossipAddQuests.html">Player:GossipAddQuests</a>, <a class="fn" href="../Player/GossipComplete.html">Player:GossipComplete</a>, <a class="fn" href="../Player/GossipClearMenu.html">Player:GossipClearMenu</a></p>
 
         <h2 id="synopsis" class='section-header'>
@@ -301,6 +303,9 @@
         </h2>
         <p>
             <code>Player:GossipSendMenu( npc_text, sender )</code>
+        </p>
+        <p>
+            <code>Player:GossipSendMenu( npc_text, sender, menu_id )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -314,6 +319,10 @@
             <dl>
                 <dt><code><strong><a class="mod" href="../Object/index.html">Object</a></strong> sender</code></dt>
                 <dd class="docblock"><p>Object acting as the source of the sent gossip menu. </p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> menu_id</code></dt>
+                <dd class="docblock"><p>If sender is a <a class="mod" href="../Player/index.html">Player</a> then menu_id is mandatory. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
         </p>
 
@@ -368,7 +377,7 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 08/07/2015</center>
+<center>Generated on 20/08/2015</center>
 <center>&copy;2015 - Eluna Lua Engine</center>
 </body>
 </html>

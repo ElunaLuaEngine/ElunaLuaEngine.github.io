@@ -99,6 +99,12 @@
         <p>
             <code>creaturesInRange = WorldObject:GetCreaturesInRange( range, entryId )</code>
         </p>
+        <p>
+            <code>creaturesInRange = WorldObject:GetCreaturesInRange( range, entryId, hostile )</code>
+        </p>
+        <p>
+            <code>creaturesInRange = WorldObject:GetCreaturesInRange( range, entryId, hostile, dead )</code>
+        </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
@@ -111,6 +117,14 @@
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> entryId (0)</code></dt>
                 <dd class="docblock"><p>Optionally set entry ID of creatures to find. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> hostile (0)</code></dt>
+                <dd class="docblock"><p>0 both, 1 hostile, 2 friendly. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> dead (1)</code></dt>
+                <dd class="docblock"><p>0 both, 1 alive, 2 dead. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
         </p>
 
@@ -168,7 +182,7 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 08/07/2015</center>
+<center>Generated on 20/08/2015</center>
 <center>&copy;2015 - Eluna Lua Engine</center>
 </body>
 </html>

@@ -113,8 +113,6 @@
     <a class="fn " href="../Player/GetReputationRank.html">GetReputationRank</a>
     <a class="fn " href="../Player/GetReqKillOrCastCurrentCount.html">GetReqKillOrCastCurrentCount</a>
     <a class="fn " href="../Player/GetRestBonus.html">GetRestBonus</a>
-    <a class="fn " href="../Player/GetRestTime.html">GetRestTime</a>
-    <a class="fn " href="../Player/GetRestType.html">GetRestType</a>
     <a class="fn " href="../Player/GetSelection.html">GetSelection</a>
     <a class="fn " href="../Player/GetShieldBlockValue.html">GetShieldBlockValue</a>
     <a class="fn " href="../Player/GetSkillPermBonusValue.html">GetSkillPermBonusValue</a>
@@ -245,8 +243,6 @@
     <a class="fn " href="../Player/SetRankPoints.html">SetRankPoints</a>
     <a class="fn " href="../Player/SetReputation.html">SetReputation</a>
     <a class="fn " href="../Player/SetRestBonus.html">SetRestBonus</a>
-    <a class="fn " href="../Player/SetRestTime.html">SetRestTime</a>
-    <a class="fn " href="../Player/SetRestType.html">SetRestType</a>
     <a class="fn " href="../Player/SetSheath.html">SetSheath</a>
     <a class="fn " href="../Player/SetSkill.html">SetSkill</a>
     <a class="fn " href="../Player/SetTaxiCheat.html">SetTaxiCheat</a>
@@ -293,28 +289,30 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
-        <p>For temporary documentation, please check the <a href="https://github.com/ElunaLuaEngine/Eluna/blob/master/LuaFunctions.cpp">LuaFunctions</a> source file.</p>
+        <p>Returns active GM chat tag</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Player:GetChatTag()</code>
+            <code>tag = Player:GetChatTag()</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            None.
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> tag</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: integers from 0 to 255.</p></dd>
+            </dl>
         </p>
     </div>
 
@@ -361,7 +359,7 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 20/08/2015</center>
+<center>Generated on 24/09/2015</center>
 <center>&copy;2015 - Eluna Lua Engine</center>
 </body>
 </html>

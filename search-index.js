@@ -182,7 +182,6 @@ searchIndex["Aura"] = {
 };searchIndex["Global"] = {
     "items": [
         [0, "", "Global", "These functions can be used anywhere at any time, including at start-up."],
-        [3, "AddCorpse", "", "Adds a <a class=\"mod\" href=\"Corpse/index.html\">Corpse</a> to the world."],
         [3, "AddTaxiPath", "", "Adds a taxi path to a specified map, returns the used pathId."],
         [3, "AddVendorItem", "", "Adds an <a class=\"mod\" href=\"Item/index.html\">Item</a> to a vendor and updates the world database."],
         [3, "AuthDBExecute", "", "Executes a SQL query on the login database."],
@@ -206,7 +205,6 @@ searchIndex["Aura"] = {
         [3, "ClearPlayerGossipEvents", "", "Unbinds event handlers for either all of a <a class=\"mod\" href=\"Player/index.html\">Player</a>'s gossip events, or one type of event."],
         [3, "ClearServerEvents", "", "Unbinds event handlers for either all server events, or one type of event."],
         [3, "ClearUniqueCreatureEvents", "", "Unbinds event handlers for either all of a <a class=\"mod\" href=\"Creature/index.html\">Creature</a>'s events, or one type of event."],
-        [3, "ConvertCorpseForPlayer", "", "Converts a <a class=\"mod\" href=\"Corpse/index.html\">Corpse</a> by GUID, and optionally allows for insignia to be looted."],
         [3, "CreateLongLong", "", "Returns an object representing a <code>long long</code> (64-bit) value."],
         [3, "CreateLuaEvent", "", "Registers a global timed event."],
         [3, "CreatePacket", "", "Creates a <a class=\"mod\" href=\"WorldPacket/index.html\">WorldPacket</a>."],
@@ -262,10 +260,8 @@ searchIndex["Aura"] = {
         [3, "RegisterServerEvent", "", "Registers a server event handler."],
         [3, "RegisterUniqueCreatureEvent", "", "Registers a <a class=\"mod\" href=\"Creature/index.html\">Creature</a> event handler for a <em>single</em> <a class=\"mod\" href=\"Creature/index.html\">Creature</a>."],
         [3, "ReloadEluna", "", "Reloads the Lua engine."],
-        [3, "RemoveCorpse", "", "Removes a <a class=\"mod\" href=\"Corpse/index.html\">Corpse</a> from the world."],
         [3, "RemoveEventById", "", "Removes a global timed event specified by ID."],
         [3, "RemoveEvents", "", "Removes all global timed events."],
-        [3, "RemoveOldCorpses", "", "Removes old <a class=\"mod\" href=\"Corpse/index.html\">Corpse</a>s from the world."],
         [3, "SaveAllPlayers", "", "Saves all <a class=\"mod\" href=\"Player/index.html\">Player</a>s."],
         [3, "SendMail", "", "Sends mail to a <a class=\"mod\" href=\"Player/index.html\">Player</a>."],
         [3, "SendWorldMessage", "", "Sends a message to all <a class=\"mod\" href=\"Player/index.html\">Player</a>s online."],

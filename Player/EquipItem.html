@@ -290,6 +290,37 @@
     
     <div class='docblock'>
         <p>Equips the given item or item entry to the given slot. Returns the equipped item or nil.</p>
+<pre><code>enum EquipmentSlots // 19 slots
+{
+    EQUIPMENT_SLOT_START        = 0,
+    EQUIPMENT_SLOT_HEAD         = 0,
+    EQUIPMENT_SLOT_NECK         = 1,
+    EQUIPMENT_SLOT_SHOULDERS    = 2,
+    EQUIPMENT_SLOT_BODY         = 3,
+    EQUIPMENT_SLOT_CHEST        = 4,
+    EQUIPMENT_SLOT_WAIST        = 5,
+    EQUIPMENT_SLOT_LEGS         = 6,
+    EQUIPMENT_SLOT_FEET         = 7,
+    EQUIPMENT_SLOT_WRISTS       = 8,
+    EQUIPMENT_SLOT_HANDS        = 9,
+    EQUIPMENT_SLOT_FINGER1      = 10,
+    EQUIPMENT_SLOT_FINGER2      = 11,
+    EQUIPMENT_SLOT_TRINKET1     = 12,
+    EQUIPMENT_SLOT_TRINKET2     = 13,
+    EQUIPMENT_SLOT_BACK         = 14,
+    EQUIPMENT_SLOT_MAINHAND     = 15,
+    EQUIPMENT_SLOT_OFFHAND      = 16,
+    EQUIPMENT_SLOT_RANGED       = 17,
+    EQUIPMENT_SLOT_TABARD       = 18,
+    EQUIPMENT_SLOT_END          = 19
+};
+
+enum InventorySlots // 4 slots
+{
+    INVENTORY_SLOT_BAG_START    = 19,
+    INVENTORY_SLOT_BAG_END      = 23
+};
+</code></pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
@@ -315,7 +346,7 @@
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> slot</code></dt>
-                <dd class="docblock"><p>Equipment slot to equip the item to. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dd class="docblock"><p>Equipment slot to equip the item to The slot can be [EquipmentSlots] or [InventorySlots]. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
         </p>
 
@@ -373,7 +404,7 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 24/09/2015</center>
+<center>Generated on 09/10/2015</center>
 <center>&copy;2015 - Eluna Lua Engine</center>
 </body>
 </html>

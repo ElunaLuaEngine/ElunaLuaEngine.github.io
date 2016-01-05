@@ -149,6 +149,8 @@
     
     <div class='docblock'>
         <p>Adds a taxi path to a specified map, returns the used pathId.</p>
+<p>Note that the first taxi point needs to be near the player when he starts the taxi path.
+The function should also be used only <strong>once</strong> per path added so use it on server startup for example.</p>
 <p>Related function: <a class="fn" href="../Player/StartTaxi.html">Player:StartTaxi</a></p>
 <pre><code>-- Execute on startup
 local pathTable = {{mapid, x, y, z}, {mapid, x, y, z}}
@@ -251,7 +253,7 @@ player:StartTaxi(path)
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 09/10/2015</center>
+<center>Generated on 05/01/2016</center>
 <center>&copy;2015 - Eluna Lua Engine</center>
 </body>
 </html>

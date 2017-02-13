@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the WorldObject:GetNearestGameObject method in the Eluna engine.">
+    <meta name="description" content="API documentation for the WorldObject:SetPhaseMask method in the Eluna engine.">
     <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>WorldObject:GetNearestGameObject - Eluna</title>
+    <title>WorldObject:SetPhaseMask - Eluna</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
 
@@ -42,7 +42,7 @@
     <a class="fn " href="../WorldObject/GetNearObject.html">GetNearObject</a>
     <a class="fn " href="../WorldObject/GetNearObjects.html">GetNearObjects</a>
     <a class="fn " href="../WorldObject/GetNearestCreature.html">GetNearestCreature</a>
-    <a class="fn current" href="../WorldObject/GetNearestGameObject.html">GetNearestGameObject</a>
+    <a class="fn " href="../WorldObject/GetNearestGameObject.html">GetNearestGameObject</a>
     <a class="fn " href="../WorldObject/GetNearestPlayer.html">GetNearestPlayer</a>
     <a class="fn " href="../WorldObject/GetO.html">GetO</a>
     <a class="fn " href="../WorldObject/GetPhaseMask.html">GetPhaseMask</a>
@@ -60,7 +60,7 @@
     <a class="fn " href="../WorldObject/RemoveEventById.html">RemoveEventById</a>
     <a class="fn " href="../WorldObject/RemoveEvents.html">RemoveEvents</a>
     <a class="fn " href="../WorldObject/SendPacket.html">SendPacket</a>
-    <a class="fn " href="../WorldObject/SetPhaseMask.html">SetPhaseMask</a>
+    <a class="fn current" href="../WorldObject/SetPhaseMask.html">SetPhaseMask</a>
     <a class="fn " href="../WorldObject/SpawnCreature.html">SpawnCreature</a>
     <a class="fn " href="../WorldObject/SummonGameObject.html">SummonGameObject</a>
 
@@ -81,7 +81,7 @@
 <section id='main' class="content mod">
     <h1 class='fqn'>
         Method
-    <a class="mod" href="../WorldObject/index.html">WorldObject</a>:<a class="fn" href="../WorldObject/GetNearestGameObject.html">GetNearestGameObject</a>
+    <a class="mod" href="../WorldObject/index.html">WorldObject</a>:<a class="fn" href="../WorldObject/SetPhaseMask.html">SetPhaseMask</a>
         <span class='out-of-band'>
             <span id='render-detail'>
                 <a id="collapse-all" href="#">[-]</a>
@@ -92,19 +92,16 @@
 
     
     <div class='docblock'>
-        <p>Returns the nearest <a class="mod" href="../GameObject/index.html">GameObject</a> object in sight of the <a class="mod" href="../WorldObject/index.html">WorldObject</a> or within the given range and/or with a specific entry ID</p>
+        <p>Sets the <a class="mod" href="../WorldObject/index.html">WorldObject</a>'s phase mask.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>nearestGameObject = WorldObject:GetNearestGameObject( range )</code>
+            <code>WorldObject:SetPhaseMask( phaseMask )</code>
         </p>
         <p>
-            <code>nearestGameObject = WorldObject:GetNearestGameObject( range, entryId )</code>
-        </p>
-        <p>
-            <code>nearestGameObject = WorldObject:GetNearestGameObject( range, entryId, hostile )</code>
+            <code>WorldObject:SetPhaseMask( phaseMask, update )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -112,16 +109,12 @@
         </h2>
         <p>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> range (533)</code></dt>
-                <dd class="docblock"><p><em>Valid numbers</em>: all decimal numbers.</p></dd>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> phaseMask</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> entryId (0)</code></dt>
-                <dd class="docblock"><p>Optionally set entry ID of game object to find. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
-            </dl>
-            <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> hostile (0)</code></dt>
-                <dd class="docblock"><p>0 both, 1 hostile, 2 friendly. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.2.html">boolean</a></strong> update (true)</code></dt>
+                <dd class="docblock"><p>Update visibility to nearby objects. </p></dd>
             </dl>
         </p>
 
@@ -129,10 +122,7 @@
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            <dl>
-                <dt><code><strong><a class="mod" href="../GameObject/index.html">GameObject</a></strong> nearestGameObject</code></dt>
-                <dd class="docblock"><em>See method description.</em></dd>
-            </dl>
+            Nothing.
         </p>
     </div>
 

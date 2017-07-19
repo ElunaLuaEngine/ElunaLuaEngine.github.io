@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the Unit:MoveClear method in the Eluna engine.">
+    <meta name="description" content="API documentation for the Unit:ModifyPower method in the Eluna engine.">
     <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>Unit:MoveClear - Eluna</title>
+    <title>Unit:ModifyPower - Eluna</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
 
@@ -125,10 +125,10 @@
     <a class="fn " href="../Unit/IsVendor.html">IsVendor</a>
     <a class="fn " href="../Unit/IsWithinDistInMap.html">IsWithinDistInMap</a>
     <a class="fn " href="../Unit/Kill.html">Kill</a>
-    <a class="fn " href="../Unit/ModifyPower.html">ModifyPower</a>
+    <a class="fn current" href="../Unit/ModifyPower.html">ModifyPower</a>
     <a class="fn " href="../Unit/Mount.html">Mount</a>
     <a class="fn " href="../Unit/MoveChase.html">MoveChase</a>
-    <a class="fn current" href="../Unit/MoveClear.html">MoveClear</a>
+    <a class="fn " href="../Unit/MoveClear.html">MoveClear</a>
     <a class="fn " href="../Unit/MoveConfused.html">MoveConfused</a>
     <a class="fn " href="../Unit/MoveExpire.html">MoveExpire</a>
     <a class="fn " href="../Unit/MoveFleeing.html">MoveFleeing</a>
@@ -193,7 +193,7 @@
 <section id='main' class="content mod">
     <h1 class='fqn'>
         Method
-    <a class="mod" href="../Unit/index.html">Unit</a>:<a class="fn" href="../Unit/MoveClear.html">MoveClear</a>
+    <a class="mod" href="../Unit/index.html">Unit</a>:<a class="fn" href="../Unit/ModifyPower.html">ModifyPower</a>
         <span class='out-of-band'>
             <span id='render-detail'>
                 <a id="collapse-all" href="#">[-]</a>
@@ -204,13 +204,27 @@
 
     
     <div class='docblock'>
-        <p>Clears the <a class="mod" href="../Unit/index.html">Unit</a>'s movement</p>
+        <p>modifies the <a class="mod" href="../Unit/index.html">Unit</a>'s power amount for the given power type.</p>
+<pre><code>enum Powers
+{
+    POWER_MANA        = 0,
+    POWER_RAGE        = 1,
+    POWER_FOCUS       = 2,
+    POWER_ENERGY      = 3,
+    POWER_HAPPINESS   = 4,
+    POWER_RUNE        = 5,
+    POWER_RUNIC_POWER = 6,
+    MAX_POWERS        = 7,
+    POWER_ALL         = 127,         // default for class?
+    POWER_HEALTH      = 0xFFFFFFFE   // (-2 as signed value)
+};
+</code></pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Unit:MoveClear( reset )</code>
+            <code>Unit:ModifyPower( amount, type )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -218,8 +232,12 @@
         </h2>
         <p>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.2.html">boolean</a></strong> reset (true)</code></dt>
-                <dd class="docblock"><p>Clean movement. </p></dd>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> amount</code></dt>
+                <dd class="docblock"><p>Amount to modify. </p><p><em>Valid numbers</em>: integers from -2,147,483,647 to 2,147,483,647.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> type</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: integers from -2,147,483,647 to 2,147,483,647.</p></dd>
             </dl>
         </p>
 

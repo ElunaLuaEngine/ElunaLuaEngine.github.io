@@ -97,6 +97,10 @@ When the passed function is called, the parameters <code>(eventId, delay, repeat
 Repeats will decrease on each call if the event does not repeat indefinitely</p>
 <p>Note that for <a class="mod" href="../Creature/index.html">Creature</a> and <a class="mod" href="../GameObject/index.html">GameObject</a> the timed event timer ticks only if the creature is in sight of someone
 For all <a class="mod" href="../WorldObject/index.html">WorldObject</a>s the timed events are removed when the object is destoryed. This means that for example a <a class="mod" href="../Player/index.html">Player</a>'s events are removed on logout.</p>
+<p>local function Timed(eventid, delay, repeats, worldobject)
+       print(worldobject:GetName())
+   end
+   worldobject:RegisterEvent(Timed, 1000, 1) -- do it after 1 second once</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
@@ -177,7 +181,7 @@ For all <a class="mod" href="../WorldObject/index.html">WorldObject</a>s the tim
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 14/02/2017</center>
+<center>Generated on 19/07/2017</center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

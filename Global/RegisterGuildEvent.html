@@ -73,7 +73,6 @@
     <a class="fn " href="../Global/GetPlayerByName.html">GetPlayerByName</a>
     <a class="fn " href="../Global/GetPlayerCount.html">GetPlayerCount</a>
     <a class="fn " href="../Global/GetPlayerGUID.html">GetPlayerGUID</a>
-    <a class="fn " href="../Global/GetPlayersInMap.html">GetPlayersInMap</a>
     <a class="fn " href="../Global/GetPlayersInWorld.html">GetPlayersInWorld</a>
     <a class="fn " href="../Global/GetQuest.html">GetQuest</a>
     <a class="fn " href="../Global/GetTimeDiff.html">GetTimeDiff</a>
@@ -154,13 +153,13 @@ enum GuildEvents
 {
     // Guild
     GUILD_EVENT_ON_ADD_MEMBER               =     1,       // (event, guild, player, rank)
-    GUILD_EVENT_ON_REMOVE_MEMBER            =     2,       // (event, guild, isDisbanding)
+    GUILD_EVENT_ON_REMOVE_MEMBER            =     2,       // (event, guild, player, isDisbanding)
     GUILD_EVENT_ON_MOTD_CHANGE              =     3,       // (event, guild, newMotd)
     GUILD_EVENT_ON_INFO_CHANGE              =     4,       // (event, guild, newInfo)
     GUILD_EVENT_ON_CREATE                   =     5,       // (event, guild, leader, name)  // Not on TC
     GUILD_EVENT_ON_DISBAND                  =     6,       // (event, guild)
-    GUILD_EVENT_ON_MONEY_WITHDRAW           =     7,       // (event, guild, player, amount, isRepair)
-    GUILD_EVENT_ON_MONEY_DEPOSIT            =     8,       // (event, guild, player, amount)
+    GUILD_EVENT_ON_MONEY_WITHDRAW           =     7,       // (event, guild, player, amount, isRepair) - Can return new money amount
+    GUILD_EVENT_ON_MONEY_DEPOSIT            =     8,       // (event, guild, player, amount) - Can return new money amount
     GUILD_EVENT_ON_ITEM_MOVE                =     9,       // (event, guild, player, item, isSrcBank, srcContainer, srcSlotId, isDestBank, destContainer, destSlotId)   // TODO
     GUILD_EVENT_ON_EVENT                    =     10,      // (event, guild, eventType, plrGUIDLow1, plrGUIDLow2, newRank)  // TODO
     GUILD_EVENT_ON_BANK_EVENT               =     11,      // (event, guild, eventType, tabId, playerGUIDLow, itemOrMoney, itemStackCount, destTabId)
@@ -251,7 +250,7 @@ enum GuildEvents
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 14/02/2017</center>
+<center>Generated on 19/07/2017</center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

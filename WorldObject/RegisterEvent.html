@@ -97,16 +97,27 @@ When the passed function is called, the parameters <code>(eventId, delay, repeat
 Repeats will decrease on each call if the event does not repeat indefinitely</p>
 <p>Note that for <a class="mod" href="../Creature/index.html">Creature</a> and <a class="mod" href="../GameObject/index.html">GameObject</a> the timed event timer ticks only if the creature is in sight of someone
 For all <a class="mod" href="../WorldObject/index.html">WorldObject</a>s the timed events are removed when the object is destoryed. This means that for example a <a class="mod" href="../Player/index.html">Player</a>'s events are removed on logout.</p>
-<p>local function Timed(eventid, delay, repeats, worldobject)
-       print(worldobject:GetName())
-   end
-   worldobject:RegisterEvent(Timed, 1000, 1) -- do it after 1 second once</p>
+<pre><code>local function Timed(eventid, delay, repeats, worldobject)
+    print(worldobject:GetName())
+end
+worldobject:RegisterEvent(Timed, 1000, 5) -- do it after 1 second 5 times
+worldobject:RegisterEvent(Timed, {1000, 10000}, 0) -- do it after 1 to 10 seconds forever
+</code></pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
+            <code>eventId = WorldObject:RegisterEvent( function, delay )</code>
+        </p>
+        <p>
+            <code>eventId = WorldObject:RegisterEvent( function, delaytable )</code>
+        </p>
+        <p>
             <code>eventId = WorldObject:RegisterEvent( function, delay, repeats )</code>
+        </p>
+        <p>
+            <code>eventId = WorldObject:RegisterEvent( function, delaytable, repeats )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -122,7 +133,11 @@ For all <a class="mod" href="../WorldObject/index.html">WorldObject</a>s the tim
                 <dd class="docblock"><p>Set time in milliseconds for the event to trigger. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> repeats</code></dt>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.5.html">table</a></strong> delaytable</code></dt>
+                <dd class="docblock"><p>A table <code>{min, max}</code> containing the minimum and maximum delay time. </p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> repeats (1)</code></dt>
                 <dd class="docblock"><p>How many times for the event to repeat, 0 is infinite. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
         </p>
@@ -181,7 +196,7 @@ For all <a class="mod" href="../WorldObject/index.html">WorldObject</a>s the tim
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 19/07/2017</center>
+<center>Generated on 31/07/2017</center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

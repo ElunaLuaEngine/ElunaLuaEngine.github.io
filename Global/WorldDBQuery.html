@@ -149,7 +149,15 @@
     <div class='docblock'>
         <p>Executes a SQL query on the world database and returns an <a class="mod" href="../ElunaQuery/index.html">ElunaQuery</a>.</p>
 <p>The query is always executed synchronously
-  (i.e. when this function returns the query has already been executed).</p>
+  (i.e. execution halts until the query has finished and then results are returned).</p>
+<pre><code>local Q = WorldDBQuery("SELECT entry, name FROM creature_template LIMIT 10")
+if Q then
+    repeat
+        local entry, name = Q:GetUInt32(0), Q:GetString(1)
+        print(entry, name)
+    until not Q:NextRow()
+end
+</code></pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
@@ -222,7 +230,7 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 19/07/2017</center>
+<center>Generated on 31/07/2017</center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

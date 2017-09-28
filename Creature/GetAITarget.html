@@ -34,7 +34,6 @@
     <a class="fn " href="../Creature/CanAssistTo.html">CanAssistTo</a>
     <a class="fn " href="../Creature/CanCompleteQuest.html">CanCompleteQuest</a>
     <a class="fn " href="../Creature/CanFly.html">CanFly</a>
-    <a class="fn " href="../Creature/CanRegenerateHealth.html">CanRegenerateHealth</a>
     <a class="fn " href="../Creature/CanStartAttack.html">CanStartAttack</a>
     <a class="fn " href="../Creature/CanSwim.html">CanSwim</a>
     <a class="fn " href="../Creature/CanWalk.html">CanWalk</a>
@@ -137,11 +136,11 @@
   supplied arguments.</p>
 <pre><code>enum SelectAggroTarget
 {
-SELECT_TARGET_RANDOM = 0,  // just pick a random target
-SELECT_TARGET_MAXTHREAT,   // prefer targets higher in the threat list
-SELECT_TARGET_MINTHREAT,   // prefer targets lower in the threat list
-SELECT_TARGET_MAXDISTANCE, // prefer targets further from us
-SELECT_TARGET_MINDISTANCE  // prefer targets closer to us
+    SELECT_TARGET_RANDOM = 0,  //Just selects a random target
+    SELECT_TARGET_TOPAGGRO,    //Selects targets from top aggro to bottom
+    SELECT_TARGET_BOTTOMAGGRO, //Selects targets from bottom aggro to top
+    SELECT_TARGET_NEAREST,
+    SELECT_TARGET_FARTHEST
 };
 </code></pre>
 <p>For example, if you wanted to select the third-farthest <a class="mod" href="../Player/index.html">Player</a>
@@ -168,9 +167,6 @@ SELECT_TARGET_MINDISTANCE  // prefer targets closer to us
         <p>
             <code>target = Creature:GetAITarget( targetType, playerOnly, position, distance, aura )</code>
         </p>
-        <p>
-            <code>target = Creature:GetAITarget( targetType, playerOnly, position, distance, aura, except )</code>
-        </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
@@ -195,10 +191,6 @@ SELECT_TARGET_MINDISTANCE  // prefer targets closer to us
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> aura (0)</code></dt>
                 <dd class="docblock"><p>If positive, the target must have this <a class="mod" href="../Aura/index.html">Aura</a>. If negative, the the target must not have this Aura. </p><p><em>Valid numbers</em>: integers from -2,147,483,647 to 2,147,483,647.</p></dd>
-            </dl>
-            <dl>
-                <dt><code><strong><a class="mod" href="../Unit/index.html">Unit</a></strong> except (nil)</code></dt>
-                <dd class="docblock"><p>An unit that is excluded from the search. </p></dd>
             </dl>
         </p>
 
@@ -256,7 +248,7 @@ SELECT_TARGET_MINDISTANCE  // prefer targets closer to us
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 31/07/2017</center>
+<center>Generated on 29/09/2017</center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

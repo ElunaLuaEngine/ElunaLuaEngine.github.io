@@ -47,7 +47,6 @@
     <a class="fn " href="../Player/ClearComboPoints.html">ClearComboPoints</a>
     <a class="fn " href="../Player/ClearHonorInfo.html">ClearHonorInfo</a>
     <a class="fn " href="../Player/CompleteQuest.html">CompleteQuest</a>
-    <a class="fn " href="../Player/CreateCorpse.html">CreateCorpse</a>
     <a class="fn " href="../Player/DurabilityLoss.html">DurabilityLoss</a>
     <a class="fn " href="../Player/DurabilityLossAll.html">DurabilityLossAll</a>
     <a class="fn " href="../Player/DurabilityPointLossForEquipSlot.html">DurabilityPointLossForEquipSlot</a>
@@ -290,13 +289,13 @@
 
     
     <div class='docblock'>
-        <p>Returns 'true' if the <a class="mod" href="../Player/index.html">Player</a> has a talent by ID in specified talent tree, 'false' otherwise.</p>
+        <p>Returns 'true' if the <a class="mod" href="../Player/index.html">Player</a> has a talent by ID in specified spec, 'false' otherwise.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>hasTalent = Player:HasTalent( talentId, spec )</code>
+            <code>hasTalent = Player:HasTalent( spellId, spec )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -304,12 +303,12 @@
         </h2>
         <p>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> talentId</code></dt>
-                <dd class="docblock"><p>Talent ID to check. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> spellId</code></dt>
+                <dd class="docblock"><p>Talent spellId to check. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> spec</code></dt>
-                <dd class="docblock"><p>Specified talent tree. </p><p><em>Valid numbers</em>: integers from 0 to 255.</p></dd>
+                <dd class="docblock"><p>Specified spec. 0 for primary, 1 for secondary.. </p><p><em>Valid numbers</em>: integers from 0 to 255.</p></dd>
             </dl>
         </p>
 
@@ -367,7 +366,7 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 11/04/2018</center>
+<center>Generated on 06/07/2019</center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

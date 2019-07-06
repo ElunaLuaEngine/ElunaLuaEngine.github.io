@@ -154,9 +154,9 @@
         <p>Ban's a <a class="mod" href="../Player/index.html">Player</a>'s account, character or IP</p>
 <pre><code>enum BanMode
 {
-    BAN_ACCOUNT,
-    BAN_CHARACTER,
-    BAN_IP
+    BAN_ACCOUNT = 0,
+    BAN_CHARACTER = 1,
+    BAN_IP = 2
 };
 </code></pre>
 
@@ -164,7 +164,7 @@
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Ban( banMode, nameOrIP, duration, reason, whoBanned )</code>
+            <code>result = Ban( banMode, nameOrIP, duration, reason, whoBanned )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -177,7 +177,7 @@
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.4.html">string</a></strong> nameOrIP</code></dt>
-                <dd class="docblock"><p>Name of the <a class="mod" href="../Player/index.html">Player</a> or IP of the <a class="mod" href="../Player/index.html">Player</a>. </p></dd>
+                <dd class="docblock"><p>If BanMode is 0 then accountname, if 1 then charactername if 2 then ip. </p></dd>
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> duration</code></dt>
@@ -197,7 +197,10 @@
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Nothing.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> result</code></dt>
+                <dd class="docblock"><p>Status of the ban. 0 if success, 1 if syntax error, 2 if target not found, 3 if ban already exists, nil if unknown result. </p><p><em>Valid numbers</em>: integers from -2,147,483,647 to 2,147,483,647.</p></dd>
+            </dl>
         </p>
     </div>
 
@@ -244,7 +247,7 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 11/04/2018</center>
+<center>Generated on 06/07/2019</center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

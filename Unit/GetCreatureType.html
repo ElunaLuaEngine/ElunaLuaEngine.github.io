@@ -147,7 +147,6 @@
     <a class="fn " href="../Unit/SendUnitSay.html">SendUnitSay</a>
     <a class="fn " href="../Unit/SendUnitWhisper.html">SendUnitWhisper</a>
     <a class="fn " href="../Unit/SendUnitYell.html">SendUnitYell</a>
-    <a class="fn " href="../Unit/SetCharmerGUID.html">SetCharmerGUID</a>
     <a class="fn " href="../Unit/SetConfused.html">SetConfused</a>
     <a class="fn " href="../Unit/SetCreatorGUID.html">SetCreatorGUID</a>
     <a class="fn " href="../Unit/SetCritterGUID.html">SetCritterGUID</a>
@@ -204,7 +203,25 @@
 
     
     <div class='docblock'>
-        <p>Returns the <a class="mod" href="../Unit/index.html">Unit</a>'s creature type ID like wolf or humanoid.</p>
+        <p>Returns the <a class="mod" href="../Unit/index.html">Unit</a>'s creature type ID (enumerated in CreatureType.dbc).</p>
+<pre>
+enum CreatureType
+{
+    CREATURE_TYPE_BEAST            = 1,
+    CREATURE_TYPE_DRAGONKIN        = 2,
+    CREATURE_TYPE_DEMON            = 3,
+    CREATURE_TYPE_ELEMENTAL        = 4,
+    CREATURE_TYPE_GIANT            = 5,
+    CREATURE_TYPE_UNDEAD           = 6,
+    CREATURE_TYPE_HUMANOID         = 7,
+    CREATURE_TYPE_CRITTER          = 8,
+    CREATURE_TYPE_MECHANICAL       = 9,
+    CREATURE_TYPE_NOT_SPECIFIED    = 10,
+    CREATURE_TYPE_TOTEM            = 11,
+    CREATURE_TYPE_NON_COMBAT_PET   = 12,     // This and below is TBC+ 
+    CREATURE_TYPE_GAS_CLOUD        = 13
+};
+</pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
@@ -225,8 +242,8 @@
         </h2>
         <p>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> creatureType</code></dt>
-                <dd class="docblock"><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dt><code><strong><a href="https://github.com/ElunaLuaEngine/ElunaTrinityWotlk/search?l=cpp&q=%22enum+CreatureType%22&type=Code&utf8=%E2%9C%93">CreatureType</a></strong> creatureType</code></dt>
+                <dd class="docblock"><em>See method description.</em></dd>
             </dl>
         </p>
     </div>
@@ -274,7 +291,7 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 11/04/2018</center>
+<center>Generated on 06/07/2019</center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

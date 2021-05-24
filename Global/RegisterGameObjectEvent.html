@@ -76,6 +76,7 @@
     <a class="fn " href="../Global/GetPlayerGUID.html">GetPlayerGUID</a>
     <a class="fn " href="../Global/GetPlayersInWorld.html">GetPlayersInWorld</a>
     <a class="fn " href="../Global/GetQuest.html">GetQuest</a>
+    <a class="fn " href="../Global/GetRealmID.html">GetRealmID</a>
     <a class="fn " href="../Global/GetTimeDiff.html">GetTimeDiff</a>
     <a class="fn " href="../Global/GetUnitGUID.html">GetUnitGUID</a>
     <a class="fn " href="../Global/IsBagPos.html">IsBagPos</a>
@@ -157,18 +158,18 @@ enum GameObjectEvents
 {
     GAMEOBJECT_EVENT_ON_AIUPDATE                    = 1,    // (event, go, diff)
     GAMEOBJECT_EVENT_ON_SPAWN                       = 2,    // (event, go)
-    GAMEOBJECT_EVENT_ON_DUMMY_EFFECT                = 3,    // (event, caster, spellid, effindex, go) - Can return true
-    GAMEOBJECT_EVENT_ON_QUEST_ACCEPT                = 4,    // (event, player, go, quest) - Can return true
-    GAMEOBJECT_EVENT_ON_QUEST_REWARD                = 5,    // (event, player, go, quest, opt) - Can return true
+    GAMEOBJECT_EVENT_ON_DUMMY_EFFECT                = 3,    // (event, caster, spellid, effindex, go) - Can return true to stop normal action
+    GAMEOBJECT_EVENT_ON_QUEST_ACCEPT                = 4,    // (event, player, go, quest) - Can return true to stop normal action
+    GAMEOBJECT_EVENT_ON_QUEST_REWARD                = 5,    // (event, player, go, quest, opt) - Can return true to stop normal action
     GAMEOBJECT_EVENT_ON_DIALOG_STATUS               = 6,    // (event, player, go)
-    GAMEOBJECT_EVENT_ON_DESTROYED                   = 7,    // (event, go, player)
-    GAMEOBJECT_EVENT_ON_DAMAGED                     = 8,    // (event, go, player)
+    GAMEOBJECT_EVENT_ON_DESTROYED                   = 7,    // (event, go, attacker)
+    GAMEOBJECT_EVENT_ON_DAMAGED                     = 8,    // (event, go, attacker)
     GAMEOBJECT_EVENT_ON_LOOT_STATE_CHANGE           = 9,    // (event, go, state)
     GAMEOBJECT_EVENT_ON_GO_STATE_CHANGED            = 10,   // (event, go, state)
     // UNUSED                                       = 11,   // (event, gameobject)
     GAMEOBJECT_EVENT_ON_ADD                         = 12,   // (event, gameobject)
     GAMEOBJECT_EVENT_ON_REMOVE                      = 13,   // (event, gameobject)
-    GAMEOBJECT_EVENT_ON_USE                         = 14,   // (event, go, player)
+    GAMEOBJECT_EVENT_ON_USE                         = 14,   // (event, go, player) - Can return true to stop normal action
     GAMEOBJECT_EVENT_COUNT
 };
 </pre>
@@ -259,7 +260,7 @@ enum GameObjectEvents
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 06/07/2019</center>
+<center>Generated on 24/05/2021</center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

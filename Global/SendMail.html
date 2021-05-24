@@ -76,6 +76,7 @@
     <a class="fn " href="../Global/GetPlayerGUID.html">GetPlayerGUID</a>
     <a class="fn " href="../Global/GetPlayersInWorld.html">GetPlayersInWorld</a>
     <a class="fn " href="../Global/GetQuest.html">GetQuest</a>
+    <a class="fn " href="../Global/GetRealmID.html">GetRealmID</a>
     <a class="fn " href="../Global/GetTimeDiff.html">GetTimeDiff</a>
     <a class="fn " href="../Global/GetUnitGUID.html">GetUnitGUID</a>
     <a class="fn " href="../Global/IsBagPos.html">IsBagPos</a>
@@ -170,28 +171,28 @@ There can be maximum of 12 different items.</p>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>SendMail( subject, text, receiverGUIDLow )</code>
+            <code>itemGUIDlow = SendMail( subject, text, receiverGUIDLow )</code>
         </p>
         <p>
-            <code>SendMail( subject, text, receiverGUIDLow, senderGUIDLow )</code>
+            <code>itemGUIDlow = SendMail( subject, text, receiverGUIDLow, senderGUIDLow )</code>
         </p>
         <p>
-            <code>SendMail( subject, text, receiverGUIDLow, senderGUIDLow, stationary )</code>
+            <code>itemGUIDlow = SendMail( subject, text, receiverGUIDLow, senderGUIDLow, stationary )</code>
         </p>
         <p>
-            <code>SendMail( subject, text, receiverGUIDLow, senderGUIDLow, stationary, delay )</code>
+            <code>itemGUIDlow = SendMail( subject, text, receiverGUIDLow, senderGUIDLow, stationary, delay )</code>
         </p>
         <p>
-            <code>SendMail( subject, text, receiverGUIDLow, senderGUIDLow, stationary, delay, money )</code>
+            <code>itemGUIDlow = SendMail( subject, text, receiverGUIDLow, senderGUIDLow, stationary, delay, money )</code>
         </p>
         <p>
-            <code>SendMail( subject, text, receiverGUIDLow, senderGUIDLow, stationary, delay, money, cod )</code>
+            <code>itemGUIDlow = SendMail( subject, text, receiverGUIDLow, senderGUIDLow, stationary, delay, money, cod )</code>
         </p>
         <p>
-            <code>SendMail( subject, text, receiverGUIDLow, senderGUIDLow, stationary, delay, money, cod, entry )</code>
+            <code>itemGUIDlow = SendMail( subject, text, receiverGUIDLow, senderGUIDLow, stationary, delay, money, cod, entry )</code>
         </p>
         <p>
-            <code>SendMail( subject, text, receiverGUIDLow, senderGUIDLow, stationary, delay, money, cod, entry, amount )</code>
+            <code>itemGUIDlow = SendMail( subject, text, receiverGUIDLow, senderGUIDLow, stationary, delay, money, cod, entry, amount )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -244,7 +245,10 @@ There can be maximum of 12 different items.</p>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Nothing.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> itemGUIDlow</code></dt>
+                <dd class="docblock"><p>Low GUID of the item. Up to 12 values returned, returns nil if no further items are sent. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
         </p>
     </div>
 
@@ -291,7 +295,7 @@ There can be maximum of 12 different items.</p>
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 06/07/2019</center>
+<center>Generated on 24/05/2021</center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

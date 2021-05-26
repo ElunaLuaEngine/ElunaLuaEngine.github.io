@@ -26,58 +26,18 @@
     <div class="block">
         
     <h2>Item Methods</h2>
-    <a class="fn " href="../Item/CanBeTraded.html">CanBeTraded</a>
-    <a class="fn " href="../Item/ClearEnchantment.html">ClearEnchantment</a>
-    <a class="fn " href="../Item/GetAllowableClass.html">GetAllowableClass</a>
-    <a class="fn " href="../Item/GetAllowableRace.html">GetAllowableRace</a>
-    <a class="fn " href="../Item/GetBagSize.html">GetBagSize</a>
-    <a class="fn " href="../Item/GetBagSlot.html">GetBagSlot</a>
-    <a class="fn " href="../Item/GetBuyCount.html">GetBuyCount</a>
-    <a class="fn " href="../Item/GetBuyPrice.html">GetBuyPrice</a>
-    <a class="fn " href="../Item/GetClass.html">GetClass</a>
-    <a class="fn " href="../Item/GetCount.html">GetCount</a>
-    <a class="fn " href="../Item/GetDisplayId.html">GetDisplayId</a>
-    <a class="fn " href="../Item/GetEnchantmentId.html">GetEnchantmentId</a>
-    <a class="fn " href="../Item/GetInventoryType.html">GetInventoryType</a>
-    <a class="fn " href="../Item/GetItemLevel.html">GetItemLevel</a>
-    <a class="fn current" href="../Item/GetItemLink.html">GetItemLink</a>
-    <a class="fn " href="../Item/GetItemSet.html">GetItemSet</a>
-    <a class="fn " href="../Item/GetMaxStackCount.html">GetMaxStackCount</a>
-    <a class="fn " href="../Item/GetName.html">GetName</a>
-    <a class="fn " href="../Item/GetOwner.html">GetOwner</a>
-    <a class="fn " href="../Item/GetOwnerGUID.html">GetOwnerGUID</a>
-    <a class="fn " href="../Item/GetQuality.html">GetQuality</a>
-    <a class="fn " href="../Item/GetRandomProperty.html">GetRandomProperty</a>
-    <a class="fn " href="../Item/GetRandomSuffix.html">GetRandomSuffix</a>
-    <a class="fn " href="../Item/GetRequiredLevel.html">GetRequiredLevel</a>
-    <a class="fn " href="../Item/GetSellPrice.html">GetSellPrice</a>
-    <a class="fn " href="../Item/GetSlot.html">GetSlot</a>
-    <a class="fn " href="../Item/GetSpellId.html">GetSpellId</a>
-    <a class="fn " href="../Item/GetSpellTrigger.html">GetSpellTrigger</a>
-    <a class="fn " href="../Item/GetStatsCount.html">GetStatsCount</a>
-    <a class="fn " href="../Item/GetSubClass.html">GetSubClass</a>
-    <a class="fn " href="../Item/HasQuest.html">HasQuest</a>
-    <a class="fn " href="../Item/IsArmorVellum.html">IsArmorVellum</a>
-    <a class="fn " href="../Item/IsBag.html">IsBag</a>
-    <a class="fn " href="../Item/IsBoundAccountWide.html">IsBoundAccountWide</a>
-    <a class="fn " href="../Item/IsBoundByEnchant.html">IsBoundByEnchant</a>
-    <a class="fn " href="../Item/IsBroken.html">IsBroken</a>
-    <a class="fn " href="../Item/IsConjuredConsumable.html">IsConjuredConsumable</a>
-    <a class="fn " href="../Item/IsCurrencyToken.html">IsCurrencyToken</a>
-    <a class="fn " href="../Item/IsEquipped.html">IsEquipped</a>
-    <a class="fn " href="../Item/IsInBag.html">IsInBag</a>
-    <a class="fn " href="../Item/IsInTrade.html">IsInTrade</a>
-    <a class="fn " href="../Item/IsLocked.html">IsLocked</a>
-    <a class="fn " href="../Item/IsNotBoundToPlayer.html">IsNotBoundToPlayer</a>
-    <a class="fn " href="../Item/IsNotEmptyBag.html">IsNotEmptyBag</a>
-    <a class="fn " href="../Item/IsPotion.html">IsPotion</a>
-    <a class="fn " href="../Item/IsSoulBound.html">IsSoulBound</a>
-    <a class="fn " href="../Item/IsWeaponVellum.html">IsWeaponVellum</a>
-    <a class="fn " href="../Item/SaveToDB.html">SaveToDB</a>
-    <a class="fn " href="../Item/SetBinding.html">SetBinding</a>
-    <a class="fn " href="../Item/SetCount.html">SetCount</a>
-    <a class="fn " href="../Item/SetEnchantment.html">SetEnchantment</a>
-    <a class="fn " href="../Item/SetOwner.html">SetOwner</a>
+    <script src="sidebar.js"></script>
+    <script>
+      // Highlight current method by adding "current" class to it
+      var element = document.getElementById("Item:GetItemLink");
+      if (element) {
+        var classname = "current";
+        arr = element.className.split(" ");
+        if (arr.indexOf(classname) == -1) {
+          element.className += " " + classname;
+        }
+      }
+    </script>
 
     </div>
 </section>
@@ -194,7 +154,7 @@ enum LocaleConstant
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 06/07/2019</center>
+<center>Generated on <script src="../date.js"></script></center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

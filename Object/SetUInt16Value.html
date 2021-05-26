@@ -26,35 +26,18 @@
     <div class="block">
         
     <h2>Object Methods</h2>
-    <a class="fn " href="../Object/GetByteValue.html">GetByteValue</a>
-    <a class="fn " href="../Object/GetEntry.html">GetEntry</a>
-    <a class="fn " href="../Object/GetFloatValue.html">GetFloatValue</a>
-    <a class="fn " href="../Object/GetGUID.html">GetGUID</a>
-    <a class="fn " href="../Object/GetGUIDLow.html">GetGUIDLow</a>
-    <a class="fn " href="../Object/GetInt32Value.html">GetInt32Value</a>
-    <a class="fn " href="../Object/GetScale.html">GetScale</a>
-    <a class="fn " href="../Object/GetTypeId.html">GetTypeId</a>
-    <a class="fn " href="../Object/GetUInt16Value.html">GetUInt16Value</a>
-    <a class="fn " href="../Object/GetUInt32Value.html">GetUInt32Value</a>
-    <a class="fn " href="../Object/GetUInt64Value.html">GetUInt64Value</a>
-    <a class="fn " href="../Object/HasFlag.html">HasFlag</a>
-    <a class="fn " href="../Object/IsInWorld.html">IsInWorld</a>
-    <a class="fn " href="../Object/RemoveFlag.html">RemoveFlag</a>
-    <a class="fn " href="../Object/SetByteValue.html">SetByteValue</a>
-    <a class="fn " href="../Object/SetFlag.html">SetFlag</a>
-    <a class="fn " href="../Object/SetFloatValue.html">SetFloatValue</a>
-    <a class="fn " href="../Object/SetInt16Value.html">SetInt16Value</a>
-    <a class="fn " href="../Object/SetInt32Value.html">SetInt32Value</a>
-    <a class="fn " href="../Object/SetScale.html">SetScale</a>
-    <a class="fn current" href="../Object/SetUInt16Value.html">SetUInt16Value</a>
-    <a class="fn " href="../Object/SetUInt32Value.html">SetUInt32Value</a>
-    <a class="fn " href="../Object/SetUInt64Value.html">SetUInt64Value</a>
-    <a class="fn " href="../Object/ToCorpse.html">ToCorpse</a>
-    <a class="fn " href="../Object/ToCreature.html">ToCreature</a>
-    <a class="fn " href="../Object/ToGameObject.html">ToGameObject</a>
-    <a class="fn " href="../Object/ToPlayer.html">ToPlayer</a>
-    <a class="fn " href="../Object/ToUnit.html">ToUnit</a>
-    <a class="fn " href="../Object/UpdateUInt32Value.html">UpdateUInt32Value</a>
+    <script src="sidebar.js"></script>
+    <script>
+      // Highlight current method by adding "current" class to it
+      var element = document.getElementById("Object:SetUInt16Value");
+      if (element) {
+        var classname = "current";
+        arr = element.className.split(" ");
+        if (arr.indexOf(classname) == -1) {
+          element.className += " " + classname;
+        }
+      }
+    </script>
 
     </div>
 </section>
@@ -162,7 +145,7 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 06/07/2019</center>
+<center>Generated on <script src="../date.js"></script></center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

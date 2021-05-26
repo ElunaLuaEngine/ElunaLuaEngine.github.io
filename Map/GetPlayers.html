@@ -26,24 +26,18 @@
     <div class="block">
         
     <h2>Map Methods</h2>
-    <a class="fn " href="../Map/GetAreaId.html">GetAreaId</a>
-    <a class="fn " href="../Map/GetDifficulty.html">GetDifficulty</a>
-    <a class="fn " href="../Map/GetHeight.html">GetHeight</a>
-    <a class="fn " href="../Map/GetInstanceData.html">GetInstanceData</a>
-    <a class="fn " href="../Map/GetInstanceId.html">GetInstanceId</a>
-    <a class="fn " href="../Map/GetMapId.html">GetMapId</a>
-    <a class="fn " href="../Map/GetName.html">GetName</a>
-    <a class="fn " href="../Map/GetPlayerCount.html">GetPlayerCount</a>
-    <a class="fn current" href="../Map/GetPlayers.html">GetPlayers</a>
-    <a class="fn " href="../Map/GetWorldObject.html">GetWorldObject</a>
-    <a class="fn " href="../Map/IsArena.html">IsArena</a>
-    <a class="fn " href="../Map/IsBattleground.html">IsBattleground</a>
-    <a class="fn " href="../Map/IsDungeon.html">IsDungeon</a>
-    <a class="fn " href="../Map/IsEmpty.html">IsEmpty</a>
-    <a class="fn " href="../Map/IsHeroic.html">IsHeroic</a>
-    <a class="fn " href="../Map/IsRaid.html">IsRaid</a>
-    <a class="fn " href="../Map/SaveInstanceData.html">SaveInstanceData</a>
-    <a class="fn " href="../Map/SetWeather.html">SetWeather</a>
+    <script src="sidebar.js"></script>
+    <script>
+      // Highlight current method by adding "current" class to it
+      var element = document.getElementById("Map:GetPlayers");
+      if (element) {
+        var classname = "current";
+        arr = element.className.split(" ");
+        if (arr.indexOf(classname) == -1) {
+          element.className += " " + classname;
+        }
+      }
+    </script>
 
     </div>
 </section>
@@ -153,7 +147,7 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 06/07/2019</center>
+<center>Generated on <script src="../date.js"></script></center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

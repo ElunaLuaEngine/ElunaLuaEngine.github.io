@@ -26,11 +26,18 @@
     <div class="block">
         
     <h2>Corpse Methods</h2>
-    <a class="fn " href="../Corpse/GetGhostTime.html">GetGhostTime</a>
-    <a class="fn " href="../Corpse/GetOwnerGUID.html">GetOwnerGUID</a>
-    <a class="fn " href="../Corpse/GetType.html">GetType</a>
-    <a class="fn " href="../Corpse/ResetGhostTime.html">ResetGhostTime</a>
-    <a class="fn current" href="../Corpse/SaveToDB.html">SaveToDB</a>
+    <script src="sidebar.js"></script>
+    <script>
+      // Highlight current method by adding "current" class to it
+      var element = document.getElementById("Corpse:SaveToDB");
+      if (element) {
+        var classname = "current";
+        arr = element.className.split(" ");
+        if (arr.indexOf(classname) == -1) {
+          element.className += " " + classname;
+        }
+      }
+    </script>
 
     </div>
 </section>
@@ -127,7 +134,7 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 06/07/2019</center>
+<center>Generated on <script src="../date.js"></script></center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

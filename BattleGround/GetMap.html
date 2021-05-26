@@ -26,24 +26,18 @@
     <div class="block">
         
     <h2>BattleGround Methods</h2>
-    <a class="fn " href="../BattleGround/GetAlivePlayersCountByTeam.html">GetAlivePlayersCountByTeam</a>
-    <a class="fn " href="../BattleGround/GetBonusHonorFromKillCount.html">GetBonusHonorFromKillCount</a>
-    <a class="fn " href="../BattleGround/GetBracketId.html">GetBracketId</a>
-    <a class="fn " href="../BattleGround/GetEndTime.html">GetEndTime</a>
-    <a class="fn " href="../BattleGround/GetFreeSlotsForTeam.html">GetFreeSlotsForTeam</a>
-    <a class="fn " href="../BattleGround/GetInstanceId.html">GetInstanceId</a>
-    <a class="fn current" href="../BattleGround/GetMap.html">GetMap</a>
-    <a class="fn " href="../BattleGround/GetMapId.html">GetMapId</a>
-    <a class="fn " href="../BattleGround/GetMaxLevel.html">GetMaxLevel</a>
-    <a class="fn " href="../BattleGround/GetMaxPlayers.html">GetMaxPlayers</a>
-    <a class="fn " href="../BattleGround/GetMaxPlayersPerTeam.html">GetMaxPlayersPerTeam</a>
-    <a class="fn " href="../BattleGround/GetMinLevel.html">GetMinLevel</a>
-    <a class="fn " href="../BattleGround/GetMinPlayers.html">GetMinPlayers</a>
-    <a class="fn " href="../BattleGround/GetMinPlayersPerTeam.html">GetMinPlayersPerTeam</a>
-    <a class="fn " href="../BattleGround/GetName.html">GetName</a>
-    <a class="fn " href="../BattleGround/GetStatus.html">GetStatus</a>
-    <a class="fn " href="../BattleGround/GetTypeId.html">GetTypeId</a>
-    <a class="fn " href="../BattleGround/GetWinner.html">GetWinner</a>
+    <script src="sidebar.js"></script>
+    <script>
+      // Highlight current method by adding "current" class to it
+      var element = document.getElementById("BattleGround:GetMap");
+      if (element) {
+        var classname = "current";
+        arr = element.className.split(" ");
+        if (arr.indexOf(classname) == -1) {
+          element.className += " " + classname;
+        }
+      }
+    </script>
 
     </div>
 </section>
@@ -143,7 +137,7 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 06/07/2019</center>
+<center>Generated on <script src="../date.js"></script></center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

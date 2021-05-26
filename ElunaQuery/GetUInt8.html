@@ -26,23 +26,18 @@
     <div class="block">
         
     <h2>ElunaQuery Methods</h2>
-    <a class="fn " href="../ElunaQuery/GetBool.html">GetBool</a>
-    <a class="fn " href="../ElunaQuery/GetColumnCount.html">GetColumnCount</a>
-    <a class="fn " href="../ElunaQuery/GetDouble.html">GetDouble</a>
-    <a class="fn " href="../ElunaQuery/GetFloat.html">GetFloat</a>
-    <a class="fn " href="../ElunaQuery/GetInt16.html">GetInt16</a>
-    <a class="fn " href="../ElunaQuery/GetInt32.html">GetInt32</a>
-    <a class="fn " href="../ElunaQuery/GetInt64.html">GetInt64</a>
-    <a class="fn " href="../ElunaQuery/GetInt8.html">GetInt8</a>
-    <a class="fn " href="../ElunaQuery/GetRow.html">GetRow</a>
-    <a class="fn " href="../ElunaQuery/GetRowCount.html">GetRowCount</a>
-    <a class="fn " href="../ElunaQuery/GetString.html">GetString</a>
-    <a class="fn " href="../ElunaQuery/GetUInt16.html">GetUInt16</a>
-    <a class="fn " href="../ElunaQuery/GetUInt32.html">GetUInt32</a>
-    <a class="fn " href="../ElunaQuery/GetUInt64.html">GetUInt64</a>
-    <a class="fn current" href="../ElunaQuery/GetUInt8.html">GetUInt8</a>
-    <a class="fn " href="../ElunaQuery/IsNull.html">IsNull</a>
-    <a class="fn " href="../ElunaQuery/NextRow.html">NextRow</a>
+    <script src="sidebar.js"></script>
+    <script>
+      // Highlight current method by adding "current" class to it
+      var element = document.getElementById("ElunaQuery:GetUInt8");
+      if (element) {
+        var classname = "current";
+        arr = element.className.split(" ");
+        if (arr.indexOf(classname) == -1) {
+          element.className += " " + classname;
+        }
+      }
+    </script>
 
     </div>
 </section>
@@ -145,7 +140,7 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 06/07/2019</center>
+<center>Generated on <script src="../date.js"></script></center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

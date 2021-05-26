@@ -26,28 +26,18 @@
     <div class="block">
         
     <h2>Group Methods</h2>
-    <a class="fn " href="../Group/AddMember.html">AddMember</a>
-    <a class="fn " href="../Group/ConvertToRaid.html">ConvertToRaid</a>
-    <a class="fn " href="../Group/Disband.html">Disband</a>
-    <a class="fn " href="../Group/GetGUID.html">GetGUID</a>
-    <a class="fn " href="../Group/GetLeaderGUID.html">GetLeaderGUID</a>
-    <a class="fn " href="../Group/GetMemberGUID.html">GetMemberGUID</a>
-    <a class="fn " href="../Group/GetMemberGroup.html">GetMemberGroup</a>
-    <a class="fn current" href="../Group/GetMembers.html">GetMembers</a>
-    <a class="fn " href="../Group/GetMembersCount.html">GetMembersCount</a>
-    <a class="fn " href="../Group/HasFreeSlotSubGroup.html">HasFreeSlotSubGroup</a>
-    <a class="fn " href="../Group/IsAssistant.html">IsAssistant</a>
-    <a class="fn " href="../Group/IsBGGroup.html">IsBGGroup</a>
-    <a class="fn " href="../Group/IsFull.html">IsFull</a>
-    <a class="fn " href="../Group/IsLeader.html">IsLeader</a>
-    <a class="fn " href="../Group/IsMember.html">IsMember</a>
-    <a class="fn " href="../Group/IsRaidGroup.html">IsRaidGroup</a>
-    <a class="fn " href="../Group/RemoveMember.html">RemoveMember</a>
-    <a class="fn " href="../Group/SameSubGroup.html">SameSubGroup</a>
-    <a class="fn " href="../Group/SendPacket.html">SendPacket</a>
-    <a class="fn " href="../Group/SetLeader.html">SetLeader</a>
-    <a class="fn " href="../Group/SetMembersGroup.html">SetMembersGroup</a>
-    <a class="fn " href="../Group/SetTargetIcon.html">SetTargetIcon</a>
+    <script src="sidebar.js"></script>
+    <script>
+      // Highlight current method by adding "current" class to it
+      var element = document.getElementById("Group:GetMembers");
+      if (element) {
+        var classname = "current";
+        arr = element.className.split(" ");
+        if (arr.indexOf(classname) == -1) {
+          element.className += " " + classname;
+        }
+      }
+    </script>
 
     </div>
 </section>
@@ -147,7 +137,7 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 06/07/2019</center>
+<center>Generated on <script src="../date.js"></script></center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

@@ -26,22 +26,18 @@
     <div class="block">
         
     <h2>Guild Methods</h2>
-    <a class="fn " href="../Guild/AddMember.html">AddMember</a>
-    <a class="fn " href="../Guild/DeleteMember.html">DeleteMember</a>
-    <a class="fn " href="../Guild/Disband.html">Disband</a>
-    <a class="fn " href="../Guild/GetId.html">GetId</a>
-    <a class="fn " href="../Guild/GetInfo.html">GetInfo</a>
-    <a class="fn current" href="../Guild/GetLeader.html">GetLeader</a>
-    <a class="fn " href="../Guild/GetLeaderGUID.html">GetLeaderGUID</a>
-    <a class="fn " href="../Guild/GetMOTD.html">GetMOTD</a>
-    <a class="fn " href="../Guild/GetMemberCount.html">GetMemberCount</a>
-    <a class="fn " href="../Guild/GetMembers.html">GetMembers</a>
-    <a class="fn " href="../Guild/GetName.html">GetName</a>
-    <a class="fn " href="../Guild/SendPacket.html">SendPacket</a>
-    <a class="fn " href="../Guild/SendPacketToRanked.html">SendPacketToRanked</a>
-    <a class="fn " href="../Guild/SetBankTabText.html">SetBankTabText</a>
-    <a class="fn " href="../Guild/SetLeader.html">SetLeader</a>
-    <a class="fn " href="../Guild/SetMemberRank.html">SetMemberRank</a>
+    <script src="sidebar.js"></script>
+    <script>
+      // Highlight current method by adding "current" class to it
+      var element = document.getElementById("Guild:GetLeader");
+      if (element) {
+        var classname = "current";
+        arr = element.className.split(" ");
+        if (arr.indexOf(classname) == -1) {
+          element.className += " " + classname;
+        }
+      }
+    </script>
 
     </div>
 </section>
@@ -141,7 +137,7 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 06/07/2019</center>
+<center>Generated on <script src="../date.js"></script></center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

@@ -26,12 +26,18 @@
     <div class="block">
         
     <h2>Vehicle Methods</h2>
-    <a class="fn " href="../Vehicle/AddPassenger.html">AddPassenger</a>
-    <a class="fn " href="../Vehicle/GetEntry.html">GetEntry</a>
-    <a class="fn " href="../Vehicle/GetOwner.html">GetOwner</a>
-    <a class="fn " href="../Vehicle/GetPassenger.html">GetPassenger</a>
-    <a class="fn current" href="../Vehicle/IsOnBoard.html">IsOnBoard</a>
-    <a class="fn " href="../Vehicle/RemovePassenger.html">RemovePassenger</a>
+    <script src="sidebar.js"></script>
+    <script>
+      // Highlight current method by adding "current" class to it
+      var element = document.getElementById("Vehicle:IsOnBoard");
+      if (element) {
+        var classname = "current";
+        arr = element.className.split(" ");
+        if (arr.indexOf(classname) == -1) {
+          element.className += " " + classname;
+        }
+      }
+    </script>
 
     </div>
 </section>
@@ -134,7 +140,7 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 06/07/2019</center>
+<center>Generated on <script src="../date.js"></script></center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

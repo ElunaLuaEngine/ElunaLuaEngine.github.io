@@ -26,29 +26,18 @@
     <div class="block">
         
     <h2>WorldPacket Methods</h2>
-    <a class="fn " href="../WorldPacket/GetOpcode.html">GetOpcode</a>
-    <a class="fn current" href="../WorldPacket/GetSize.html">GetSize</a>
-    <a class="fn " href="../WorldPacket/ReadByte.html">ReadByte</a>
-    <a class="fn " href="../WorldPacket/ReadDouble.html">ReadDouble</a>
-    <a class="fn " href="../WorldPacket/ReadFloat.html">ReadFloat</a>
-    <a class="fn " href="../WorldPacket/ReadGUID.html">ReadGUID</a>
-    <a class="fn " href="../WorldPacket/ReadLong.html">ReadLong</a>
-    <a class="fn " href="../WorldPacket/ReadShort.html">ReadShort</a>
-    <a class="fn " href="../WorldPacket/ReadString.html">ReadString</a>
-    <a class="fn " href="../WorldPacket/ReadUByte.html">ReadUByte</a>
-    <a class="fn " href="../WorldPacket/ReadULong.html">ReadULong</a>
-    <a class="fn " href="../WorldPacket/ReadUShort.html">ReadUShort</a>
-    <a class="fn " href="../WorldPacket/SetOpcode.html">SetOpcode</a>
-    <a class="fn " href="../WorldPacket/WriteByte.html">WriteByte</a>
-    <a class="fn " href="../WorldPacket/WriteDouble.html">WriteDouble</a>
-    <a class="fn " href="../WorldPacket/WriteFloat.html">WriteFloat</a>
-    <a class="fn " href="../WorldPacket/WriteGUID.html">WriteGUID</a>
-    <a class="fn " href="../WorldPacket/WriteLong.html">WriteLong</a>
-    <a class="fn " href="../WorldPacket/WriteShort.html">WriteShort</a>
-    <a class="fn " href="../WorldPacket/WriteString.html">WriteString</a>
-    <a class="fn " href="../WorldPacket/WriteUByte.html">WriteUByte</a>
-    <a class="fn " href="../WorldPacket/WriteULong.html">WriteULong</a>
-    <a class="fn " href="../WorldPacket/WriteUShort.html">WriteUShort</a>
+    <script src="sidebar.js"></script>
+    <script>
+      // Highlight current method by adding "current" class to it
+      var element = document.getElementById("WorldPacket:GetSize");
+      if (element) {
+        var classname = "current";
+        arr = element.className.split(" ");
+        if (arr.indexOf(classname) == -1) {
+          element.className += " " + classname;
+        }
+      }
+    </script>
 
     </div>
 </section>
@@ -148,7 +137,7 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 06/07/2019</center>
+<center>Generated on <script src="../date.js"></script></center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

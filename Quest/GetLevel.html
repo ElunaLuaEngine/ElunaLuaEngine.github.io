@@ -26,17 +26,18 @@
     <div class="block">
         
     <h2>Quest Methods</h2>
-    <a class="fn " href="../Quest/GetFlags.html">GetFlags</a>
-    <a class="fn " href="../Quest/GetId.html">GetId</a>
-    <a class="fn current" href="../Quest/GetLevel.html">GetLevel</a>
-    <a class="fn " href="../Quest/GetMinLevel.html">GetMinLevel</a>
-    <a class="fn " href="../Quest/GetNextQuestId.html">GetNextQuestId</a>
-    <a class="fn " href="../Quest/GetNextQuestInChain.html">GetNextQuestInChain</a>
-    <a class="fn " href="../Quest/GetPrevQuestId.html">GetPrevQuestId</a>
-    <a class="fn " href="../Quest/GetType.html">GetType</a>
-    <a class="fn " href="../Quest/HasFlag.html">HasFlag</a>
-    <a class="fn " href="../Quest/IsDaily.html">IsDaily</a>
-    <a class="fn " href="../Quest/IsRepeatable.html">IsRepeatable</a>
+    <script src="sidebar.js"></script>
+    <script>
+      // Highlight current method by adding "current" class to it
+      var element = document.getElementById("Quest:GetLevel");
+      if (element) {
+        var classname = "current";
+        arr = element.className.split(" ");
+        if (arr.indexOf(classname) == -1) {
+          element.className += " " + classname;
+        }
+      }
+    </script>
 
     </div>
 </section>
@@ -136,7 +137,7 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 06/07/2019</center>
+<center>Generated on <script src="../date.js"></script></center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

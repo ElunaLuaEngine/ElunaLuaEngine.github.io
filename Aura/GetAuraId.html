@@ -26,18 +26,18 @@
     <div class="block">
         
     <h2>Aura Methods</h2>
-    <a class="fn current" href="../Aura/GetAuraId.html">GetAuraId</a>
-    <a class="fn " href="../Aura/GetCaster.html">GetCaster</a>
-    <a class="fn " href="../Aura/GetCasterGUID.html">GetCasterGUID</a>
-    <a class="fn " href="../Aura/GetCasterLevel.html">GetCasterLevel</a>
-    <a class="fn " href="../Aura/GetDuration.html">GetDuration</a>
-    <a class="fn " href="../Aura/GetMaxDuration.html">GetMaxDuration</a>
-    <a class="fn " href="../Aura/GetOwner.html">GetOwner</a>
-    <a class="fn " href="../Aura/GetStackAmount.html">GetStackAmount</a>
-    <a class="fn " href="../Aura/Remove.html">Remove</a>
-    <a class="fn " href="../Aura/SetDuration.html">SetDuration</a>
-    <a class="fn " href="../Aura/SetMaxDuration.html">SetMaxDuration</a>
-    <a class="fn " href="../Aura/SetStackAmount.html">SetStackAmount</a>
+    <script src="sidebar.js"></script>
+    <script>
+      // Highlight current method by adding "current" class to it
+      var element = document.getElementById("Aura:GetAuraId");
+      if (element) {
+        var classname = "current";
+        arr = element.className.split(" ");
+        if (arr.indexOf(classname) == -1) {
+          element.className += " " + classname;
+        }
+      }
+    </script>
 
     </div>
 </section>
@@ -137,7 +137,7 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 06/07/2019</center>
+<center>Generated on <script src="../date.js"></script></center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

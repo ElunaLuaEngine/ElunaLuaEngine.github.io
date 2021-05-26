@@ -26,53 +26,18 @@
     <div class="block">
         
     <h2>WorldObject Methods</h2>
-    <a class="fn " href="../WorldObject/GetAngle.html">GetAngle</a>
-    <a class="fn " href="../WorldObject/GetAreaId.html">GetAreaId</a>
-    <a class="fn " href="../WorldObject/GetCreaturesInRange.html">GetCreaturesInRange</a>
-    <a class="fn current" href="../WorldObject/GetDistance.html">GetDistance</a>
-    <a class="fn " href="../WorldObject/GetDistance2d.html">GetDistance2d</a>
-    <a class="fn " href="../WorldObject/GetExactDistance.html">GetExactDistance</a>
-    <a class="fn " href="../WorldObject/GetExactDistance2d.html">GetExactDistance2d</a>
-    <a class="fn " href="../WorldObject/GetGameObjectsInRange.html">GetGameObjectsInRange</a>
-    <a class="fn " href="../WorldObject/GetInstanceId.html">GetInstanceId</a>
-    <a class="fn " href="../WorldObject/GetLocation.html">GetLocation</a>
-    <a class="fn " href="../WorldObject/GetMap.html">GetMap</a>
-    <a class="fn " href="../WorldObject/GetMapId.html">GetMapId</a>
-    <a class="fn " href="../WorldObject/GetName.html">GetName</a>
-    <a class="fn " href="../WorldObject/GetNearObject.html">GetNearObject</a>
-    <a class="fn " href="../WorldObject/GetNearObjects.html">GetNearObjects</a>
-    <a class="fn " href="../WorldObject/GetNearestCreature.html">GetNearestCreature</a>
-    <a class="fn " href="../WorldObject/GetNearestGameObject.html">GetNearestGameObject</a>
-    <a class="fn " href="../WorldObject/GetNearestPlayer.html">GetNearestPlayer</a>
-    <a class="fn " href="../WorldObject/GetO.html">GetO</a>
-    <a class="fn " href="../WorldObject/GetPhaseMask.html">GetPhaseMask</a>
-    <a class="fn " href="../WorldObject/GetPlayersInRange.html">GetPlayersInRange</a>
-    <a class="fn " href="../WorldObject/GetRelativePoint.html">GetRelativePoint</a>
-    <a class="fn " href="../WorldObject/GetX.html">GetX</a>
-    <a class="fn " href="../WorldObject/GetY.html">GetY</a>
-    <a class="fn " href="../WorldObject/GetZ.html">GetZ</a>
-    <a class="fn " href="../WorldObject/GetZoneId.html">GetZoneId</a>
-    <a class="fn " href="../WorldObject/IsInBack.html">IsInBack</a>
-    <a class="fn " href="../WorldObject/IsInFront.html">IsInFront</a>
-    <a class="fn " href="../WorldObject/IsInMap.html">IsInMap</a>
-    <a class="fn " href="../WorldObject/IsInRange.html">IsInRange</a>
-    <a class="fn " href="../WorldObject/IsInRange2d.html">IsInRange2d</a>
-    <a class="fn " href="../WorldObject/IsInRange3d.html">IsInRange3d</a>
-    <a class="fn " href="../WorldObject/IsWithinDist.html">IsWithinDist</a>
-    <a class="fn " href="../WorldObject/IsWithinDist2d.html">IsWithinDist2d</a>
-    <a class="fn " href="../WorldObject/IsWithinDist3d.html">IsWithinDist3d</a>
-    <a class="fn " href="../WorldObject/IsWithinDistInMap.html">IsWithinDistInMap</a>
-    <a class="fn " href="../WorldObject/IsWithinLoS.html">IsWithinLoS</a>
-    <a class="fn " href="../WorldObject/PlayDirectSound.html">PlayDirectSound</a>
-    <a class="fn " href="../WorldObject/PlayDistanceSound.html">PlayDistanceSound</a>
-    <a class="fn " href="../WorldObject/PlayMusic.html">PlayMusic</a>
-    <a class="fn " href="../WorldObject/RegisterEvent.html">RegisterEvent</a>
-    <a class="fn " href="../WorldObject/RemoveEventById.html">RemoveEventById</a>
-    <a class="fn " href="../WorldObject/RemoveEvents.html">RemoveEvents</a>
-    <a class="fn " href="../WorldObject/SendPacket.html">SendPacket</a>
-    <a class="fn " href="../WorldObject/SetPhaseMask.html">SetPhaseMask</a>
-    <a class="fn " href="../WorldObject/SpawnCreature.html">SpawnCreature</a>
-    <a class="fn " href="../WorldObject/SummonGameObject.html">SummonGameObject</a>
+    <script src="sidebar.js"></script>
+    <script>
+      // Highlight current method by adding "current" class to it
+      var element = document.getElementById("WorldObject:GetDistance");
+      if (element) {
+        var classname = "current";
+        arr = element.className.split(" ");
+        if (arr.indexOf(classname) == -1) {
+          element.className += " " + classname;
+        }
+      }
+    </script>
 
     </div>
 </section>
@@ -191,7 +156,7 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 06/07/2019</center>
+<center>Generated on <script src="../date.js"></script></center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

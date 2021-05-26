@@ -26,18 +26,18 @@
     <div class="block">
         
     <h2>Spell Methods</h2>
-    <a class="fn " href="../Spell/Cancel.html">Cancel</a>
-    <a class="fn " href="../Spell/Cast.html">Cast</a>
-    <a class="fn " href="../Spell/Finish.html">Finish</a>
-    <a class="fn " href="../Spell/GetCastTime.html">GetCastTime</a>
-    <a class="fn " href="../Spell/GetCaster.html">GetCaster</a>
-    <a class="fn " href="../Spell/GetDuration.html">GetDuration</a>
-    <a class="fn " href="../Spell/GetEntry.html">GetEntry</a>
-    <a class="fn current" href="../Spell/GetPowerCost.html">GetPowerCost</a>
-    <a class="fn " href="../Spell/GetTarget.html">GetTarget</a>
-    <a class="fn " href="../Spell/GetTargetDest.html">GetTargetDest</a>
-    <a class="fn " href="../Spell/IsAutoRepeat.html">IsAutoRepeat</a>
-    <a class="fn " href="../Spell/SetAutoRepeat.html">SetAutoRepeat</a>
+    <script src="sidebar.js"></script>
+    <script>
+      // Highlight current method by adding "current" class to it
+      var element = document.getElementById("Spell:GetPowerCost");
+      if (element) {
+        var classname = "current";
+        arr = element.className.split(" ");
+        if (arr.indexOf(classname) == -1) {
+          element.className += " " + classname;
+        }
+      }
+    </script>
 
     </div>
 </section>
@@ -137,7 +137,7 @@
 <script src="../static/jquery.js"></script>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
-<center>Generated on 06/07/2019</center>
+<center>Generated on <script src="../date.js"></script></center>
 <center>&copy;2016 - Eluna Lua Engine</center>
 </body>
 </html>

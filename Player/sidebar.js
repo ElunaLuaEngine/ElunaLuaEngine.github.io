@@ -68,6 +68,7 @@ document.write(`
   <a id="Player:GetLatency" class="fn" href="../Player/GetLatency.html">GetLatency</a>
   <a id="Player:GetLevelPlayedTime" class="fn" href="../Player/GetLevelPlayedTime.html">GetLevelPlayedTime</a>
   <a id="Player:GetLifetimeKills" class="fn" href="../Player/GetLifetimeKills.html">GetLifetimeKills</a>
+  <a id="Player:GetMailItem" class="fn" href="../Player/GetMailItem.html">GetMailItem</a>
   <a id="Player:GetManaBonusFromIntellect" class="fn" href="../Player/GetManaBonusFromIntellect.html">GetManaBonusFromIntellect</a>
   <a id="Player:GetMaxSkillValue" class="fn" href="../Player/GetMaxSkillValue.html">GetMaxSkillValue</a>
   <a id="Player:GetNextRandomRaidMember" class="fn" href="../Player/GetNextRandomRaidMember.html">GetNextRandomRaidMember</a>
@@ -155,6 +156,7 @@ document.write(`
   <a id="Player:ModifyHonorPoints" class="fn" href="../Player/ModifyHonorPoints.html">ModifyHonorPoints</a>
   <a id="Player:ModifyMoney" class="fn" href="../Player/ModifyMoney.html">ModifyMoney</a>
   <a id="Player:Mute" class="fn" href="../Player/Mute.html">Mute</a>
+  <a id="Player:RemoveArenaSpellCooldowns" class="fn" href="../Player/RemoveArenaSpellCooldowns.html">RemoveArenaSpellCooldowns</a>
   <a id="Player:RemoveFromBattlegroundRaid" class="fn" href="../Player/RemoveFromBattlegroundRaid.html">RemoveFromBattlegroundRaid</a>
   <a id="Player:RemoveFromGroup" class="fn" href="../Player/RemoveFromGroup.html">RemoveFromGroup</a>
   <a id="Player:RemoveItem" class="fn" href="../Player/RemoveItem.html">RemoveItem</a>
@@ -191,6 +193,7 @@ document.write(`
   <a id="Player:SendTabardVendorActivate" class="fn" href="../Player/SendTabardVendorActivate.html">SendTabardVendorActivate</a>
   <a id="Player:SendTaxiMenu" class="fn" href="../Player/SendTaxiMenu.html">SendTaxiMenu</a>
   <a id="Player:SendTrainerList" class="fn" href="../Player/SendTrainerList.html">SendTrainerList</a>
+  <a id="Player:SendUpdateWorldState" class="fn" href="../Player/SendUpdateWorldState.html">SendUpdateWorldState</a>
   <a id="Player:SetAcceptWhispers" class="fn" href="../Player/SetAcceptWhispers.html">SetAcceptWhispers</a>
   <a id="Player:SetAchievement" class="fn" href="../Player/SetAchievement.html">SetAchievement</a>
   <a id="Player:SetArenaPoints" class="fn" href="../Player/SetArenaPoints.html">SetArenaPoints</a>

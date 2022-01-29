@@ -114,6 +114,7 @@ document.write(`
   <a id="Unit:NearTeleport" class="fn" href="../Unit/NearTeleport.html">NearTeleport</a>
   <a id="Unit:PerformEmote" class="fn" href="../Unit/PerformEmote.html">PerformEmote</a>
   <a id="Unit:RemoveAllAuras" class="fn" href="../Unit/RemoveAllAuras.html">RemoveAllAuras</a>
+  <a id="Unit:RemoveArenaAuras" class="fn" href="../Unit/RemoveArenaAuras.html">RemoveArenaAuras</a>
   <a id="Unit:RemoveAura" class="fn" href="../Unit/RemoveAura.html">RemoveAura</a>
   <a id="Unit:SendChatMessageToPlayer" class="fn" href="../Unit/SendChatMessageToPlayer.html">SendChatMessageToPlayer</a>
   <a id="Unit:SendUnitEmote" class="fn" href="../Unit/SendUnitEmote.html">SendUnitEmote</a>
@@ -130,6 +131,7 @@ document.write(`
   <a id="Unit:SetFaction" class="fn" href="../Unit/SetFaction.html">SetFaction</a>
   <a id="Unit:SetFeared" class="fn" href="../Unit/SetFeared.html">SetFeared</a>
   <a id="Unit:SetHealth" class="fn" href="../Unit/SetHealth.html">SetHealth</a>
+  <a id="Unit:SetInCombatWith" class="fn" href="../Unit/SetInCombatWith.html">SetInCombatWith</a>
   <a id="Unit:SetLevel" class="fn" href="../Unit/SetLevel.html">SetLevel</a>
   <a id="Unit:SetMaxHealth" class="fn" href="../Unit/SetMaxHealth.html">SetMaxHealth</a>
   <a id="Unit:SetMaxPower" class="fn" href="../Unit/SetMaxPower.html">SetMaxPower</a>

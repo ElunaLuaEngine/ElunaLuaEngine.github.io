@@ -76,6 +76,7 @@ document.write(`
   <a id="Creature:SetNPCFlags" class="fn" href="../Creature/SetNPCFlags.html">SetNPCFlags</a>
   <a id="Creature:SetNoCallAssistance" class="fn" href="../Creature/SetNoCallAssistance.html">SetNoCallAssistance</a>
   <a id="Creature:SetNoSearchAssistance" class="fn" href="../Creature/SetNoSearchAssistance.html">SetNoSearchAssistance</a>
+  <a id="Creature:SetReactState" class="fn" href="../Creature/SetReactState.html">SetReactState</a>
   <a id="Creature:SetRegeneratingHealth" class="fn" href="../Creature/SetRegeneratingHealth.html">SetRegeneratingHealth</a>
   <a id="Creature:SetRespawnDelay" class="fn" href="../Creature/SetRespawnDelay.html">SetRespawnDelay</a>
   <a id="Creature:SetWalk" class="fn" href="../Creature/SetWalk.html">SetWalk</a>

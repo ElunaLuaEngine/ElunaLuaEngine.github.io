@@ -67,13 +67,19 @@
 
     
     <div class='docblock'>
-        <p>Repairs <a class="mod" href="../Item/index.html">Item</a> at specified position. Returns total repair cost </p>
+        <p>Repairs <a class="mod" href="../Item/index.html">Item</a> at specified position.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>totalCost = Player:DurabilityRepair( position, cost, discountMod, guildBank )</code>
+            <code>Player:DurabilityRepair( position )</code>
+        </p>
+        <p>
+            <code>Player:DurabilityRepair( position, cost )</code>
+        </p>
+        <p>
+            <code>Player:DurabilityRepair( position, cost, discountMod )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -89,12 +95,8 @@
                 <dd class="docblock"><em>See method description.</em></dd>
             </dl>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> discountMod</code></dt>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> discountMod (1)</code></dt>
                 <dd class="docblock"><p><em>Valid numbers</em>: all decimal numbers.</p></dd>
-            </dl>
-            <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.2.html">boolean</a></strong> guildBank (false)</code></dt>
-                <dd class="docblock"><em>See method description.</em></dd>
             </dl>
         </p>
 
@@ -102,10 +104,7 @@
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> totalCost</code></dt>
-                <dd class="docblock"><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
-            </dl>
+            Nothing.
         </p>
     </div>
 

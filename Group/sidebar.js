@@ -12,6 +12,7 @@ document.write(`
   <a id="Group:IsAssistant" class="fn" href="../Group/IsAssistant.html">IsAssistant</a>
   <a id="Group:IsBGGroup" class="fn" href="../Group/IsBGGroup.html">IsBGGroup</a>
   <a id="Group:IsFull" class="fn" href="../Group/IsFull.html">IsFull</a>
+  <a id="Group:IsLFGGroup" class="fn" href="../Group/IsLFGGroup.html">IsLFGGroup</a>
   <a id="Group:IsLeader" class="fn" href="../Group/IsLeader.html">IsLeader</a>
   <a id="Group:IsMember" class="fn" href="../Group/IsMember.html">IsMember</a>
   <a id="Group:IsRaidGroup" class="fn" href="../Group/IsRaidGroup.html">IsRaidGroup</a>

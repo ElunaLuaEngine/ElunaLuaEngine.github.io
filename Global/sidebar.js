@@ -81,6 +81,7 @@ document.write(`
   <a id="Global:ReloadEluna" class="fn" href="../Global/ReloadEluna.html">ReloadEluna</a>
   <a id="Global:RemoveEventById" class="fn" href="../Global/RemoveEventById.html">RemoveEventById</a>
   <a id="Global:RemoveEvents" class="fn" href="../Global/RemoveEvents.html">RemoveEvents</a>
+  <a id="Global:RunCommand" class="fn" href="../Global/RunCommand.html">RunCommand</a>
   <a id="Global:SaveAllPlayers" class="fn" href="../Global/SaveAllPlayers.html">SaveAllPlayers</a>
   <a id="Global:SendMail" class="fn" href="../Global/SendMail.html">SendMail</a>
   <a id="Global:SendWorldMessage" class="fn" href="../Global/SendWorldMessage.html">SendWorldMessage</a>

@@ -15,6 +15,7 @@ document.write(`
   <a id="Unit:DeMorph" class="fn" href="../Unit/DeMorph.html">DeMorph</a>
   <a id="Unit:DealDamage" class="fn" href="../Unit/DealDamage.html">DealDamage</a>
   <a id="Unit:DealHeal" class="fn" href="../Unit/DealHeal.html">DealHeal</a>
+  <a id="Unit:DisableMelee" class="fn" href="../Unit/DisableMelee.html">DisableMelee</a>
   <a id="Unit:Dismount" class="fn" href="../Unit/Dismount.html">Dismount</a>
   <a id="Unit:EmoteState" class="fn" href="../Unit/EmoteState.html">EmoteState</a>
   <a id="Unit:GetAura" class="fn" href="../Unit/GetAura.html">GetAura</a>
@@ -73,6 +74,7 @@ document.write(`
   <a id="Unit:IsCharmed" class="fn" href="../Unit/IsCharmed.html">IsCharmed</a>
   <a id="Unit:IsDead" class="fn" href="../Unit/IsDead.html">IsDead</a>
   <a id="Unit:IsDying" class="fn" href="../Unit/IsDying.html">IsDying</a>
+  <a id="Unit:IsFlying" class="fn" href="../Unit/IsFlying.html">IsFlying</a>
   <a id="Unit:IsFullHealth" class="fn" href="../Unit/IsFullHealth.html">IsFullHealth</a>
   <a id="Unit:IsGossip" class="fn" href="../Unit/IsGossip.html">IsGossip</a>
   <a id="Unit:IsGuildMaster" class="fn" href="../Unit/IsGuildMaster.html">IsGuildMaster</a>
@@ -81,6 +83,7 @@ document.write(`
   <a id="Unit:IsInWater" class="fn" href="../Unit/IsInWater.html">IsInWater</a>
   <a id="Unit:IsInnkeeper" class="fn" href="../Unit/IsInnkeeper.html">IsInnkeeper</a>
   <a id="Unit:IsMounted" class="fn" href="../Unit/IsMounted.html">IsMounted</a>
+  <a id="Unit:IsMoving" class="fn" href="../Unit/IsMoving.html">IsMoving</a>
   <a id="Unit:IsOnVehicle" class="fn" href="../Unit/IsOnVehicle.html">IsOnVehicle</a>
   <a id="Unit:IsPvPFlagged" class="fn" href="../Unit/IsPvPFlagged.html">IsPvPFlagged</a>
   <a id="Unit:IsQuestGiver" class="fn" href="../Unit/IsQuestGiver.html">IsQuestGiver</a>
@@ -96,6 +99,7 @@ document.write(`
   <a id="Unit:IsTrainer" class="fn" href="../Unit/IsTrainer.html">IsTrainer</a>
   <a id="Unit:IsUnderWater" class="fn" href="../Unit/IsUnderWater.html">IsUnderWater</a>
   <a id="Unit:IsVendor" class="fn" href="../Unit/IsVendor.html">IsVendor</a>
+  <a id="Unit:IsVisible" class="fn" href="../Unit/IsVisible.html">IsVisible</a>
   <a id="Unit:Kill" class="fn" href="../Unit/Kill.html">Kill</a>
   <a id="Unit:ModifyPower" class="fn" href="../Unit/ModifyPower.html">ModifyPower</a>
   <a id="Unit:Mount" class="fn" href="../Unit/Mount.html">Mount</a>
@@ -116,11 +120,16 @@ document.write(`
   <a id="Unit:RemoveAllAuras" class="fn" href="../Unit/RemoveAllAuras.html">RemoveAllAuras</a>
   <a id="Unit:RemoveArenaAuras" class="fn" href="../Unit/RemoveArenaAuras.html">RemoveArenaAuras</a>
   <a id="Unit:RemoveAura" class="fn" href="../Unit/RemoveAura.html">RemoveAura</a>
+  <a id="Unit:RemoveBindSightAuras" class="fn" href="../Unit/RemoveBindSightAuras.html">RemoveBindSightAuras</a>
+  <a id="Unit:RemoveCharmAuras" class="fn" href="../Unit/RemoveCharmAuras.html">RemoveCharmAuras</a>
+  <a id="Unit:RestoreDisplayId" class="fn" href="../Unit/RestoreDisplayId.html">RestoreDisplayId</a>
+  <a id="Unit:RestoreFaction" class="fn" href="../Unit/RestoreFaction.html">RestoreFaction</a>
   <a id="Unit:SendChatMessageToPlayer" class="fn" href="../Unit/SendChatMessageToPlayer.html">SendChatMessageToPlayer</a>
   <a id="Unit:SendUnitEmote" class="fn" href="../Unit/SendUnitEmote.html">SendUnitEmote</a>
   <a id="Unit:SendUnitSay" class="fn" href="../Unit/SendUnitSay.html">SendUnitSay</a>
   <a id="Unit:SendUnitWhisper" class="fn" href="../Unit/SendUnitWhisper.html">SendUnitWhisper</a>
   <a id="Unit:SendUnitYell" class="fn" href="../Unit/SendUnitYell.html">SendUnitYell</a>
+  <a id="Unit:SetCanFly" class="fn" href="../Unit/SetCanFly.html">SetCanFly</a>
   <a id="Unit:SetConfused" class="fn" href="../Unit/SetConfused.html">SetConfused</a>
   <a id="Unit:SetCreatorGUID" class="fn" href="../Unit/SetCreatorGUID.html">SetCreatorGUID</a>
   <a id="Unit:SetCritterGUID" class="fn" href="../Unit/SetCritterGUID.html">SetCritterGUID</a>
@@ -147,6 +156,8 @@ document.write(`
   <a id="Unit:SetSheath" class="fn" href="../Unit/SetSheath.html">SetSheath</a>
   <a id="Unit:SetSpeed" class="fn" href="../Unit/SetSpeed.html">SetSpeed</a>
   <a id="Unit:SetStandState" class="fn" href="../Unit/SetStandState.html">SetStandState</a>
+  <a id="Unit:SetStunned" class="fn" href="../Unit/SetStunned.html">SetStunned</a>
+  <a id="Unit:SetVisible" class="fn" href="../Unit/SetVisible.html">SetVisible</a>
   <a id="Unit:SetWaterWalk" class="fn" href="../Unit/SetWaterWalk.html">SetWaterWalk</a>
   <a id="Unit:StopSpellCast" class="fn" href="../Unit/StopSpellCast.html">StopSpellCast</a>
 `);

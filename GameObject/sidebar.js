@@ -8,6 +8,7 @@ document.write(`
   <a id="GameObject:GetLootState" class="fn" href="../GameObject/GetLootState.html">GetLootState</a>
   <a id="GameObject:HasQuest" class="fn" href="../GameObject/HasQuest.html">HasQuest</a>
   <a id="GameObject:IsActive" class="fn" href="../GameObject/IsActive.html">IsActive</a>
+  <a id="GameObject:IsDestructible" class="fn" href="../GameObject/IsDestructible.html">IsDestructible</a>
   <a id="GameObject:IsSpawned" class="fn" href="../GameObject/IsSpawned.html">IsSpawned</a>
   <a id="GameObject:IsTransport" class="fn" href="../GameObject/IsTransport.html">IsTransport</a>
   <a id="GameObject:RemoveFromWorld" class="fn" href="../GameObject/RemoveFromWorld.html">RemoveFromWorld</a>

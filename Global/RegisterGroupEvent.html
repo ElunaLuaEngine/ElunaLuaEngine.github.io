@@ -78,6 +78,7 @@ enum GroupEvents
     GROUP_EVENT_ON_LEADER_CHANGE            =     4,       // (event, group, newLeaderGuid, oldLeaderGuid)
     GROUP_EVENT_ON_DISBAND                  =     5,       // (event, group)
     GROUP_EVENT_ON_CREATE                   =     6,       // (event, group, leaderGuid, groupType)
+    GROUP_EVENT_ON_MEMBER_ACCEPT            =     7,       // (event, group, player) - Can return false to disable accepting
 
     GROUP_EVENT_COUNT
 };
@@ -166,6 +167,6 @@ enum GroupEvents
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
 <center>Generated on <script src="../date.js"></script></center>
-<center>&copy;2016 - Eluna Lua Engine</center>
+<center>&copy;2023 - Eluna Lua Engine</center>
 </body>
 </html>

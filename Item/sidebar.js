@@ -44,6 +44,7 @@ document.write(`
   <a id="Item:IsNotBoundToPlayer" class="fn" href="../Item/IsNotBoundToPlayer.html">IsNotBoundToPlayer</a>
   <a id="Item:IsNotEmptyBag" class="fn" href="../Item/IsNotEmptyBag.html">IsNotEmptyBag</a>
   <a id="Item:IsPotion" class="fn" href="../Item/IsPotion.html">IsPotion</a>
+  <a id="Item:IsRefundExpired" class="fn" href="../Item/IsRefundExpired.html">IsRefundExpired</a>
   <a id="Item:IsSoulBound" class="fn" href="../Item/IsSoulBound.html">IsSoulBound</a>
   <a id="Item:IsWeaponVellum" class="fn" href="../Item/IsWeaponVellum.html">IsWeaponVellum</a>
   <a id="Item:SaveToDB" class="fn" href="../Item/SaveToDB.html">SaveToDB</a>

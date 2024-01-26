@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the Guild:GetMembers method in the Eluna engine.">
+    <meta name="description" content="API documentation for the Global:GetPlayersOnMap method in the Eluna engine.">
     <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>Guild:GetMembers - Eluna</title>
+    <title>Global:GetPlayersOnMap - Eluna</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
 
@@ -25,11 +25,11 @@
     <a href='../index.html'><img src='../static/eluna-logo.png' alt='Eluna Logo' width='100'></a>
     <div class="block">
         
-    <h2>Guild Methods</h2>
+    <h2>Global Methods</h2>
     <script src="sidebar.js"></script>
     <script>
       // Highlight current method by adding "current" class to it
-      var element = document.getElementById("Guild:GetMembers");
+      var element = document.getElementById("Global:GetPlayersOnMap");
       if (element) {
         var classname = "current";
         arr = element.className.split(" ");
@@ -56,7 +56,7 @@
 <section id='main' class="content mod">
     <h1 class='fqn'>
         Method
-    <a class="mod" href="../Guild/index.html">Guild</a>:<a class="fn" href="../Guild/GetMembers.html">GetMembers</a>
+    <a class="mod" href="../Global/index.html">Global</a>:<a class="fn" href="../Global/GetPlayersOnMap.html">GetPlayersOnMap</a>
         <span class='out-of-band'>
             <span id='render-detail'>
                 <a id="collapse-all" href="#">[-]</a>
@@ -67,22 +67,39 @@
 
     
     <div class='docblock'>
-        <p>Returns a table with the <a class="mod" href="../Player/index.html">Player</a>s in this <a class="mod" href="../Guild/index.html">Guild</a></p>
-<p>Only the players that are online and on some map.</p>
-<p>In multistate, this method is only available in the WORLD state</p>
+        <p>Returns a table with all the current <a class="mod" href="../Player/index.html">Player</a>s on the states map.</p>
+<p>Does not return players that may be teleporting or otherwise not on the map.</p>
+<pre><code>enum TeamId
+{
+    TEAM_ALLIANCE = 0,
+    TEAM_HORDE = 1,
+    TEAM_NEUTRAL = 2
+};
+</code></pre>
+<p>In multistate, this method is only available in the MAP state</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>guildPlayers = Guild:GetMembers()</code>
+            <code>mapPlayers = GetPlayersOnMap( team )</code>
+        </p>
+        <p>
+            <code>mapPlayers = GetPlayersOnMap( team, onlyGM )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            None.
+            <dl>
+                <dt><code><strong><a href="https://github.com/ElunaLuaEngine/ElunaTrinityWotlk/search?l=cpp&q=%22enum+TeamId%22&type=Code&utf8=%E2%9C%93">TeamId</a></strong> team (TEAM_NEUTRAL)</code></dt>
+                <dd class="docblock"><p>Optional check team of the <a class="mod" href="../Player/index.html">Player</a>, Alliance, Horde or Neutral (All). </p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.2.html">boolean</a></strong> onlyGM (false)</code></dt>
+                <dd class="docblock"><p>Optional check if GM only. </p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
@@ -90,8 +107,8 @@
         </h2>
         <p>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.5.html">table</a></strong> guildPlayers</code></dt>
-                <dd class="docblock"><p>Table of <a class="mod" href="../Player/index.html">Player</a>s. </p></dd>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.5.html">table</a></strong> mapPlayers</code></dt>
+                <dd class="docblock"><em>See method description.</em></dd>
             </dl>
         </p>
     </div>

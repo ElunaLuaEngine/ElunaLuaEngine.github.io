@@ -3,9 +3,11 @@ document.write(`
   <a id="Global:AddVendorItem" class="fn" href="../Global/AddVendorItem.html">AddVendorItem</a>
   <a id="Global:AuthDBExecute" class="fn" href="../Global/AuthDBExecute.html">AuthDBExecute</a>
   <a id="Global:AuthDBQuery" class="fn" href="../Global/AuthDBQuery.html">AuthDBQuery</a>
+  <a id="Global:AuthDBQueryAsync" class="fn" href="../Global/AuthDBQueryAsync.html">AuthDBQueryAsync</a>
   <a id="Global:Ban" class="fn" href="../Global/Ban.html">Ban</a>
   <a id="Global:CharDBExecute" class="fn" href="../Global/CharDBExecute.html">CharDBExecute</a>
   <a id="Global:CharDBQuery" class="fn" href="../Global/CharDBQuery.html">CharDBQuery</a>
+  <a id="Global:CharDBQueryAsync" class="fn" href="../Global/CharDBQueryAsync.html">CharDBQueryAsync</a>
   <a id="Global:ClearBattleGroundEvents" class="fn" href="../Global/ClearBattleGroundEvents.html">ClearBattleGroundEvents</a>
   <a id="Global:ClearCreatureEvents" class="fn" href="../Global/ClearCreatureEvents.html">ClearCreatureEvents</a>
   <a id="Global:ClearCreatureGossipEvents" class="fn" href="../Global/ClearCreatureGossipEvents.html">ClearCreatureGossipEvents</a>
@@ -48,12 +50,17 @@ document.write(`
   <a id="Global:GetPlayerCount" class="fn" href="../Global/GetPlayerCount.html">GetPlayerCount</a>
   <a id="Global:GetPlayerGUID" class="fn" href="../Global/GetPlayerGUID.html">GetPlayerGUID</a>
   <a id="Global:GetPlayersInWorld" class="fn" href="../Global/GetPlayersInWorld.html">GetPlayersInWorld</a>
+  <a id="Global:GetPlayersOnMap" class="fn" href="../Global/GetPlayersOnMap.html">GetPlayersOnMap</a>
   <a id="Global:GetQuest" class="fn" href="../Global/GetQuest.html">GetQuest</a>
   <a id="Global:GetRealmID" class="fn" href="../Global/GetRealmID.html">GetRealmID</a>
+  <a id="Global:GetStateInstanceId" class="fn" href="../Global/GetStateInstanceId.html">GetStateInstanceId</a>
+  <a id="Global:GetStateMap" class="fn" href="../Global/GetStateMap.html">GetStateMap</a>
+  <a id="Global:GetStateMapId" class="fn" href="../Global/GetStateMapId.html">GetStateMapId</a>
   <a id="Global:GetTimeDiff" class="fn" href="../Global/GetTimeDiff.html">GetTimeDiff</a>
   <a id="Global:GetUnitGUID" class="fn" href="../Global/GetUnitGUID.html">GetUnitGUID</a>
   <a id="Global:IsBagPos" class="fn" href="../Global/IsBagPos.html">IsBagPos</a>
   <a id="Global:IsBankPos" class="fn" href="../Global/IsBankPos.html">IsBankPos</a>
+  <a id="Global:IsCompatibilityMode" class="fn" href="../Global/IsCompatibilityMode.html">IsCompatibilityMode</a>
   <a id="Global:IsEquipmentPos" class="fn" href="../Global/IsEquipmentPos.html">IsEquipmentPos</a>
   <a id="Global:IsGameEventActive" class="fn" href="../Global/IsGameEventActive.html">IsGameEventActive</a>
   <a id="Global:IsInventoryPos" class="fn" href="../Global/IsInventoryPos.html">IsInventoryPos</a>
@@ -91,6 +98,7 @@ document.write(`
   <a id="Global:VendorRemoveItem" class="fn" href="../Global/VendorRemoveItem.html">VendorRemoveItem</a>
   <a id="Global:WorldDBExecute" class="fn" href="../Global/WorldDBExecute.html">WorldDBExecute</a>
   <a id="Global:WorldDBQuery" class="fn" href="../Global/WorldDBQuery.html">WorldDBQuery</a>
+  <a id="Global:WorldDBQueryAsync" class="fn" href="../Global/WorldDBQueryAsync.html">WorldDBQueryAsync</a>
   <a id="Global:bit_and" class="fn" href="../Global/bit_and.html">bit_and</a>
   <a id="Global:bit_lshift" class="fn" href="../Global/bit_lshift.html">bit_lshift</a>
   <a id="Global:bit_not" class="fn" href="../Global/bit_not.html">bit_not</a>

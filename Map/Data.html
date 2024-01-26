@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the Guild:GetMembers method in the Eluna engine.">
+    <meta name="description" content="API documentation for the Map:Data method in the Eluna engine.">
     <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>Guild:GetMembers - Eluna</title>
+    <title>Map:Data - Eluna</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
 
@@ -25,11 +25,11 @@
     <a href='../index.html'><img src='../static/eluna-logo.png' alt='Eluna Logo' width='100'></a>
     <div class="block">
         
-    <h2>Guild Methods</h2>
+    <h2>Map Methods</h2>
     <script src="sidebar.js"></script>
     <script>
       // Highlight current method by adding "current" class to it
-      var element = document.getElementById("Guild:GetMembers");
+      var element = document.getElementById("Map:Data");
       if (element) {
         var classname = "current";
         arr = element.className.split(" ");
@@ -56,7 +56,7 @@
 <section id='main' class="content mod">
     <h1 class='fqn'>
         Method
-    <a class="mod" href="../Guild/index.html">Guild</a>:<a class="fn" href="../Guild/GetMembers.html">GetMembers</a>
+    <a class="mod" href="../Map/index.html">Map</a>:<a class="fn" href="../Map/Data.html">Data</a>
         <span class='out-of-band'>
             <span id='render-detail'>
                 <a id="collapse-all" href="#">[-]</a>
@@ -67,15 +67,29 @@
 
     
     <div class='docblock'>
-        <p>Returns a table with the <a class="mod" href="../Player/index.html">Player</a>s in this <a class="mod" href="../Guild/index.html">Guild</a></p>
-<p>Only the players that are online and on some map.</p>
-<p>In multistate, this method is only available in the WORLD state</p>
+        <p>Returns a runtime-persistent cache tied to the <a class="mod" href="../Map/index.html">Map</a>.
+This data will remain for as long as the <a class="mod" href="../Map/index.html">Map</a> exists, or until a server restart.</p>
+<p>A reload of the Lua state will NOT clear this cache.</p>
+<p>This cache can be added to and read from with the following sub-methods.</p>
+<pre>
+-- Sets the key-value pair in the cache
+Map:Data():Set("key", val)
+
+-- Returns the value from the cache using the key
+local val = Map:Data():Get("key")
+
+-- Removes the key-value pair from the cache
+Map:Data():Set("key", nil)
+
+-- Returns all the key-value pairs as a Lua table indexed by the keys
+local table = Map:Data():AsTable()
+</pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>guildPlayers = Guild:GetMembers()</code>
+            <code>Map:Data()</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -89,10 +103,7 @@
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.5.html">table</a></strong> guildPlayers</code></dt>
-                <dd class="docblock"><p>Table of <a class="mod" href="../Player/index.html">Player</a>s. </p></dd>
-            </dl>
+            Nothing.
         </p>
     </div>
 

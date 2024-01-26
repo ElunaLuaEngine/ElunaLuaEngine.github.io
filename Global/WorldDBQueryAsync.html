@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the Guild:GetMembers method in the Eluna engine.">
+    <meta name="description" content="API documentation for the Global:WorldDBQueryAsync method in the Eluna engine.">
     <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>Guild:GetMembers - Eluna</title>
+    <title>Global:WorldDBQueryAsync - Eluna</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
 
@@ -25,11 +25,11 @@
     <a href='../index.html'><img src='../static/eluna-logo.png' alt='Eluna Logo' width='100'></a>
     <div class="block">
         
-    <h2>Guild Methods</h2>
+    <h2>Global Methods</h2>
     <script src="sidebar.js"></script>
     <script>
       // Highlight current method by adding "current" class to it
-      var element = document.getElementById("Guild:GetMembers");
+      var element = document.getElementById("Global:WorldDBQueryAsync");
       if (element) {
         var classname = "current";
         arr = element.className.split(" ");
@@ -56,7 +56,7 @@
 <section id='main' class="content mod">
     <h1 class='fqn'>
         Method
-    <a class="mod" href="../Guild/index.html">Guild</a>:<a class="fn" href="../Guild/GetMembers.html">GetMembers</a>
+    <a class="mod" href="../Global/index.html">Global</a>:<a class="fn" href="../Global/WorldDBQueryAsync.html">WorldDBQueryAsync</a>
         <span class='out-of-band'>
             <span id='render-detail'>
                 <a id="collapse-all" href="#">[-]</a>
@@ -67,32 +67,45 @@
 
     
     <div class='docblock'>
-        <p>Returns a table with the <a class="mod" href="../Player/index.html">Player</a>s in this <a class="mod" href="../Guild/index.html">Guild</a></p>
-<p>Only the players that are online and on some map.</p>
-<p>In multistate, this method is only available in the WORLD state</p>
+        <p>Initiates an asynchronous SQL query on the world database with a callback function.</p>
+<p>The query is executed asynchronously, and the provided Lua function is called when the query completes.
+The callback function parameter is the query result (an <a class="mod" href="../ElunaQuery/index.html">ElunaQuery</a> or nil if no rows found).</p>
+<p>Example usage:
+    WorldDBQueryAsync("SELECT entry, name FROM creature_template LIMIT 10", function(results)
+        if results then
+            repeat
+                local entry, name = results:GetUInt32(0), results:GetString(1)
+                print(entry, name)
+            until not results:NextRow()
+        end
+    end)</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>guildPlayers = Guild:GetMembers()</code>
+            <code>WorldDBQueryAsync( sql, callback )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            None.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.4.html">string</a></strong> sql</code></dt>
+                <dd class="docblock"><p>Query to execute asynchronously. </p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.6.html">function</a></strong> callback</code></dt>
+                <dd class="docblock"><p>The callback function to be called with the query results. </p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.5.html">table</a></strong> guildPlayers</code></dt>
-                <dd class="docblock"><p>Table of <a class="mod" href="../Player/index.html">Player</a>s. </p></dd>
-            </dl>
+            Nothing.
         </p>
     </div>
 

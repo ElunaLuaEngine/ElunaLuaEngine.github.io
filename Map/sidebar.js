@@ -1,4 +1,5 @@
 document.write(`
+  <a id="Map:Data" class="fn" href="../Map/Data.html">Data</a>
   <a id="Map:GetAreaId" class="fn" href="../Map/GetAreaId.html">GetAreaId</a>
   <a id="Map:GetDifficulty" class="fn" href="../Map/GetDifficulty.html">GetDifficulty</a>
   <a id="Map:GetHeight" class="fn" href="../Map/GetHeight.html">GetHeight</a>

@@ -1,4 +1,5 @@
 document.write(`
+  <a id="WorldObject:Data" class="fn" href="../WorldObject/Data.html">Data</a>
   <a id="WorldObject:GetAngle" class="fn" href="../WorldObject/GetAngle.html">GetAngle</a>
   <a id="WorldObject:GetAreaId" class="fn" href="../WorldObject/GetAreaId.html">GetAreaId</a>
   <a id="WorldObject:GetCreaturesInRange" class="fn" href="../WorldObject/GetCreaturesInRange.html">GetCreaturesInRange</a>

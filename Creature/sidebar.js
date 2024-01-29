@@ -11,9 +11,9 @@ document.write(`
   <a id="Creature:CanStartAttack" class="fn" href="../Creature/CanStartAttack.html">CanStartAttack</a>
   <a id="Creature:CanSwim" class="fn" href="../Creature/CanSwim.html">CanSwim</a>
   <a id="Creature:CanWalk" class="fn" href="../Creature/CanWalk.html">CanWalk</a>
-  <a id="Creature:ClearAllThreat" class="fn" href="../Creature/ClearAllThreat.html">ClearAllThreat</a>
   <a id="Creature:ClearFixate" class="fn" href="../Creature/ClearFixate.html">ClearFixate</a>
   <a id="Creature:ClearThreat" class="fn" href="../Creature/ClearThreat.html">ClearThreat</a>
+  <a id="Creature:ClearThreatList" class="fn" href="../Creature/ClearThreatList.html">ClearThreatList</a>
   <a id="Creature:DespawnOrUnsummon" class="fn" href="../Creature/DespawnOrUnsummon.html">DespawnOrUnsummon</a>
   <a id="Creature:FixateTarget" class="fn" href="../Creature/FixateTarget.html">FixateTarget</a>
   <a id="Creature:FleeToGetAssistance" class="fn" href="../Creature/FleeToGetAssistance.html">FleeToGetAssistance</a>

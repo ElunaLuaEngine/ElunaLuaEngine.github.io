@@ -1,5 +1,6 @@
 document.write(`
   <a id="Creature:AddLootMode" class="fn" href="../Creature/AddLootMode.html">AddLootMode</a>
+  <a id="Creature:AddThreat" class="fn" href="../Creature/AddThreat.html">AddThreat</a>
   <a id="Creature:AttackStart" class="fn" href="../Creature/AttackStart.html">AttackStart</a>
   <a id="Creature:CallAssistance" class="fn" href="../Creature/CallAssistance.html">CallAssistance</a>
   <a id="Creature:CallForHelp" class="fn" href="../Creature/CallForHelp.html">CallForHelp</a>
@@ -10,7 +11,11 @@ document.write(`
   <a id="Creature:CanStartAttack" class="fn" href="../Creature/CanStartAttack.html">CanStartAttack</a>
   <a id="Creature:CanSwim" class="fn" href="../Creature/CanSwim.html">CanSwim</a>
   <a id="Creature:CanWalk" class="fn" href="../Creature/CanWalk.html">CanWalk</a>
+  <a id="Creature:ClearAllThreat" class="fn" href="../Creature/ClearAllThreat.html">ClearAllThreat</a>
+  <a id="Creature:ClearFixate" class="fn" href="../Creature/ClearFixate.html">ClearFixate</a>
+  <a id="Creature:ClearThreat" class="fn" href="../Creature/ClearThreat.html">ClearThreat</a>
   <a id="Creature:DespawnOrUnsummon" class="fn" href="../Creature/DespawnOrUnsummon.html">DespawnOrUnsummon</a>
+  <a id="Creature:FixateTarget" class="fn" href="../Creature/FixateTarget.html">FixateTarget</a>
   <a id="Creature:FleeToGetAssistance" class="fn" href="../Creature/FleeToGetAssistance.html">FleeToGetAssistance</a>
   <a id="Creature:GetAIName" class="fn" href="../Creature/GetAIName.html">GetAIName</a>
   <a id="Creature:GetAITarget" class="fn" href="../Creature/GetAITarget.html">GetAITarget</a>
@@ -34,6 +39,7 @@ document.write(`
   <a id="Creature:GetScriptId" class="fn" href="../Creature/GetScriptId.html">GetScriptId</a>
   <a id="Creature:GetScriptName" class="fn" href="../Creature/GetScriptName.html">GetScriptName</a>
   <a id="Creature:GetShieldBlockValue" class="fn" href="../Creature/GetShieldBlockValue.html">GetShieldBlockValue</a>
+  <a id="Creature:GetThreat" class="fn" href="../Creature/GetThreat.html">GetThreat</a>
   <a id="Creature:GetWanderRadius" class="fn" href="../Creature/GetWanderRadius.html">GetWanderRadius</a>
   <a id="Creature:GetWaypointPath" class="fn" href="../Creature/GetWaypointPath.html">GetWaypointPath</a>
   <a id="Creature:HasCategoryCooldown" class="fn" href="../Creature/HasCategoryCooldown.html">HasCategoryCooldown</a>
@@ -59,6 +65,7 @@ document.write(`
   <a id="Creature:MoveWaypoint" class="fn" href="../Creature/MoveWaypoint.html">MoveWaypoint</a>
   <a id="Creature:RemoveCorpse" class="fn" href="../Creature/RemoveCorpse.html">RemoveCorpse</a>
   <a id="Creature:RemoveLootMode" class="fn" href="../Creature/RemoveLootMode.html">RemoveLootMode</a>
+  <a id="Creature:ResetAllThreat" class="fn" href="../Creature/ResetAllThreat.html">ResetAllThreat</a>
   <a id="Creature:ResetLootMode" class="fn" href="../Creature/ResetLootMode.html">ResetLootMode</a>
   <a id="Creature:Respawn" class="fn" href="../Creature/Respawn.html">Respawn</a>
   <a id="Creature:SaveToDB" class="fn" href="../Creature/SaveToDB.html">SaveToDB</a>

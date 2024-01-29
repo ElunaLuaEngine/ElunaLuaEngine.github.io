@@ -1,6 +1,5 @@
 document.write(`
   <a id="Unit:AddAura" class="fn" href="../Unit/AddAura.html">AddAura</a>
-  <a id="Unit:AddThreat" class="fn" href="../Unit/AddThreat.html">AddThreat</a>
   <a id="Unit:AddUnitState" class="fn" href="../Unit/AddUnitState.html">AddUnitState</a>
   <a id="Unit:Attack" class="fn" href="../Unit/Attack.html">Attack</a>
   <a id="Unit:AttackStop" class="fn" href="../Unit/AttackStop.html">AttackStop</a>
@@ -8,7 +7,6 @@ document.write(`
   <a id="Unit:CastSpell" class="fn" href="../Unit/CastSpell.html">CastSpell</a>
   <a id="Unit:CastSpellAoF" class="fn" href="../Unit/CastSpellAoF.html">CastSpellAoF</a>
   <a id="Unit:ClearInCombat" class="fn" href="../Unit/ClearInCombat.html">ClearInCombat</a>
-  <a id="Unit:ClearThreatList" class="fn" href="../Unit/ClearThreatList.html">ClearThreatList</a>
   <a id="Unit:ClearUnitState" class="fn" href="../Unit/ClearUnitState.html">ClearUnitState</a>
   <a id="Unit:CountPctFromCurHealth" class="fn" href="../Unit/CountPctFromCurHealth.html">CountPctFromCurHealth</a>
   <a id="Unit:CountPctFromMaxHealth" class="fn" href="../Unit/CountPctFromMaxHealth.html">CountPctFromMaxHealth</a>

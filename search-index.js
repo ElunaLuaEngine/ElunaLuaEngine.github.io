@@ -272,6 +272,7 @@ searchIndex["Aura"] = {
         [3, "RegisterPlayerEvent", "", "Registers a <a class=\"mod\" href=\"Player/index.html\">Player</a> event handler."],
         [3, "RegisterPlayerGossipEvent", "", "Registers a <a class=\"mod\" href=\"Player/index.html\">Player</a> gossip event handler."],
         [3, "RegisterServerEvent", "", "Registers a server event handler."],
+        [3, "RegisterSpellEvent", "", "Registers a <a class=\"mod\" href=\"Spell/index.html\">Spell</a> event handler."],
         [3, "RegisterUniqueCreatureEvent", "", "Registers a <a class=\"mod\" href=\"Creature/index.html\">Creature</a> event handler for a <em>single</em> <a class=\"mod\" href=\"Creature/index.html\">Creature</a>."],
         [3, "ReloadEluna", "", "Reloads the Lua engine."],
         [3, "RemoveEventById", "", "Removes a global timed event specified by ID."],

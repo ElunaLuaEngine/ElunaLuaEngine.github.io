@@ -84,6 +84,7 @@ document.write(`
   <a id="Global:RegisterPlayerEvent" class="fn" href="../Global/RegisterPlayerEvent.html">RegisterPlayerEvent</a>
   <a id="Global:RegisterPlayerGossipEvent" class="fn" href="../Global/RegisterPlayerGossipEvent.html">RegisterPlayerGossipEvent</a>
   <a id="Global:RegisterServerEvent" class="fn" href="../Global/RegisterServerEvent.html">RegisterServerEvent</a>
+  <a id="Global:RegisterSpellEvent" class="fn" href="../Global/RegisterSpellEvent.html">RegisterSpellEvent</a>
   <a id="Global:RegisterUniqueCreatureEvent" class="fn" href="../Global/RegisterUniqueCreatureEvent.html">RegisterUniqueCreatureEvent</a>
   <a id="Global:ReloadEluna" class="fn" href="../Global/ReloadEluna.html">ReloadEluna</a>
   <a id="Global:RemoveEventById" class="fn" href="../Global/RemoveEventById.html">RemoveEventById</a>

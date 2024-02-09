@@ -908,6 +908,7 @@ searchIndex["Aura"] = {
         [3, "SetFaction", "", "Sets the <a class=\"mod\" href=\"Unit/index.html\">Unit</a>'s faction."],
         [3, "SetFeared", "", "Fears the <a class=\"mod\" href=\"Unit/index.html\">Unit</a>, if 'false' specified, the <a class=\"mod\" href=\"Unit/index.html\">Unit</a> is no longer feared."],
         [3, "SetHealth", "", "Sets the <a class=\"mod\" href=\"Unit/index.html\">Unit</a>'s health."],
+        [3, "SetImmuneTo", "", "Sets a mechanic immunity for the <a class=\"mod\" href=\"Unit/index.html\">Unit</a>."],
         [3, "SetInCombatWith", "", "Sets the <a class=\"mod\" href=\"Unit/index.html\">Unit</a> in combat with the <code>enemy</code> <a class=\"mod\" href=\"Unit/index.html\">Unit</a>."],
         [3, "SetLevel", "", "Sets the <a class=\"mod\" href=\"Unit/index.html\">Unit</a>'s level."],
         [3, "SetMaxHealth", "", "Sets the <a class=\"mod\" href=\"Unit/index.html\">Unit</a>'s max health."],

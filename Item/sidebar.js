@@ -11,7 +11,11 @@ document.write(`
   <a id="Item:GetCount" class="fn" href="../Item/GetCount.html">GetCount</a>
   <a id="Item:GetDisplayId" class="fn" href="../Item/GetDisplayId.html">GetDisplayId</a>
   <a id="Item:GetEnchantmentId" class="fn" href="../Item/GetEnchantmentId.html">GetEnchantmentId</a>
+  <a id="Item:GetExtraFlags" class="fn" href="../Item/GetExtraFlags.html">GetExtraFlags</a>
+  <a id="Item:GetFlags" class="fn" href="../Item/GetFlags.html">GetFlags</a>
+  <a id="Item:GetFlags2" class="fn" href="../Item/GetFlags2.html">GetFlags2</a>
   <a id="Item:GetInventoryType" class="fn" href="../Item/GetInventoryType.html">GetInventoryType</a>
+  <a id="Item:GetItemId" class="fn" href="../Item/GetItemId.html">GetItemId</a>
   <a id="Item:GetItemLevel" class="fn" href="../Item/GetItemLevel.html">GetItemLevel</a>
   <a id="Item:GetItemLink" class="fn" href="../Item/GetItemLink.html">GetItemLink</a>
   <a id="Item:GetItemSet" class="fn" href="../Item/GetItemSet.html">GetItemSet</a>

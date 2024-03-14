@@ -118,6 +118,7 @@ searchIndex["Aura"] = {
         [3, "IsWorldBoss", "", "Returns <code>true</code> if the <a class=\"mod\" href=\"Creature/index.html\">Creature</a>'s rank is Boss,   and returns <code>false</code> otherwise."],
         [3, "MoveWaypoint", "", "Make the <a class=\"mod\" href=\"Creature/index.html\">Creature</a> start following its waypoint path."],
         [3, "RemoveCorpse", "", "Remove this <a class=\"mod\" href=\"Creature/index.html\">Creature</a>'s corpse."],
+        [3, "RemoveFromWorld", "", "Removes <a class=\"mod\" href=\"Creature/index.html\">Creature</a> from the world"],
         [3, "RemoveLootMode", "", "Removes specified loot mode from <a class=\"mod\" href=\"Creature/index.html\">Creature</a>"],
         [3, "ResetAllThreat", "", "Resets the <a class=\"mod\" href=\"Creature/index.html\">Creature</a>'s threat list, setting all threat targets' threat to 0."],
         [3, "ResetLootMode", "", "Resets <a class=\"mod\" href=\"Creature/index.html\">Creature</a>'s loot mode to default"],

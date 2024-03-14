@@ -64,6 +64,7 @@ document.write(`
   <a id="Creature:IsWorldBoss" class="fn" href="../Creature/IsWorldBoss.html">IsWorldBoss</a>
   <a id="Creature:MoveWaypoint" class="fn" href="../Creature/MoveWaypoint.html">MoveWaypoint</a>
   <a id="Creature:RemoveCorpse" class="fn" href="../Creature/RemoveCorpse.html">RemoveCorpse</a>
+  <a id="Creature:RemoveFromWorld" class="fn" href="../Creature/RemoveFromWorld.html">RemoveFromWorld</a>
   <a id="Creature:RemoveLootMode" class="fn" href="../Creature/RemoveLootMode.html">RemoveLootMode</a>
   <a id="Creature:ResetAllThreat" class="fn" href="../Creature/ResetAllThreat.html">ResetAllThreat</a>
   <a id="Creature:ResetLootMode" class="fn" href="../Creature/ResetLootMode.html">ResetLootMode</a>

@@ -1,8 +1,11 @@
 document.write(`
   <a id="Unit:AddAura" class="fn" href="../Unit/AddAura.html">AddAura</a>
+  <a id="Unit:AddFlatStatModifier" class="fn" href="../Unit/AddFlatStatModifier.html">AddFlatStatModifier</a>
+  <a id="Unit:AddPctStatModifier" class="fn" href="../Unit/AddPctStatModifier.html">AddPctStatModifier</a>
   <a id="Unit:AddUnitState" class="fn" href="../Unit/AddUnitState.html">AddUnitState</a>
   <a id="Unit:Attack" class="fn" href="../Unit/Attack.html">Attack</a>
   <a id="Unit:AttackStop" class="fn" href="../Unit/AttackStop.html">AttackStop</a>
+  <a id="Unit:CanModifyStats" class="fn" href="../Unit/CanModifyStats.html">CanModifyStats</a>
   <a id="Unit:CastCustomSpell" class="fn" href="../Unit/CastCustomSpell.html">CastCustomSpell</a>
   <a id="Unit:CastSpell" class="fn" href="../Unit/CastSpell.html">CastSpell</a>
   <a id="Unit:CastSpellAoF" class="fn" href="../Unit/CastSpellAoF.html">CastSpellAoF</a>

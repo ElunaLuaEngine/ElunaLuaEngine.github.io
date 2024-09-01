@@ -776,9 +776,12 @@ searchIndex["Aura"] = {
     "items": [
         [0, "", "Unit", "Inherits all methods from: <a class=\"mod\" href=\"Object/index.html\">Object</a>, <a class=\"mod\" href=\"WorldObject/index.html\">WorldObject</a>"],
         [3, "AddAura", "", "Adds the <a class=\"mod\" href=\"Aura/index.html\">Aura</a> of the given spell entry on the given target from the <a class=\"mod\" href=\"Unit/index.html\">Unit</a>."],
+        [3, "AddFlatStatModifier", "", "Modifies a flat amount of a specific stat of the <a class=\"mod\" href=\"Unit/index.html\">Unit</a>"],
+        [3, "AddPctStatModifier", "", "Modifies a percentage amount of a specific stat of the <a class=\"mod\" href=\"Unit/index.html\">Unit</a>"],
         [3, "AddUnitState", "", "Adds the given unit state for the <a class=\"mod\" href=\"Unit/index.html\">Unit</a>."],
         [3, "Attack", "", "The <a class=\"mod\" href=\"Unit/index.html\">Unit</a> tries to attack a given target"],
         [3, "AttackStop", "", "The <a class=\"mod\" href=\"Unit/index.html\">Unit</a> stops attacking its target"],
+        [3, "CanModifyStats", "", "Returns whether or not the <a class=\"mod\" href=\"Unit/index.html\">Unit</a> can have stat modifiers applied."],
         [3, "CastCustomSpell", "", "Casts the <a class=\"mod\" href=\"Spell/index.html\">Spell</a> at target <a class=\"mod\" href=\"Unit/index.html\">Unit</a> with custom basepoints or casters. See also <a class=\"fn\" href=\"Unit/CastSpell.html\">Unit:CastSpell</a>."],
         [3, "CastSpell", "", "Makes the <a class=\"mod\" href=\"Unit/index.html\">Unit</a> cast the spell on the target."],
         [3, "CastSpellAoF", "", "Makes the <a class=\"mod\" href=\"Unit/index.html\">Unit</a> cast the spell to the given coordinates, used for area effect spells."],

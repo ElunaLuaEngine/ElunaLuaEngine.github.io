@@ -68,14 +68,30 @@
     
     <div class='docblock'>
         <p>Registers a <a class="mod" href="../Spell/index.html">Spell</a> event handler.</p>
-<pre>
-enum SpellEvents
-{
-    SPELL_EVENT_ON_CAST                             = 1,    // (event, spell, skipCheck)
-    SPELL_EVENT_COUNT
-};
-</pre>
-
+        <div class="table-container">
+        <p>
+            <table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Event</th>
+<th>Parameters</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ON_CAST</td>
+<td>event, spell, skipCheck</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+        </p>
+        </div>
+        
+        
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
@@ -96,7 +112,7 @@ enum SpellEvents
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> event</code></dt>
-                <dd class="docblock"><p><a class="mod" href="../Spell/index.html">Spell</a> event Id, refer to SpellEvents above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dd class="docblock"><p><a class="mod" href="../Spell/index.html">Spell</a> event Id, refer to table above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.6.html">function</a></strong> function</code></dt>

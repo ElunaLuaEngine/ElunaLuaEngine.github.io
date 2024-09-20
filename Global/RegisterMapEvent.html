@@ -68,20 +68,66 @@
     
     <div class='docblock'>
         <p>Registers a <a class="mod" href="../Map/index.html">Map</a> event handler for all instance of a <a class="mod" href="../Map/index.html">Map</a>.</p>
-<pre>
-enum InstanceEvents
-{
-    INSTANCE_EVENT_ON_INITIALIZE                    = 1,    // (event, instance_data, map)
-    INSTANCE_EVENT_ON_LOAD                          = 2,    // (event, instance_data, map)
-    INSTANCE_EVENT_ON_UPDATE                        = 3,    // (event, instance_data, map, diff)
-    INSTANCE_EVENT_ON_PLAYER_ENTER                  = 4,    // (event, instance_data, map, player)
-    INSTANCE_EVENT_ON_CREATURE_CREATE               = 5,    // (event, instance_data, map, creature)
-    INSTANCE_EVENT_ON_GAMEOBJECT_CREATE             = 6,    // (event, instance_data, map, go)
-    INSTANCE_EVENT_ON_CHECK_ENCOUNTER_IN_PROGRESS   = 7,    // (event, instance_data, map)
-    INSTANCE_EVENT_COUNT
-};
-</pre>
-
+        <div class="table-container">
+        <p>
+            <table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Event</th>
+<th>Parameters</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ON_INITIALIZE</td>
+<td>event, instance_data, map</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>ON_LOAD</td>
+<td>event, instance_data, map</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>ON_UPDATE</td>
+<td>event, instance_data, map, diff</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>ON_PLAYER_ENTER</td>
+<td>event, instance_data, map, player</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>ON_CREATURE_CREATE</td>
+<td>event, instance_data, map, creature</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>ON_GAMEOBJECT_CREATE</td>
+<td>event, instance_data, map, go</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>ON_CHECK_ENCOUNTER_IN_PROGRESS</td>
+<td>event, instance_data, map</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+        </p>
+        </div>
+        
+        
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
@@ -102,7 +148,7 @@ enum InstanceEvents
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> event</code></dt>
-                <dd class="docblock"><p><a class="mod" href="../Map/index.html">Map</a> event ID, refer to MapEvents above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dd class="docblock"><p><a class="mod" href="../Map/index.html">Map</a> event ID, refer to table above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.6.html">function</a></strong> function</code></dt>

@@ -238,7 +238,7 @@ searchIndex["Aura"] = {
         [3, "GetGuildByLeaderGUID", "", "Returns <a class=\"mod\" href=\"Guild/index.html\">Guild</a> by the leader's GUID"],
         [3, "GetGuildByName", "", "Returns a <a class=\"mod\" href=\"Guild/index.html\">Guild</a> by name."],
         [3, "GetItemGUID", "", "Builds an <a class=\"mod\" href=\"Item/index.html\">Item</a>'s GUID."],
-        [3, "GetItemLink", "", "Returns an chat link for an <a class=\"mod\" href=\"Item/index.html\">Item</a>."],
+        [3, "GetItemLink", "", "Returns a chat link for an <a class=\"mod\" href=\"Item/index.html\">Item</a>."],
         [3, "GetLuaEngine", "", "Returns Lua engine's name."],
         [3, "GetMapById", "", "Returns a <a class=\"mod\" href=\"Map/index.html\">Map</a> by ID."],
         [3, "GetObjectGUID", "", "Builds a <a class=\"mod\" href=\"GameObject/index.html\">GameObject</a>'s GUID."],

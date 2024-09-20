@@ -68,17 +68,42 @@
     
     <div class='docblock'>
         <p>Registers a <a class="mod" href="../WorldPacket/index.html">WorldPacket</a> event handler.</p>
-<pre>
-enum PacketEvents
-{
-    PACKET_EVENT_ON_PACKET_RECEIVE          =     5,       // (event, packet, player) - Player only if accessible. Can return false, newPacket
-    PACKET_EVENT_ON_PACKET_RECEIVE_UNKNOWN  =     6,       // Not Implemented
-    PACKET_EVENT_ON_PACKET_SEND             =     7,       // (event, packet, player) - Player only if accessible. Can return false
-
-    PACKET_EVENT_COUNT
-};
-</pre>
-
+        <div class="table-container">
+        <p>
+            <table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Event</th>
+<th>Parameters</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td>ON_PACKET_RECEIVE</td>
+<td>event, packet, player</td>
+<td>Player only if accessible. Can return false, newPacket</td>
+</tr>
+<tr>
+<td>6</td>
+<td>ON_PACKET_RECEIVE_UNKNOWN</td>
+<td></td>
+<td>Not implemented</td>
+</tr>
+<tr>
+<td>7</td>
+<td>ON_PACKET_SEND</td>
+<td>event, packet, player</td>
+<td>Player only if accessible. Can return false</td>
+</tr>
+</tbody>
+</table>
+        </p>
+        </div>
+        
+        
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
@@ -99,7 +124,7 @@ enum PacketEvents
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> event</code></dt>
-                <dd class="docblock"><p>Packet event Id, refer to PacketEvents above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dd class="docblock"><p>Packet event Id, refer to table above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.6.html">function</a></strong> function</code></dt>

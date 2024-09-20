@@ -68,22 +68,66 @@
     
     <div class='docblock'>
         <p>Registers a <a class="mod" href="../Group/index.html">Group</a> event handler.</p>
-<pre>
-enum GroupEvents
-{
-    // Group
-    GROUP_EVENT_ON_MEMBER_ADD               =     1,       // (event, group, guid)
-    GROUP_EVENT_ON_MEMBER_INVITE            =     2,       // (event, group, guid)
-    GROUP_EVENT_ON_MEMBER_REMOVE            =     3,       // (event, group, guid, method, kicker, reason)
-    GROUP_EVENT_ON_LEADER_CHANGE            =     4,       // (event, group, newLeaderGuid, oldLeaderGuid)
-    GROUP_EVENT_ON_DISBAND                  =     5,       // (event, group)
-    GROUP_EVENT_ON_CREATE                   =     6,       // (event, group, leaderGuid, groupType)
-    GROUP_EVENT_ON_MEMBER_ACCEPT            =     7,       // (event, group, player) - Can return false to disable accepting
-
-    GROUP_EVENT_COUNT
-};
-</pre>
-
+        <div class="table-container">
+        <p>
+            <table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Event</th>
+<th>Parameters</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ON_MEMBER_ADD</td>
+<td>event, group, guid</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>ON_MEMBER_INVITE</td>
+<td>event, group, guid,</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>ON_MEMBER_REMOVE</td>
+<td>event, group, guid, method, kicker, reason</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>ON_LEADER_CHANGE</td>
+<td>event, group, newLeaderGuid, oldLeaderGuid</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>ON_DISBAND</td>
+<td>event, group</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>ON_CREATE</td>
+<td>event, group, leaderGuid, groupType</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>ON_MEMBER_ACCEPT</td>
+<td>event, group, player</td>
+<td>Can return false to disable accepting</td>
+</tr>
+</tbody>
+</table>
+        </p>
+        </div>
+        
+        
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
@@ -100,7 +144,7 @@ enum GroupEvents
         <p>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> event</code></dt>
-                <dd class="docblock"><p><a class="mod" href="../Group/index.html">Group</a> event Id, refer to GroupEvents above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dd class="docblock"><p><a class="mod" href="../Group/index.html">Group</a> event Id, refer to table above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.6.html">function</a></strong> function</code></dt>

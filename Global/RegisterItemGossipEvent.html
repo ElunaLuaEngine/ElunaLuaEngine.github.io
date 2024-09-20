@@ -68,15 +68,36 @@
     
     <div class='docblock'>
         <p>Registers an <a class="mod" href="../Item/index.html">Item</a> gossip event handler.</p>
-<pre>
-enum GossipEvents
-{
-    GOSSIP_EVENT_ON_HELLO                           = 1,    // (event, player, object) - Object is the Creature/GameObject/Item. Can return false to do default action. For item gossip can return false to stop spell casting.
-    GOSSIP_EVENT_ON_SELECT                          = 2,    // (event, player, object, sender, intid, code, menu_id) - Object is the Creature/GameObject/Item/Player, menu_id is only for player gossip. Can return false to do default action.
-    GOSSIP_EVENT_COUNT
-};
-</pre>
-
+        <div class="table-container">
+        <p>
+            <table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Event</th>
+<th>Parameters</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ON_HELLO</td>
+<td>event, player, object</td>
+<td>Object is the Creature/GameObject/Item. Can return false to do default action. For item gossip can return false to stop spell casting.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ON_SELECT</td>
+<td>event, player, object, sender, intid, code, menu_id</td>
+<td>Object is the Creature/GameObject/Item/Player, menu_id is only for player gossip. Can return false to do default action.</td>
+</tr>
+</tbody>
+</table>
+        </p>
+        </div>
+        
+        
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
@@ -97,7 +118,7 @@ enum GossipEvents
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> event</code></dt>
-                <dd class="docblock"><p><a class="mod" href="../Item/index.html">Item</a> gossip event Id, refer to GossipEvents above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dd class="docblock"><p><a class="mod" href="../Item/index.html">Item</a> gossip event Id, refer to table above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.6.html">function</a></strong> function</code></dt>

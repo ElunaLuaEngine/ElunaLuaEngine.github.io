@@ -68,68 +68,324 @@
     
     <div class='docblock'>
         <p>Registers a <a class="mod" href="../Player/index.html">Player</a> event handler.</p>
-<pre>
-enum PlayerEvents
-{
-    PLAYER_EVENT_ON_CHARACTER_CREATE        =     1,        // (event, player)
-    PLAYER_EVENT_ON_CHARACTER_DELETE        =     2,        // (event, guid)
-    PLAYER_EVENT_ON_LOGIN                   =     3,        // (event, player)
-    PLAYER_EVENT_ON_LOGOUT                  =     4,        // (event, player)
-    PLAYER_EVENT_ON_SPELL_CAST              =     5,        // (event, player, spell, skipCheck)
-    PLAYER_EVENT_ON_KILL_PLAYER             =     6,        // (event, killer, killed)
-    PLAYER_EVENT_ON_KILL_CREATURE           =     7,        // (event, killer, killed)
-    PLAYER_EVENT_ON_KILLED_BY_CREATURE      =     8,        // (event, killer, killed)
-    PLAYER_EVENT_ON_DUEL_REQUEST            =     9,        // (event, target, challenger)
-    PLAYER_EVENT_ON_DUEL_START              =     10,       // (event, player1, player2)
-    PLAYER_EVENT_ON_DUEL_END                =     11,       // (event, winner, loser, type)
-    PLAYER_EVENT_ON_GIVE_XP                 =     12,       // (event, player, amount, victim) - Can return new XP amount
-    PLAYER_EVENT_ON_LEVEL_CHANGE            =     13,       // (event, player, oldLevel)
-    PLAYER_EVENT_ON_MONEY_CHANGE            =     14,       // (event, player, amount) - Can return new money amount
-    PLAYER_EVENT_ON_REPUTATION_CHANGE       =     15,       // (event, player, factionId, standing, incremental) - Can return new standing
-    PLAYER_EVENT_ON_TALENTS_CHANGE          =     16,       // (event, player, points)
-    PLAYER_EVENT_ON_TALENTS_RESET           =     17,       // (event, player, noCost)
-    PLAYER_EVENT_ON_CHAT                    =     18,       // (event, player, msg, Type, lang) - Can return false, newMessage
-    PLAYER_EVENT_ON_WHISPER                 =     19,       // (event, player, msg, Type, lang, receiver) - Can return false, newMessage
-    PLAYER_EVENT_ON_GROUP_CHAT              =     20,       // (event, player, msg, Type, lang, group) - Can return false, newMessage
-    PLAYER_EVENT_ON_GUILD_CHAT              =     21,       // (event, player, msg, Type, lang, guild) - Can return false, newMessage
-    PLAYER_EVENT_ON_CHANNEL_CHAT            =     22,       // (event, player, msg, Type, lang, channel) - Can return false, newMessage
-    PLAYER_EVENT_ON_EMOTE                   =     23,       // (event, player, emote) - Not triggered on any known emote
-    PLAYER_EVENT_ON_TEXT_EMOTE              =     24,       // (event, player, textEmote, emoteNum, guid)
-    PLAYER_EVENT_ON_SAVE                    =     25,       // (event, player)
-    PLAYER_EVENT_ON_BIND_TO_INSTANCE        =     26,       // (event, player, difficulty, mapid, permanent)
-    PLAYER_EVENT_ON_UPDATE_ZONE             =     27,       // (event, player, newZone, newArea)
-    PLAYER_EVENT_ON_MAP_CHANGE              =     28,       // (event, player)
-
-    // Custom
-    PLAYER_EVENT_ON_EQUIP                   =     29,       // (event, player, item, bag, slot)
-    PLAYER_EVENT_ON_FIRST_LOGIN             =     30,       // (event, player)
-    PLAYER_EVENT_ON_CAN_USE_ITEM            =     31,       // (event, player, itemEntry) - Can return InventoryResult enum value
-    PLAYER_EVENT_ON_LOOT_ITEM               =     32,       // (event, player, item, count)
-    PLAYER_EVENT_ON_ENTER_COMBAT            =     33,       // (event, player, enemy)
-    PLAYER_EVENT_ON_LEAVE_COMBAT            =     34,       // (event, player)
-    PLAYER_EVENT_ON_REPOP                   =     35,       // (event, player)
-    PLAYER_EVENT_ON_RESURRECT               =     36,       // (event, player)
-    PLAYER_EVENT_ON_LOOT_MONEY              =     37,       // (event, player, amount)
-    PLAYER_EVENT_ON_QUEST_ABANDON           =     38,       // (event, player, questId)
-    PLAYER_EVENT_ON_LEARN_TALENTS           =     39,       // (event, player, talentId, talentRank, spellid)
-    PLAYER_EVENT_ON_ENVIRONMENTAL_DEATH     =     40,       // (event, player, environmentalDamageType)
-    PLAYER_EVENT_ON_TRADE_ACCEPT            =     41,       // (event, player, target) - Can return false to interrupt trade
-    PLAYER_EVENT_ON_COMMAND                 =     42,       // (event, player, command) - player is nil if command used from console. Can return false
-    PLAYER_EVENT_ON_SKILL_CHANGE            =     43,       // (event, player, skillId, skillValue) - Returns new skill level value
-    PLAYER_EVENT_ON_LEARN_SPELL             =     44,       // (event, player, spellId)
-    PLAYER_EVENT_ON_ACHIEVEMENT_COMPLETE    =     45,       // (event, player, achievementId)
-    PLAYER_EVENT_ON_DISCOVER_AREA           =     46,       // (event, player, area)
-    PLAYER_EVENT_ON_UPDATE_AREA             =     47,       // (event, player, oldArea, newArea)
-    PLAYER_EVENT_ON_TRADE_INIT              =     48,       // (event, player, target) - Can return false to interrupt trade
-    PLAYER_EVENT_ON_SEND_MAIL               =     49,       // (event, player, recipientGuid) - Can return false to interrupt sending
-    // UNUSED                               =     50,       // (event, player)
-    // UNUSED                               =     51,       // (event, player)
-    // UNUSED                               =     52,       // (event, player)
-    // UNUSED                               =     53,       // (event, player)
-    PLAYER_EVENT_ON_QUEST_STATUS_CHANGED    =     54,       // (event, player, questId, status)
-};
-</pre>
-
+        <div class="table-container">
+        <p>
+            <table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Event</th>
+<th>Parameters</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ON_CHARACTER_CREATE</td>
+<td>event, player</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>ON_CHARACTER_DELETE</td>
+<td>event, guid</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>ON_LOGIN</td>
+<td>event, player</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>ON_LOGOUT</td>
+<td>event, player</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>ON_SPELL_CAST</td>
+<td>event, player, spell, skipCheck</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>ON_KILL_PLAYER</td>
+<td>event, killer, killed</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>ON_KILL_CREATURE</td>
+<td>event, killer, killed</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>ON_KILLED_BY_CREATURE</td>
+<td>event, killer, killed</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>ON_DUEL_REQUEST</td>
+<td>event, target, challenger</td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>ON_DUEL_START</td>
+<td>event, player1, player2</td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>ON_DUEL_END</td>
+<td>event, winner, loser, type</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>ON_GIVE_XP</td>
+<td>event, player, amount, victim</td>
+<td>Can return new XP amount</td>
+</tr>
+<tr>
+<td>13</td>
+<td>ON_LEVEL_CHANGE</td>
+<td>event, player, oldLevel</td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>ON_MONEY_CHANGE</td>
+<td>event, player, amount</td>
+<td>Can return new money amount</td>
+</tr>
+<tr>
+<td>15</td>
+<td>ON_REPUTATION_CHANGE</td>
+<td>event, player, factionId, standing, incremental</td>
+<td>Can return new standing</td>
+</tr>
+<tr>
+<td>16</td>
+<td>ON_TALENTS_CHANGE</td>
+<td>event, player, points</td>
+<td></td>
+</tr>
+<tr>
+<td>17</td>
+<td>ON_TALENTS_RESET</td>
+<td>event, player, noCost</td>
+<td></td>
+</tr>
+<tr>
+<td>18</td>
+<td>ON_CHAT</td>
+<td>event, player, msg, Type, lang</td>
+<td>Can return false, newMessage</td>
+</tr>
+<tr>
+<td>19</td>
+<td>ON_WHISPER</td>
+<td>event, player, msg, Type, lang, receiver</td>
+<td>Can return false, newMessage</td>
+</tr>
+<tr>
+<td>20</td>
+<td>ON_GROUP_CHAT</td>
+<td>event, player, msg, Type, lang, group</td>
+<td>Can return false, newMessage</td>
+</tr>
+<tr>
+<td>21</td>
+<td>ON_GUILD_CHAT</td>
+<td>event, player, msg, Type, lang, guild</td>
+<td>Can return false, newMessage</td>
+</tr>
+<tr>
+<td>22</td>
+<td>ON_CHANNEL_CHAT</td>
+<td>event, player, msg, Type, lang, channel</td>
+<td>Can return false, newMessage</td>
+</tr>
+<tr>
+<td>23</td>
+<td>ON_EMOTE</td>
+<td>event, player, emote</td>
+<td>Not triggered on any known emote</td>
+</tr>
+<tr>
+<td>24</td>
+<td>ON_TEXT_EMOTE</td>
+<td>event, player, textEmote, emoteNum, guid</td>
+<td></td>
+</tr>
+<tr>
+<td>25</td>
+<td>ON_SAVE</td>
+<td>event, player</td>
+<td></td>
+</tr>
+<tr>
+<td>26</td>
+<td>ON_BIND_TO_INSTANCE</td>
+<td>event, player, difficulty, mapid, permanent</td>
+<td></td>
+</tr>
+<tr>
+<td>27</td>
+<td>ON_UPDATE_ZONE</td>
+<td>event, player, newZone, newArea</td>
+<td></td>
+</tr>
+<tr>
+<td>28</td>
+<td>ON_MAP_CHANGE</td>
+<td>event, player</td>
+<td></td>
+</tr>
+<tr>
+<td>29</td>
+<td>ON_EQUIP</td>
+<td>event, player, item, bag, slot</td>
+<td></td>
+</tr>
+<tr>
+<td>30</td>
+<td>ON_FIRST_LOGIN</td>
+<td>event, player</td>
+<td></td>
+</tr>
+<tr>
+<td>31</td>
+<td>ON_CAN_USE_ITEM</td>
+<td>event, player, itemEntry</td>
+<td>Can return InventoryResult enum value</td>
+</tr>
+<tr>
+<td>32</td>
+<td>ON_LOOT_ITEM</td>
+<td>event, player, item, count</td>
+<td></td>
+</tr>
+<tr>
+<td>33</td>
+<td>ON_ENTER_COMBAT</td>
+<td>event, player, enemy</td>
+<td></td>
+</tr>
+<tr>
+<td>34</td>
+<td>ON_LEAVE_COMBAT</td>
+<td>event, player</td>
+<td></td>
+</tr>
+<tr>
+<td>35</td>
+<td>ON_REPOP</td>
+<td>event, player</td>
+<td></td>
+</tr>
+<tr>
+<td>36</td>
+<td>ON_RESURRECT</td>
+<td>event, player</td>
+<td></td>
+</tr>
+<tr>
+<td>37</td>
+<td>ON_LOOT_MONEY</td>
+<td>event, player, amount</td>
+<td></td>
+</tr>
+<tr>
+<td>38</td>
+<td>ON_QUEST_ABANDON</td>
+<td>event, player, questId</td>
+<td></td>
+</tr>
+<tr>
+<td>39</td>
+<td>ON_LEARN_TALENTS</td>
+<td>event, player, talentId, talentRank, spellid</td>
+<td></td>
+</tr>
+<tr>
+<td>40</td>
+<td>ON_ENVIRONMENTAL_DEATH</td>
+<td>event, player, environmentalDamageType</td>
+<td></td>
+</tr>
+<tr>
+<td>41</td>
+<td>ON_TRADE_ACCEPT</td>
+<td>event, player, target</td>
+<td>Can return false to interrupt trade</td>
+</tr>
+<tr>
+<td>42</td>
+<td>ON_COMMAND</td>
+<td>event, player, command</td>
+<td>Player is nil if command used from console. Can return false</td>
+</tr>
+<tr>
+<td>43</td>
+<td>ON_SKILL_CHANGE</td>
+<td>event, player, skillId, skillValue</td>
+<td>Returns new skill level value</td>
+</tr>
+<tr>
+<td>44</td>
+<td>ON_LEARN_SPELL</td>
+<td>event, player, spellId</td>
+<td></td>
+</tr>
+<tr>
+<td>45</td>
+<td>ON_ACHIEVEMENT_COMPLETE</td>
+<td>event, player, achievementId</td>
+<td></td>
+</tr>
+<tr>
+<td>46</td>
+<td>ON_DISCOVER_AREA</td>
+<td>event, player, area</td>
+<td></td>
+</tr>
+<tr>
+<td>47</td>
+<td>ON_UPDATE_AREA</td>
+<td>event, player, oldArea, newArea</td>
+<td></td>
+</tr>
+<tr>
+<td>48</td>
+<td>ON_TRADE_INIT</td>
+<td>event, player, target</td>
+<td>Can return false to interrupt trade</td>
+</tr>
+<tr>
+<td>49</td>
+<td>ON_SEND_MAIL</td>
+<td>event, player, recipientGuid</td>
+<td>Can return false to interrupt sending</td>
+</tr>
+<tr>
+<td>54</td>
+<td>ON_QUEST_STATUS_CHANGED</td>
+<td>event, player, questId, status</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+        </p>
+        </div>
+        
+        
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
@@ -146,7 +402,7 @@ enum PlayerEvents
         <p>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> event</code></dt>
-                <dd class="docblock"><p><a class="mod" href="../Player/index.html">Player</a> event Id, refer to PlayerEvents above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dd class="docblock"><p><a class="mod" href="../Player/index.html">Player</a> event Id, refer to table above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.6.html">function</a></strong> function</code></dt>

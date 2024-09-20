@@ -70,18 +70,58 @@
         <p>Sends mail to a <a class="mod" href="../Player/index.html">Player</a>.</p>
 <p>There can be several item entry-amount pairs at the end of the function.
 There can be maximum of 12 different items.</p>
-<pre><code>enum MailStationery
-{
-    MAIL_STATIONERY_TEST = 1,
-    MAIL_STATIONERY_DEFAULT = 41,
-    MAIL_STATIONERY_GM = 61,
-    MAIL_STATIONERY_AUCTION = 62,
-    MAIL_STATIONERY_VAL = 64, // Valentine
-    MAIL_STATIONERY_CHR = 65, // Christmas
-    MAIL_STATIONERY_ORP = 67 // Orphan
-};
-</code></pre>
-
+        <div class="table-container">
+        <p>
+            <table>
+<thead>
+<tr>
+<th>Stationery</th>
+<th>ID</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TEST</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>DEFAULT</td>
+<td>41</td>
+<td></td>
+</tr>
+<tr>
+<td>GM</td>
+<td>61</td>
+<td></td>
+</tr>
+<tr>
+<td>AUCTION</td>
+<td>62</td>
+<td></td>
+</tr>
+<tr>
+<td>VAL</td>
+<td>64</td>
+<td>Valentine</td>
+</tr>
+<tr>
+<td>CHR</td>
+<td>65</td>
+<td>Christmas</td>
+</tr>
+<tr>
+<td>ORP</td>
+<td>67</td>
+<td>Orphan</td>
+</tr>
+</tbody>
+</table>
+        </p>
+        </div>
+        
+        
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
@@ -132,7 +172,7 @@ There can be maximum of 12 different items.</p>
             </dl>
             <dl>
                 <dt><code><strong><a href="https://github.com/ElunaLuaEngine/ElunaTrinityWotlk/search?l=cpp&q=%22enum+MailStationery%22&type=Code&utf8=%E2%9C%93">MailStationery</a></strong> stationary (MAIL_STATIONERY_DEFAULT)</code></dt>
-                <dd class="docblock"><p>Type of mail that is being sent as, refer to MailStationery above. </p></dd>
+                <dd class="docblock"><p>Type of mail that is being sent as, refer to table above. </p></dd>
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> delay (0)</code></dt>

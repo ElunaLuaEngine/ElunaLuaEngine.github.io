@@ -68,65 +68,228 @@
     
     <div class='docblock'>
         <p>Registers a server event handler.</p>
-<pre><code>enum ServerEvents
-{
-    // Server
-    SERVER_EVENT_ON_NETWORK_START           =     1,       // Not Implemented
-    SERVER_EVENT_ON_NETWORK_STOP            =     2,       // Not Implemented
-    SERVER_EVENT_ON_SOCKET_OPEN             =     3,       // Not Implemented
-    SERVER_EVENT_ON_SOCKET_CLOSE            =     4,       // Not Implemented
-    SERVER_EVENT_ON_PACKET_RECEIVE          =     5,       // (event, packet, player) - Player only if accessible. Can return false, newPacket
-    SERVER_EVENT_ON_PACKET_RECEIVE_UNKNOWN  =     6,       // Not Implemented
-    SERVER_EVENT_ON_PACKET_SEND             =     7,       // (event, packet, player) - Player only if accessible. Can return false
-
-    // World
-    WORLD_EVENT_ON_OPEN_STATE_CHANGE        =     8,        // (event, open) - Needs core support on Mangos
-    WORLD_EVENT_ON_CONFIG_LOAD              =     9,        // (event, reload)
-    // UNUSED                               =     10,
-    WORLD_EVENT_ON_SHUTDOWN_INIT            =     11,       // (event, code, mask)
-    WORLD_EVENT_ON_SHUTDOWN_CANCEL          =     12,       // (event)
-    WORLD_EVENT_ON_UPDATE                   =     13,       // (event, diff)
-    WORLD_EVENT_ON_STARTUP                  =     14,       // (event)
-    WORLD_EVENT_ON_SHUTDOWN                 =     15,       // (event)
-
-    // Eluna
-    ELUNA_EVENT_ON_LUA_STATE_CLOSE          =     16,       // (event) - triggers just before shutting down eluna (on shutdown and restart)
-
-    // Map
-    MAP_EVENT_ON_CREATE                     =     17,       // (event, map)
-    MAP_EVENT_ON_DESTROY                    =     18,       // (event, map)
-    MAP_EVENT_ON_GRID_LOAD                  =     19,       // Not Implemented
-    MAP_EVENT_ON_GRID_UNLOAD                =     20,       // Not Implemented
-    MAP_EVENT_ON_PLAYER_ENTER               =     21,       // (event, map, player)
-    MAP_EVENT_ON_PLAYER_LEAVE               =     22,       // (event, map, player)
-    MAP_EVENT_ON_UPDATE                     =     23,       // (event, map, diff)
-
-    // Area trigger
-    TRIGGER_EVENT_ON_TRIGGER                =     24,       // (event, player, triggerId) - Can return true
-
-    // Weather
-    WEATHER_EVENT_ON_CHANGE                 =     25,       // (event, zoneId, state, grade)
-
-    // Auction house
-    AUCTION_EVENT_ON_ADD                    =     26,       // (event, auctionId, owner, item, expireTime, buyout, startBid, currentBid, bidderGUIDLow)
-    AUCTION_EVENT_ON_REMOVE                 =     27,       // (event, auctionId, owner, item, expireTime, buyout, startBid, currentBid, bidderGUIDLow)
-    AUCTION_EVENT_ON_SUCCESSFUL             =     28,       // (event, auctionId, owner, item, expireTime, buyout, startBid, currentBid, bidderGUIDLow)
-    AUCTION_EVENT_ON_EXPIRE                 =     29,       // (event, auctionId, owner, item, expireTime, buyout, startBid, currentBid, bidderGUIDLow)
-
-    // AddOns
-    ADDON_EVENT_ON_MESSAGE                  =     30,       // (event, sender, type, prefix, msg, target) - target can be nil/whisper_target/guild/group/channel. Can return false
-
-    WORLD_EVENT_ON_DELETE_CREATURE          =     31,       // (event, creature)
-    WORLD_EVENT_ON_DELETE_GAMEOBJECT        =     32,       // (event, gameobject)
-
-    // Eluna
-    ELUNA_EVENT_ON_LUA_STATE_OPEN           =     33,       // (event) - triggers after all scripts are loaded
-
-    GAME_EVENT_START                        =     34,       // (event, gameeventid)
-    GAME_EVENT_STOP                         =     35,       // (event, gameeventid)
-};
-</code></pre>
-
+        <div class="table-container">
+        <p>
+            <table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Event</th>
+<th>Parameters</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>SERVER_EVENT_ON_NETWORK_START</td>
+<td></td>
+<td>Not Implemented</td>
+</tr>
+<tr>
+<td>2</td>
+<td>SERVER_EVENT_ON_NETWORK_STOP</td>
+<td></td>
+<td>Not Implemented</td>
+</tr>
+<tr>
+<td>3</td>
+<td>SERVER_EVENT_ON_SOCKET_OPEN</td>
+<td></td>
+<td>Not Implemented</td>
+</tr>
+<tr>
+<td>4</td>
+<td>SERVER_EVENT_ON_SOCKET_CLOSE</td>
+<td></td>
+<td>Not Implemented</td>
+</tr>
+<tr>
+<td>5</td>
+<td>SERVER_EVENT_ON_PACKET_RECEIVE</td>
+<td>event, packet, player</td>
+<td>Player only if accessible. Can return false, newPacket</td>
+</tr>
+<tr>
+<td>6</td>
+<td>SERVER_EVENT_ON_PACKET_RECEIVE_UNKNOWN</td>
+<td></td>
+<td>Not Implemented</td>
+</tr>
+<tr>
+<td>7</td>
+<td>SERVER_EVENT_ON_PACKET_SEND</td>
+<td>event, packet, player</td>
+<td>Player only if accessible. Can return false</td>
+</tr>
+<tr>
+<td>8</td>
+<td>WORLD_EVENT_ON_OPEN_STATE_CHANGE</td>
+<td>event, open</td>
+<td>Needs core support on Mangos</td>
+</tr>
+<tr>
+<td>9</td>
+<td>WORLD_EVENT_ON_CONFIG_LOAD</td>
+<td>event, reload</td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>WORLD_EVENT_ON_SHUTDOWN_INIT</td>
+<td>event, code, mask</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>WORLD_EVENT_ON_SHUTDOWN_CANCEL</td>
+<td>event</td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>WORLD_EVENT_ON_UPDATE</td>
+<td>event, diff</td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>WORLD_EVENT_ON_STARTUP</td>
+<td>event</td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>WORLD_EVENT_ON_SHUTDOWN</td>
+<td>event</td>
+<td></td>
+</tr>
+<tr>
+<td>16</td>
+<td>ELUNA_EVENT_ON_LUA_STATE_CLOSE</td>
+<td>event</td>
+<td>triggers just before shutting down eluna (on shutdown and restart)</td>
+</tr>
+<tr>
+<td>17</td>
+<td>MAP_EVENT_ON_CREATE</td>
+<td>event, map</td>
+<td></td>
+</tr>
+<tr>
+<td>18</td>
+<td>MAP_EVENT_ON_DESTROY</td>
+<td>event, map</td>
+<td></td>
+</tr>
+<tr>
+<td>19</td>
+<td>MAP_EVENT_ON_GRID_LOAD</td>
+<td></td>
+<td>Not Implemented</td>
+</tr>
+<tr>
+<td>20</td>
+<td>MAP_EVENT_ON_GRID_UNLOAD</td>
+<td></td>
+<td>Not Implemented</td>
+</tr>
+<tr>
+<td>21</td>
+<td>MAP_EVENT_ON_PLAYER_ENTER</td>
+<td>event, map, player</td>
+<td></td>
+</tr>
+<tr>
+<td>22</td>
+<td>MAP_EVENT_ON_PLAYER_LEAVE</td>
+<td>event, map, player</td>
+<td></td>
+</tr>
+<tr>
+<td>23</td>
+<td>MAP_EVENT_ON_UPDATE</td>
+<td>event, map, diff</td>
+<td></td>
+</tr>
+<tr>
+<td>24</td>
+<td>TRIGGER_EVENT_ON_TRIGGER</td>
+<td>event, player, triggerId</td>
+<td>Can return true</td>
+</tr>
+<tr>
+<td>25</td>
+<td>WEATHER_EVENT_ON_CHANGE</td>
+<td>event, zoneId, state, grade</td>
+<td></td>
+</tr>
+<tr>
+<td>26</td>
+<td>AUCTION_EVENT_ON_ADD</td>
+<td>event, auctionId, owner, item, expireTime, buyout, startBid, currentBid, bidderGUIDLow</td>
+<td></td>
+</tr>
+<tr>
+<td>27</td>
+<td>AUCTION_EVENT_ON_REMOVE</td>
+<td>event, auctionId, owner, item, expireTime, buyout, startBid, currentBid, bidderGUIDLow</td>
+<td></td>
+</tr>
+<tr>
+<td>28</td>
+<td>AUCTION_EVENT_ON_SUCCESSFUL</td>
+<td>event, auctionId, owner, item, expireTime, buyout, startBid, currentBid, bidderGUIDLow</td>
+<td></td>
+</tr>
+<tr>
+<td>29</td>
+<td>AUCTION_EVENT_ON_EXPIRE</td>
+<td>event, auctionId, owner, item, expireTime, buyout, startBid, currentBid, bidderGUIDLow</td>
+<td></td>
+</tr>
+<tr>
+<td>30</td>
+<td>ADDON_EVENT_ON_MESSAGE</td>
+<td>event, sender, type, prefix, msg, target</td>
+<td>Target can be nil/whisper_target/guild/group/channel. Can return false</td>
+</tr>
+<tr>
+<td>31</td>
+<td>WORLD_EVENT_ON_DELETE_CREATURE</td>
+<td>event, creature</td>
+<td></td>
+</tr>
+<tr>
+<td>32</td>
+<td>WORLD_EVENT_ON_DELETE_GAMEOBJECT</td>
+<td>event, gameobject</td>
+<td></td>
+</tr>
+<tr>
+<td>33</td>
+<td>ELUNA_EVENT_ON_LUA_STATE_OPEN</td>
+<td>event</td>
+<td>Triggers after all scripts are loaded</td>
+</tr>
+<tr>
+<td>34</td>
+<td>GAME_EVENT_START</td>
+<td>event, gameeventid</td>
+<td></td>
+</tr>
+<tr>
+<td>35</td>
+<td>GAME_EVENT_STOP</td>
+<td>event, gameeventid</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+        </p>
+        </div>
+        
+        
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
@@ -143,7 +306,7 @@
         <p>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> event</code></dt>
-                <dd class="docblock"><p>Server event ID, refer to ServerEvents above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dd class="docblock"><p>Server event ID, refer to table above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.6.html">function</a></strong> function</code></dt>

@@ -68,27 +68,102 @@
     
     <div class='docblock'>
         <p>Registers a <a class="mod" href="../GameObject/index.html">GameObject</a> event handler.</p>
-<pre>
-enum GameObjectEvents
-{
-    GAMEOBJECT_EVENT_ON_AIUPDATE                    = 1,    // (event, go, diff)
-    GAMEOBJECT_EVENT_ON_SPAWN                       = 2,    // (event, go)
-    GAMEOBJECT_EVENT_ON_DUMMY_EFFECT                = 3,    // (event, caster, spellid, effindex, go) - Can return true to stop normal action
-    GAMEOBJECT_EVENT_ON_QUEST_ACCEPT                = 4,    // (event, player, go, quest) - Can return true to stop normal action
-    GAMEOBJECT_EVENT_ON_QUEST_REWARD                = 5,    // (event, player, go, quest, opt) - Can return true to stop normal action
-    GAMEOBJECT_EVENT_ON_DIALOG_STATUS               = 6,    // (event, player, go)
-    GAMEOBJECT_EVENT_ON_DESTROYED                   = 7,    // (event, go, attacker)
-    GAMEOBJECT_EVENT_ON_DAMAGED                     = 8,    // (event, go, attacker)
-    GAMEOBJECT_EVENT_ON_LOOT_STATE_CHANGE           = 9,    // (event, go, state)
-    GAMEOBJECT_EVENT_ON_GO_STATE_CHANGED            = 10,   // (event, go, state)
-    // UNUSED                                       = 11,   // (event, gameobject)
-    GAMEOBJECT_EVENT_ON_ADD                         = 12,   // (event, gameobject)
-    GAMEOBJECT_EVENT_ON_REMOVE                      = 13,   // (event, gameobject)
-    GAMEOBJECT_EVENT_ON_USE                         = 14,   // (event, go, player) - Can return true to stop normal action
-    GAMEOBJECT_EVENT_COUNT
-};
-</pre>
-
+        <div class="table-container">
+        <p>
+            <table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Event</th>
+<th>Parameters</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ON_AIUPDATE</td>
+<td>event, go, diff</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>ON_SPAWN</td>
+<td>event, go</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>ON_DUMMY_EFFECT</td>
+<td>event, caster, spellid, effindex, go</td>
+<td>Can return true to stop normal action</td>
+</tr>
+<tr>
+<td>4</td>
+<td>ON_QUEST_ACCEPT</td>
+<td>event, player, go, quest</td>
+<td>Can return true to stop normal action</td>
+</tr>
+<tr>
+<td>5</td>
+<td>ON_QUEST_REWARD</td>
+<td>event, player, go, quest, opt</td>
+<td>Can return true to stop normal action</td>
+</tr>
+<tr>
+<td>6</td>
+<td>ON_DIALOG_STATUS</td>
+<td>event, player, go</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>ON_DESTROYED</td>
+<td>event, go, attacker</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>ON_DAMAGED</td>
+<td>event, go, attacker</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>ON_LOOT_STATE_CHANGE</td>
+<td>event, go, state</td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>ON_GO_STATE_CHANGED</td>
+<td>event, go, state</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>ON_ADD</td>
+<td>event, gameobject</td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>ON_REMOVE</td>
+<td>event, gameobject</td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>ON_USE</td>
+<td>event, go, player</td>
+<td>Can return true to stop normal action</td>
+</tr>
+</tbody>
+</table>
+        </p>
+        </div>
+        
+        
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
@@ -109,7 +184,7 @@ enum GameObjectEvents
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> event</code></dt>
-                <dd class="docblock"><p><a class="mod" href="../GameObject/index.html">GameObject</a> event Id, refer to GameObjectEvents above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dd class="docblock"><p><a class="mod" href="../GameObject/index.html">GameObject</a> event Id, refer to table above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.6.html">function</a></strong> function</code></dt>

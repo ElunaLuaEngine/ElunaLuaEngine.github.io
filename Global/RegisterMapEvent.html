@@ -85,6 +85,8 @@
     
     <div class='docblock'>
         <p>Registers a <a class="mod" href="../Map/index.html">Map</a> event handler for all instance of a <a class="mod" href="../Map/index.html">Map</a>.</p>
+<p>In Multistate mode (default), events are either registered to the WORLD state (-1) or the MAP states (map ID). These events will only ever trigger on their respective state.</p>
+<p>In Compatibility mode, all events are registered to the WORLD state (-1).</p>
         <div class="table-container">
         <p>
             <table>
@@ -92,6 +94,7 @@
 <tr>
 <th>ID</th>
 <th>Event</th>
+<th>State</th>
 <th>Parameters</th>
 <th>Comment</th>
 </tr>
@@ -100,42 +103,49 @@
 <tr>
 <td>1</td>
 <td>ON_INITIALIZE</td>
+<td>MAP</td>
 <td>event, instance_data, map</td>
 <td></td>
 </tr>
 <tr>
 <td>2</td>
 <td>ON_LOAD</td>
+<td>MAP</td>
 <td>event, instance_data, map</td>
 <td></td>
 </tr>
 <tr>
 <td>3</td>
 <td>ON_UPDATE</td>
+<td>MAP</td>
 <td>event, instance_data, map, diff</td>
 <td></td>
 </tr>
 <tr>
 <td>4</td>
 <td>ON_PLAYER_ENTER</td>
+<td>MAP</td>
 <td>event, instance_data, map, player</td>
 <td></td>
 </tr>
 <tr>
 <td>5</td>
 <td>ON_CREATURE_CREATE</td>
+<td>MAP</td>
 <td>event, instance_data, map, creature</td>
 <td></td>
 </tr>
 <tr>
 <td>6</td>
 <td>ON_GAMEOBJECT_CREATE</td>
+<td>MAP</td>
 <td>event, instance_data, map, go</td>
 <td></td>
 </tr>
 <tr>
 <td>7</td>
 <td>ON_CHECK_ENCOUNTER_IN_PROGRESS</td>
+<td>MAP</td>
 <td>event, instance_data, map</td>
 <td></td>
 </tr>

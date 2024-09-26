@@ -85,6 +85,8 @@
     
     <div class='docblock'>
         <p>Registers a <a class="mod" href="../Player/index.html">Player</a> event handler.</p>
+<p>In Multistate mode (default), events are either registered to the WORLD state (-1) or the MAP states (map ID). These events will only ever trigger on their respective state.</p>
+<p>In Compatibility mode, all events are registered to the WORLD state (-1).</p>
         <div class="table-container">
         <p>
             <table>
@@ -92,6 +94,7 @@
 <tr>
 <th>ID</th>
 <th>Event</th>
+<th>State</th>
 <th>Parameters</th>
 <th>Comment</th>
 </tr>
@@ -100,300 +103,350 @@
 <tr>
 <td>1</td>
 <td>ON_CHARACTER_CREATE</td>
+<td>WORLD</td>
 <td>event, player</td>
 <td></td>
 </tr>
 <tr>
 <td>2</td>
 <td>ON_CHARACTER_DELETE</td>
+<td>WORLD</td>
 <td>event, guid</td>
 <td></td>
 </tr>
 <tr>
 <td>3</td>
 <td>ON_LOGIN</td>
+<td>WORLD</td>
 <td>event, player</td>
 <td></td>
 </tr>
 <tr>
 <td>4</td>
 <td>ON_LOGOUT</td>
+<td>WORLD</td>
 <td>event, player</td>
 <td></td>
 </tr>
 <tr>
 <td>5</td>
 <td>ON_SPELL_CAST</td>
+<td>MAP</td>
 <td>event, player, spell, skipCheck</td>
 <td></td>
 </tr>
 <tr>
 <td>6</td>
 <td>ON_KILL_PLAYER</td>
+<td>MAP</td>
 <td>event, killer, killed</td>
 <td></td>
 </tr>
 <tr>
 <td>7</td>
 <td>ON_KILL_CREATURE</td>
+<td>MAP</td>
 <td>event, killer, killed</td>
 <td></td>
 </tr>
 <tr>
 <td>8</td>
 <td>ON_KILLED_BY_CREATURE</td>
+<td>MAP</td>
 <td>event, killer, killed</td>
 <td></td>
 </tr>
 <tr>
 <td>9</td>
 <td>ON_DUEL_REQUEST</td>
+<td>MAP</td>
 <td>event, target, challenger</td>
 <td></td>
 </tr>
 <tr>
 <td>10</td>
 <td>ON_DUEL_START</td>
+<td>MAP</td>
 <td>event, player1, player2</td>
 <td></td>
 </tr>
 <tr>
 <td>11</td>
 <td>ON_DUEL_END</td>
+<td>MAP</td>
 <td>event, winner, loser, type</td>
 <td></td>
 </tr>
 <tr>
 <td>12</td>
 <td>ON_GIVE_XP</td>
+<td>MAP</td>
 <td>event, player, amount, victim</td>
 <td>Can return new XP amount</td>
 </tr>
 <tr>
 <td>13</td>
 <td>ON_LEVEL_CHANGE</td>
+<td>MAP</td>
 <td>event, player, oldLevel</td>
 <td></td>
 </tr>
 <tr>
 <td>14</td>
 <td>ON_MONEY_CHANGE</td>
+<td>MAP</td>
 <td>event, player, amount</td>
 <td>Can return new money amount</td>
 </tr>
 <tr>
 <td>15</td>
 <td>ON_REPUTATION_CHANGE</td>
+<td>MAP</td>
 <td>event, player, factionId, standing, incremental</td>
 <td>Can return new standing</td>
 </tr>
 <tr>
 <td>16</td>
 <td>ON_TALENTS_CHANGE</td>
+<td>MAP</td>
 <td>event, player, points</td>
 <td></td>
 </tr>
 <tr>
 <td>17</td>
 <td>ON_TALENTS_RESET</td>
+<td>MAP</td>
 <td>event, player, noCost</td>
 <td></td>
 </tr>
 <tr>
 <td>18</td>
 <td>ON_CHAT</td>
+<td>WORLD</td>
 <td>event, player, msg, Type, lang</td>
 <td>Can return false, newMessage</td>
 </tr>
 <tr>
 <td>19</td>
 <td>ON_WHISPER</td>
+<td>WORLD</td>
 <td>event, player, msg, Type, lang, receiver</td>
 <td>Can return false, newMessage</td>
 </tr>
 <tr>
 <td>20</td>
 <td>ON_GROUP_CHAT</td>
+<td>WORLD</td>
 <td>event, player, msg, Type, lang, group</td>
 <td>Can return false, newMessage</td>
 </tr>
 <tr>
 <td>21</td>
 <td>ON_GUILD_CHAT</td>
+<td>WORLD</td>
 <td>event, player, msg, Type, lang, guild</td>
 <td>Can return false, newMessage</td>
 </tr>
 <tr>
 <td>22</td>
 <td>ON_CHANNEL_CHAT</td>
+<td>WORLD</td>
 <td>event, player, msg, Type, lang, channel</td>
 <td>Can return false, newMessage</td>
 </tr>
 <tr>
 <td>23</td>
 <td>ON_EMOTE</td>
+<td>MAP</td>
 <td>event, player, emote</td>
 <td>Not triggered on any known emote</td>
 </tr>
 <tr>
 <td>24</td>
 <td>ON_TEXT_EMOTE</td>
+<td>MAP</td>
 <td>event, player, textEmote, emoteNum, guid</td>
 <td></td>
 </tr>
 <tr>
 <td>25</td>
 <td>ON_SAVE</td>
+<td>MAP</td>
 <td>event, player</td>
 <td></td>
 </tr>
 <tr>
 <td>26</td>
 <td>ON_BIND_TO_INSTANCE</td>
+<td>MAP</td>
 <td>event, player, difficulty, mapid, permanent</td>
 <td></td>
 </tr>
 <tr>
 <td>27</td>
 <td>ON_UPDATE_ZONE</td>
+<td>MAP</td>
 <td>event, player, newZone, newArea</td>
 <td></td>
 </tr>
 <tr>
 <td>28</td>
 <td>ON_MAP_CHANGE</td>
+<td>MAP</td>
 <td>event, player</td>
 <td></td>
 </tr>
 <tr>
 <td>29</td>
 <td>ON_EQUIP</td>
+<td>MAP</td>
 <td>event, player, item, bag, slot</td>
 <td></td>
 </tr>
 <tr>
 <td>30</td>
 <td>ON_FIRST_LOGIN</td>
+<td>WORLD</td>
 <td>event, player</td>
 <td></td>
 </tr>
 <tr>
 <td>31</td>
 <td>ON_CAN_USE_ITEM</td>
+<td>MAP</td>
 <td>event, player, itemEntry</td>
 <td>Can return InventoryResult enum value</td>
 </tr>
 <tr>
 <td>32</td>
 <td>ON_LOOT_ITEM</td>
+<td>MAP</td>
 <td>event, player, item, count</td>
 <td></td>
 </tr>
 <tr>
 <td>33</td>
 <td>ON_ENTER_COMBAT</td>
+<td>MAP</td>
 <td>event, player, enemy</td>
 <td></td>
 </tr>
 <tr>
 <td>34</td>
 <td>ON_LEAVE_COMBAT</td>
+<td>MAP</td>
 <td>event, player</td>
 <td></td>
 </tr>
 <tr>
 <td>35</td>
 <td>ON_REPOP</td>
+<td>MAP</td>
 <td>event, player</td>
 <td></td>
 </tr>
 <tr>
 <td>36</td>
 <td>ON_RESURRECT</td>
+<td>MAP</td>
 <td>event, player</td>
 <td></td>
 </tr>
 <tr>
 <td>37</td>
 <td>ON_LOOT_MONEY</td>
+<td>MAP</td>
 <td>event, player, amount</td>
 <td></td>
 </tr>
 <tr>
 <td>38</td>
 <td>ON_QUEST_ABANDON</td>
+<td>MAP</td>
 <td>event, player, questId</td>
 <td></td>
 </tr>
 <tr>
 <td>39</td>
 <td>ON_LEARN_TALENTS</td>
+<td>MAP</td>
 <td>event, player, talentId, talentRank, spellid</td>
 <td></td>
 </tr>
 <tr>
 <td>40</td>
 <td>ON_ENVIRONMENTAL_DEATH</td>
+<td>MAP</td>
 <td>event, player, environmentalDamageType</td>
 <td></td>
 </tr>
 <tr>
 <td>41</td>
 <td>ON_TRADE_ACCEPT</td>
+<td>MAP</td>
 <td>event, player, target</td>
 <td>Can return false to interrupt trade</td>
 </tr>
 <tr>
 <td>42</td>
 <td>ON_COMMAND</td>
+<td>MAP</td>
 <td>event, player, command</td>
 <td>Player is nil if command used from console. Can return false</td>
 </tr>
 <tr>
 <td>43</td>
 <td>ON_SKILL_CHANGE</td>
+<td>MAP</td>
 <td>event, player, skillId, skillValue</td>
 <td>Returns new skill level value</td>
 </tr>
 <tr>
 <td>44</td>
 <td>ON_LEARN_SPELL</td>
+<td>MAP</td>
 <td>event, player, spellId</td>
 <td></td>
 </tr>
 <tr>
 <td>45</td>
 <td>ON_ACHIEVEMENT_COMPLETE</td>
+<td>MAP</td>
 <td>event, player, achievementId</td>
 <td></td>
 </tr>
 <tr>
 <td>46</td>
 <td>ON_DISCOVER_AREA</td>
+<td>MAP</td>
 <td>event, player, area</td>
 <td></td>
 </tr>
 <tr>
 <td>47</td>
 <td>ON_UPDATE_AREA</td>
+<td>MAP</td>
 <td>event, player, oldArea, newArea</td>
 <td></td>
 </tr>
 <tr>
 <td>48</td>
 <td>ON_TRADE_INIT</td>
+<td>MAP</td>
 <td>event, player, target</td>
 <td>Can return false to interrupt trade</td>
 </tr>
 <tr>
 <td>49</td>
 <td>ON_SEND_MAIL</td>
+<td>MAP</td>
 <td>event, player, recipientGuid</td>
 <td>Can return false to interrupt sending</td>
 </tr>
 <tr>
 <td>54</td>
 <td>ON_QUEST_STATUS_CHANGED</td>
+<td>MAP</td>
 <td>event, player, questId, status</td>
 <td></td>
 </tr>

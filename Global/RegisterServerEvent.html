@@ -85,6 +85,8 @@
     
     <div class='docblock'>
         <p>Registers a server event handler.</p>
+<p>In Multistate mode (default), events are either registered to the WORLD state (-1) or the MAP states (map ID). These events will only ever trigger on their respective state.</p>
+<p>In Compatibility mode, all events are registered to the WORLD state (-1).</p>
         <div class="table-container">
         <p>
             <table>
@@ -92,6 +94,7 @@
 <tr>
 <th>ID</th>
 <th>Event</th>
+<th>State</th>
 <th>Parameters</th>
 <th>Comment</th>
 </tr>
@@ -101,11 +104,13 @@
 <td>1</td>
 <td>SERVER_EVENT_ON_NETWORK_START</td>
 <td></td>
+<td></td>
 <td>Not Implemented</td>
 </tr>
 <tr>
 <td>2</td>
 <td>SERVER_EVENT_ON_NETWORK_STOP</td>
+<td></td>
 <td></td>
 <td>Not Implemented</td>
 </tr>
@@ -113,17 +118,20 @@
 <td>3</td>
 <td>SERVER_EVENT_ON_SOCKET_OPEN</td>
 <td></td>
+<td></td>
 <td>Not Implemented</td>
 </tr>
 <tr>
 <td>4</td>
 <td>SERVER_EVENT_ON_SOCKET_CLOSE</td>
 <td></td>
+<td></td>
 <td>Not Implemented</td>
 </tr>
 <tr>
 <td>5</td>
 <td>SERVER_EVENT_ON_PACKET_RECEIVE</td>
+<td>WORLD</td>
 <td>event, packet, player</td>
 <td>Player only if accessible. Can return false, newPacket</td>
 </tr>
@@ -131,71 +139,83 @@
 <td>6</td>
 <td>SERVER_EVENT_ON_PACKET_RECEIVE_UNKNOWN</td>
 <td></td>
+<td></td>
 <td>Not Implemented</td>
 </tr>
 <tr>
 <td>7</td>
 <td>SERVER_EVENT_ON_PACKET_SEND</td>
+<td>WORLD</td>
 <td>event, packet, player</td>
 <td>Player only if accessible. Can return false</td>
 </tr>
 <tr>
 <td>8</td>
 <td>WORLD_EVENT_ON_OPEN_STATE_CHANGE</td>
+<td>WORLD</td>
 <td>event, open</td>
 <td>Needs core support on Mangos</td>
 </tr>
 <tr>
 <td>9</td>
 <td>WORLD_EVENT_ON_CONFIG_LOAD</td>
+<td>WORLD</td>
 <td>event, reload</td>
 <td></td>
 </tr>
 <tr>
 <td>11</td>
 <td>WORLD_EVENT_ON_SHUTDOWN_INIT</td>
+<td>WORLD</td>
 <td>event, code, mask</td>
 <td></td>
 </tr>
 <tr>
 <td>12</td>
 <td>WORLD_EVENT_ON_SHUTDOWN_CANCEL</td>
+<td>WORLD</td>
 <td>event</td>
 <td></td>
 </tr>
 <tr>
 <td>13</td>
 <td>WORLD_EVENT_ON_UPDATE</td>
+<td>WORLD</td>
 <td>event, diff</td>
 <td></td>
 </tr>
 <tr>
 <td>14</td>
 <td>WORLD_EVENT_ON_STARTUP</td>
+<td>WORLD</td>
 <td>event</td>
 <td></td>
 </tr>
 <tr>
 <td>15</td>
 <td>WORLD_EVENT_ON_SHUTDOWN</td>
+<td>WORLD</td>
 <td>event</td>
 <td></td>
 </tr>
 <tr>
 <td>16</td>
 <td>ELUNA_EVENT_ON_LUA_STATE_CLOSE</td>
+<td>ALL</td>
 <td>event</td>
-<td>triggers just before shutting down eluna (on shutdown and restart)</td>
+<td>Triggers just before shutting down the Eluna state (on shutdown, restart and reload)</td>
 </tr>
 <tr>
 <td>17</td>
 <td>MAP_EVENT_ON_CREATE</td>
+<td>MAP</td>
 <td>event, map</td>
 <td></td>
 </tr>
 <tr>
 <td>18</td>
 <td>MAP_EVENT_ON_DESTROY</td>
+<td>MAP</td>
 <td>event, map</td>
 <td></td>
 </tr>
@@ -203,101 +223,118 @@
 <td>19</td>
 <td>MAP_EVENT_ON_GRID_LOAD</td>
 <td></td>
+<td></td>
 <td>Not Implemented</td>
 </tr>
 <tr>
 <td>20</td>
 <td>MAP_EVENT_ON_GRID_UNLOAD</td>
 <td></td>
+<td></td>
 <td>Not Implemented</td>
 </tr>
 <tr>
 <td>21</td>
 <td>MAP_EVENT_ON_PLAYER_ENTER</td>
+<td>MAP</td>
 <td>event, map, player</td>
 <td></td>
 </tr>
 <tr>
 <td>22</td>
 <td>MAP_EVENT_ON_PLAYER_LEAVE</td>
+<td>MAP</td>
 <td>event, map, player</td>
 <td></td>
 </tr>
 <tr>
 <td>23</td>
 <td>MAP_EVENT_ON_UPDATE</td>
+<td>MAP</td>
 <td>event, map, diff</td>
 <td></td>
 </tr>
 <tr>
 <td>24</td>
 <td>TRIGGER_EVENT_ON_TRIGGER</td>
+<td>MAP</td>
 <td>event, player, triggerId</td>
 <td>Can return true</td>
 </tr>
 <tr>
 <td>25</td>
 <td>WEATHER_EVENT_ON_CHANGE</td>
+<td>WORLD</td>
 <td>event, zoneId, state, grade</td>
 <td></td>
 </tr>
 <tr>
 <td>26</td>
 <td>AUCTION_EVENT_ON_ADD</td>
+<td>WORLD</td>
 <td>event, auctionId, owner, item, expireTime, buyout, startBid, currentBid, bidderGUIDLow</td>
 <td></td>
 </tr>
 <tr>
 <td>27</td>
 <td>AUCTION_EVENT_ON_REMOVE</td>
+<td>WORLD</td>
 <td>event, auctionId, owner, item, expireTime, buyout, startBid, currentBid, bidderGUIDLow</td>
 <td></td>
 </tr>
 <tr>
 <td>28</td>
 <td>AUCTION_EVENT_ON_SUCCESSFUL</td>
+<td>WORLD</td>
 <td>event, auctionId, owner, item, expireTime, buyout, startBid, currentBid, bidderGUIDLow</td>
 <td></td>
 </tr>
 <tr>
 <td>29</td>
 <td>AUCTION_EVENT_ON_EXPIRE</td>
+<td>WORLD</td>
 <td>event, auctionId, owner, item, expireTime, buyout, startBid, currentBid, bidderGUIDLow</td>
 <td></td>
 </tr>
 <tr>
 <td>30</td>
 <td>ADDON_EVENT_ON_MESSAGE</td>
+<td>WORLD</td>
 <td>event, sender, type, prefix, msg, target</td>
 <td>Target can be nil/whisper_target/guild/group/channel. Can return false</td>
 </tr>
 <tr>
 <td>31</td>
 <td>WORLD_EVENT_ON_DELETE_CREATURE</td>
+<td>MAP</td>
 <td>event, creature</td>
 <td></td>
 </tr>
 <tr>
 <td>32</td>
 <td>WORLD_EVENT_ON_DELETE_GAMEOBJECT</td>
+<td>MAP</td>
 <td>event, gameobject</td>
 <td></td>
 </tr>
 <tr>
 <td>33</td>
 <td>ELUNA_EVENT_ON_LUA_STATE_OPEN</td>
+<td>ALL</td>
 <td>event</td>
 <td>Triggers after all scripts are loaded</td>
 </tr>
 <tr>
 <td>34</td>
 <td>GAME_EVENT_START</td>
+<td>WORLD</td>
 <td>event, gameeventid</td>
 <td></td>
 </tr>
 <tr>
 <td>35</td>
 <td>GAME_EVENT_STOP</td>
+<td>WORLD</td>
 <td>event, gameeventid</td>
 <td></td>
 </tr>

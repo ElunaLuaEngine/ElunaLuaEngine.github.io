@@ -85,6 +85,8 @@
     
     <div class='docblock'>
         <p>Registers a <a class="mod" href="../Guild/index.html">Guild</a> event handler.</p>
+<p>In Multistate mode (default), events are either registered to the WORLD state (-1) or the MAP states (map ID). These events will only ever trigger on their respective state.</p>
+<p>In Compatibility mode, all events are registered to the WORLD state (-1).</p>
         <div class="table-container">
         <p>
             <table>
@@ -92,6 +94,7 @@
 <tr>
 <th>ID</th>
 <th>Event</th>
+<th>State</th>
 <th>Parameters</th>
 <th>Comment</th>
 </tr>
@@ -100,66 +103,77 @@
 <tr>
 <td>1</td>
 <td>ON_ADD_MEMBER</td>
+<td>WORLD</td>
 <td>event, guild, player, rank</td>
 <td></td>
 </tr>
 <tr>
 <td>2</td>
 <td>ON_REMOVE_MEMBER</td>
+<td>WORLD</td>
 <td>event, guild, player, isDisbanding</td>
 <td></td>
 </tr>
 <tr>
 <td>3</td>
 <td>ON_MOTD_CHANGE</td>
+<td>WORLD</td>
 <td>event, guild, newMotd</td>
 <td></td>
 </tr>
 <tr>
 <td>4</td>
 <td>ON_INFO_CHANGE</td>
+<td>WORLD</td>
 <td>event, guild, newInfo</td>
 <td></td>
 </tr>
 <tr>
 <td>5</td>
 <td>ON_CREATE</td>
+<td>WORLD</td>
 <td>event, guild, leader, name</td>
 <td>Not on TC</td>
 </tr>
 <tr>
 <td>6</td>
 <td>ON_DISBAND</td>
+<td>WORLD</td>
 <td>event, guild</td>
 <td></td>
 </tr>
 <tr>
 <td>7</td>
 <td>ON_MONEY_WITHDRAW</td>
+<td>WORLD</td>
 <td>event, guild, player, amount, isRepair</td>
 <td>Can return new money amount</td>
 </tr>
 <tr>
 <td>8</td>
 <td>ON_MONEY_DEPOSIT</td>
+<td>WORLD</td>
 <td>event, guild, player, amount</td>
 <td>Can return new money amount</td>
 </tr>
 <tr>
 <td>9</td>
 <td>ON_ITEM_MOVE</td>
+<td>WORLD</td>
 <td>event, guild, player, item, isSrcBank, srcContainer, srcSlotId, isDestBank, destContainer, destSlotId</td>
 <td>TODO</td>
 </tr>
 <tr>
 <td>10</td>
 <td>ON_EVENT</td>
+<td>WORLD</td>
 <td>event, guild, eventType, plrGUIDLow1, plrGUIDLow2, newRank</td>
 <td>TODO</td>
 </tr>
 <tr>
 <td>11</td>
 <td>ON_BANK_EVENT</td>
+<td>WORLD</td>
 <td>event, guild, eventType, tabId, playerGUIDLow, itemOrMoney, itemStackCount, destTabId</td>
 <td></td>
 </tr>

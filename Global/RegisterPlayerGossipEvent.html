@@ -85,6 +85,8 @@
     
     <div class='docblock'>
         <p>Registers a <a class="mod" href="../Player/index.html">Player</a> gossip event handler.</p>
+<p>In Multistate mode (default), events are either registered to the WORLD state (-1) or the MAP states (map ID). These events will only ever trigger on their respective state.</p>
+<p>In Compatibility mode, all events are registered to the WORLD state (-1).</p>
 <p>Note that you can not use <code>ON_HELLO</code> with this hook. It does nothing since players dont have an "on hello".</p>
         <div class="table-container">
         <p>
@@ -93,6 +95,7 @@
 <tr>
 <th>ID</th>
 <th>Event</th>
+<th>State</th>
 <th>Parameters</th>
 <th>Comment</th>
 </tr>
@@ -101,12 +104,14 @@
 <tr>
 <td>1</td>
 <td>ON_HELLO</td>
+<td>MAP</td>
 <td>event, player, object</td>
 <td>Object is the Creature/GameObject/Item. Can return false to do default action. For item gossip can return false to stop spell casting.</td>
 </tr>
 <tr>
 <td>2</td>
 <td>ON_SELECT</td>
+<td>MAP</td>
 <td>event, player, object, sender, intid, code, menu_id</td>
 <td>Object is the Creature/GameObject/Item/Player, menu_id is only for player gossip. Can return false to do default action.</td>
 </tr>

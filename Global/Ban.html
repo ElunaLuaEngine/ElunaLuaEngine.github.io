@@ -117,6 +117,12 @@
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
+            <code>result = Ban( banMode, nameOrIP, duration )</code>
+        </p>
+        <p>
+            <code>result = Ban( banMode, nameOrIP, duration, reason )</code>
+        </p>
+        <p>
             <code>result = Ban( banMode, nameOrIP, duration, reason, whoBanned )</code>
         </p>
 
@@ -137,12 +143,12 @@
                 <dd class="docblock"><p>Duration (in seconds) of the ban. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.4.html">string</a></strong> reason</code></dt>
-                <dd class="docblock"><em>See method description.</em></dd>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.4.html">string</a></strong> reason ("")</code></dt>
+                <dd class="docblock"><p>Ban reason, this is optional. </p></dd>
             </dl>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.4.html">string</a></strong> whoBanned</code></dt>
-                <dd class="docblock"><em>See method description.</em></dd>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.4.html">string</a></strong> whoBanned ("")</code></dt>
+                <dd class="docblock"><p>The <a class="mod" href="../Player/index.html">Player</a>'s name that banned the account, character or IP, this is optional. </p></dd>
             </dl>
         </p>
 

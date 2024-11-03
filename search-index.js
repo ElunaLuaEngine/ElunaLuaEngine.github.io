@@ -675,6 +675,7 @@ searchIndex["Aura"] = {
         [3, "ResetTypeCooldowns", "", "Resets cooldown of the specified category"],
         [3, "ResurrectPlayer", "", "Resurrects the <a class=\"mod\" href=\"Player/index.html\">Player</a>."],
         [3, "RewardQuest", "", "Rewards the given quest entry for the <a class=\"mod\" href=\"Player/index.html\">Player</a> if he has completed it."],
+        [3, "RunCommand", "", "Runs a command as the <a class=\"mod\" href=\"Player/index.html\">Player</a>."],
         [3, "SaveToDB", "", "Saves the <a class=\"mod\" href=\"Player/index.html\">Player</a> to the database"],
         [3, "Say", "", "Sends say text from the <a class=\"mod\" href=\"Player/index.html\">Player</a>"],
         [3, "SendAddonMessage", "", "Sends addon message to the <a class=\"mod\" href=\"Player/index.html\">Player</a> receiver"],

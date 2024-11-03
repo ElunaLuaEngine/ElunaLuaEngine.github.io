@@ -193,6 +193,7 @@ document.write(`
   <a id="Player:ResetTypeCooldowns" class="fn" href="../Player/ResetTypeCooldowns.html">ResetTypeCooldowns</a>
   <a id="Player:ResurrectPlayer" class="fn" href="../Player/ResurrectPlayer.html">ResurrectPlayer</a>
   <a id="Player:RewardQuest" class="fn" href="../Player/RewardQuest.html">RewardQuest</a>
+  <a id="Player:RunCommand" class="fn" href="../Player/RunCommand.html">RunCommand</a>
   <a id="Player:SaveToDB" class="fn" href="../Player/SaveToDB.html">SaveToDB</a>
   <a id="Player:Say" class="fn" href="../Player/Say.html">Say</a>
   <a id="Player:SendAddonMessage" class="fn" href="../Player/SendAddonMessage.html">SendAddonMessage</a>

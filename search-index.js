@@ -147,6 +147,12 @@ searchIndex["Aura"] = {
         [3, "UpdateEntry", "", "Transform the <a class=\"mod\" href=\"Creature/index.html\">Creature</a> into another Creature."],
     ],
     "paths": []
+};searchIndex["Custom"] = {
+    "items": [
+        [0, "", "Custom", ""],
+        [3, "CustomPlayerMethod", "", ""],
+    ],
+    "paths": []
 };searchIndex["ElunaQuery"] = {
     "items": [
         [0, "", "ElunaQuery", "The result of a database query."],

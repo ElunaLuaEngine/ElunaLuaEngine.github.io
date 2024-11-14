@@ -89,20 +89,54 @@
     <div class='docblock'>
         <p>Sets the <a class="mod" href="../Unit/index.html">Unit</a>'s speed of given [UnitMoveType] to given rate.
 If forced, packets sent to clients forcing the visual change.</p>
-<pre>
-enum UnitMoveType
-{
-    MOVE_WALK           = 0,
-    MOVE_RUN            = 1,
-    MOVE_RUN_BACK       = 2,
-    MOVE_SWIM           = 3,
-    MOVE_SWIM_BACK      = 4,
-    MOVE_TURN_RATE      = 5,
-    MOVE_FLIGHT         = 6,
-    MOVE_FLIGHT_BACK    = 7,
-    MOVE_PITCH_RATE     = 8
-};
-</pre>
+        <div class="table-container">
+            <table>
+<thead>
+<tr>
+<th>UnitMoveType</th>
+<th>ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MOVE_WALK</td>
+<td>0</td>
+</tr>
+<tr>
+<td>MOVE_RUN</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MOVE_RUN_BACK</td>
+<td>2</td>
+</tr>
+<tr>
+<td>MOVE_SWIM</td>
+<td>3</td>
+</tr>
+<tr>
+<td>MOVE_SWIM_BACK</td>
+<td>4</td>
+</tr>
+<tr>
+<td>MOVE_TURN_RATE</td>
+<td>5</td>
+</tr>
+<tr>
+<td>MOVE_FLIGHT</td>
+<td>6</td>
+</tr>
+<tr>
+<td>MOVE_FLIGHT_BACK</td>
+<td>7</td>
+</tr>
+<tr>
+<td>MOVE_PITCH_RATE</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+        </div>
         
         
         <h2 id="synopsis" class='section-header'>

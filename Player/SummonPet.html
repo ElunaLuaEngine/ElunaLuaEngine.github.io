@@ -87,29 +87,77 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
-        <p>For temporary documentation, please check the <a href="https://github.com/ElunaLuaEngine/Eluna/blob/master/LuaFunctions.cpp">LuaFunctions</a> source file.</p>
+        <p>Summons a pet for the <a class="mod" href="../Player/index.html">Player</a>.</p>
+        <div class="table-container">
+        <p>
+            <table>
+<thead>
+<tr>
+<th>Summon Type</th>
+<th>ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SUMMON_PET</td>
+<td>0</td>
+</tr>
+<tr>
+<td>HUNTER_PET</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+        </p>
+        </div>
         
         
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Player:SummonPet()</code>
+            <code>Player:SummonPet( entryId, x, y, z, o, petType, despawnTime )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> entryId</code></dt>
+                <dd class="docblock"><p>The ID of the pet to summon.. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> x</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: all decimal numbers.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> y</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: all decimal numbers.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> z</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: all decimal numbers.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> o</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: all decimal numbers.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> petType</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> despawnTime</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            Nothing.
         </p>
     </div>
 

@@ -88,54 +88,234 @@
     
     <div class='docblock'>
         <p>Returns the <a class="mod" href="../Creature/index.html">Creature</a>'s creature family ID (enumerated in CreatureFamily.dbc).</p>
-<pre>
-enum CreatureFamily
-{
-    CREATURE_FAMILY_NONE                = 0,    // TrinityCore only
-    CREATURE_FAMILY_WOLF                = 1,
-    CREATURE_FAMILY_CAT                 = 2,
-    CREATURE_FAMILY_SPIDER              = 3,
-    CREATURE_FAMILY_BEAR                = 4,
-    CREATURE_FAMILY_BOAR                = 5,
-    CREATURE_FAMILY_CROCOLISK           = 6,
-    CREATURE_FAMILY_CARRION_BIRD        = 7,
-    CREATURE_FAMILY_CRAB                = 8,
-    CREATURE_FAMILY_GORILLA             = 9,
-    CREATURE_FAMILY_HORSE_CUSTOM        = 10,   // Does not exist in DBC but used for horse like beasts in DB
-    CREATURE_FAMILY_RAPTOR              = 11,
-    CREATURE_FAMILY_TALLSTRIDER         = 12,
-    CREATURE_FAMILY_FELHUNTER           = 15,
-    CREATURE_FAMILY_VOIDWALKER          = 16,
-    CREATURE_FAMILY_SUCCUBUS            = 17,
-    CREATURE_FAMILY_DOOMGUARD           = 19,
-    CREATURE_FAMILY_SCORPID             = 20,
-    CREATURE_FAMILY_TURTLE              = 21,
-    CREATURE_FAMILY_IMP                 = 23,
-    CREATURE_FAMILY_BAT                 = 24,
-    CREATURE_FAMILY_HYENA               = 25,
-    CREATURE_FAMILY_BIRD_OF_PREY        = 26,   // Named CREATURE_FAMILY_OWL in Mangos
-    CREATURE_FAMILY_WIND_SERPENT        = 27,
-    CREATURE_FAMILY_REMOTE_CONTROL      = 28,
-    CREATURE_FAMILY_FELGUARD            = 29,   // This and below is TBC+
-    CREATURE_FAMILY_DRAGONHAWK          = 30,
-    CREATURE_FAMILY_RAVAGER             = 31,
-    CREATURE_FAMILY_WARP_STALKER        = 32,
-    CREATURE_FAMILY_SPOREBAT            = 33,
-    CREATURE_FAMILY_NETHER_RAY          = 34,
-    CREATURE_FAMILY_SERPENT             = 35,
-    CREATURE_FAMILY_SEA_LION            = 36,   // TBC only
-    CREATURE_FAMILY_MOTH                = 37,   // This and below is WotLK+
-    CREATURE_FAMILY_CHIMAERA            = 38,
-    CREATURE_FAMILY_DEVILSAUR           = 39,
-    CREATURE_FAMILY_GHOUL               = 40,
-    CREATURE_FAMILY_SILITHID            = 41,
-    CREATURE_FAMILY_WORM                = 42,
-    CREATURE_FAMILY_RHINO               = 43,
-    CREATURE_FAMILY_WASP                = 44,
-    CREATURE_FAMILY_CORE_HOUND          = 45,
-    CREATURE_FAMILY_SPIRIT_BEAST        = 46
-};
-</pre>
+        <div class="table-container">
+            <table>
+<thead>
+<tr>
+<th>CreatureFamily</th>
+<th>ID</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CREATURE_FAMILY_NONE</td>
+<td>0</td>
+<td>TrinityCore only</td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_WOLF</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_CAT</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_SPIDER</td>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_BEAR</td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_BOAR</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_CROCOLISK</td>
+<td>6</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_CARRION_BIRD</td>
+<td>7</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_CRAB</td>
+<td>8</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_GORILLA</td>
+<td>9</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_HORSE_CUSTOM</td>
+<td>10</td>
+<td>Does not exist in DBC but used for horse like beasts in DB</td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_RAPTOR</td>
+<td>11</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_TALLSTRIDER</td>
+<td>12</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_FELHUNTER</td>
+<td>15</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_VOIDWALKER</td>
+<td>16</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_SUCCUBUS</td>
+<td>17</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_DOOMGUARD</td>
+<td>19</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_SCORPID</td>
+<td>20</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_TURTLE</td>
+<td>21</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_IMP</td>
+<td>23</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_BAT</td>
+<td>24</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_HYENA</td>
+<td>25</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_BIRD_OF_PREY</td>
+<td>26</td>
+<td>Named CREATURE_FAMILY_OWL in Mangos</td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_WIND_SERPENT</td>
+<td>27</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_REMOTE_CONTROL</td>
+<td>28</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_FELGUARD</td>
+<td>29</td>
+<td>This and below is TBC+</td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_DRAGONHAWK</td>
+<td>30</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_RAVAGER</td>
+<td>31</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_WARP_STALKER</td>
+<td>32</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_SPOREBAT</td>
+<td>33</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_NETHER_RAY</td>
+<td>34</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_SERPENT</td>
+<td>35</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_SEA_LION</td>
+<td>36</td>
+<td>TBC only</td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_MOTH</td>
+<td>37</td>
+<td>This and below is WotLK+</td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_CHIMAERA</td>
+<td>38</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_DEVILSAUR</td>
+<td>39</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_GHOUL</td>
+<td>40</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_SILITHID</td>
+<td>41</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_WORM</td>
+<td>42</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_RHINO</td>
+<td>43</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_WASP</td>
+<td>44</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_CORE_HOUND</td>
+<td>45</td>
+<td></td>
+</tr>
+<tr>
+<td>CREATURE_FAMILY_SPIRIT_BEAST</td>
+<td>46</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+        </div>
         
         
         <h2 id="synopsis" class='section-header'>

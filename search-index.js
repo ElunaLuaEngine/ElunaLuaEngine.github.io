@@ -625,7 +625,7 @@ searchIndex["Aura"] = {
         [3, "IsGM", "", "Returns 'true' if the <a class=\"mod\" href=\"Player/index.html\">Player</a> is a Game Master, 'false' otherwise."],
         [3, "IsGMChat", "", "Returns whether or not the <a class=\"mod\" href=\"Player/index.html\">Player</a> has the GM chat flag active"],
         [3, "IsGMVisible", "", "Returns whether or not the <a class=\"mod\" href=\"Player/index.html\">Player</a> has GM invisibility active"],
-        [3, "IsGroupVisibleFor", "", ""],
+        [3, "IsGroupVisibleFor", "", "Returns whether or not the <a class=\"mod\" href=\"Player/index.html\">Player</a>s <a class=\"mod\" href=\"Group/index.html\">Group</a> is visible for the other specific <a class=\"mod\" href=\"Player/index.html\">Player</a>."],
         [3, "IsHonorOrXPTarget", "", "Returns 'true' if the <a class=\"mod\" href=\"Player/index.html\">Player</a> is eligible for Honor or XP gain by <a class=\"mod\" href=\"Unit/index.html\">Unit</a> specified, 'false' otherwise."],
         [3, "IsHorde", "", "Returns 'true' if the <a class=\"mod\" href=\"Player/index.html\">Player</a> is a part of the Horde faction, 'false' otherwise."],
         [3, "IsImmuneToDamage", "", "Returns 'true' if the <a class=\"mod\" href=\"Player/index.html\">Player</a> is immune to everything."],

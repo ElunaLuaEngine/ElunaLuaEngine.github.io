@@ -87,29 +87,83 @@
 
     
     <div class='docblock'>
-        <p>This method is <em>undocumented</em>. <strong>Use at your own risk.</strong></p>
-        <p>For temporary documentation, please check the <a href="https://github.com/ElunaLuaEngine/Eluna/blob/master/LuaFunctions.cpp">LuaFunctions</a> source file.</p>
+        <p>Removes the <a class="mod" href="../Player/index.html">Player</a>'s active pet.</p>
+        <div class="table-container">
+        <p>
+            <table>
+<thead>
+<tr>
+<th>Save mode</th>
+<th>ID</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PET_SAVE_AS_DELETED</td>
+<td>-1</td>
+<td>Not saved</td>
+</tr>
+<tr>
+<td>PET_SAVE_AS_CURRENT</td>
+<td>0</td>
+<td>In current slot (with the player)</td>
+</tr>
+<tr>
+<td>PET_SAVE_FIRST_STABLE_SLOT</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>PET_SAVE_SECOND_STABLE_SLOT</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td>PET_SAVE_THIRD_STABLE_SLOT</td>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td>PET_SAVE_LAST_STABLE_SLOT</td>
+<td>4</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+        </p>
+        </div>
         
         
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>Player:RemovePet()</code>
+            <code>Player:RemovePet( saveMode )</code>
+        </p>
+        <p>
+            <code>Player:RemovePet( saveMode, returnReagent )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            Unknown.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> saveMode (-1)</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: integers from -2,147,483,647 to 2,147,483,647.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.2.html">boolean</a></strong> returnReagent (false)</code></dt>
+                <dd class="docblock"><em>See method description.</em></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Unknown.
+            Nothing.
         </p>
     </div>
 

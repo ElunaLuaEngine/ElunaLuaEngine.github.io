@@ -122,6 +122,7 @@ document.write(`
   <a id="Player:HasQuestForGO" class="fn" href="../Player/HasQuestForGO.html">HasQuestForGO</a>
   <a id="Player:HasQuestForItem" class="fn" href="../Player/HasQuestForItem.html">HasQuestForItem</a>
   <a id="Player:HasReceivedQuestReward" class="fn" href="../Player/HasReceivedQuestReward.html">HasReceivedQuestReward</a>
+  <a id="Player:HasRecruited" class="fn" href="../Player/HasRecruited.html">HasRecruited</a>
   <a id="Player:HasSkill" class="fn" href="../Player/HasSkill.html">HasSkill</a>
   <a id="Player:HasSpell" class="fn" href="../Player/HasSpell.html">HasSpell</a>
   <a id="Player:HasSpellCooldown" class="fn" href="../Player/HasSpellCooldown.html">HasSpellCooldown</a>
@@ -156,6 +157,7 @@ document.write(`
   <a id="Player:IsMoving" class="fn" href="../Player/IsMoving.html">IsMoving</a>
   <a id="Player:IsNeverVisible" class="fn" href="../Player/IsNeverVisible.html">IsNeverVisible</a>
   <a id="Player:IsOutdoorPvPActive" class="fn" href="../Player/IsOutdoorPvPActive.html">IsOutdoorPvPActive</a>
+  <a id="Player:IsRecruited" class="fn" href="../Player/IsRecruited.html">IsRecruited</a>
   <a id="Player:IsRested" class="fn" href="../Player/IsRested.html">IsRested</a>
   <a id="Player:IsTaxiCheater" class="fn" href="../Player/IsTaxiCheater.html">IsTaxiCheater</a>
   <a id="Player:IsUsingLfg" class="fn" href="../Player/IsUsingLfg.html">IsUsingLfg</a>

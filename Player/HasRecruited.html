@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the Player:AddTalent method in the Eluna engine.">
+    <meta name="description" content="API documentation for the Player:HasRecruited method in the Eluna engine.">
     <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>Player:AddTalent - Eluna</title>
+    <title>Player:HasRecruited - Eluna</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
     <link rel="stylesheet" href="../static/highlight.css">
@@ -34,7 +34,7 @@
     <script src="sidebar.js"></script>
     <script>
       // Highlight current method by adding "current" class to it
-      var element = document.getElementById("Player:AddTalent");
+      var element = document.getElementById("Player:HasRecruited");
       if (element) {
         var classname = "current";
         arr = element.className.split(" ");
@@ -76,7 +76,7 @@
 <section id='main' class="content mod">
     <h1 class='fqn'>
         Method
-    <a class="mod" href="../Player/index.html">Player</a>:<a class="fn" href="../Player/AddTalent.html">AddTalent</a>
+    <a class="mod" href="../Player/index.html">Player</a>:<a class="fn" href="../Player/HasRecruited.html">HasRecruited</a>
         <span class='out-of-band'>
             <span id='render-detail'>
                 <a id="collapse-all" href="#">[-]</a>
@@ -87,17 +87,14 @@
 
     
     <div class='docblock'>
-        <p>Adds a talent to the <a class="mod" href="../Player/index.html">Player</a> for the specified spec and learning status.</p>
+        <p>Returns whether or not the <a class="mod" href="../Player/index.html">Player</a> recruited the other <a class="mod" href="../Player/index.html">Player</a></p>
         
         
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>success = Player:AddTalent( spellId, spec )</code>
-        </p>
-        <p>
-            <code>success = Player:AddTalent( spellId, spec, learning )</code>
+            <code>hasRecruited = Player:HasRecruited( recruit )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -105,16 +102,8 @@
         </h2>
         <p>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> spellId</code></dt>
-                <dd class="docblock"><p>ID of the spell for the talent. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
-            </dl>
-            <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> spec</code></dt>
-                <dd class="docblock"><p>The spec to which the talent applies. </p><p><em>Valid numbers</em>: integers from 0 to 255.</p></dd>
-            </dl>
-            <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.2.html">boolean</a></strong> learning (true)</code></dt>
-                <dd class="docblock"><p>Whether the talent is being learned. </p></dd>
+                <dt><code><strong><a class="mod" href="../Player/index.html">Player</a></strong> recruit</code></dt>
+                <dd class="docblock"><em>See method description.</em></dd>
             </dl>
         </p>
 
@@ -123,8 +112,8 @@
         </h2>
         <p>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.2.html">boolean</a></strong> success</code></dt>
-                <dd class="docblock"><p>True if the talent was added, false otherwise. </p></dd>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.2.html">boolean</a></strong> hasRecruited</code></dt>
+                <dd class="docblock"><p>Returns 'true' if the <a class="mod" href="../Player/index.html">Player</a> recruited the other <a class="mod" href="../Player/index.html">Player</a>, false otherwise. </p></dd>
             </dl>
         </p>
     </div>

@@ -88,14 +88,34 @@
     
     <div class='docblock'>
         <p>Sets the state of a <a class="mod" href="../GameObject/index.html">GameObject</a></p>
-<pre>
-enum GOState
-{
-    GO_STATE_ACTIVE             = 0,                        // show in world as used and not reset (closed door open)
-    GO_STATE_READY              = 1,                        // show in world as ready (closed door close)
-    GO_STATE_ACTIVE_ALTERNATIVE = 2                         // show in world as used in alt way and not reset (closed door open by cannon fire)
-};
-</pre>
+        <div class="table-container">
+            <table>
+<thead>
+<tr>
+<th>GOState</th>
+<th>ID</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GO_STATE_ACTIVE</td>
+<td>0</td>
+<td>show in world as used and not reset (closed door open)</td>
+</tr>
+<tr>
+<td>GO_STATE_READY</td>
+<td>1</td>
+<td>show in world as ready (closed door close)</td>
+</tr>
+<tr>
+<td>GO_STATE_ACTIVE_ALTERNATIVE</td>
+<td>2</td>
+<td>show in world as used in alt way and not reset (closed door open by cannon fire)</td>
+</tr>
+</tbody>
+</table>
+        </div>
         
         
         <h2 id="synopsis" class='section-header'>

@@ -89,20 +89,49 @@
     <div class='docblock'>
         <p>Returns a target from the <a class="mod" href="../Creature/index.html">Creature</a>'s threat list based on the
   supplied arguments.</p>
-<pre><code>enum SelectAggroTarget
-{
-    SELECT_TARGET_RANDOM = 0,  //Just selects a random target
-    SELECT_TARGET_TOPAGGRO,    //Selects targets from top aggro to bottom
-    SELECT_TARGET_BOTTOMAGGRO, //Selects targets from bottom aggro to top
-    SELECT_TARGET_NEAREST,
-    SELECT_TARGET_FARTHEST
-};
-</code></pre>
 <p>For example, if you wanted to select the third-farthest <a class="mod" href="../Player/index.html">Player</a>
   within 50 yards that has the <a class="mod" href="../Aura/index.html">Aura</a> "Corrupted Blood" (ID 24328),
   you could use this function like so:</p>
 <pre><code>target = creature:GetAITarget(4, true, 3, 50, 24328)
 </code></pre>
+        <div class="table-container">
+            <table>
+<thead>
+<tr>
+<th>SelectAggroTarget</th>
+<th>ID</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SELECT_TARGET_RANDOM</td>
+<td>0</td>
+<td>Just selects a random target</td>
+</tr>
+<tr>
+<td>SELECT_TARGET_TOPAGGRO</td>
+<td>1</td>
+<td>Sorts targets from top aggro to bottom</td>
+</tr>
+<tr>
+<td>SELECT_TARGET_BOTTOMAGGRO</td>
+<td>2</td>
+<td>Sorts targets from bottom aggro to top</td>
+</tr>
+<tr>
+<td>SELECT_TARGET_NEAREST</td>
+<td>3</td>
+<td>Sorts targets from the nearest to the furthest</td>
+</tr>
+<tr>
+<td>SELECT_TARGET_FARTHEST</td>
+<td>4</td>
+<td>Sorts targets from the furthest to the nearest</td>
+</tr>
+</tbody>
+</table>
+        </div>
         
         
         <h2 id="synopsis" class='section-header'>

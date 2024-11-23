@@ -88,20 +88,69 @@
     
     <div class='docblock'>
         <p>Spawns the creature at specified location.</p>
-<pre><code>enum TempSummonType
-{
-    TEMPSUMMON_TIMED_OR_DEAD_DESPAWN       = 1, // despawns after a specified time OR when the creature disappears
-    TEMPSUMMON_TIMED_OR_CORPSE_DESPAWN     = 2, // despawns after a specified time OR when the creature dies
-    TEMPSUMMON_TIMED_DESPAWN               = 3, // despawns after a specified time
-    TEMPSUMMON_TIMED_DESPAWN_OUT_OF_COMBAT = 4, // despawns after a specified time after the creature is out of combat
-    TEMPSUMMON_CORPSE_DESPAWN              = 5, // despawns instantly after death
-    TEMPSUMMON_CORPSE_TIMED_DESPAWN        = 6, // despawns after a specified time after death
-    TEMPSUMMON_DEAD_DESPAWN                = 7, // despawns when the creature disappears
-    TEMPSUMMON_MANUAL_DESPAWN              = 8, // despawns when UnSummon() is called
-    TEMPSUMMON_TIMED_OOC_OR_CORPSE_DESPAWN = 9, // despawns after a specified time (OOC) OR when the creature dies
-    TEMPSUMMON_TIMED_OOC_OR_DEAD_DESPAWN   = 10 // despawns after a specified time (OOC) OR when the creature disappears
-};
-</code></pre>
+        <div class="table-container">
+            <table>
+<thead>
+<tr>
+<th>TempSummonType</th>
+<th>ID</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TEMPSUMMON_TIMED_OR_DEAD_DESPAWN</td>
+<td>1</td>
+<td>despawns after a specified time OR when the creature disappears</td>
+</tr>
+<tr>
+<td>TEMPSUMMON_TIMED_OR_CORPSE_DESPAWN</td>
+<td>2</td>
+<td>despawns after a specified time OR when the creature dies</td>
+</tr>
+<tr>
+<td>TEMPSUMMON_TIMED_DESPAWN</td>
+<td>3</td>
+<td>despawns after a specified time</td>
+</tr>
+<tr>
+<td>TEMPSUMMON_TIMED_DESPAWN_OUT_OF_COMBAT</td>
+<td>4</td>
+<td>despawns after a specified time after the creature is out of combat</td>
+</tr>
+<tr>
+<td>TEMPSUMMON_CORPSE_DESPAWN</td>
+<td>5</td>
+<td>despawns instantly after death</td>
+</tr>
+<tr>
+<td>TEMPSUMMON_CORPSE_TIMED_DESPAWN</td>
+<td>6</td>
+<td>despawns after a specified time after death</td>
+</tr>
+<tr>
+<td>TEMPSUMMON_DEAD_DESPAWN</td>
+<td>7</td>
+<td>despawns when the creature disappears</td>
+</tr>
+<tr>
+<td>TEMPSUMMON_MANUAL_DESPAWN</td>
+<td>8</td>
+<td>despawns when UnSummon() is called</td>
+</tr>
+<tr>
+<td>TEMPSUMMON_TIMED_OOC_OR_CORPSE_DESPAWN</td>
+<td>9</td>
+<td>despawns after a specified time (OOC) OR when the creature dies</td>
+</tr>
+<tr>
+<td>TEMPSUMMON_TIMED_OOC_OR_DEAD_DESPAWN</td>
+<td>10</td>
+<td>despawns after a specified time (OOC) OR when the creature disappears</td>
+</tr>
+</tbody>
+</table>
+        </div>
         
         
         <h2 id="synopsis" class='section-header'>

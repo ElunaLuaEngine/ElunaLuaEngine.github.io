@@ -3,13 +3,16 @@ document.write(`
   <a id="Item:ClearEnchantment" class="fn" href="../Item/ClearEnchantment.html">ClearEnchantment</a>
   <a id="Item:GetAllowableClass" class="fn" href="../Item/GetAllowableClass.html">GetAllowableClass</a>
   <a id="Item:GetAllowableRace" class="fn" href="../Item/GetAllowableRace.html">GetAllowableRace</a>
+  <a id="Item:GetArmor" class="fn" href="../Item/GetArmor.html">GetArmor</a>
   <a id="Item:GetBagSize" class="fn" href="../Item/GetBagSize.html">GetBagSize</a>
   <a id="Item:GetBagSlot" class="fn" href="../Item/GetBagSlot.html">GetBagSlot</a>
   <a id="Item:GetBuyCount" class="fn" href="../Item/GetBuyCount.html">GetBuyCount</a>
   <a id="Item:GetBuyPrice" class="fn" href="../Item/GetBuyPrice.html">GetBuyPrice</a>
   <a id="Item:GetClass" class="fn" href="../Item/GetClass.html">GetClass</a>
   <a id="Item:GetCount" class="fn" href="../Item/GetCount.html">GetCount</a>
+  <a id="Item:GetDamageInfo" class="fn" href="../Item/GetDamageInfo.html">GetDamageInfo</a>
   <a id="Item:GetDisplayId" class="fn" href="../Item/GetDisplayId.html">GetDisplayId</a>
+  <a id="Item:GetDurability" class="fn" href="../Item/GetDurability.html">GetDurability</a>
   <a id="Item:GetEnchantmentId" class="fn" href="../Item/GetEnchantmentId.html">GetEnchantmentId</a>
   <a id="Item:GetExtraFlags" class="fn" href="../Item/GetExtraFlags.html">GetExtraFlags</a>
   <a id="Item:GetFlags" class="fn" href="../Item/GetFlags.html">GetFlags</a>
@@ -19,6 +22,7 @@ document.write(`
   <a id="Item:GetItemLevel" class="fn" href="../Item/GetItemLevel.html">GetItemLevel</a>
   <a id="Item:GetItemLink" class="fn" href="../Item/GetItemLink.html">GetItemLink</a>
   <a id="Item:GetItemSet" class="fn" href="../Item/GetItemSet.html">GetItemSet</a>
+  <a id="Item:GetMaxDurability" class="fn" href="../Item/GetMaxDurability.html">GetMaxDurability</a>
   <a id="Item:GetMaxStackCount" class="fn" href="../Item/GetMaxStackCount.html">GetMaxStackCount</a>
   <a id="Item:GetName" class="fn" href="../Item/GetName.html">GetName</a>
   <a id="Item:GetOwner" class="fn" href="../Item/GetOwner.html">GetOwner</a>
@@ -29,8 +33,10 @@ document.write(`
   <a id="Item:GetRequiredLevel" class="fn" href="../Item/GetRequiredLevel.html">GetRequiredLevel</a>
   <a id="Item:GetSellPrice" class="fn" href="../Item/GetSellPrice.html">GetSellPrice</a>
   <a id="Item:GetSlot" class="fn" href="../Item/GetSlot.html">GetSlot</a>
+  <a id="Item:GetSpeed" class="fn" href="../Item/GetSpeed.html">GetSpeed</a>
   <a id="Item:GetSpellId" class="fn" href="../Item/GetSpellId.html">GetSpellId</a>
   <a id="Item:GetSpellTrigger" class="fn" href="../Item/GetSpellTrigger.html">GetSpellTrigger</a>
+  <a id="Item:GetStatInfo" class="fn" href="../Item/GetStatInfo.html">GetStatInfo</a>
   <a id="Item:GetStatsCount" class="fn" href="../Item/GetStatsCount.html">GetStatsCount</a>
   <a id="Item:GetSubClass" class="fn" href="../Item/GetSubClass.html">GetSubClass</a>
   <a id="Item:HasQuest" class="fn" href="../Item/HasQuest.html">HasQuest</a>

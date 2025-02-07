@@ -17,5 +17,6 @@ document.write(`
   <a id="GameObject:SetGoState" class="fn" href="../GameObject/SetGoState.html">SetGoState</a>
   <a id="GameObject:SetLootState" class="fn" href="../GameObject/SetLootState.html">SetLootState</a>
   <a id="GameObject:SetRespawnTime" class="fn" href="../GameObject/SetRespawnTime.html">SetRespawnTime</a>
+  <a id="GameObject:SetSpawnedByDefault" class="fn" href="../GameObject/SetSpawnedByDefault.html">SetSpawnedByDefault</a>
   <a id="GameObject:UseDoorOrButton" class="fn" href="../GameObject/UseDoorOrButton.html">UseDoorOrButton</a>
 `);

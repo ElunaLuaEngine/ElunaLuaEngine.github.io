@@ -190,6 +190,7 @@ searchIndex["Aura"] = {
         [3, "SetGoState", "", "Sets the state of a <a class=\"mod\" href=\"GameObject/index.html\">GameObject</a>"],
         [3, "SetLootState", "", "Sets the [LootState] of a <a class=\"mod\" href=\"GameObject/index.html\">GameObject</a> Below are [LootState]s off of 3.3.5a"],
         [3, "SetRespawnTime", "", "Sets the respawn or despawn time for the gameobject."],
+        [3, "SetSpawnedByDefault", "", "Sets whether or not the <a class=\"mod\" href=\"GameObject/index.html\">GameObject</a> will be spawned by default"],
         [3, "UseDoorOrButton", "", "Activates a door or a button/lever"],
     ],
     "paths": []

@@ -507,7 +507,7 @@ searchIndex["Aura"] = {
         [3, "CanRewardQuest", "", "Returns 'true' if the <a class=\"mod\" href=\"Player/index.html\">Player</a> satisfies all requirements to turn in the quest."],
         [3, "CanShareQuest", "", "Returns 'true' if the <a class=\"mod\" href=\"Player/index.html\">Player</a> can share <a class=\"mod\" href=\"Quest/index.html\">Quest</a> specified by ID, 'false' otherwise."],
         [3, "CanSpeak", "", "Returns 'true' if the <a class=\"mod\" href=\"Player/index.html\">Player</a> can currently communicate through chat, 'false' otherwise."],
-        [3, "CanTitanGrip", "", "Returns 'true' if the <a class=\"mod\" href=\"Player/index.html\">Player</a> can Titan Grip, 'false' otherwise."],
+        [3, "CanTitanGrip", "", "Returns 'true' if the <a class=\"mod\" href=\"Player/index.html\">Player</a> can Titan Grip the specific <a class=\"mod\" href=\"Item/index.html\">Item</a>, 'false' otherwise."],
         [3, "CanUninviteFromGroup", "", "Returns 'true' if the <a class=\"mod\" href=\"Player/index.html\">Player</a> has permission to uninvite others from the current group, 'false' otherwise."],
         [3, "CanUseItem", "", "Returns 'true' if the <a class=\"mod\" href=\"Player/index.html\">Player</a> can use the item or item entry specified, 'false' otherwise."],
         [3, "ClearComboPoints", "", "Clears the <a class=\"mod\" href=\"Player/index.html\">Player</a>s combo points"],

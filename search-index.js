@@ -40,6 +40,24 @@ searchIndex["Aura"] = {
         [3, "GetWinner", "", "Returns the winning team of the specific <a class=\"mod\" href=\"BattleGround/index.html\">BattleGround</a>."],
     ],
     "paths": []
+};searchIndex["BigInt"] = {
+    "items": [
+        [0, "", "BigInt", ""],
+        [3, "Add", "", ""],
+        [3, "Divide", "", ""],
+        [3, "Equal", "", ""],
+        [3, "Equal", "", ""],
+        [3, "Less", "", ""],
+        [3, "LessOrEqual", "", ""],
+        [3, "Mod", "", ""],
+        [3, "Multiply", "", ""],
+        [3, "Pow", "", ""],
+        [3, "Subtract", "", ""],
+        [3, "ToString", "", ""],
+        [3, "ToString", "", ""],
+        [3, "UnaryMinus", "", ""],
+    ],
+    "paths": []
 };searchIndex["Corpse"] = {
     "items": [
         [0, "", "Corpse", "The remains of a <a class=\"mod\" href=\"Player/index.html\">Player</a> that has died."],

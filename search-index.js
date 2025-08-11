@@ -425,6 +425,8 @@ searchIndex["Aura"] = {
         [3, "SetCount", "", "Sets the stack count of the <a class=\"mod\" href=\"Item/index.html\">Item</a>"],
         [3, "SetEnchantment", "", "Sets the specified enchantment of the <a class=\"mod\" href=\"Item/index.html\">Item</a> to the specified slot"],
         [3, "SetOwner", "", "Sets the <a class=\"mod\" href=\"Player/index.html\">Player</a> specified as the owner of the <a class=\"mod\" href=\"Item/index.html\">Item</a>"],
+        [3, "SetRandomProperty", "", "Sets the random properties for the <a class=\"mod\" href=\"Item/index.html\">Item</a> from a given random property ID."],
+        [3, "SetRandomSuffix", "", "Sets the random suffix for the <a class=\"mod\" href=\"Item/index.html\">Item</a> from a given random suffix ID."],
     ],
     "paths": []
 };searchIndex["Map"] = {

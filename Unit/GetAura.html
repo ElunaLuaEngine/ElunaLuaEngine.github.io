@@ -87,14 +87,24 @@
 
     
     <div class='docblock'>
-        <p>Returns the <a class="mod" href="../Aura/index.html">Aura</a> of the given spell entry on the <a class="mod" href="../Unit/index.html">Unit</a> or nil.</p>
+        <p>Returns the <a class="mod" href="../Aura/index.html">Aura</a> of the given spell on the <a class="mod" href="../Unit/index.html">Unit</a>, or nil if not found.
+Optionally filters by caster, item caster, and required effect mask.</p>
         
         
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>aura = Unit:GetAura( spellID )</code>
+            <code>aura = Unit:GetAura( spellId )</code>
+        </p>
+        <p>
+            <code>aura = Unit:GetAura( spellId, caster )</code>
+        </p>
+        <p>
+            <code>aura = Unit:GetAura( spellId, caster, itemCaster )</code>
+        </p>
+        <p>
+            <code>aura = Unit:GetAura( spellId, caster, itemCaster, reqEffMask )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -102,8 +112,20 @@
         </h2>
         <p>
             <dl>
-                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> spellID</code></dt>
-                <dd class="docblock"><p>Entry of the aura spell. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> spellId</code></dt>
+                <dd class="docblock"><p>The spell ID to look up. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> caster (ObjectGuid)</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: integers from 0 to 18,446,744,073,709,551,615.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> itemCaster (ObjectGuid)</code></dt>
+                <dd class="docblock"><p><em>Valid numbers</em>: integers from 0 to 18,446,744,073,709,551,615.</p></dd>
+            </dl>
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> reqEffMask (0)</code></dt>
+                <dd class="docblock"><p>Bitmask of effects that must be present, or 0 for any. </p><p><em>Valid numbers</em>: integers from 0 to 255.</p></dd>
             </dl>
         </p>
 
@@ -113,7 +135,7 @@
         <p>
             <dl>
                 <dt><code><strong><a class="mod" href="../Aura/index.html">Aura</a></strong> aura</code></dt>
-                <dd class="docblock"><p>Aura object or nil. </p></dd>
+                <dd class="docblock"><p>The aura object or nil. </p></dd>
             </dl>
         </p>
     </div>

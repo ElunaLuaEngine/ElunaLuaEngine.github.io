@@ -263,7 +263,8 @@ See also <a class="fn" href="../Unit/CastSpell.html">Unit:CastSpell</a>.</p>
                 <a class='fn' href='GetAura.html'>GetAura</a>
             </td>
             <td class='docblock short'>
-                <p>Returns the <a class="mod" href="../Aura/index.html">Aura</a> of the given spell entry on the <a class="mod" href="../Unit/index.html">Unit</a> or nil.</p>
+                <p>Returns the <a class="mod" href="../Aura/index.html">Aura</a> of the given spell on the <a class="mod" href="../Unit/index.html">Unit</a>, or nil if not found.
+Optionally filters by caster, item caster, and required effect mask.</p>
             </td>
         </tr>
         <tr>
@@ -480,6 +481,16 @@ See also <a class="fn" href="../Unit/CastSpell.html">Unit:CastSpell</a>.</p>
             </td>
             <td class='docblock short'>
                 <p>Returns the <a class="mod" href="../Unit/index.html">Unit</a>'s native/original display ID.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetOwnedAura.html'>GetOwnedAura</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the owned <a class="mod" href="../Aura/index.html">Aura</a> of the given spell on the <a class="mod" href="../Unit/index.html">Unit</a>, or nil if not found.
+Similar to GetAura but searches owned auras and optionally excludes a specific <a class="mod" href="../Aura/index.html">Aura</a>.</p>
             </td>
         </tr>
         <tr>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="API documentation for the ElunaProcInfo class in the Eluna engine.">
+    <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
+
+    <title>ElunaProcInfo - Eluna API</title>
+
+    <link rel="stylesheet" type="text/css" href="../static/main.css">
+    <link rel="stylesheet" href="../static/highlight.css">
+
+    <link rel="shortcut icon" href="../static/favicon.ico">
+    
+    <script>
+    // Inline script to set theme before the rest of the document loads
+    (function() {
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme) {
+            document.documentElement.classList.add(currentTheme);
+        }
+    })();
+    </script>
+    <script src="../static/highlight.min.js"></script>
+    <script src="../static/lua.min.js"></script>
+</head>
+<body class="rustdoc">
+<section class="sidebar">
+    <a href='../index.html'><img src='../static/eluna-logo.png' alt='Eluna Logo' width='100'></a>
+    <div class="block">
+        
+
+    </div>
+</section>
+
+<nav class="sub">
+    <form class="search-form js-only">
+        <input class="search-input" name="search"
+            autocomplete="off"
+            placeholder="Click or press 'S' to search..."
+            type="search">
+                   
+        <div class="toggle-container" id="themeToggle">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </div>
+    </form>
+</nav>
+
+<section id='main' class="content mod">
+    <h1 class='fqn'>
+        Class <a class="mod" href="">ElunaProcInfo</a>
+        <span class='out-of-band'>
+            <span id='render-detail'>
+                <a id="collapse-all" href="#">[-]</a>
+                <a id="expand-all" href="#">[+]</a>
+            </span>
+        </span>
+    </h1>
+
+    
+    
+
+    <h2 id='methods' class='section-header'><a href="#methods">Methods</a></h2>
+    <table>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetActionTarget.html'>GetActionTarget</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the target <a class="mod" href="../Unit/index.html">Unit</a> of the proc event action.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetActor.html'>GetActor</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the <a class="mod" href="../Unit/index.html">Unit</a> that triggered the proc event.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetAttackType.html'>GetAttackType</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the weapon attack type of the proc event.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetBlock.html'>GetBlock</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the amount of damage blocked in the proc event.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetDamage.html'>GetDamage</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the damage dealt in the proc event.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetDamageAbsorb.html'>GetDamageAbsorb</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the amount of damage absorbed in the proc event.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetDamageType.html'>GetDamageType</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the damage effect type of the proc event.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetEffectiveHeal.html'>GetEffectiveHeal</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the effective healing done in the proc event, after overhealing is subtracted.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetHeal.html'>GetHeal</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the amount of healing done in the proc event.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetHealAbsorb.html'>GetHealAbsorb</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the amount of healing absorbed in the proc event.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetHitMask.html'>GetHitMask</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the hit mask of the proc event.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetMap.html'>GetMap</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the <a class="mod" href="../Map/index.html">Map</a> the proc event occurred on.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetProcSpell.html'>GetProcSpell</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the <a class="mod" href="../Spell/index.html">Spell</a> that triggered the proc event, or nil if the proc was not triggered by a spell.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetResist.html'>GetResist</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the amount of damage resisted in the proc event.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetSchoolMask.html'>GetSchoolMask</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the school mask of the proc event.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetSpellInfo.html'>GetSpellInfo</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the [ElunaSpellInfo] of the spell that triggered the proc event.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetSpellPhaseMask.html'>GetSpellPhaseMask</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the spell phase mask of the proc event.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetSpellTypeMask.html'>GetSpellTypeMask</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the spell type mask of the proc event.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetTypeMask.html'>GetTypeMask</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the type mask of the proc event.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='HasDamage.html'>HasDamage</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns <code>true</code> if the proc event involved damage, <code>false</code> otherwise.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='HasHeal.html'>HasHeal</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns <code>true</code> if the proc event involved healing, <code>false</code> otherwise.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='SetAbsorbDamage.html'>SetAbsorbDamage</a>
+            </td>
+            <td class='docblock short'>
+                <p>Sets the absorbed damage of the proc event.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='SetAbsorbHeal.html'>SetAbsorbHeal</a>
+            </td>
+            <td class='docblock short'>
+                <p>Sets the absorbed healing of the proc event.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='SetBlockDamage.html'>SetBlockDamage</a>
+            </td>
+            <td class='docblock short'>
+                <p>Sets the blocked damage of the proc event.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='SetDamage.html'>SetDamage</a>
+            </td>
+            <td class='docblock short'>
+                <p>Sets the damage of the proc event.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='SetEffectiveHeal.html'>SetEffectiveHeal</a>
+            </td>
+            <td class='docblock short'>
+                <p>Sets the effective healing of the proc event.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='SetHeal.html'>SetHeal</a>
+            </td>
+            <td class='docblock short'>
+                <p>Sets the healing of the proc event.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='SetResistDamage.html'>SetResistDamage</a>
+            </td>
+            <td class='docblock short'>
+                <p>Sets the resisted damage of the proc event.</p>
+            </td>
+        </tr>
+    </table>
+
+</section>
+
+<section id='search' class="content hidden"></section>
+
+<section class="footer"></section>
+
+<div id="help" class="hidden">
+    <div class="shortcuts">
+        <h1>Keyboard shortcuts</h1>
+        <dl>
+            <dt>?</dt>
+            <dd>Show this help dialog</dd>
+            <dt>S</dt>
+            <dd>Focus the search field</dd>
+            <dt>&larrb;</dt>
+            <dd>Move up in search results</dd>
+            <dt>&rarrb;</dt>
+            <dd>Move down in search results</dd>
+            <dt>&#9166;</dt>
+            <dd>Go to active search result</dd>
+        </dl>
+    </div>
+    <div class="infos">
+        <h1>Search tricks</h1>
+        <p>
+            Prefix searches with a type followed by a colon (e.g.
+            <code>fn:</code>) to restrict the search to a given type.
+        </p>
+        <p>
+            Accepted types are: <code>fn</code>, <code>mod</code>,
+            <code>struct</code> (or <code>str</code>), <code>enum</code>,
+            <code>trait</code>, <code>typedef</code> (or
+            <code>tdef</code>).
+        </p>
+    </div>
+</div>
+
+<script>
+    window.rootPath = "../";
+</script>
+<script src="../static/jquery.js"></script>
+<script src="../static/main.js"></script>
+<script src="../static/theme.js"></script>
+<script async src="../search-index.js"></script>
+<center>Generated on <script src="../date.js"></script></center>
+<center>&copy; 2010 - 2024 Eluna Lua Engine</center>
+</body>
+</html>

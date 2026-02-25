@@ -1,14 +1,42 @@
 document.write(`
+  <a id="Spell:CalculateDamage" class="fn" href="../Spell/CalculateDamage.html">CalculateDamage</a>
   <a id="Spell:Cancel" class="fn" href="../Spell/Cancel.html">Cancel</a>
   <a id="Spell:Cast" class="fn" href="../Spell/Cast.html">Cast</a>
+  <a id="Spell:CleanupTargetList" class="fn" href="../Spell/CleanupTargetList.html">CleanupTargetList</a>
   <a id="Spell:Finish" class="fn" href="../Spell/Finish.html">Finish</a>
   <a id="Spell:GetCastTime" class="fn" href="../Spell/GetCastTime.html">GetCastTime</a>
   <a id="Spell:GetCaster" class="fn" href="../Spell/GetCaster.html">GetCaster</a>
+  <a id="Spell:GetDelayMoment" class="fn" href="../Spell/GetDelayMoment.html">GetDelayMoment</a>
+  <a id="Spell:GetDelayStart" class="fn" href="../Spell/GetDelayStart.html">GetDelayStart</a>
   <a id="Spell:GetDuration" class="fn" href="../Spell/GetDuration.html">GetDuration</a>
   <a id="Spell:GetEntry" class="fn" href="../Spell/GetEntry.html">GetEntry</a>
+  <a id="Spell:GetGameObjectTargetCountForEffect" class="fn" href="../Spell/GetGameObjectTargetCountForEffect.html">GetGameObjectTargetCountForEffect</a>
+  <a id="Spell:GetItemTargetCountForEffect" class="fn" href="../Spell/GetItemTargetCountForEffect.html">GetItemTargetCountForEffect</a>
+  <a id="Spell:GetOriginalCaster" class="fn" href="../Spell/GetOriginalCaster.html">GetOriginalCaster</a>
   <a id="Spell:GetPowerCost" class="fn" href="../Spell/GetPowerCost.html">GetPowerCost</a>
+  <a id="Spell:GetRuneState" class="fn" href="../Spell/GetRuneState.html">GetRuneState</a>
+  <a id="Spell:GetSpellInfo" class="fn" href="../Spell/GetSpellInfo.html">GetSpellInfo</a>
+  <a id="Spell:GetState" class="fn" href="../Spell/GetState.html">GetState</a>
   <a id="Spell:GetTarget" class="fn" href="../Spell/GetTarget.html">GetTarget</a>
   <a id="Spell:GetTargetDest" class="fn" href="../Spell/GetTargetDest.html">GetTargetDest</a>
+  <a id="Spell:GetUnitTargetCountForEffect" class="fn" href="../Spell/GetUnitTargetCountForEffect.html">GetUnitTargetCountForEffect</a>
+  <a id="Spell:IsAutoActionResetSpell" class="fn" href="../Spell/IsAutoActionResetSpell.html">IsAutoActionResetSpell</a>
   <a id="Spell:IsAutoRepeat" class="fn" href="../Spell/IsAutoRepeat.html">IsAutoRepeat</a>
+  <a id="Spell:IsChannelActive" class="fn" href="../Spell/IsChannelActive.html">IsChannelActive</a>
+  <a id="Spell:IsDeletable" class="fn" href="../Spell/IsDeletable.html">IsDeletable</a>
+  <a id="Spell:IsIgnoringCooldowns" class="fn" href="../Spell/IsIgnoringCooldowns.html">IsIgnoringCooldowns</a>
+  <a id="Spell:IsInterruptable" class="fn" href="../Spell/IsInterruptable.html">IsInterruptable</a>
+  <a id="Spell:IsNeedSendToClient" class="fn" href="../Spell/IsNeedSendToClient.html">IsNeedSendToClient</a>
+  <a id="Spell:IsPositive" class="fn" href="../Spell/IsPositive.html">IsPositive</a>
+  <a id="Spell:IsProcDisabled" class="fn" href="../Spell/IsProcDisabled.html">IsProcDisabled</a>
+  <a id="Spell:IsTriggered" class="fn" href="../Spell/IsTriggered.html">IsTriggered</a>
+  <a id="Spell:IsTriggeredByAura" class="fn" href="../Spell/IsTriggeredByAura.html">IsTriggeredByAura</a>
   <a id="Spell:SetAutoRepeat" class="fn" href="../Spell/SetAutoRepeat.html">SetAutoRepeat</a>
+  <a id="Spell:SetDelayStart" class="fn" href="../Spell/SetDelayStart.html">SetDelayStart</a>
+  <a id="Spell:SetExecutedCurrently" class="fn" href="../Spell/SetExecutedCurrently.html">SetExecutedCurrently</a>
+  <a id="Spell:SetReferencedFromCurrent" class="fn" href="../Spell/SetReferencedFromCurrent.html">SetReferencedFromCurrent</a>
+  <a id="Spell:SetRuneState" class="fn" href="../Spell/SetRuneState.html">SetRuneState</a>
+  <a id="Spell:SetSpellValue" class="fn" href="../Spell/SetSpellValue.html">SetSpellValue</a>
+  <a id="Spell:SetState" class="fn" href="../Spell/SetState.html">SetState</a>
+  <a id="Spell:UpdatePointers" class="fn" href="../Spell/UpdatePointers.html">UpdatePointers</a>
 `);

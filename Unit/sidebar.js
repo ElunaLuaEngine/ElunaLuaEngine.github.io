@@ -44,6 +44,7 @@ document.write(`
   <a id="Unit:GetMountId" class="fn" href="../Unit/GetMountId.html">GetMountId</a>
   <a id="Unit:GetMovementType" class="fn" href="../Unit/GetMovementType.html">GetMovementType</a>
   <a id="Unit:GetNativeDisplayId" class="fn" href="../Unit/GetNativeDisplayId.html">GetNativeDisplayId</a>
+  <a id="Unit:GetOwnedAura" class="fn" href="../Unit/GetOwnedAura.html">GetOwnedAura</a>
   <a id="Unit:GetOwner" class="fn" href="../Unit/GetOwner.html">GetOwner</a>
   <a id="Unit:GetOwnerGUID" class="fn" href="../Unit/GetOwnerGUID.html">GetOwnerGUID</a>
   <a id="Unit:GetPetGUID" class="fn" href="../Unit/GetPetGUID.html">GetPetGUID</a>

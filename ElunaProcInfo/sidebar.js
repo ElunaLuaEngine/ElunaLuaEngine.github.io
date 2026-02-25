@@ -1,0 +1,30 @@
+document.write(`
+  <a id="ElunaProcInfo:GetActionTarget" class="fn" href="../ElunaProcInfo/GetActionTarget.html">GetActionTarget</a>
+  <a id="ElunaProcInfo:GetActor" class="fn" href="../ElunaProcInfo/GetActor.html">GetActor</a>
+  <a id="ElunaProcInfo:GetAttackType" class="fn" href="../ElunaProcInfo/GetAttackType.html">GetAttackType</a>
+  <a id="ElunaProcInfo:GetBlock" class="fn" href="../ElunaProcInfo/GetBlock.html">GetBlock</a>
+  <a id="ElunaProcInfo:GetDamage" class="fn" href="../ElunaProcInfo/GetDamage.html">GetDamage</a>
+  <a id="ElunaProcInfo:GetDamageAbsorb" class="fn" href="../ElunaProcInfo/GetDamageAbsorb.html">GetDamageAbsorb</a>
+  <a id="ElunaProcInfo:GetDamageType" class="fn" href="../ElunaProcInfo/GetDamageType.html">GetDamageType</a>
+  <a id="ElunaProcInfo:GetEffectiveHeal" class="fn" href="../ElunaProcInfo/GetEffectiveHeal.html">GetEffectiveHeal</a>
+  <a id="ElunaProcInfo:GetHeal" class="fn" href="../ElunaProcInfo/GetHeal.html">GetHeal</a>
+  <a id="ElunaProcInfo:GetHealAbsorb" class="fn" href="../ElunaProcInfo/GetHealAbsorb.html">GetHealAbsorb</a>
+  <a id="ElunaProcInfo:GetHitMask" class="fn" href="../ElunaProcInfo/GetHitMask.html">GetHitMask</a>
+  <a id="ElunaProcInfo:GetMap" class="fn" href="../ElunaProcInfo/GetMap.html">GetMap</a>
+  <a id="ElunaProcInfo:GetProcSpell" class="fn" href="../ElunaProcInfo/GetProcSpell.html">GetProcSpell</a>
+  <a id="ElunaProcInfo:GetResist" class="fn" href="../ElunaProcInfo/GetResist.html">GetResist</a>
+  <a id="ElunaProcInfo:GetSchoolMask" class="fn" href="../ElunaProcInfo/GetSchoolMask.html">GetSchoolMask</a>
+  <a id="ElunaProcInfo:GetSpellInfo" class="fn" href="../ElunaProcInfo/GetSpellInfo.html">GetSpellInfo</a>
+  <a id="ElunaProcInfo:GetSpellPhaseMask" class="fn" href="../ElunaProcInfo/GetSpellPhaseMask.html">GetSpellPhaseMask</a>
+  <a id="ElunaProcInfo:GetSpellTypeMask" class="fn" href="../ElunaProcInfo/GetSpellTypeMask.html">GetSpellTypeMask</a>
+  <a id="ElunaProcInfo:GetTypeMask" class="fn" href="../ElunaProcInfo/GetTypeMask.html">GetTypeMask</a>
+  <a id="ElunaProcInfo:HasDamage" class="fn" href="../ElunaProcInfo/HasDamage.html">HasDamage</a>
+  <a id="ElunaProcInfo:HasHeal" class="fn" href="../ElunaProcInfo/HasHeal.html">HasHeal</a>
+  <a id="ElunaProcInfo:SetAbsorbDamage" class="fn" href="../ElunaProcInfo/SetAbsorbDamage.html">SetAbsorbDamage</a>
+  <a id="ElunaProcInfo:SetAbsorbHeal" class="fn" href="../ElunaProcInfo/SetAbsorbHeal.html">SetAbsorbHeal</a>
+  <a id="ElunaProcInfo:SetBlockDamage" class="fn" href="../ElunaProcInfo/SetBlockDamage.html">SetBlockDamage</a>
+  <a id="ElunaProcInfo:SetDamage" class="fn" href="../ElunaProcInfo/SetDamage.html">SetDamage</a>
+  <a id="ElunaProcInfo:SetEffectiveHeal" class="fn" href="../ElunaProcInfo/SetEffectiveHeal.html">SetEffectiveHeal</a>
+  <a id="ElunaProcInfo:SetHeal" class="fn" href="../ElunaProcInfo/SetHeal.html">SetHeal</a>
+  <a id="ElunaProcInfo:SetResistDamage" class="fn" href="../ElunaProcInfo/SetResistDamage.html">SetResistDamage</a>
+`);

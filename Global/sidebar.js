@@ -53,6 +53,7 @@ document.write(`
   <a id="Global:GetPlayersOnMap" class="fn" href="../Global/GetPlayersOnMap.html">GetPlayersOnMap</a>
   <a id="Global:GetQuest" class="fn" href="../Global/GetQuest.html">GetQuest</a>
   <a id="Global:GetRealmID" class="fn" href="../Global/GetRealmID.html">GetRealmID</a>
+  <a id="Global:GetSpellInfo" class="fn" href="../Global/GetSpellInfo.html">GetSpellInfo</a>
   <a id="Global:GetStateInstanceId" class="fn" href="../Global/GetStateInstanceId.html">GetStateInstanceId</a>
   <a id="Global:GetStateMap" class="fn" href="../Global/GetStateMap.html">GetStateMap</a>
   <a id="Global:GetStateMapId" class="fn" href="../Global/GetStateMapId.html">GetStateMapId</a>

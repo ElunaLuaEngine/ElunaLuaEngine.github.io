@@ -109,6 +109,160 @@
 <td><span title="number">event</span>, <span title="Spell">spell</span>, <span title="boolean">skipCheck</span></td>
 <td></td>
 </tr>
+<tr>
+<td>2</td>
+<td>ON_AURA_APPLICATION</td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Aura">aura</span>, <span title="AuraEffect">auraEff</span>, <span title="Unit">target</span>, <span title="number">mode</span>, <span title="boolean">apply</span></td>
+<td>Can return true to prevent application</td>
+</tr>
+<tr>
+<td>3</td>
+<td>ON_DISPEL</td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Aura">aura</span>, <span title="WorldObject">dispeller</span>, <span title="number">dispellerSpellId</span>, <span title="number">removedCharges</span></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>ON_PERIODIC_TICK</td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Aura">aura</span>, <span title="AuraEffect">auraEff</span>, <span title="Unit">target</span></td>
+<td>Can return true to prevent tick</td>
+</tr>
+<tr>
+<td>5</td>
+<td>ON_PERIODIC_UPDATE</td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Aura">aura</span>, <span title="AuraEffect">auraEff</span></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>ON_AURA_CALC_AMOUNT</td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Aura">aura</span>, <span title="AuraEffect">auraEff</span>, <span title="number">amount</span>, <span title="boolean">canBeRecalculated</span></td>
+<td>Can return amount, canBeRecalculated to override</td>
+</tr>
+<tr>
+<td>7</td>
+<td>ON_CALC_PERIODIC</td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Aura">aura</span>, <span title="AuraEffect">auraEff</span>, <span title="boolean">isPeriodic</span>, <span title="number">amplitude</span></td>
+<td>Can return isPeriodic, amplitude to override</td>
+</tr>
+<tr>
+<td>8</td>
+<td>ON_CHECK_PROC</td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Aura">aura</span>, <span title="ElunaProcInfo">procInfo</span></td>
+<td>Can return false to prevent proc</td>
+</tr>
+<tr>
+<td>9</td>
+<td>ON_PROC</td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Aura">aura</span>, <span title="ElunaProcInfo">procInfo</span></td>
+<td>Can return true to prevent default proc handling</td>
+</tr>
+<tr>
+<td>10</td>
+<td>ON_CHECK_CAST</td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Spell">spell</span></td>
+<td>Can return SpellCastResult to override cast result</td>
+</tr>
+<tr>
+<td>11</td>
+<td>ON_BEFORE_CAST</td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Spell">spell</span></td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>ON_AFTER_CAST</td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Spell">spell</span></td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>ON_OBJECT_AREA_TARGET</td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Spell">spell</span>, <span title="number">effIndex</span>, <span title="table">targets</span></td>
+<td>Modify targets table in place to change targets</td>
+</tr>
+<tr>
+<td>14</td>
+<td>ON_OBJECT_TARGET</td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Spell">spell</span>, <span title="number">effIndex</span>, <span title="WorldObject">target</span></td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>ON_DEST_TARGET</td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Spell">spell</span>, <span title="number">effIndex</span>, <span title="number">mapId</span>, <span title="number">x</span>, <span title="number">y</span>, <span title="number">z</span>, <span title="number">orientation</span></td>
+<td>Can return mapId, x, y, z, orientation to override destination</td>
+</tr>
+<tr>
+<td>16</td>
+<td>ON_EFFECT_LAUNCH</td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Spell">spell</span>, <span title="number">effIndex</span>, <span title="number">mode</span></td>
+<td>Can return true to prevent default launch handling</td>
+</tr>
+<tr>
+<td>17</td>
+<td>ON_EFFECT_LAUNCH_TARGET</td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Spell">spell</span>, <span title="number">effIndex</span>, <span title="number">mode</span></td>
+<td>Can return true to prevent default launch target handling</td>
+</tr>
+<tr>
+<td>18</td>
+<td>ON_EFFECT_CALC_ABSORB</td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Spell">spell</span>, <span title="Unit">attacker</span>, <span title="Unit">victim</span>, <span title="number">damage</span>, <span title="number">absorb</span>, <span title="number">resist</span>, <span title="number">block</span>, <span title="number">schoolMask</span>, <span title="number">damageType</span>, <span title="number">attackType</span>, <span title="number">hitMask</span>, <span title="number">resistAmount</span>, <span title="number">absorbAmount</span></td>
+<td>Can return resistAmount, absorbAmount to override</td>
+</tr>
+<tr>
+<td>19</td>
+<td>ON_EFFECT_HIT</td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Spell">spell</span>, <span title="number">effIndex</span>, <span title="number">mode</span></td>
+<td>Can return true to prevent default hit handling</td>
+</tr>
+<tr>
+<td>20</td>
+<td>ON_BEFORE_HIT</td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Spell">spell</span>, <span title="number">missInfo</span></td>
+<td></td>
+</tr>
+<tr>
+<td>21</td>
+<td>ON_EFFECT_HIT_TARGET</td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Spell">spell</span>, <span title="number">effIndex</span>, <span title="number">mode</span></td>
+<td>Can return true to prevent default hit target handling</td>
+</tr>
+<tr>
+<td>22</td>
+<td>ON_HIT</td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Spell">spell</span></td>
+<td></td>
+</tr>
+<tr>
+<td>23</td>
+<td>ON_AFTER_HIT</td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Spell">spell</span></td>
+<td></td>
+</tr>
 </tbody>
 </table>
         </div>

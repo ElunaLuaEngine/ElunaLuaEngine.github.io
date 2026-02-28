@@ -88,13 +88,10 @@
     
     <div class='docblock'>
         <p>Registers a <a class="mod" href="../Guild/index.html">Guild</a> event handler.</p>
-<p>In Multistate mode (default), events are either registered to the WORLD state (-1) or the MAP states (map ID). These events will only ever trigger on their respective state.</p>
-<p>In Compatibility mode, all events are registered to the WORLD state (-1).</p>
         <div class="table-container">
             <table>
 <thead>
 <tr>
-<th>ID</th>
 <th>Event</th>
 <th>State</th>
 <th>Parameters</th>
@@ -103,78 +100,67 @@
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>ON_ADD_MEMBER</td>
+<td><span title="1">events.guild.on_add_member</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Guild">guild</span>, <span title="Player">player</span>, <span title="number">rank</span></td>
 <td></td>
 </tr>
 <tr>
-<td>2</td>
-<td>ON_REMOVE_MEMBER</td>
+<td><span title="2">events.guild.on_remove_member</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Guild">guild</span>, <span title="Player">player</span>, <span title="boolean">isDisbanding</span></td>
 <td></td>
 </tr>
 <tr>
-<td>3</td>
-<td>ON_MOTD_CHANGE</td>
+<td><span title="3">events.guild.on_motd_change</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Guild">guild</span>, <span title="string">newMotd</span></td>
 <td></td>
 </tr>
 <tr>
-<td>4</td>
-<td>ON_INFO_CHANGE</td>
+<td><span title="4">events.guild.on_info_change</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Guild">guild</span>, <span title="string">newInfo</span></td>
 <td></td>
 </tr>
 <tr>
-<td>5</td>
-<td>ON_CREATE</td>
+<td><span title="5">events.guild.on_create</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Guild">guild</span>, <span title="Player">leader</span>, <span title="string">name</span></td>
 <td>Not on TC</td>
 </tr>
 <tr>
-<td>6</td>
-<td>ON_DISBAND</td>
+<td><span title="6">events.guild.on_disband</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Guild">guild</span></td>
 <td></td>
 </tr>
 <tr>
-<td>7</td>
-<td>ON_MONEY_WITHDRAW</td>
+<td><span title="7">events.guild.on_money_withdraw</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Guild">guild</span>, <span title="Player">player</span>, <span title="number">amount</span>, <span title="boolean">isRepair</span></td>
 <td>Can return new money amount</td>
 </tr>
 <tr>
-<td>8</td>
-<td>ON_MONEY_DEPOSIT</td>
+<td><span title="8">events.guild.on_money_deposit</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Guild">guild</span>, <span title="Player">player</span>, <span title="number">amount</span></td>
 <td>Can return new money amount</td>
 </tr>
 <tr>
-<td>9</td>
-<td>ON_ITEM_MOVE</td>
+<td><span title="9">events.guild.on_item_move</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Guild">guild</span>, <span title="Player">player</span>, <span title="Item">item</span>, <span title="boolean">isSrcBank</span>, <span title="number">srcContainer</span>, <span title="number">srcSlotId</span>, <span title="boolean">isDestBank</span>, <span title="number">destContainer</span>, <span title="number">destSlotId</span></td>
 <td>TODO</td>
 </tr>
 <tr>
-<td>10</td>
-<td>ON_EVENT</td>
+<td><span title="10">events.guild.on_event</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Guild">guild</span>, <span title="number">eventType</span>, <span title="number">plrGUIDLow1</span>, <span title="number">plrGUIDLow2</span>, <span title="number">newRank</span></td>
 <td>TODO</td>
 </tr>
 <tr>
-<td>11</td>
-<td>ON_BANK_EVENT</td>
+<td><span title="11">events.guild.on_bank_event</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Guild">guild</span>, <span title="number">eventType</span>, <span title="number">tabId</span>, <span title="number">playerGUIDLow</span>, <span title="number">itemOrMoney</span>, <span title="number">itemStackCount</span>, <span title="number">destTabId</span></td>
 <td></td>

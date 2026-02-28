@@ -88,13 +88,10 @@
     
     <div class='docblock'>
         <p>Registers a <a class="mod" href="../Group/index.html">Group</a> event handler.</p>
-<p>In Multistate mode (default), events are either registered to the WORLD state (-1) or the MAP states (map ID). These events will only ever trigger on their respective state.</p>
-<p>In Compatibility mode, all events are registered to the WORLD state (-1).</p>
         <div class="table-container">
             <table>
 <thead>
 <tr>
-<th>ID</th>
 <th>Event</th>
 <th>State</th>
 <th>Parameters</th>
@@ -103,50 +100,43 @@
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>ON_MEMBER_ADD</td>
+<td><span title="1">events.group.on_add_member</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Group">group</span>, <span title="number">guid</span></td>
 <td></td>
 </tr>
 <tr>
-<td>2</td>
-<td>ON_MEMBER_INVITE</td>
+<td><span title="2">events.group.on_invite_member</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Group">group</span>, <span title="number">guid</span></td>
 <td></td>
 </tr>
 <tr>
-<td>3</td>
-<td>ON_MEMBER_REMOVE</td>
+<td><span title="3">events.group.on_remove_member</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Group">group</span>, <span title="number">guid</span>, <span title="number">method</span>, <span title="Player">kicker</span>, <span title="string">reason</span></td>
 <td></td>
 </tr>
 <tr>
-<td>4</td>
-<td>ON_LEADER_CHANGE</td>
+<td><span title="4">events.group.on_leader_change</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Group">group</span>, <span title="number">newLeaderGuid</span>, <span title="number">oldLeaderGuid</span></td>
 <td></td>
 </tr>
 <tr>
-<td>5</td>
-<td>ON_DISBAND</td>
+<td><span title="5">events.group.on_disband</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Group">group</span></td>
 <td></td>
 </tr>
 <tr>
-<td>6</td>
-<td>ON_CREATE</td>
+<td><span title="6">events.group.on_create</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Group">group</span>, <span title="number">leaderGuid</span>, <span title="number">groupType</span></td>
 <td></td>
 </tr>
 <tr>
-<td>7</td>
-<td>ON_MEMBER_ACCEPT</td>
+<td><span title="7">events.group.on_member_accept</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Group">group</span>, <span title="Player">player</span></td>
 <td>Can return false to disable accepting</td>

@@ -88,13 +88,10 @@
     
     <div class='docblock'>
         <p>Registers a <a class="mod" href="../Creature/index.html">Creature</a> event handler.</p>
-<p>In Multistate mode (default), events are either registered to the WORLD state (-1) or the MAP states (map ID). These events will only ever trigger on their respective state.</p>
-<p>In Compatibility mode, all events are registered to the WORLD state (-1).</p>
         <div class="table-container">
             <table>
 <thead>
 <tr>
-<th>ID</th>
 <th>Event</th>
 <th>State</th>
 <th>Parameters</th>
@@ -103,197 +100,169 @@
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>ON_ENTER_COMBAT</td>
+<td><span title="1">events.creature.on_enter_combat</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span>, <span title="Unit">target</span></td>
 <td>Can return true to stop normal action</td>
 </tr>
 <tr>
-<td>2</td>
-<td>ON_LEAVE_COMBAT</td>
+<td><span title="2">events.creature.on_leave_combat</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span></td>
 <td>Can return true to stop normal action</td>
 </tr>
 <tr>
-<td>3</td>
-<td>ON_TARGET_DIED</td>
+<td><span title="3">events.creature.on_target_died</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span>, <span title="Unit">victim</span></td>
 <td>Can return true to stop normal action</td>
 </tr>
 <tr>
-<td>4</td>
-<td>ON_DIED</td>
+<td><span title="4">events.creature.on_died</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span>, <span title="Unit">killer</span></td>
 <td>Can return true to stop normal action</td>
 </tr>
 <tr>
-<td>5</td>
-<td>ON_SPAWN</td>
+<td><span title="5">events.creature.on_spawn</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span></td>
 <td>Can return true to stop normal action</td>
 </tr>
 <tr>
-<td>6</td>
-<td>ON_REACH_WP</td>
+<td><span title="6">events.creature.on_reach_wp</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span>, <span title="number">type</span>, <span title="number">id</span></td>
 <td>Can return true to stop normal action</td>
 </tr>
 <tr>
-<td>7</td>
-<td>ON_AIUPDATE</td>
+<td><span title="7">events.creature.on_ai_update</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span>, <span title="number">diff</span></td>
 <td>Can return true to stop normal action</td>
 </tr>
 <tr>
-<td>8</td>
-<td>ON_RECEIVE_EMOTE</td>
+<td><span title="8">events.creature.on_receive_emote</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span>, <span title="Player">player</span>, <span title="number">emoteid</span></td>
 <td>Can return true to stop normal action</td>
 </tr>
 <tr>
-<td>9</td>
-<td>ON_DAMAGE_TAKEN</td>
+<td><span title="9">events.creature.on_damage_taken</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span>, <span title="Unit">attacker</span>, <span title="number">damage</span></td>
 <td>Can return true to stop normal action, can return new damage as second return value.</td>
 </tr>
 <tr>
-<td>10</td>
-<td>ON_PRE_COMBAT</td>
+<td><span title="10">events.creature.on_pre_combat</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span>, <span title="Unit">target</span></td>
 <td>Can return true to stop normal action</td>
 </tr>
 <tr>
-<td>12</td>
-<td>ON_OWNER_ATTACKED</td>
+<td><span title="12">events.creature.on_owner_attacked</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span>, <span title="Unit">target</span></td>
 <td>Can return true to stop normal action. Not on mangos</td>
 </tr>
 <tr>
-<td>13</td>
-<td>ON_OWNER_ATTACKED_AT</td>
+<td><span title="13">events.creature.on_owner_attacked_at</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span>, <span title="Unit">attacker</span></td>
 <td>Can return true to stop normal action. Not on mangos</td>
 </tr>
 <tr>
-<td>14</td>
-<td>ON_HIT_BY_SPELL</td>
+<td><span title="14">events.creature.on_hit_by_spell</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span>, <span title="Unit">caster</span>, <span title="number">spellid</span></td>
 <td>Can return true to stop normal action</td>
 </tr>
 <tr>
-<td>15</td>
-<td>ON_SPELL_HIT_TARGET</td>
+<td><span title="15">events.creature.on_spell_hit_target</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span>, <span title="Unit">target</span>, <span title="number">spellid</span></td>
 <td>Can return true to stop normal action</td>
 </tr>
 <tr>
-<td>19</td>
-<td>ON_JUST_SUMMONED_CREATURE</td>
+<td><span title="19">events.creature.on_just_summoned_creature</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span>, <span title="Creature">summon</span></td>
 <td>Can return true to stop normal action</td>
 </tr>
 <tr>
-<td>20</td>
-<td>ON_SUMMONED_CREATURE_DESPAWN</td>
+<td><span title="20">events.creature.on_summoned_creature_despawn</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span>, <span title="Creature">summon</span></td>
 <td>Can return true to stop normal action</td>
 </tr>
 <tr>
-<td>21</td>
-<td>ON_SUMMONED_CREATURE_DIED</td>
+<td><span title="21">events.creature.on_summoned_creature_died</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span>, <span title="Creature">summon</span>, <span title="Unit">killer</span></td>
 <td>Can return true to stop normal action. Not on mangos</td>
 </tr>
 <tr>
-<td>22</td>
-<td>ON_SUMMONED</td>
+<td><span title="22">events.creature.on_summoned</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span>, <span title="Unit">summoner</span></td>
 <td>Can return true to stop normal action</td>
 </tr>
 <tr>
-<td>23</td>
-<td>ON_RESET</td>
+<td><span title="23">events.creature.on_reset</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span></td>
 <td></td>
 </tr>
 <tr>
-<td>24</td>
-<td>ON_REACH_HOME</td>
+<td><span title="24">events.creature.on_reach_home</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span></td>
 <td>Can return true to stop normal action</td>
 </tr>
 <tr>
-<td>26</td>
-<td>ON_CORPSE_REMOVED</td>
+<td><span title="26">events.creature.on_corpse_removed</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span>, <span title="number">respawndelay</span></td>
 <td>Can return true to stop normal action, can return new respawndelay as second return value</td>
 </tr>
 <tr>
-<td>27</td>
-<td>ON_MOVE_IN_LOS</td>
+<td><span title="27">events.creature.on_move_in_los</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span>, <span title="Unit">who</span></td>
 <td>Can return true to stop normal action. Does not actually check LOS, just uses the sight range</td>
 </tr>
 <tr>
-<td>30</td>
-<td>ON_DUMMY_EFFECT</td>
+<td><span title="30">events.creature.on_dummy_effect</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="WorldObject">caster</span>, <span title="number">spellid</span>, <span title="number">effindex</span>, <span title="Creature">creature</span></td>
 <td></td>
 </tr>
 <tr>
-<td>31</td>
-<td>ON_QUEST_ACCEPT</td>
+<td><span title="31">events.creature.on_quest_accept</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="Creature">creature</span>, <span title="Quest">quest</span></td>
 <td>Can return true</td>
 </tr>
 <tr>
-<td>34</td>
-<td>ON_QUEST_REWARD</td>
+<td><span title="34">events.creature.on_quest_reward</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="Creature">creature</span>, <span title="Quest">quest</span>, <span title="number">opt</span></td>
 <td>Can return true</td>
 </tr>
 <tr>
-<td>35</td>
-<td>ON_DIALOG_STATUS</td>
+<td><span title="35">events.creature.on_dialog_status</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="Creature">creature</span></td>
 <td></td>
 </tr>
 <tr>
-<td>36</td>
-<td>ON_ADD</td>
+<td><span title="36">events.creature.on_add</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span></td>
 <td></td>
 </tr>
 <tr>
-<td>37</td>
-<td>ON_REMOVE</td>
+<td><span title="37">events.creature.on_remove</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span></td>
 <td></td>

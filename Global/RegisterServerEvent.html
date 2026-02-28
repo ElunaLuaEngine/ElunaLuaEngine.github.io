@@ -88,13 +88,10 @@
     
     <div class='docblock'>
         <p>Registers a server event handler.</p>
-<p>In Multistate mode (default), events are either registered to the WORLD state (-1) or the MAP states (map ID). These events will only ever trigger on their respective state.</p>
-<p>In Compatibility mode, all events are registered to the WORLD state (-1).</p>
         <div class="table-container">
             <table>
 <thead>
 <tr>
-<th>ID</th>
 <th>Event</th>
 <th>State</th>
 <th>Parameters</th>
@@ -103,239 +100,205 @@
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>SERVER_EVENT_ON_NETWORK_START</td>
-<td></td>
-<td></td>
+<td><span title="1">events.server.on_network_start</span></td>
+<td>WORLD</td>
+<td><span title="number">event</span></td>
 <td>Not Implemented</td>
 </tr>
 <tr>
-<td>2</td>
-<td>SERVER_EVENT_ON_NETWORK_STOP</td>
-<td></td>
-<td></td>
+<td><span title="2">events.server.on_network_stop</span></td>
+<td>WORLD</td>
+<td><span title="number">event</span></td>
 <td>Not Implemented</td>
 </tr>
 <tr>
-<td>3</td>
-<td>SERVER_EVENT_ON_SOCKET_OPEN</td>
-<td></td>
-<td></td>
+<td><span title="3">events.server.on_socket_open</span></td>
+<td>WORLD</td>
+<td><span title="number">event</span></td>
 <td>Not Implemented</td>
 </tr>
 <tr>
-<td>4</td>
-<td>SERVER_EVENT_ON_SOCKET_CLOSE</td>
-<td></td>
-<td></td>
+<td><span title="4">events.server.on_socket_close</span></td>
+<td>WORLD</td>
+<td><span title="number">event</span></td>
 <td>Not Implemented</td>
 </tr>
 <tr>
-<td>5</td>
-<td>SERVER_EVENT_ON_PACKET_RECEIVE</td>
+<td><span title="5">events.server.on_packet_receive</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="WorldPacket">packet</span>, <span title="Player">player</span></td>
 <td>Player only if accessible. Can return false, newPacket</td>
 </tr>
 <tr>
-<td>6</td>
-<td>SERVER_EVENT_ON_PACKET_RECEIVE_UNKNOWN</td>
-<td></td>
-<td></td>
+<td><span title="6">events.server.on_packet_receive_unk</span></td>
+<td>WORLD</td>
+<td><span title="number">event</span>, <span title="WorldPacket">packet</span>, <span title="Player">player</span></td>
 <td>Not Implemented</td>
 </tr>
 <tr>
-<td>7</td>
-<td>SERVER_EVENT_ON_PACKET_SEND</td>
+<td><span title="7">events.server.on_packet_send</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="WorldPacket">packet</span>, <span title="Player">player</span></td>
 <td>Player only if accessible. Can return false</td>
 </tr>
 <tr>
-<td>8</td>
-<td>WORLD_EVENT_ON_OPEN_STATE_CHANGE</td>
+<td><span title="8">events.server.on_open_state_change</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="boolean">open</span></td>
 <td>Needs core support on Mangos</td>
 </tr>
 <tr>
-<td>9</td>
-<td>WORLD_EVENT_ON_CONFIG_LOAD</td>
+<td><span title="9">events.server.on_config_load</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="boolean">reload</span></td>
 <td></td>
 </tr>
 <tr>
-<td>11</td>
-<td>WORLD_EVENT_ON_SHUTDOWN_INIT</td>
+<td><span title="11">events.server.on_shutdown_init</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="number">code</span>, <span title="number">mask</span></td>
 <td></td>
 </tr>
 <tr>
-<td>12</td>
-<td>WORLD_EVENT_ON_SHUTDOWN_CANCEL</td>
+<td><span title="12">events.server.on_shutdown_cancel</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span></td>
 <td></td>
 </tr>
 <tr>
-<td>13</td>
-<td>WORLD_EVENT_ON_UPDATE</td>
+<td><span title="13">events.server.on_world_update</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="number">diff</span></td>
 <td></td>
 </tr>
 <tr>
-<td>14</td>
-<td>WORLD_EVENT_ON_STARTUP</td>
+<td><span title="14">events.server.on_world_startup</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span></td>
 <td></td>
 </tr>
 <tr>
-<td>15</td>
-<td>WORLD_EVENT_ON_SHUTDOWN</td>
+<td><span title="15">events.server.on_world_shutdown</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span></td>
 <td></td>
 </tr>
 <tr>
-<td>16</td>
-<td>ELUNA_EVENT_ON_LUA_STATE_CLOSE</td>
+<td><span title="16">events.server.on_lua_state_close</span></td>
 <td>ALL</td>
 <td><span title="number">event</span></td>
 <td>Triggers just before shutting down the Eluna state (on shutdown, restart and reload)</td>
 </tr>
 <tr>
-<td>17</td>
-<td>MAP_EVENT_ON_CREATE</td>
+<td><span title="17">events.server.on_map_create</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Map">map</span></td>
 <td></td>
 </tr>
 <tr>
-<td>18</td>
-<td>MAP_EVENT_ON_DESTROY</td>
+<td><span title="18">events.server.on_map_destroy</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Map">map</span></td>
 <td></td>
 </tr>
 <tr>
-<td>19</td>
-<td>MAP_EVENT_ON_GRID_LOAD</td>
-<td></td>
-<td></td>
+<td><span title="19">events.server.on_map_grid_load</span></td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Map">map</span></td>
 <td>Not Implemented</td>
 </tr>
 <tr>
-<td>20</td>
-<td>MAP_EVENT_ON_GRID_UNLOAD</td>
-<td></td>
-<td></td>
+<td><span title="20">events.server.on_map_grid_unload</span></td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="Map">map</span></td>
 <td>Not Implemented</td>
 </tr>
 <tr>
-<td>21</td>
-<td>MAP_EVENT_ON_PLAYER_ENTER</td>
+<td><span title="21">events.server.on_map_player_enter</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Map">map</span>, <span title="Player">player</span></td>
 <td></td>
 </tr>
 <tr>
-<td>22</td>
-<td>MAP_EVENT_ON_PLAYER_LEAVE</td>
+<td><span title="22">events.server.on_map_player_leave</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Map">map</span>, <span title="Player">player</span></td>
 <td></td>
 </tr>
 <tr>
-<td>23</td>
-<td>MAP_EVENT_ON_UPDATE</td>
+<td><span title="23">events.server.on_map_update</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Map">map</span>, <span title="number">diff</span></td>
 <td></td>
 </tr>
 <tr>
-<td>24</td>
-<td>TRIGGER_EVENT_ON_TRIGGER</td>
+<td><span title="24">events.server.on_event_trigger</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">triggerId</span></td>
 <td>Can return true</td>
 </tr>
 <tr>
-<td>25</td>
-<td>WEATHER_EVENT_ON_CHANGE</td>
+<td><span title="25">events.server.on_weather_change</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="number">zoneId</span>, <span title="number">state</span>, <span title="number">grade</span></td>
 <td></td>
 </tr>
 <tr>
-<td>26</td>
-<td>AUCTION_EVENT_ON_ADD</td>
+<td><span title="26">events.server.on_auction_add</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="number">auctionId</span>, <span title="Player">owner</span>, <span title="Item">item</span>, <span title="number">expireTime</span>, <span title="number">buyout</span>, <span title="number">startBid</span>, <span title="number">currentBid</span>, <span title="number">bidderGUIDLow</span></td>
 <td></td>
 </tr>
 <tr>
-<td>27</td>
-<td>AUCTION_EVENT_ON_REMOVE</td>
+<td><span title="27">events.server.on_auction_remove</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="number">auctionId</span>, <span title="Player">owner</span>, <span title="Item">item</span>, <span title="number">expireTime</span>, <span title="number">buyout</span>, <span title="number">startBid</span>, <span title="number">currentBid</span>, <span title="number">bidderGUIDLow</span></td>
 <td></td>
 </tr>
 <tr>
-<td>28</td>
-<td>AUCTION_EVENT_ON_SUCCESSFUL</td>
+<td><span title="28">events.server.on_auction_successful</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="number">auctionId</span>, <span title="Player">owner</span>, <span title="Item">item</span>, <span title="number">expireTime</span>, <span title="number">buyout</span>, <span title="number">startBid</span>, <span title="number">currentBid</span>, <span title="number">bidderGUIDLow</span></td>
 <td></td>
 </tr>
 <tr>
-<td>29</td>
-<td>AUCTION_EVENT_ON_EXPIRE</td>
+<td><span title="29">events.server.on_auction_expire</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="number">auctionId</span>, <span title="Player">owner</span>, <span title="Item">item</span>, <span title="number">expireTime</span>, <span title="number">buyout</span>, <span title="number">startBid</span>, <span title="number">currentBid</span>, <span title="number">bidderGUIDLow</span></td>
 <td></td>
 </tr>
 <tr>
-<td>30</td>
-<td>ADDON_EVENT_ON_MESSAGE</td>
+<td><span title="30">events.server.on_addon_message</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Player">sender</span>, <span title="number">type</span>, <span title="string">prefix</span>, <span title="string">msg</span>, <span title="nil">target</span></td>
 <td>Target can be nil/whisper_target/guild/group/channel. Can return false</td>
 </tr>
 <tr>
-<td>31</td>
-<td>WORLD_EVENT_ON_DELETE_CREATURE</td>
+<td><span title="31">events.server.on_world_delete_creature</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">creature</span></td>
 <td></td>
 </tr>
 <tr>
-<td>32</td>
-<td>WORLD_EVENT_ON_DELETE_GAMEOBJECT</td>
+<td><span title="32">events.server.on_world_delete_gameobject</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="GameObject">gameobject</span></td>
 <td></td>
 </tr>
 <tr>
-<td>33</td>
-<td>ELUNA_EVENT_ON_LUA_STATE_OPEN</td>
+<td><span title="33">events.server.on_lua_state_open</span></td>
 <td>ALL</td>
 <td><span title="number">event</span></td>
 <td>Triggers after all scripts are loaded</td>
 </tr>
 <tr>
-<td>34</td>
-<td>GAME_EVENT_START</td>
+<td><span title="34">events.server.on_game_start</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="number">gameeventid</span></td>
 <td></td>
 </tr>
 <tr>
-<td>35</td>
-<td>GAME_EVENT_STOP</td>
+<td><span title="35">events.server.on_game_stop</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="number">gameeventid</span></td>
 <td></td>

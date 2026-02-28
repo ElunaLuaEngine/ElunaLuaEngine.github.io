@@ -88,13 +88,10 @@
     
     <div class='docblock'>
         <p>Registers a <a class="mod" href="../Spell/index.html">Spell</a> event handler.</p>
-<p>In Multistate mode (default), events are either registered to the WORLD state (-1) or the MAP states (map ID). These events will only ever trigger on their respective state.</p>
-<p>In Compatibility mode, all events are registered to the WORLD state (-1).</p>
         <div class="table-container">
             <table>
 <thead>
 <tr>
-<th>ID</th>
 <th>Event</th>
 <th>State</th>
 <th>Parameters</th>
@@ -103,162 +100,139 @@
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>ON_CAST</td>
+<td><span title="1">events.spell.on_cast</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Spell">spell</span>, <span title="boolean">skipCheck</span></td>
 <td></td>
 </tr>
 <tr>
-<td>2</td>
-<td>ON_AURA_APPLICATION</td>
+<td><span title="2">events.spell.on_aura_application</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Aura">aura</span>, <span title="AuraEffect">auraEff</span>, <span title="Unit">target</span>, <span title="number">mode</span>, <span title="boolean">apply</span></td>
 <td>Can return true to prevent application</td>
 </tr>
 <tr>
-<td>3</td>
-<td>ON_DISPEL</td>
+<td><span title="3">events.spell.on_dispel</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Aura">aura</span>, <span title="WorldObject">dispeller</span>, <span title="number">dispellerSpellId</span>, <span title="number">removedCharges</span></td>
 <td></td>
 </tr>
 <tr>
-<td>4</td>
-<td>ON_PERIODIC_TICK</td>
+<td><span title="4">events.spell.on_periodic_tick</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Aura">aura</span>, <span title="AuraEffect">auraEff</span>, <span title="Unit">target</span></td>
 <td>Can return true to prevent tick</td>
 </tr>
 <tr>
-<td>5</td>
-<td>ON_PERIODIC_UPDATE</td>
+<td><span title="5">events.spell.on_periodic_update</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Aura">aura</span>, <span title="AuraEffect">auraEff</span></td>
 <td></td>
 </tr>
 <tr>
-<td>6</td>
-<td>ON_AURA_CALC_AMOUNT</td>
+<td><span title="6">events.spell.on_aura_calc_amount</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Aura">aura</span>, <span title="AuraEffect">auraEff</span>, <span title="number">amount</span>, <span title="boolean">canBeRecalculated</span></td>
 <td>Can return amount, canBeRecalculated to override</td>
 </tr>
 <tr>
-<td>7</td>
-<td>ON_CALC_PERIODIC</td>
+<td><span title="7">events.spell.on_calc_periodic</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Aura">aura</span>, <span title="AuraEffect">auraEff</span>, <span title="boolean">isPeriodic</span>, <span title="number">amplitude</span></td>
 <td>Can return isPeriodic, amplitude to override</td>
 </tr>
 <tr>
-<td>8</td>
-<td>ON_CHECK_PROC</td>
+<td><span title="8">events.spell.on_check_proc</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Aura">aura</span>, <span title="ElunaProcInfo">procInfo</span></td>
 <td>Can return false to prevent proc</td>
 </tr>
 <tr>
-<td>9</td>
-<td>ON_PROC</td>
+<td><span title="9">events.spell.on_proc</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Aura">aura</span>, <span title="ElunaProcInfo">procInfo</span></td>
 <td>Can return true to prevent default proc handling</td>
 </tr>
 <tr>
-<td>10</td>
-<td>ON_CHECK_CAST</td>
+<td><span title="10">events.spell.on_check_cast</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Spell">spell</span></td>
 <td>Can return SpellCastResult to override cast result</td>
 </tr>
 <tr>
-<td>11</td>
-<td>ON_BEFORE_CAST</td>
+<td><span title="11">events.spell.on_before_cast</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Spell">spell</span></td>
 <td></td>
 </tr>
 <tr>
-<td>12</td>
-<td>ON_AFTER_CAST</td>
+<td><span title="12">events.spell.on_after_cast</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Spell">spell</span></td>
 <td></td>
 </tr>
 <tr>
-<td>13</td>
-<td>ON_OBJECT_AREA_TARGET</td>
+<td><span title="13">events.spell.on_object_area_target</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Spell">spell</span>, <span title="number">effIndex</span>, <span title="table">targets</span></td>
 <td>Modify targets table in place to change targets</td>
 </tr>
 <tr>
-<td>14</td>
-<td>ON_OBJECT_TARGET</td>
+<td><span title="14">events.spell.on_object_target</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Spell">spell</span>, <span title="number">effIndex</span>, <span title="WorldObject">target</span></td>
 <td></td>
 </tr>
 <tr>
-<td>15</td>
-<td>ON_DEST_TARGET</td>
+<td><span title="15">events.spell.on_dest_target</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Spell">spell</span>, <span title="number">effIndex</span>, <span title="number">mapId</span>, <span title="number">x</span>, <span title="number">y</span>, <span title="number">z</span>, <span title="number">orientation</span></td>
 <td>Can return mapId, x, y, z, orientation to override destination</td>
 </tr>
 <tr>
-<td>16</td>
-<td>ON_EFFECT_LAUNCH</td>
+<td><span title="16">events.spell.on_effect_launch</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Spell">spell</span>, <span title="number">effIndex</span>, <span title="number">mode</span></td>
 <td>Can return true to prevent default launch handling</td>
 </tr>
 <tr>
-<td>17</td>
-<td>ON_EFFECT_LAUNCH_TARGET</td>
+<td><span title="17">events.spell.on_effect_launch_target</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Spell">spell</span>, <span title="number">effIndex</span>, <span title="number">mode</span></td>
 <td>Can return true to prevent default launch target handling</td>
 </tr>
 <tr>
-<td>18</td>
-<td>ON_EFFECT_CALC_ABSORB</td>
+<td><span title="18">events.spell.on_effect_calc_absorb</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Spell">spell</span>, <span title="Unit">attacker</span>, <span title="Unit">victim</span>, <span title="number">damage</span>, <span title="number">absorb</span>, <span title="number">resist</span>, <span title="number">block</span>, <span title="number">schoolMask</span>, <span title="number">damageType</span>, <span title="number">attackType</span>, <span title="number">hitMask</span>, <span title="number">resistAmount</span>, <span title="number">absorbAmount</span></td>
 <td>Can return resistAmount, absorbAmount to override</td>
 </tr>
 <tr>
-<td>19</td>
-<td>ON_EFFECT_HIT</td>
+<td><span title="19">events.spell.on_effect_hit</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Spell">spell</span>, <span title="number">effIndex</span>, <span title="number">mode</span></td>
 <td>Can return true to prevent default hit handling</td>
 </tr>
 <tr>
-<td>20</td>
-<td>ON_BEFORE_HIT</td>
+<td><span title="20">events.spell.on_before_hit</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Spell">spell</span>, <span title="number">missInfo</span></td>
 <td></td>
 </tr>
 <tr>
-<td>21</td>
-<td>ON_EFFECT_HIT_TARGET</td>
+<td><span title="21">events.spell.on_effect_hit_target</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Spell">spell</span>, <span title="number">effIndex</span>, <span title="number">mode</span></td>
 <td>Can return true to prevent default hit target handling</td>
 </tr>
 <tr>
-<td>22</td>
-<td>ON_HIT</td>
+<td><span title="22">events.spell.on_hit</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Spell">spell</span></td>
 <td></td>
 </tr>
 <tr>
-<td>23</td>
-<td>ON_AFTER_HIT</td>
+<td><span title="23">events.spell.on_after_hit</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Spell">spell</span></td>
 <td></td>

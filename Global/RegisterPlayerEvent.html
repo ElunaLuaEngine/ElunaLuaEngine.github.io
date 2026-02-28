@@ -88,13 +88,10 @@
     
     <div class='docblock'>
         <p>Registers a <a class="mod" href="../Player/index.html">Player</a> event handler.</p>
-<p>In Multistate mode (default), events are either registered to the WORLD state (-1) or the MAP states (map ID). These events will only ever trigger on their respective state.</p>
-<p>In Compatibility mode, all events are registered to the WORLD state (-1).</p>
         <div class="table-container">
             <table>
 <thead>
 <tr>
-<th>ID</th>
 <th>Event</th>
 <th>State</th>
 <th>Parameters</th>
@@ -103,351 +100,301 @@
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>ON_CHARACTER_CREATE</td>
+<td><span title="1">events.player.on_character_create</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Player">player</span></td>
 <td></td>
 </tr>
 <tr>
-<td>2</td>
-<td>ON_CHARACTER_DELETE</td>
+<td><span title="2">events.player.on_character_delete</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="number">guidLow</span></td>
 <td></td>
 </tr>
 <tr>
-<td>3</td>
-<td>ON_LOGIN</td>
+<td><span title="3">events.player.on_login</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Player">player</span></td>
 <td></td>
 </tr>
 <tr>
-<td>4</td>
-<td>ON_LOGOUT</td>
+<td><span title="4">events.player.on_logout</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Player">player</span></td>
 <td></td>
 </tr>
 <tr>
-<td>5</td>
-<td>ON_SPELL_CAST</td>
+<td><span title="5">events.player.on_spell_cast</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="Spell">spell</span>, <span title="boolean">skipCheck</span></td>
 <td></td>
 </tr>
 <tr>
-<td>6</td>
-<td>ON_KILL_PLAYER</td>
+<td><span title="6">events.player.on_kill_player</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">killer</span>, <span title="Player">killed</span></td>
 <td></td>
 </tr>
 <tr>
-<td>7</td>
-<td>ON_KILL_CREATURE</td>
+<td><span title="7">events.player.on_kill_creature</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">killer</span>, <span title="Creature">killed</span></td>
 <td></td>
 </tr>
 <tr>
-<td>8</td>
-<td>ON_KILLED_BY_CREATURE</td>
+<td><span title="8">events.player.on_killed_by_creature</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Creature">killer</span>, <span title="Player">killed</span></td>
 <td></td>
 </tr>
 <tr>
-<td>9</td>
-<td>ON_DUEL_REQUEST</td>
+<td><span title="9">events.player.on_duel_request</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">target</span>, <span title="Player">challenger</span></td>
 <td></td>
 </tr>
 <tr>
-<td>10</td>
-<td>ON_DUEL_START</td>
+<td><span title="10">events.player.on_duel_start</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player1</span>, <span title="Player">player2</span></td>
 <td></td>
 </tr>
 <tr>
-<td>11</td>
-<td>ON_DUEL_END</td>
+<td><span title="11">events.player.on_duel_end</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">winner</span>, <span title="Player">loser</span>, <span title="number">type</span></td>
 <td></td>
 </tr>
 <tr>
-<td>12</td>
-<td>ON_GIVE_XP</td>
+<td><span title="12">events.player.on_give_xp</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">amount</span>, <span title="Unit">victim</span></td>
 <td>Can return new XP amount</td>
 </tr>
 <tr>
-<td>13</td>
-<td>ON_LEVEL_CHANGE</td>
+<td><span title="13">events.player.on_level_change</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">oldLevel</span></td>
 <td></td>
 </tr>
 <tr>
-<td>14</td>
-<td>ON_MONEY_CHANGE</td>
+<td><span title="14">events.player.on_money_change</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">amount</span></td>
 <td>Can return new money amount</td>
 </tr>
 <tr>
-<td>15</td>
-<td>ON_REPUTATION_CHANGE</td>
+<td><span title="15">events.player.on_reputation_change</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">factionId</span>, <span title="number">standing</span>, <span title="boolean">incremental</span></td>
 <td>Can return new standing</td>
 </tr>
 <tr>
-<td>16</td>
-<td>ON_TALENTS_CHANGE</td>
+<td><span title="16">events.player.on_talents_change</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">points</span></td>
 <td></td>
 </tr>
 <tr>
-<td>17</td>
-<td>ON_TALENTS_RESET</td>
+<td><span title="17">events.player.on_talents_reset</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="boolean">noCost</span></td>
 <td></td>
 </tr>
 <tr>
-<td>18</td>
-<td>ON_CHAT</td>
+<td><span title="18">events.player.on_chat</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="string">msg</span>, <span title="number">Type</span>, <span title="number">lang</span></td>
 <td>Can return false, newMessage</td>
 </tr>
 <tr>
-<td>19</td>
-<td>ON_WHISPER</td>
+<td><span title="19">events.player.on_whisper</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="string">msg</span>, <span title="number">Type</span>, <span title="number">lang</span>, <span title="Player">receiver</span></td>
 <td>Can return false, newMessage</td>
 </tr>
 <tr>
-<td>20</td>
-<td>ON_GROUP_CHAT</td>
+<td><span title="20">events.player.on_group_chat</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="string">msg</span>, <span title="number">Type</span>, <span title="number">lang</span>, <span title="Group">group</span></td>
 <td>Can return false, newMessage</td>
 </tr>
 <tr>
-<td>21</td>
-<td>ON_GUILD_CHAT</td>
+<td><span title="21">events.player.on_guild_chat</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="string">msg</span>, <span title="number">Type</span>, <span title="number">lang</span>, <span title="Guild">guild</span></td>
 <td>Can return false, newMessage</td>
 </tr>
 <tr>
-<td>22</td>
-<td>ON_CHANNEL_CHAT</td>
+<td><span title="22">events.player.on_channel_chat</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="string">msg</span>, <span title="number">Type</span>, <span title="number">lang</span>, <span title="number">channel</span></td>
 <td>Can return false, newMessage</td>
 </tr>
 <tr>
-<td>23</td>
-<td>ON_EMOTE</td>
+<td><span title="23">events.player.on_emote</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">emote</span></td>
 <td>Not triggered on any known emote</td>
 </tr>
 <tr>
-<td>24</td>
-<td>ON_TEXT_EMOTE</td>
+<td><span title="24">events.player.on_text_emote</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">textEmote</span>, <span title="number">emoteNum</span>, <span title="number">guid</span></td>
 <td></td>
 </tr>
 <tr>
-<td>25</td>
-<td>ON_SAVE</td>
+<td><span title="25">events.player.on_save</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span></td>
 <td></td>
 </tr>
 <tr>
-<td>26</td>
-<td>ON_BIND_TO_INSTANCE</td>
+<td><span title="26">events.player.on_bind_to_instance</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">difficulty</span>, <span title="number">mapid</span>, <span title="boolean">permanent</span></td>
 <td></td>
 </tr>
 <tr>
-<td>27</td>
-<td>ON_UPDATE_ZONE</td>
+<td><span title="27">events.player.on_update_zone</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">newZone</span>, <span title="number">newArea</span></td>
 <td></td>
 </tr>
 <tr>
-<td>28</td>
-<td>ON_MAP_CHANGE</td>
+<td><span title="28">events.player.on_map_change</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span></td>
 <td></td>
 </tr>
 <tr>
-<td>29</td>
-<td>ON_EQUIP</td>
+<td><span title="29">events.player.on_equip</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="Item">item</span>, <span title="number">bag</span>, <span title="number">slot</span></td>
 <td></td>
 </tr>
 <tr>
-<td>30</td>
-<td>ON_FIRST_LOGIN</td>
+<td><span title="30">events.player.on_first_login</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Player">player</span></td>
 <td></td>
 </tr>
 <tr>
-<td>31</td>
-<td>ON_CAN_USE_ITEM</td>
+<td><span title="31">events.player.on_can_use_item</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">itemEntry</span></td>
 <td>Can return InventoryResult enum value</td>
 </tr>
 <tr>
-<td>32</td>
-<td>ON_LOOT_ITEM</td>
+<td><span title="32">events.player.on_loot_item</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="Item">item</span>, <span title="number">count</span></td>
 <td></td>
 </tr>
 <tr>
-<td>33</td>
-<td>ON_ENTER_COMBAT</td>
+<td><span title="33">events.player.on_enter_combat</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="Unit">enemy</span></td>
 <td></td>
 </tr>
 <tr>
-<td>34</td>
-<td>ON_LEAVE_COMBAT</td>
+<td><span title="34">events.player.on_leave_combat</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span></td>
 <td></td>
 </tr>
 <tr>
-<td>35</td>
-<td>ON_REPOP</td>
+<td><span title="35">events.player.on_repop</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span></td>
 <td></td>
 </tr>
 <tr>
-<td>36</td>
-<td>ON_RESURRECT</td>
+<td><span title="36">events.player.on_resurrect</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span></td>
 <td></td>
 </tr>
 <tr>
-<td>37</td>
-<td>ON_LOOT_MONEY</td>
+<td><span title="37">events.player.on_loot_money</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">amount</span></td>
 <td></td>
 </tr>
 <tr>
-<td>38</td>
-<td>ON_QUEST_ABANDON</td>
+<td><span title="38">events.player.on_quest_abandon</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">questId</span></td>
 <td></td>
 </tr>
 <tr>
-<td>39</td>
-<td>ON_LEARN_TALENTS</td>
+<td><span title="39">events.player.on_learn_talents</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">talentId</span>, <span title="number">talentRank</span>, <span title="number">spellid</span></td>
 <td></td>
 </tr>
 <tr>
-<td>40</td>
-<td>ON_ENVIRONMENTAL_DEATH</td>
+<td><span title="40">events.player.on_environmental_death</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">environmentalDamageType</span></td>
 <td></td>
 </tr>
 <tr>
-<td>41</td>
-<td>ON_TRADE_ACCEPT</td>
+<td><span title="41">events.player.on_trade_accept</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="Player">target</span></td>
 <td>Can return false to interrupt trade</td>
 </tr>
 <tr>
-<td>42</td>
-<td>ON_COMMAND</td>
+<td><span title="42">events.player.on_command</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="string">command</span></td>
 <td>Player is nil if command used from console. Can return false</td>
 </tr>
 <tr>
-<td>43</td>
-<td>ON_SKILL_CHANGE</td>
+<td><span title="43">events.player.on_skill_change</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">skillId</span>, <span title="number">skillValue</span></td>
 <td>Returns new skill level value</td>
 </tr>
 <tr>
-<td>44</td>
-<td>ON_LEARN_SPELL</td>
+<td><span title="44">events.player.on_learn_spell</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">spellId</span></td>
 <td></td>
 </tr>
 <tr>
-<td>45</td>
-<td>ON_ACHIEVEMENT_COMPLETE</td>
+<td><span title="45">events.player.on_achievement_complete</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">achievementId</span></td>
 <td></td>
 </tr>
 <tr>
-<td>46</td>
-<td>ON_DISCOVER_AREA</td>
+<td><span title="46">events.player.on_discover_area</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">area</span></td>
 <td></td>
 </tr>
 <tr>
-<td>47</td>
-<td>ON_UPDATE_AREA</td>
+<td><span title="47">events.player.on_update_area</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">oldArea</span>, <span title="number">newArea</span></td>
 <td></td>
 </tr>
 <tr>
-<td>48</td>
-<td>ON_TRADE_INIT</td>
+<td><span title="48">events.player.on_trade_init</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="Player">target</span></td>
 <td>Can return false to interrupt trade</td>
 </tr>
 <tr>
-<td>49</td>
-<td>ON_SEND_MAIL</td>
+<td><span title="49">events.player.on_send_mail</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">recipientGuid</span></td>
 <td>Can return false to interrupt sending</td>
 </tr>
 <tr>
-<td>54</td>
-<td>ON_QUEST_STATUS_CHANGED</td>
+<td><span title="54">events.player.on_quest_status_changed</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">questId</span>, <span title="number">status</span></td>
 <td></td>

@@ -88,13 +88,10 @@
     
     <div class='docblock'>
         <p>Registers a <a class="mod" href="../Creature/index.html">Creature</a> gossip event handler.</p>
-<p>In Multistate mode (default), events are either registered to the WORLD state (-1) or the MAP states (map ID). These events will only ever trigger on their respective state.</p>
-<p>In Compatibility mode, all events are registered to the WORLD state (-1).</p>
         <div class="table-container">
             <table>
 <thead>
 <tr>
-<th>ID</th>
 <th>Event</th>
 <th>State</th>
 <th>Parameters</th>
@@ -103,15 +100,13 @@
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>ON_HELLO</td>
+<td><span title="1">events.gossip.on_hello</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="Creature">object</span></td>
 <td>Object is the Creature/GameObject/Item. Can return false to do default action.</td>
 </tr>
 <tr>
-<td>2</td>
-<td>ON_SELECT</td>
+<td><span title="2">events.gossip.on_select</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="Creature">object</span>, <span title="number">sender</span>, <span title="number">intid</span>, <span title="string">code</span>, <span title="number">menu_id</span></td>
 <td>Object is the Creature/GameObject/Item/Player, menu_id is only for player gossip. Can return false to do default action.</td>

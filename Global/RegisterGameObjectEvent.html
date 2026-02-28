@@ -88,13 +88,10 @@
     
     <div class='docblock'>
         <p>Registers a <a class="mod" href="../GameObject/index.html">GameObject</a> event handler.</p>
-<p>In Multistate mode (default), events are either registered to the WORLD state (-1) or the MAP states (map ID). These events will only ever trigger on their respective state.</p>
-<p>In Compatibility mode, all events are registered to the WORLD state (-1).</p>
         <div class="table-container">
             <table>
 <thead>
 <tr>
-<th>ID</th>
 <th>Event</th>
 <th>State</th>
 <th>Parameters</th>
@@ -103,92 +100,79 @@
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>ON_AIUPDATE</td>
+<td><span title="1">events.gameobject.on_ai_update</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="GameObject">go</span>, <span title="number">diff</span></td>
 <td></td>
 </tr>
 <tr>
-<td>2</td>
-<td>ON_SPAWN</td>
+<td><span title="2">events.gameobject.on_spawn</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="GameObject">go</span></td>
 <td></td>
 </tr>
 <tr>
-<td>3</td>
-<td>ON_DUMMY_EFFECT</td>
+<td><span title="3">events.gameobject.on_dummy_effect</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="WorldObject">caster</span>, <span title="number">spellid</span>, <span title="number">effindex</span>, <span title="GameObject">go</span></td>
 <td>Can return true to stop normal action</td>
 </tr>
 <tr>
-<td>4</td>
-<td>ON_QUEST_ACCEPT</td>
+<td><span title="4">events.gameobject.on_quest_accept</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="GameObject">go</span>, <span title="Quest">quest</span></td>
 <td>Can return true to stop normal action</td>
 </tr>
 <tr>
-<td>5</td>
-<td>ON_QUEST_REWARD</td>
+<td><span title="5">events.gameobject.on_quest_reward</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="GameObject">go</span>, <span title="Quest">quest</span>, <span title="number">opt</span></td>
 <td>Can return true to stop normal action</td>
 </tr>
 <tr>
-<td>6</td>
-<td>ON_DIALOG_STATUS</td>
+<td><span title="6">events.gameobject.on_dialog_status</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="GameObject">go</span></td>
 <td></td>
 </tr>
 <tr>
-<td>7</td>
-<td>ON_DESTROYED</td>
-<td>MAP</td>
-<td><span title="number">event</span>, <span title="GameObject">go</span></td>
-<td></td>
-</tr>
-<tr>
-<td>8</td>
-<td>ON_DAMAGED</td>
+<td><span title="7">events.gameobject.on_destroyed</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="GameObject">go</span>, <span title="Unit">attacker</span></td>
 <td></td>
 </tr>
 <tr>
-<td>9</td>
-<td>ON_LOOT_STATE_CHANGE</td>
+<td><span title="8">events.gameobject.on_damaged</span></td>
+<td>MAP</td>
+<td><span title="number">event</span>, <span title="GameObject">go</span>, <span title="Unit">attacker</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span title="9">events.gameobject.on_loot_state_change</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="GameObject">go</span>, <span title="number">state</span></td>
 <td></td>
 </tr>
 <tr>
-<td>10</td>
-<td>ON_GO_STATE_CHANGED</td>
+<td><span title="10">events.gameobject.on_go_state_changed</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="GameObject">go</span>, <span title="number">state</span></td>
 <td></td>
 </tr>
 <tr>
-<td>12</td>
-<td>ON_ADD</td>
+<td><span title="12">events.gameobject.on_add</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="GameObject">go</span></td>
 <td></td>
 </tr>
 <tr>
-<td>13</td>
-<td>ON_REMOVE</td>
+<td><span title="13">events.gameobject.on_remove</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="GameObject">go</span></td>
 <td></td>
 </tr>
 <tr>
-<td>14</td>
-<td>ON_USE</td>
+<td><span title="14">events.gameobject.on_use</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="GameObject">go</span>, <span title="Player">player</span></td>
 <td>Can return true to stop normal action</td>

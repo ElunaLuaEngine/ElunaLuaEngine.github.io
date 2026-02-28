@@ -87,14 +87,11 @@
 
     
     <div class='docblock'>
-        <p>Registers a <a class="mod" href="../Map/index.html">Map</a> event handler for all instance of a <a class="mod" href="../Map/index.html">Map</a>.</p>
-<p>In Multistate mode (default), events are either registered to the WORLD state (-1) or the MAP states (map ID). These events will only ever trigger on their respective state.</p>
-<p>In Compatibility mode, all events are registered to the WORLD state (-1).</p>
+        <p>Registers a <a class="mod" href="../Map/index.html">Map</a> event handler for all instances of a <a class="mod" href="../Map/index.html">Map</a>.</p>
         <div class="table-container">
             <table>
 <thead>
 <tr>
-<th>ID</th>
 <th>Event</th>
 <th>State</th>
 <th>Parameters</th>
@@ -103,50 +100,43 @@
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>ON_INITIALIZE</td>
+<td><span title="1">events.map.on_initialize</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="string">instance_data</span>, <span title="Map">map</span></td>
 <td></td>
 </tr>
 <tr>
-<td>2</td>
-<td>ON_LOAD</td>
+<td><span title="2">events.map.on_load</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="string">instance_data</span>, <span title="Map">map</span></td>
 <td></td>
 </tr>
 <tr>
-<td>3</td>
-<td>ON_UPDATE</td>
+<td><span title="3">events.map.on_update</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="string">instance_data</span>, <span title="Map">map</span>, <span title="number">diff</span></td>
 <td></td>
 </tr>
 <tr>
-<td>4</td>
-<td>ON_PLAYER_ENTER</td>
+<td><span title="4">events.map.on_player_enter</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="string">instance_data</span>, <span title="Map">map</span>, <span title="Player">player</span></td>
 <td></td>
 </tr>
 <tr>
-<td>5</td>
-<td>ON_CREATURE_CREATE</td>
+<td><span title="5">events.map.on_creature_create</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="string">instance_data</span>, <span title="Map">map</span>, <span title="Creature">creature</span></td>
 <td></td>
 </tr>
 <tr>
-<td>6</td>
-<td>ON_GAMEOBJECT_CREATE</td>
+<td><span title="6">events.map.on_gameobject_create</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="string">instance_data</span>, <span title="Map">map</span>, <span title="GameObject">go</span></td>
 <td></td>
 </tr>
 <tr>
-<td>7</td>
-<td>ON_CHECK_ENCOUNTER_IN_PROGRESS</td>
+<td><span title="7">events.map.on_check_encounter_in_progress</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="string">instance_data</span>, <span title="Map">map</span></td>
 <td></td>

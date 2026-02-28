@@ -88,13 +88,10 @@
     
     <div class='docblock'>
         <p>Registers a <a class="mod" href="../WorldPacket/index.html">WorldPacket</a> event handler.</p>
-<p>In Multistate mode (default), events are either registered to the WORLD state (-1) or the MAP states (map ID). These events will only ever trigger on their respective state.</p>
-<p>In Compatibility mode, all events are registered to the WORLD state (-1).</p>
         <div class="table-container">
             <table>
 <thead>
 <tr>
-<th>ID</th>
 <th>Event</th>
 <th>State</th>
 <th>Parameters</th>
@@ -103,22 +100,13 @@
 </thead>
 <tbody>
 <tr>
-<td>5</td>
-<td>ON_PACKET_RECEIVE</td>
+<td><span title="5">events.packet.on_receive</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="WorldPacket">packet</span>, <span title="Player">player</span></td>
 <td>Player only if accessible. Can return false, newPacket</td>
 </tr>
 <tr>
-<td>6</td>
-<td>ON_PACKET_RECEIVE_UNKNOWN</td>
-<td></td>
-<td></td>
-<td>Not implemented</td>
-</tr>
-<tr>
-<td>7</td>
-<td>ON_PACKET_SEND</td>
+<td><span title="7">events.packet.on_send</span></td>
 <td>WORLD</td>
 <td><span title="number">event</span>, <span title="WorldPacket">packet</span>, <span title="Player">player</span></td>
 <td>Player only if accessible. Can return false</td>

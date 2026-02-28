@@ -340,7 +340,7 @@ searchIndex["Aura"] = {
         [3, "RegisterInstanceEvent", "", "Registers a <a class=\"mod\" href=\"Map/index.html\">Map</a> event handler for one instance of a <a class=\"mod\" href=\"Map/index.html\">Map</a>."],
         [3, "RegisterItemEvent", "", "Registers an <a class=\"mod\" href=\"Item/index.html\">Item</a> event handler."],
         [3, "RegisterItemGossipEvent", "", "Registers an <a class=\"mod\" href=\"Item/index.html\">Item</a> gossip event handler."],
-        [3, "RegisterMapEvent", "", "Registers a <a class=\"mod\" href=\"Map/index.html\">Map</a> event handler for all instance of a <a class=\"mod\" href=\"Map/index.html\">Map</a>."],
+        [3, "RegisterMapEvent", "", "Registers a <a class=\"mod\" href=\"Map/index.html\">Map</a> event handler for all instances of a <a class=\"mod\" href=\"Map/index.html\">Map</a>."],
         [3, "RegisterPacketEvent", "", "Registers a <a class=\"mod\" href=\"WorldPacket/index.html\">WorldPacket</a> event handler."],
         [3, "RegisterPlayerEvent", "", "Registers a <a class=\"mod\" href=\"Player/index.html\">Player</a> event handler."],
         [3, "RegisterPlayerGossipEvent", "", "Registers a <a class=\"mod\" href=\"Player/index.html\">Player</a> gossip event handler."],

@@ -88,13 +88,10 @@
     
     <div class='docblock'>
         <p>Registers an <a class="mod" href="../Item/index.html">Item</a> event handler.</p>
-<p>In Multistate mode (default), events are either registered to the WORLD state (-1) or the MAP states (map ID). These events will only ever trigger on their respective state.</p>
-<p>In Compatibility mode, all events are registered to the WORLD state (-1).</p>
         <div class="table-container">
             <table>
 <thead>
 <tr>
-<th>ID</th>
 <th>Event</th>
 <th>State</th>
 <th>Parameters</th>
@@ -103,57 +100,49 @@
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>ON_DUMMY_EFFECT</td>
+<td><span title="1">events.item.on_dummy_effect</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="WorldObject">caster</span>, <span title="number">spellid</span>, <span title="number">effindex</span>, <span title="Item">item</span></td>
 <td></td>
 </tr>
 <tr>
-<td>2</td>
-<td>ON_USE</td>
+<td><span title="2">events.item.on_use</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="Item">item</span>, <span title="nil">target</span></td>
 <td>Can return false to stop the spell casting</td>
 </tr>
 <tr>
-<td>3</td>
-<td>ON_QUEST_ACCEPT</td>
+<td><span title="3">events.item.on_quest_accept</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="Item">item</span>, <span title="Quest">quest</span></td>
 <td>Can return true</td>
 </tr>
 <tr>
-<td>4</td>
-<td>ON_EXPIRE</td>
+<td><span title="4">events.item.on_expire</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="number">itemid</span></td>
 <td>Can return true</td>
 </tr>
 <tr>
-<td>5</td>
-<td>ON_REMOVE</td>
+<td><span title="5">events.item.on_remove</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="Item">item</span></td>
 <td>Can return true</td>
 </tr>
 <tr>
-<td>6</td>
-<td>ON_ADD</td>
+<td><span title="6">events.item.on_add</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="Item">item</span></td>
 <td></td>
 </tr>
 <tr>
-<td>8</td>
-<td>ON_UNEQUIP</td>
+<td><span title="7">events.item.on_equip</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="Item">item</span>, <span title="number">slot</span></td>
 <td></td>
 </tr>
 <tr>
-<td>7</td>
-<td>ON_EQUIP</td>
+<td><span title="8">events.item.on_unequip</span></td>
 <td>MAP</td>
 <td><span title="number">event</span>, <span title="Player">player</span>, <span title="Item">item</span>, <span title="number">slot</span></td>
 <td></td>

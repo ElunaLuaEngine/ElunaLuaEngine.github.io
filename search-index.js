@@ -52,7 +52,7 @@ searchIndex["Aura"] = {
         [3, "GetAlivePlayersCountByTeam", "", "Returns the amount of alive players in the <a class=\"mod\" href=\"BattleGround/index.html\">BattleGround</a> by the team ID."],
         [3, "GetBonusHonorFromKillCount", "", "Returns the bonus honor given by amount of kills in the specific <a class=\"mod\" href=\"BattleGround/index.html\">BattleGround</a>."],
         [3, "GetBracketId", "", "Returns the bracket ID of the specific <a class=\"mod\" href=\"BattleGround/index.html\">BattleGround</a>."],
-        [3, "GetEndTime", "", "Returns the end time of the <a class=\"mod\" href=\"BattleGround/index.html\">BattleGround</a>."],
+        [3, "GetEndTime", "", "Returns the time remaining in milliseconds until <a class=\"mod\" href=\"BattleGround/index.html\">BattleGround</a> closes and removes all players. This can be after battleground ends normally or when there are not enough players"],
         [3, "GetFreeSlotsForTeam", "", "Returns the amount of free slots for the selected team in the specific <a class=\"mod\" href=\"BattleGround/index.html\">BattleGround</a>."],
         [3, "GetInstanceId", "", "Returns the instance ID of the <a class=\"mod\" href=\"BattleGround/index.html\">BattleGround</a>."],
         [3, "GetMap", "", "Returns the <a class=\"mod\" href=\"Map/index.html\">Map</a> of the <a class=\"mod\" href=\"BattleGround/index.html\">BattleGround</a>."],
